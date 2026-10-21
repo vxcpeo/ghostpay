@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "current",
-  "generatedAt": "2026-10-20T16:36:41.371Z",
+  "generatedAt": "2026-10-21T17:36:38.154Z",
   "baseUrl": "http://127.0.0.1:4326/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
@@ -15,13 +15,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Seclura — Private Payments, Invisible by Design",
+          "title": "Veilary — Private Payments, Invisible by Design",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 11952,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 55
+          "focusableCount": 53
         },
         "words": [
           {
@@ -2005,18 +2005,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 21
-          },
-          {
-            "word": "seclura://send",
-            "count": 1
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 2
-          },
-          {
             "word": "second",
             "count": 4
           },
@@ -2481,6 +2469,18 @@
             "count": 2
           },
           {
+            "word": "Veilary",
+            "count": 21
+          },
+          {
+            "word": "veilary://send",
+            "count": 1
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 2
+          },
+          {
             "word": "verifiability",
             "count": 1
           },
@@ -2683,16 +2683,16 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
-          },
-          {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
           },
           {
             "key": "aria-label=Terms of Use",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -2723,7 +2723,7 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
@@ -2797,11 +2797,11 @@
             "count": 2
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 4
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -2815,256 +2815,259 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "crest",
-          "crest__audit",
-          "crest__board",
-          "crest__creed",
-          "crest__fact",
-          "crest__facts",
-          "crest__foot",
-          "crest__head",
-          "crest__live",
-          "crest__pillar",
-          "crest__pillar-text",
-          "crest__pillar-title",
-          "crest__record",
-          "crest__record-head",
-          "crest__source",
-          "crest__stat",
-          "crest__stats",
-          "drift",
-          "drift__body",
-          "drift__checks",
-          "drift__current",
-          "drift__detail",
-          "drift__dot",
-          "drift__go",
-          "drift__head",
-          "drift__label",
-          "drift__line",
-          "drift__line--on",
-          "drift__live",
-          "drift__meta",
-          "drift__move",
-          "drift__name",
-          "drift__node",
-          "drift__node--on",
-          "drift__num",
-          "drift__readout",
-          "drift__route",
-          "drift__sequence",
-          "drift__stage",
-          "drift__step",
-          "drift__step--on",
-          "drift__tag",
-          "drift__text",
-          "expanse",
-          "expanse__body",
-          "expanse__head",
-          "expanse__icon",
-          "expanse__note",
-          "expanse__tablewrap",
-          "expanse__tenet",
-          "expanse__tenets",
-          "expanse__text",
-          "expanse__title",
-          "harbor__brand",
-          "harbor__cta",
-          "harbor__dock",
-          "harbor__label",
-          "harbor__legal",
-          "harbor__link",
-          "harbor__marker",
-          "harbor__paper",
-          "harbor__sigil",
-          "harbor__split",
-          "harbor__word",
-          "horizon",
-          "horizon__badge",
-          "horizon__head",
-          "horizon__items",
-          "horizon__meta",
-          "horizon__phase",
-          "horizon__phase--active",
-          "horizon__phase--done",
-          "horizon__phase--next",
-          "horizon__phase-name",
-          "horizon__rail",
-          "horizon__status",
-          "horizon__title",
-          "inlet",
-          "inlet__acts",
-          "inlet__card",
-          "inlet__copy",
-          "inlet__deck",
-          "inlet__field",
-          "inlet__fine",
-          "inlet__form",
-          "inlet__form-sub",
-          "inlet__form-title",
-          "inlet__grid",
-          "inlet__label",
-          "inlet__submit",
-          "inlet__ticks",
-          "inlet__title",
-          "mintline",
-          "mintline__act",
-          "mintline__key",
-          "mintline__value",
-          "modules",
-          "modules__deck",
-          "modules__head",
-          "modules__icon",
-          "modules__item",
-          "modules__lede",
-          "modules__name",
-          "modules__rail",
-          "modules__text",
-          "modules__title",
-          "scene",
-          "scene--deep",
-          "scene__head",
-          "scene__inner",
-          "shallows",
-          "shallows__answer",
-          "shallows__answer--open",
-          "shallows__aside",
-          "shallows__ask",
-          "shallows__grid",
-          "shallows__head",
-          "shallows__index",
-          "shallows__links",
-          "shallows__list",
-          "shallows__mark",
-          "shallows__prompt",
-          "shallows__qa",
-          "shallows__qa--open",
-          "shallows__question",
-          "shallows__trigger",
-          "shore",
-          "shore__base",
-          "shore__blurb",
-          "shore__brand",
-          "shore__copy",
-          "shore__crest",
-          "shore__group",
-          "shore__group-title",
-          "shore__index",
-          "shore__inner",
-          "shore__legal",
-          "shore__links",
-          "shore__notice",
-          "shore__sep",
-          "shore__sigil",
-          "shore__social",
-          "shore__social--pending",
-          "shore__socials",
-          "shore__word",
-          "splash",
-          "splash__acts",
-          "splash__aside",
-          "splash__belt",
-          "splash__chain",
-          "splash__copy",
-          "splash__date",
-          "splash__halo",
-          "splash__ink",
-          "splash__inner",
-          "splash__lede",
-          "splash__logos",
-          "splash__notes",
-          "splash__stage",
-          "splash__stamp",
-          "splash__stat",
-          "splash__stats",
-          "splash__title",
-          "ticket",
-          "ticket__bar",
-          "ticket__flag",
-          "ticket__hash",
-          "ticket__route",
-          "ticket__row",
-          "ticket__row--veil",
-          "ticket__rows",
-          "ticket__seal",
-          "ticket__seal-head",
-          "ticket__seal-ok",
-          "ticket__send",
-          "tide",
-          "tide-bento",
-          "tide-bento__cell",
-          "tide-bento__cell--deep",
-          "tide-bento__cell--wash",
-          "tide-button",
-          "tide-button--fill",
-          "tide-button--light",
-          "tide-button--line",
-          "tide-button--outline",
-          "tide-button--small",
-          "tide-deck",
-          "tide-home",
-          "tide-kicker",
-          "tide-mark",
-          "tide-mark--no",
-          "tide-mark--own",
-          "tide-mark--yes",
-          "tide-rail",
-          "tide-sign--no",
-          "tide-sign--own",
-          "tide-sign--yes",
-          "tide-table",
-          "tide-table__own",
-          "tide-title",
-          "tide__aurora",
-          "tide__dots",
-          "tide__main",
-          "vault",
-          "vault__act",
-          "vault__bar",
-          "vault__board",
-          "vault__buy",
-          "vault__copy",
-          "vault__fact",
-          "vault__facts",
-          "vault__figure",
-          "vault__fine",
-          "vault__head",
-          "vault__label",
-          "vault__ledger",
-          "vault__name",
-          "vault__pct",
-          "vault__row",
-          "vault__rows",
-          "vault__supply",
-          "vault__supply-head",
-          "vault__track",
-          "vault__uses",
-          "vault__utility",
-          "vault__utility-title"
+          "boot",
+          "boot__acts",
+          "boot__copy",
+          "boot__date",
+          "boot__grid",
+          "boot__ink",
+          "boot__lede",
+          "boot__stack",
+          "boot__stamp",
+          "boot__title",
+          "cmd",
+          "cmd--block",
+          "cmd--ghost",
+          "cmd--sm",
+          "colophon",
+          "colophon__base",
+          "colophon__blurb",
+          "colophon__brand",
+          "colophon__copy",
+          "colophon__group",
+          "colophon__group-title",
+          "colophon__index",
+          "colophon__inner",
+          "colophon__legal",
+          "colophon__links",
+          "colophon__mark",
+          "colophon__notice",
+          "colophon__sep",
+          "colophon__social",
+          "colophon__social--pending",
+          "colophon__socials",
+          "colophon__top",
+          "colophon__word",
+          "compare",
+          "compare__head",
+          "compare__own",
+          "compare__row",
+          "console-stack",
+          "data",
+          "data__act",
+          "data__bar",
+          "data__copy",
+          "data__fact",
+          "data__facts",
+          "data__figure",
+          "data__fine",
+          "data__grid",
+          "data__head",
+          "data__label",
+          "data__name",
+          "data__pct",
+          "data__row",
+          "data__rows",
+          "data__supply",
+          "data__supply-head",
+          "data__track",
+          "data__uses",
+          "data__utility",
+          "data__utility-title",
+          "deck",
+          "gate",
+          "gate__acts",
+          "gate__copy",
+          "gate__deck",
+          "gate__field",
+          "gate__fine",
+          "gate__form",
+          "gate__form-sub",
+          "gate__form-title",
+          "gate__grid",
+          "gate__label",
+          "gate__shell",
+          "gate__submit",
+          "gate__ticks",
+          "gate__title",
+          "glyph",
+          "kicker",
+          "ledger-board",
+          "ledger-board__grid",
+          "ledger-board__head",
+          "ledger-board__note",
+          "ledger-board__table",
+          "log",
+          "log__answer",
+          "log__answer--open",
+          "log__ask",
+          "log__grid",
+          "log__head",
+          "log__index",
+          "log__item",
+          "log__item--open",
+          "log__links",
+          "log__list",
+          "log__mark",
+          "log__num",
+          "log__prompt",
+          "log__question",
+          "log__trigger",
+          "manifest",
+          "manifest__audit",
+          "manifest__creed",
+          "manifest__fact",
+          "manifest__facts",
+          "manifest__foot",
+          "manifest__grid",
+          "manifest__head",
+          "manifest__live",
+          "manifest__pillar",
+          "manifest__pillar-text",
+          "manifest__pillar-title",
+          "manifest__pillars",
+          "manifest__record",
+          "manifest__record-head",
+          "manifest__source",
+          "manifest__stat",
+          "manifest__stats",
+          "mark",
+          "mark--no",
+          "mark--own",
+          "mark--yes",
+          "module",
+          "module--first",
+          "module__bar",
+          "module__inner",
+          "phase",
+          "phase__badge",
+          "phase__head",
+          "phase__items",
+          "phase__list",
+          "phase__meta",
+          "phase__name",
+          "phase__row",
+          "phase__row--active",
+          "phase__row--done",
+          "phase__row--next",
+          "phase__status",
+          "phase__title",
+          "process",
+          "process__body",
+          "process__checks",
+          "process__current",
+          "process__detail",
+          "process__go",
+          "process__grid",
+          "process__head",
+          "process__list",
+          "process__live",
+          "process__meta",
+          "process__move",
+          "process__name",
+          "process__num",
+          "process__readout",
+          "process__step",
+          "process__step--on",
+          "process__tag",
+          "process__text",
+          "readout",
+          "readout__act",
+          "readout__key",
+          "readout__notes",
+          "readout__stat",
+          "readout__stats",
+          "readout__value",
+          "registry",
+          "registry__body",
+          "registry__deck",
+          "registry__grid",
+          "registry__head",
+          "registry__icon",
+          "registry__item",
+          "registry__name",
+          "registry__text",
+          "registry__title",
+          "relay",
+          "relay__inner",
+          "relay__list",
+          "scene-title",
+          "sign--no",
+          "sign--own",
+          "sign--yes",
+          "sysbar",
+          "sysbar__aux",
+          "sysbar__brand",
+          "sysbar__cmd",
+          "sysbar__cmd-label",
+          "sysbar__doc",
+          "sysbar__glyph",
+          "sysbar__inner",
+          "sysbar__launch",
+          "sysbar__mark",
+          "sysbar__name",
+          "sysbar__rail",
+          "tag",
+          "tenets",
+          "tenets__icon",
+          "tenets__item",
+          "tenets__text",
+          "tenets__title",
+          "term",
+          "term__field",
+          "term__main",
+          "trace",
+          "trace__dot",
+          "trace__label",
+          "trace__line",
+          "trace__line--on",
+          "trace__node",
+          "trace__node--on",
+          "tx",
+          "tx__bar",
+          "tx__flag",
+          "tx__hash",
+          "tx__route",
+          "tx__row",
+          "tx__row--veil",
+          "tx__rows",
+          "tx__seal",
+          "tx__seal-head",
+          "tx__seal-ok",
+          "tx__send"
         ],
         "fingerprint": [
           "a@11:0",
           "a@11:1",
           "a@12:1",
           "a@13:1",
-          "a@7:0",
-          "a@7:1",
           "a@7:2",
+          "a@8:0",
+          "a@8:1",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@10:2",
           "article@10:3",
+          "article@11:2",
           "article@11:3",
           "blockquote@9:0",
-          "button@11:1",
           "button@11:3",
           "button@12:1",
           "button@12:3",
-          "button@14:1",
-          "button@7:0",
+          "button@14:2",
+          "button@8:0",
+          "code@10:0",
+          "code@12:0",
+          "code@12:1",
+          "code@13:0",
+          "code@14:0",
+          "code@15:0",
+          "code@8:0",
+          "code@9:0",
           "dd@13:0",
           "dd@13:1",
+          "dd@14:0",
           "div@10:1",
           "div@10:2",
           "div@10:3",
@@ -3076,67 +3079,77 @@
           "div@12:1",
           "div@12:2",
           "div@12:3",
+          "div@13:2",
           "div@3:1",
           "div@4:4+",
           "div@5:0",
-          "div@5:4+",
+          "div@6:3",
           "div@6:4+",
           "div@7:1",
           "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:1",
           "div@8:2",
           "div@8:3",
           "div@8:4+",
+          "div@9:1",
           "div@9:2",
-          "div@9:3",
           "div@9:4+",
-          "dl@11:3",
           "dl@11:4+",
+          "dl@12:3",
           "dt@13:0",
+          "dt@14:0",
           "em@11:0",
           "em@12:0",
           "em@13:0",
           "footer@5:1",
           "form@11:4+",
-          "h1@10:1",
+          "h1@11:1",
           "h2@10:1",
           "h2@11:1",
           "h2@12:1",
           "h3@11:0",
           "h3@12:0",
-          "h4@9:0",
+          "h4@9:1",
+          "header@5:2",
+          "i@10:0",
+          "i@12:0",
+          "i@13:0",
+          "i@14:0",
+          "i@15:0",
+          "i@9:0",
           "input@12:0",
           "label@12:0",
           "li@10:1",
-          "li@10:2",
           "li@11:1",
+          "li@11:2",
           "li@12:1",
           "li@12:2",
           "main@5:1",
-          "nav@6:4+",
+          "nav@7:4+",
           "ol@10:4+",
+          "output@12:0",
+          "output@13:0",
+          "output@14:0",
           "p@10:0",
-          "p@10:2",
           "p@11:0",
+          "p@11:1",
           "p@11:2",
           "p@12:0",
+          "p@12:1",
           "p@13:0",
           "p@8:0",
+          "p@8:1",
           "path@10:0",
-          "path@11:0",
-          "path@12:0",
-          "path@13:0",
-          "path@14:0",
-          "path@15:0",
-          "path@16:0",
-          "path@17:0",
-          "path@9:0",
-          "rect@9:0",
+          "pre@13:0",
+          "rect@10:0",
+          "samp@12:0",
           "section@7:1",
           "section@7:2",
-          "span@10:0",
-          "span@11:0",
+          "small@10:0",
+          "small@12:0",
+          "small@13:0",
           "span@11:1",
           "span@12:0",
           "span@12:1",
@@ -3144,144 +3157,124 @@
           "span@13:1",
           "span@13:2",
           "span@14:0",
-          "span@15:1",
-          "span@6:0",
-          "span@7:0",
-          "span@8:0",
+          "span@14:1",
           "span@8:1",
           "span@9:0",
           "span@9:1",
-          "strong@12:0",
           "strong@8:0",
-          "svg@10:1",
-          "svg@11:1",
-          "svg@12:1",
-          "svg@13:1",
-          "svg@14:1",
-          "svg@15:1",
-          "svg@16:1",
-          "svg@8:2",
-          "svg@9:1",
-          "table@11:2",
-          "tbody@12:4+",
-          "td@14:1",
-          "th@14:0",
-          "thead@12:1",
-          "tr@13:3",
+          "svg@9:2",
+          "time@9:0",
+          "ul@10:4+",
           "ul@11:3",
           "ul@11:4+",
           "ul@9:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
-            "top": -83,
+            "top": 0,
             "left": 0,
             "width": 1440,
-            "height": 9178
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 9182,
-            "left": 0,
-            "width": 1440,
-            "height": 766
+            "height": 55
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 814,
-            "left": 198,
-            "width": 1044,
-            "height": 58
+            "top": 2,
+            "left": 180,
+            "width": 909,
+            "height": 52
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 1440,
+            "height": 8859
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 8907,
+            "left": 0,
+            "width": 1440,
+            "height": 600
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 381
+            "hex": "#eef6fb",
+            "count": 399
           },
           {
-            "hex": "#546a7d",
-            "count": 196
+            "hex": "#a3b8c8",
+            "count": 213
           },
           {
-            "hex": "#0b64cc",
-            "count": 89
+            "hex": "#7b93a4",
+            "count": 159
           },
           {
-            "hex": "#b3d2ec",
-            "count": 81
+            "hex": "#ff9b91",
+            "count": 73
           },
           {
-            "hex": "#ffffff",
-            "count": 80
+            "hex": "#ff3b30",
+            "count": 53
           },
           {
-            "hex": "#087a55",
-            "count": 48
+            "hex": "#070b10",
+            "count": 37
           },
           {
-            "hex": "#eaf4ff",
-            "count": 46
-          },
-          {
-            "hex": "#298dff",
-            "count": 31
-          },
-          {
-            "hex": "#a9c6dd",
+            "hex": "#5ce1a0",
             "count": 21
           },
           {
-            "hex": "#7cc0ff",
-            "count": 17
+            "hex": "#0a121a",
+            "count": 18
           },
           {
-            "hex": "#f4f9ff",
-            "count": 17
+            "hex": "#3b5b70",
+            "count": 9
           },
           {
-            "hex": "#d9ecff",
-            "count": 11
+            "hex": "#04070b",
+            "count": 8
           },
           {
-            "hex": "#e8f3ff",
-            "count": 10
-          },
-          {
-            "hex": "#0b2540",
+            "hex": "#1a2a36",
             "count": 6
           },
           {
-            "hex": "#8a5a00",
-            "count": 5
+            "hex": "#ff5cd6",
+            "count": 6
           },
           {
-            "hex": "#d8e7f5",
-            "count": 5
+            "hex": "#ffffff",
+            "count": 6
           },
           {
-            "hex": "#06182a",
+            "hex": "#0f1b25",
+            "count": 4
+          },
+          {
+            "hex": "#2a4355",
             "count": 3
           },
           {
-            "hex": "#6f8ca3",
-            "count": 3
-          },
-          {
-            "hex": "#e8f5ee",
+            "hex": "#4df0d0",
             "count": 2
           },
           {
-            "hex": "#fdf6e7",
+            "hex": "#f2c94c",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 295,
+        "contrastChecked": 296,
         "headings": [
           {
             "tag": "h1",
@@ -3423,48 +3416,7 @@
         ],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.scene__inner > div.tide-rail.modules__rail > article.modules__item",
-              "right": 1636,
-              "width": 380
-            },
-            {
-              "selector": "div.tide-rail.modules__rail > article.modules__item > h3.modules__name",
-              "right": 1602,
-              "width": 312
-            },
-            {
-              "selector": "div.tide-rail.modules__rail > article.modules__item > p.modules__text",
-              "right": 1602,
-              "width": 312
-            },
-            {
-              "selector": "div.scene__inner > div.tide-rail.modules__rail > article.modules__item",
-              "right": 2036,
-              "width": 380
-            },
-            {
-              "selector": "div.tide-rail.modules__rail > article.modules__item > span.modules__icon",
-              "right": 1736,
-              "width": 46
-            },
-            {
-              "selector": "article.modules__item > span.modules__icon > svg",
-              "right": 1723,
-              "width": 20
-            },
-            {
-              "selector": "span.modules__icon > svg > path",
-              "right": 1719,
-              "width": 13
-            },
-            {
-              "selector": "div.tide-rail.modules__rail > article.modules__item > h3.modules__name",
-              "right": 2002,
-              "width": 312
-            }
-          ]
+          "offenders": []
         }
       },
       "axe": {
@@ -3481,13 +3433,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Seclura — Private Payments, Invisible by Design",
+          "title": "Veilary — Private Payments, Invisible by Design",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 11883,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 49
+          "focusableCount": 47
         },
         "words": [
           {
@@ -5467,18 +5419,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 20
-          },
-          {
-            "word": "seclura://send",
-            "count": 1
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 2
-          },
-          {
             "word": "second",
             "count": 4
           },
@@ -5943,6 +5883,18 @@
             "count": 2
           },
           {
+            "word": "Veilary",
+            "count": 20
+          },
+          {
+            "word": "veilary://send",
+            "count": 1
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 2
+          },
+          {
             "word": "verifiability",
             "count": 1
           },
@@ -6133,20 +6085,12 @@
             "count": 1
           },
           {
-            "key": "aria-label=Primary",
-            "count": 1
-          },
-          {
             "key": "aria-label=Privacy Policy",
             "count": 1
           },
           {
             "key": "aria-label=Roadmap",
             "count": 1
-          },
-          {
-            "key": "aria-label=Seclura home",
-            "count": 2
           },
           {
             "key": "aria-label=Telegram (link pending)",
@@ -6159,6 +6103,10 @@
           {
             "key": "aria-label=Toggle navigation",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -6189,7 +6137,7 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
@@ -6259,11 +6207,11 @@
             "count": 2
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 3
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -6277,251 +6225,254 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "crest",
-          "crest__audit",
-          "crest__board",
-          "crest__creed",
-          "crest__fact",
-          "crest__facts",
-          "crest__foot",
-          "crest__head",
-          "crest__live",
-          "crest__pillar",
-          "crest__pillar-text",
-          "crest__pillar-title",
-          "crest__record",
-          "crest__record-head",
-          "crest__source",
-          "crest__stat",
-          "crest__stats",
-          "drift",
-          "drift__body",
-          "drift__checks",
-          "drift__current",
-          "drift__detail",
-          "drift__dot",
-          "drift__go",
-          "drift__head",
-          "drift__label",
-          "drift__line",
-          "drift__line--on",
-          "drift__live",
-          "drift__meta",
-          "drift__move",
-          "drift__name",
-          "drift__node",
-          "drift__node--on",
-          "drift__num",
-          "drift__readout",
-          "drift__route",
-          "drift__sequence",
-          "drift__stage",
-          "drift__step",
-          "drift__step--on",
-          "drift__tag",
-          "drift__text",
-          "expanse",
-          "expanse__body",
-          "expanse__head",
-          "expanse__icon",
-          "expanse__note",
-          "expanse__tablewrap",
-          "expanse__tenet",
-          "expanse__tenets",
-          "expanse__text",
-          "expanse__title",
-          "harbor__brand",
-          "harbor__cta",
-          "harbor__dock",
-          "harbor__legal",
-          "harbor__sigil",
-          "harbor__split",
-          "harbor__toggle",
-          "horizon",
-          "horizon__badge",
-          "horizon__head",
-          "horizon__items",
-          "horizon__meta",
-          "horizon__phase",
-          "horizon__phase--active",
-          "horizon__phase--done",
-          "horizon__phase--next",
-          "horizon__phase-name",
-          "horizon__rail",
-          "horizon__status",
-          "horizon__title",
-          "inlet",
-          "inlet__acts",
-          "inlet__card",
-          "inlet__copy",
-          "inlet__deck",
-          "inlet__field",
-          "inlet__fine",
-          "inlet__form",
-          "inlet__form-sub",
-          "inlet__form-title",
-          "inlet__grid",
-          "inlet__label",
-          "inlet__submit",
-          "inlet__ticks",
-          "inlet__title",
-          "mintline",
-          "mintline__act",
-          "mintline__key",
-          "mintline__value",
-          "modules",
-          "modules__deck",
-          "modules__head",
-          "modules__icon",
-          "modules__item",
-          "modules__lede",
-          "modules__name",
-          "modules__rail",
-          "modules__text",
-          "modules__title",
-          "scene",
-          "scene--deep",
-          "scene__head",
-          "scene__inner",
-          "shallows",
-          "shallows__answer",
-          "shallows__answer--open",
-          "shallows__aside",
-          "shallows__ask",
-          "shallows__grid",
-          "shallows__head",
-          "shallows__index",
-          "shallows__links",
-          "shallows__list",
-          "shallows__mark",
-          "shallows__prompt",
-          "shallows__qa",
-          "shallows__qa--open",
-          "shallows__question",
-          "shallows__trigger",
-          "shore",
-          "shore__base",
-          "shore__blurb",
-          "shore__brand",
-          "shore__copy",
-          "shore__crest",
-          "shore__group",
-          "shore__group-title",
-          "shore__index",
-          "shore__inner",
-          "shore__legal",
-          "shore__links",
-          "shore__notice",
-          "shore__sep",
-          "shore__sigil",
-          "shore__social",
-          "shore__social--pending",
-          "shore__socials",
-          "shore__word",
-          "splash",
-          "splash__acts",
-          "splash__aside",
-          "splash__belt",
-          "splash__chain",
-          "splash__copy",
-          "splash__date",
-          "splash__halo",
-          "splash__ink",
-          "splash__inner",
-          "splash__lede",
-          "splash__logos",
-          "splash__notes",
-          "splash__stage",
-          "splash__stamp",
-          "splash__stat",
-          "splash__stats",
-          "splash__title",
-          "ticket",
-          "ticket__bar",
-          "ticket__flag",
-          "ticket__hash",
-          "ticket__route",
-          "ticket__row",
-          "ticket__row--veil",
-          "ticket__rows",
-          "ticket__seal",
-          "ticket__seal-head",
-          "ticket__seal-ok",
-          "ticket__send",
-          "tide",
-          "tide-bento",
-          "tide-bento__cell",
-          "tide-bento__cell--deep",
-          "tide-bento__cell--wash",
-          "tide-button",
-          "tide-button--fill",
-          "tide-button--light",
-          "tide-button--line",
-          "tide-button--outline",
-          "tide-button--small",
-          "tide-deck",
-          "tide-home",
-          "tide-kicker",
-          "tide-mark",
-          "tide-mark--no",
-          "tide-mark--own",
-          "tide-mark--yes",
-          "tide-rail",
-          "tide-sign--no",
-          "tide-sign--own",
-          "tide-sign--yes",
-          "tide-table",
-          "tide-table__own",
-          "tide-title",
-          "tide__aurora",
-          "tide__main",
-          "vault",
-          "vault__act",
-          "vault__bar",
-          "vault__board",
-          "vault__buy",
-          "vault__copy",
-          "vault__fact",
-          "vault__facts",
-          "vault__figure",
-          "vault__fine",
-          "vault__head",
-          "vault__label",
-          "vault__ledger",
-          "vault__name",
-          "vault__pct",
-          "vault__row",
-          "vault__rows",
-          "vault__supply",
-          "vault__supply-head",
-          "vault__track",
-          "vault__uses",
-          "vault__utility",
-          "vault__utility-title"
+          "boot",
+          "boot__acts",
+          "boot__copy",
+          "boot__date",
+          "boot__grid",
+          "boot__ink",
+          "boot__lede",
+          "boot__stack",
+          "boot__stamp",
+          "boot__title",
+          "cmd",
+          "cmd--block",
+          "cmd--ghost",
+          "cmd--sm",
+          "colophon",
+          "colophon__base",
+          "colophon__blurb",
+          "colophon__brand",
+          "colophon__copy",
+          "colophon__group",
+          "colophon__group-title",
+          "colophon__index",
+          "colophon__inner",
+          "colophon__legal",
+          "colophon__links",
+          "colophon__mark",
+          "colophon__notice",
+          "colophon__sep",
+          "colophon__social",
+          "colophon__social--pending",
+          "colophon__socials",
+          "colophon__top",
+          "colophon__word",
+          "compare",
+          "compare__head",
+          "compare__own",
+          "compare__row",
+          "console-stack",
+          "data",
+          "data__act",
+          "data__bar",
+          "data__copy",
+          "data__fact",
+          "data__facts",
+          "data__figure",
+          "data__fine",
+          "data__grid",
+          "data__head",
+          "data__label",
+          "data__name",
+          "data__pct",
+          "data__row",
+          "data__rows",
+          "data__supply",
+          "data__supply-head",
+          "data__track",
+          "data__uses",
+          "data__utility",
+          "data__utility-title",
+          "deck",
+          "gate",
+          "gate__acts",
+          "gate__copy",
+          "gate__deck",
+          "gate__field",
+          "gate__fine",
+          "gate__form",
+          "gate__form-sub",
+          "gate__form-title",
+          "gate__grid",
+          "gate__label",
+          "gate__shell",
+          "gate__submit",
+          "gate__ticks",
+          "gate__title",
+          "glyph",
+          "kicker",
+          "ledger-board",
+          "ledger-board__grid",
+          "ledger-board__head",
+          "ledger-board__note",
+          "ledger-board__table",
+          "log",
+          "log__answer",
+          "log__answer--open",
+          "log__ask",
+          "log__grid",
+          "log__head",
+          "log__index",
+          "log__item",
+          "log__item--open",
+          "log__links",
+          "log__list",
+          "log__mark",
+          "log__num",
+          "log__prompt",
+          "log__question",
+          "log__trigger",
+          "manifest",
+          "manifest__audit",
+          "manifest__creed",
+          "manifest__fact",
+          "manifest__facts",
+          "manifest__foot",
+          "manifest__grid",
+          "manifest__head",
+          "manifest__live",
+          "manifest__pillar",
+          "manifest__pillar-text",
+          "manifest__pillar-title",
+          "manifest__pillars",
+          "manifest__record",
+          "manifest__record-head",
+          "manifest__source",
+          "manifest__stat",
+          "manifest__stats",
+          "mark",
+          "mark--no",
+          "mark--own",
+          "mark--yes",
+          "module",
+          "module--first",
+          "module__bar",
+          "module__inner",
+          "phase",
+          "phase__badge",
+          "phase__head",
+          "phase__items",
+          "phase__list",
+          "phase__meta",
+          "phase__name",
+          "phase__row",
+          "phase__row--active",
+          "phase__row--done",
+          "phase__row--next",
+          "phase__status",
+          "phase__title",
+          "process",
+          "process__body",
+          "process__checks",
+          "process__current",
+          "process__detail",
+          "process__go",
+          "process__grid",
+          "process__head",
+          "process__list",
+          "process__live",
+          "process__meta",
+          "process__move",
+          "process__name",
+          "process__num",
+          "process__readout",
+          "process__step",
+          "process__step--on",
+          "process__tag",
+          "process__text",
+          "readout",
+          "readout__act",
+          "readout__key",
+          "readout__notes",
+          "readout__stat",
+          "readout__stats",
+          "readout__value",
+          "registry",
+          "registry__body",
+          "registry__deck",
+          "registry__grid",
+          "registry__head",
+          "registry__icon",
+          "registry__item",
+          "registry__name",
+          "registry__text",
+          "registry__title",
+          "relay",
+          "relay__inner",
+          "relay__list",
+          "scene-title",
+          "sign--no",
+          "sign--own",
+          "sign--yes",
+          "sysbar",
+          "sysbar__aux",
+          "sysbar__brand",
+          "sysbar__glyph",
+          "sysbar__inner",
+          "sysbar__launch",
+          "sysbar__mark",
+          "sysbar__toggle",
+          "tag",
+          "tenets",
+          "tenets__icon",
+          "tenets__item",
+          "tenets__text",
+          "tenets__title",
+          "term",
+          "term__field",
+          "term__main",
+          "trace",
+          "trace__dot",
+          "trace__label",
+          "trace__line",
+          "trace__line--on",
+          "trace__node",
+          "trace__node--on",
+          "tx",
+          "tx__bar",
+          "tx__flag",
+          "tx__hash",
+          "tx__route",
+          "tx__row",
+          "tx__row--veil",
+          "tx__rows",
+          "tx__seal",
+          "tx__seal-head",
+          "tx__seal-ok",
+          "tx__send"
         ],
         "fingerprint": [
           "a@11:0",
           "a@11:1",
           "a@12:1",
           "a@13:1",
-          "a@7:1",
           "a@7:2",
+          "a@8:1",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@10:2",
           "article@10:3",
+          "article@11:2",
           "article@11:3",
           "blockquote@9:0",
-          "button@11:1",
           "button@11:3",
           "button@12:1",
           "button@12:3",
-          "button@14:1",
-          "button@7:0",
-          "button@7:1",
+          "button@14:2",
+          "button@8:0",
+          "button@8:1",
+          "code@10:0",
+          "code@12:0",
+          "code@12:1",
+          "code@13:0",
+          "code@14:0",
+          "code@15:0",
+          "code@9:0",
           "dd@13:0",
           "dd@13:1",
+          "dd@14:0",
           "div@10:1",
           "div@10:2",
           "div@10:3",
@@ -6533,66 +6484,76 @@
           "div@12:1",
           "div@12:2",
           "div@12:3",
+          "div@13:2",
           "div@3:1",
           "div@4:4+",
           "div@5:0",
+          "div@6:3",
           "div@6:4+",
           "div@7:1",
           "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:1",
           "div@8:2",
           "div@8:3",
           "div@8:4+",
+          "div@9:1",
           "div@9:2",
-          "div@9:3",
           "div@9:4+",
-          "dl@11:3",
           "dl@11:4+",
+          "dl@12:3",
           "dt@13:0",
+          "dt@14:0",
           "em@11:0",
           "em@12:0",
           "em@13:0",
           "footer@5:1",
           "form@11:4+",
-          "h1@10:1",
+          "h1@11:1",
           "h2@10:1",
           "h2@11:1",
           "h2@12:1",
           "h3@11:0",
           "h3@12:0",
-          "h4@9:0",
+          "h4@9:1",
+          "header@5:2",
+          "i@10:0",
+          "i@12:0",
+          "i@13:0",
+          "i@14:0",
+          "i@15:0",
+          "i@9:0",
           "input@12:0",
           "label@12:0",
           "li@10:1",
-          "li@10:2",
           "li@11:1",
+          "li@11:2",
           "li@12:1",
           "li@12:2",
           "main@5:1",
-          "nav@6:4+",
           "ol@10:4+",
+          "output@12:0",
+          "output@13:0",
+          "output@14:0",
           "p@10:0",
-          "p@10:2",
           "p@11:0",
+          "p@11:1",
           "p@11:2",
           "p@12:0",
+          "p@12:1",
           "p@13:0",
           "p@8:0",
+          "p@8:1",
           "path@10:0",
-          "path@11:0",
-          "path@12:0",
-          "path@13:0",
-          "path@14:0",
-          "path@15:0",
-          "path@16:0",
-          "path@17:0",
-          "path@9:0",
-          "rect@9:0",
+          "pre@13:0",
+          "rect@10:0",
+          "samp@12:0",
           "section@7:1",
           "section@7:2",
-          "span@10:0",
-          "span@11:0",
+          "small@10:0",
+          "small@12:0",
+          "small@13:0",
           "span@11:1",
           "span@12:0",
           "span@12:1",
@@ -6600,143 +6561,116 @@
           "span@13:1",
           "span@13:2",
           "span@14:0",
-          "span@15:1",
-          "span@7:0",
+          "span@14:1",
           "span@8:1",
           "span@9:0",
           "span@9:1",
-          "strong@12:0",
           "strong@8:0",
-          "svg@10:1",
-          "svg@11:1",
-          "svg@12:1",
-          "svg@13:1",
-          "svg@14:1",
-          "svg@15:1",
-          "svg@16:1",
-          "svg@8:1",
-          "svg@8:2",
-          "svg@9:1",
-          "table@11:2",
-          "tbody@12:4+",
-          "td@14:1",
-          "th@14:0",
-          "thead@12:1",
-          "tr@13:3",
+          "svg@9:2",
+          "time@9:0",
+          "ul@10:4+",
           "ul@11:3",
           "ul@11:4+",
           "ul@9:4+"
         ],
         "landmarks": [
           {
+            "tag": "header",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 390,
+            "height": 55
+          },
+          {
             "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 11055
+            "height": 12106
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 11095,
+            "top": 12130,
             "left": 0,
             "width": 390,
-            "height": 1124
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 772,
-            "left": 27,
-            "width": 337,
-            "height": 58
+            "height": 936
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 373
+            "hex": "#eef6fb",
+            "count": 400
           },
           {
-            "hex": "#546a7d",
-            "count": 178
+            "hex": "#a3b8c8",
+            "count": 201
           },
           {
-            "hex": "#0b64cc",
-            "count": 88
+            "hex": "#7b93a4",
+            "count": 159
           },
           {
-            "hex": "#ffffff",
-            "count": 81
+            "hex": "#ff9b91",
+            "count": 72
           },
           {
-            "hex": "#b3d2ec",
-            "count": 75
+            "hex": "#ff3b30",
+            "count": 53
           },
           {
-            "hex": "#087a55",
-            "count": 48
+            "hex": "#070b10",
+            "count": 37
           },
           {
-            "hex": "#eaf4ff",
-            "count": 46
-          },
-          {
-            "hex": "#298dff",
-            "count": 22
-          },
-          {
-            "hex": "#a9c6dd",
+            "hex": "#5ce1a0",
             "count": 21
           },
           {
-            "hex": "#7cc0ff",
-            "count": 17
+            "hex": "#0a121a",
+            "count": 18
           },
           {
-            "hex": "#f4f9ff",
-            "count": 17
+            "hex": "#3b5b70",
+            "count": 9
           },
           {
-            "hex": "#d9ecff",
-            "count": 11
+            "hex": "#04070b",
+            "count": 8
           },
           {
-            "hex": "#e8f3ff",
-            "count": 10
-          },
-          {
-            "hex": "#0b2540",
+            "hex": "#1a2a36",
             "count": 6
           },
           {
-            "hex": "#8a5a00",
-            "count": 5
+            "hex": "#ff5cd6",
+            "count": 6
           },
           {
-            "hex": "#d8e7f5",
-            "count": 5
+            "hex": "#ffffff",
+            "count": 6
           },
           {
-            "hex": "#06182a",
+            "hex": "#0f1b25",
+            "count": 4
+          },
+          {
+            "hex": "#2a4355",
             "count": 3
           },
           {
-            "hex": "#6f8ca3",
-            "count": 3
-          },
-          {
-            "hex": "#e8f5ee",
+            "hex": "#4df0d0",
             "count": 2
           },
           {
-            "hex": "#fdf6e7",
+            "hex": "#f2c94c",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 287,
+        "contrastChecked": 288,
         "headings": [
           {
             "tag": "h1",
@@ -6878,48 +6812,7 @@
         ],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.splash__inner > div.splash__stage > span.splash__halo",
-              "right": 405,
-              "width": 420
-            },
-            {
-              "selector": "div.scene__inner > div.tide-rail.modules__rail > article.modules__item",
-              "right": 668,
-              "width": 320
-            },
-            {
-              "selector": "div.tide-rail.modules__rail > article.modules__item > span.modules__icon",
-              "right": 416,
-              "width": 46
-            },
-            {
-              "selector": "article.modules__item > span.modules__icon > svg",
-              "right": 403,
-              "width": 20
-            },
-            {
-              "selector": "span.modules__icon > svg > path",
-              "right": 398,
-              "width": 11
-            },
-            {
-              "selector": "div.tide-rail.modules__rail > article.modules__item > h3.modules__name",
-              "right": 646,
-              "width": 276
-            },
-            {
-              "selector": "div.tide-rail.modules__rail > article.modules__item > p.modules__text",
-              "right": 646,
-              "width": 276
-            },
-            {
-              "selector": "div.scene__inner > div.tide-rail.modules__rail > article.modules__item",
-              "right": 999,
-              "width": 320
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
@@ -6934,83 +6827,83 @@
       "focus": {
         "samples": [
           {
-            "tag": "button",
-            "text": "Launch App",
+            "tag": "a",
+            "text": "Veilary home",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(11, 100, 204)",
-            "boxShadow": "rgba(20, 96, 173, 0.28) 0px 16px 36px 0px",
-            "borderColor": "rgb(11, 100, 204)",
-            "backgroundColor": "rgb(11, 100, 204)"
-          },
-          {
-            "tag": "button",
-            "text": "See how it works",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(11, 100, 204)",
+            "outlineColor": "rgb(77, 240, 208)",
             "boxShadow": "none",
-            "borderColor": "rgb(179, 210, 236)",
-            "backgroundColor": "rgba(255, 255, 255, 0.7)"
-          },
-          {
-            "tag": "button",
-            "text": "Send privately",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(11, 100, 204)",
-            "boxShadow": "none",
-            "borderColor": "rgb(255, 255, 255)",
-            "backgroundColor": "rgb(6, 24, 42)"
-          },
-          {
-            "tag": "button",
-            "text": "Copy the $GHOST mint address BBKPiLM9KjdJW7oQSKt99RVWcZdhF6s",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(11, 100, 204)",
-            "boxShadow": "none",
-            "borderColor": "rgb(216, 231, 245)",
-            "backgroundColor": "rgba(255, 255, 255, 0.88)"
-          },
-          {
-            "tag": "div",
-            "text": "Core modules",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(11, 100, 204)",
-            "boxShadow": "none",
-            "borderColor": "rgb(8, 27, 43)",
+            "borderColor": "rgb(238, 246, 251) rgb(26, 42, 54) rgb(238, 246, 251) rgb(238, 246, 251)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           },
           {
-            "tag": "button",
-            "text": "01 Connect your Solana wallet Phantom, Solflare, Backpack or",
+            "tag": "a",
+            "text": "HOME",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(11, 100, 204)",
+            "outlineColor": "rgb(77, 240, 208)",
             "boxShadow": "none",
-            "borderColor": "rgb(8, 27, 43)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgb(226, 236, 243) rgb(26, 42, 54) rgb(226, 236, 243) rgb(226, 236, 243)",
+            "backgroundColor": "rgba(255, 59, 48, 0.075)"
           },
           {
-            "tag": "button",
-            "text": "02 Fund your private balance Move SOL or SPL tokens into Sec",
+            "tag": "a",
+            "text": "FEATURES",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(11, 100, 204)",
+            "outlineColor": "rgb(77, 240, 208)",
             "boxShadow": "none",
-            "borderColor": "rgb(8, 27, 43)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
+            "borderColor": "rgb(217, 229, 237) rgb(26, 42, 54) rgb(217, 229, 237) rgb(217, 229, 237)",
+            "backgroundColor": "rgba(255, 59, 48, 0.067)"
           },
           {
-            "tag": "button",
-            "text": "03 Pay to a stealth address Send to a fresh one-time address",
+            "tag": "a",
+            "text": "HOW IT WORKS",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(11, 100, 204)",
+            "outlineColor": "rgb(77, 240, 208)",
             "boxShadow": "none",
-            "borderColor": "rgb(8, 27, 43)",
+            "borderColor": "rgb(217, 229, 237) rgb(26, 42, 54) rgb(217, 229, 237) rgb(217, 229, 237)",
+            "backgroundColor": "rgba(255, 59, 48, 0.067)"
+          },
+          {
+            "tag": "a",
+            "text": "TOKENOMICS",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(77, 240, 208)",
+            "boxShadow": "none",
+            "borderColor": "rgb(223, 234, 241) rgb(26, 42, 54) rgb(223, 234, 241) rgb(223, 234, 241)",
+            "backgroundColor": "rgba(255, 59, 48, 0.07)"
+          },
+          {
+            "tag": "a",
+            "text": "ROADMAP",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(77, 240, 208)",
+            "boxShadow": "none",
+            "borderColor": "rgb(218, 229, 237) rgb(26, 42, 54) rgb(218, 229, 237) rgb(218, 229, 237)",
+            "backgroundColor": "rgba(255, 59, 48, 0.067)"
+          },
+          {
+            "tag": "a",
+            "text": "FAQ",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(77, 240, 208)",
+            "boxShadow": "none",
+            "borderColor": "rgb(217, 229, 237) rgb(26, 42, 54) rgb(217, 229, 237) rgb(217, 229, 237)",
+            "backgroundColor": "rgba(255, 59, 48, 0.067)"
+          },
+          {
+            "tag": "a",
+            "text": "WHITEPAPER",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(77, 240, 208)",
+            "boxShadow": "none",
+            "borderColor": "rgb(255, 155, 145) rgb(255, 155, 145) rgb(255, 155, 145) rgb(26, 42, 54)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           }
         ],
@@ -7024,7 +6917,7 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Privacy Policy — Seclura",
+          "title": "Privacy Policy — Veilary",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 2300,
@@ -7702,14 +7595,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 6
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 2
-          },
-          {
             "word": "seed",
             "count": 1
           },
@@ -7878,6 +7763,14 @@
             "count": 1
           },
           {
+            "word": "Veilary",
+            "count": 6
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 2
+          },
+          {
             "word": "Vision",
             "count": 1
           },
@@ -7976,16 +7869,16 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
-          },
-          {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
           },
           {
             "key": "aria-label=Terms of Use",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -8008,7 +7901,7 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
@@ -8082,11 +7975,11 @@
             "count": 1
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 3
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -8095,181 +7988,202 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "harbor__brand",
-          "harbor__cta",
-          "harbor__dock",
-          "harbor__label",
-          "harbor__legal",
-          "harbor__link",
-          "harbor__marker",
-          "harbor__paper",
-          "harbor__sigil",
-          "harbor__split",
-          "harbor__word",
-          "legal",
-          "legal__back",
-          "legal__copy",
-          "legal__heading",
-          "legal__lead",
-          "legal__opening",
-          "legal__reading",
-          "legal__section",
-          "legal__stamp",
-          "legal__title",
-          "legal__wall",
+          "cmd",
+          "cmd--ghost",
+          "colophon",
+          "colophon__base",
+          "colophon__blurb",
+          "colophon__brand",
+          "colophon__copy",
+          "colophon__group",
+          "colophon__group-title",
+          "colophon__index",
+          "colophon__inner",
+          "colophon__legal",
+          "colophon__links",
+          "colophon__mark",
+          "colophon__notice",
+          "colophon__sep",
+          "colophon__social",
+          "colophon__social--pending",
+          "colophon__socials",
+          "colophon__top",
+          "colophon__word",
+          "glyph",
+          "kicker",
+          "module",
+          "module--first",
+          "module__bar",
+          "module__inner",
           "router-link-active",
           "router-link-exact-active",
-          "scene",
-          "scene--tall",
-          "scene__inner",
-          "shore",
-          "shore__base",
-          "shore__blurb",
-          "shore__brand",
-          "shore__copy",
-          "shore__crest",
-          "shore__group",
-          "shore__group-title",
-          "shore__index",
-          "shore__inner",
-          "shore__legal",
-          "shore__links",
-          "shore__notice",
-          "shore__sep",
-          "shore__sigil",
-          "shore__social",
-          "shore__social--pending",
-          "shore__socials",
-          "shore__word",
-          "tide",
-          "tide-button",
-          "tide-button--fill",
-          "tide-button--line",
-          "tide-kicker",
-          "tide__aurora",
-          "tide__dots",
-          "tide__main"
+          "statute",
+          "statute__back",
+          "statute__copy",
+          "statute__grid",
+          "statute__heading",
+          "statute__lead",
+          "statute__meta",
+          "statute__opening",
+          "statute__rail",
+          "statute__reading",
+          "statute__section",
+          "statute__stamp",
+          "statute__title",
+          "statute__wall",
+          "sysbar",
+          "sysbar__aux",
+          "sysbar__brand",
+          "sysbar__cmd",
+          "sysbar__cmd-label",
+          "sysbar__doc",
+          "sysbar__glyph",
+          "sysbar__inner",
+          "sysbar__launch",
+          "sysbar__mark",
+          "sysbar__name",
+          "sysbar__rail",
+          "term",
+          "term__field",
+          "term__main"
         ],
         "fingerprint": [
           "a@10:0",
           "a@11:0",
-          "a@7:0",
-          "a@7:1",
           "a@7:2",
+          "a@8:0",
+          "a@8:1",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@6:2",
-          "button@7:0",
+          "button@8:0",
+          "code@10:0",
+          "code@13:0",
+          "code@8:0",
+          "code@9:0",
+          "div@10:0",
+          "div@10:4+",
           "div@3:1",
           "div@4:4+",
           "div@5:0",
-          "div@5:4+",
+          "div@6:3",
           "div@6:4+",
           "div@7:1",
           "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:2",
           "div@8:4+",
           "div@9:1",
-          "div@9:4+",
+          "div@9:3",
           "footer@5:1",
           "h1@9:0",
-          "h2@11:0",
-          "h4@9:0",
+          "h2@12:1",
+          "h4@9:1",
+          "header@5:2",
+          "i@10:0",
+          "i@9:0",
           "li@10:1",
           "main@5:1",
-          "nav@6:4+",
-          "p@11:0",
+          "nav@7:4+",
+          "p@10:0",
+          "p@12:0",
           "p@8:0",
+          "p@8:1",
           "p@9:0",
+          "p@9:1",
           "path@10:0",
-          "path@11:0",
-          "path@9:0",
-          "rect@9:0",
-          "section@10:2",
-          "span@6:0",
-          "span@7:0",
-          "span@8:0",
+          "rect@10:0",
+          "section@11:2",
+          "small@10:0",
           "span@8:1",
           "span@9:0",
           "span@9:1",
           "strong@8:0",
-          "svg@10:1",
-          "svg@8:2",
-          "svg@9:1",
+          "svg@9:2",
+          "time@10:0",
+          "time@9:0",
           "ul@9:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
-            "top": -145,
+            "top": 0,
             "left": 0,
             "width": 1440,
-            "height": 2154
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 2095,
-            "left": 0,
-            "width": 1440,
-            "height": 766
+            "height": 55
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 814,
-            "left": 198,
-            "width": 1044,
-            "height": 58
+            "top": 2,
+            "left": 180,
+            "width": 909,
+            "height": 52
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": -15,
+            "left": 0,
+            "width": 1440,
+            "height": 1489
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 1522,
+            "left": 0,
+            "width": 1440,
+            "height": 600
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 93
+            "hex": "#eef6fb",
+            "count": 75
           },
           {
-            "hex": "#546a7d",
-            "count": 40
+            "hex": "#a3b8c8",
+            "count": 39
           },
           {
-            "hex": "#298dff",
-            "count": 9
+            "hex": "#7b93a4",
+            "count": 16
           },
           {
-            "hex": "#b3d2ec",
+            "hex": "#ff9b91",
             "count": 8
           },
           {
-            "hex": "#0b64cc",
-            "count": 7
+            "hex": "#ff3b30",
+            "count": 5
           },
           {
-            "hex": "#ffffff",
-            "count": 7
+            "hex": "#070b10",
+            "count": 4
           },
           {
-            "hex": "#eaf4ff",
+            "hex": "#04070b",
             "count": 3
           },
           {
-            "hex": "#e8f3ff",
+            "hex": "#0a121a",
             "count": 2
           },
           {
-            "hex": "#8a5a00",
-            "count": 1
+            "hex": "#2a4355",
+            "count": 2
           },
           {
-            "hex": "#d8e7f5",
+            "hex": "#f2c94c",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 47,
+        "contrastChecked": 49,
         "headings": [
           {
             "tag": "h1",
@@ -8332,7 +8246,7 @@
       },
       "mobile": {
         "meta": {
-          "title": "Privacy Policy — Seclura",
+          "title": "Privacy Policy — Veilary",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 2231,
@@ -9002,14 +8916,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 5
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 2
-          },
-          {
             "word": "seed",
             "count": 1
           },
@@ -9178,6 +9084,14 @@
             "count": 1
           },
           {
+            "word": "Veilary",
+            "count": 5
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 2
+          },
+          {
             "word": "Vision",
             "count": 1
           },
@@ -9268,16 +9182,8 @@
             "count": 1
           },
           {
-            "key": "aria-label=Primary",
-            "count": 1
-          },
-          {
             "key": "aria-label=Privacy Policy",
             "count": 1
-          },
-          {
-            "key": "aria-label=Seclura home",
-            "count": 2
           },
           {
             "key": "aria-label=Telegram (link pending)",
@@ -9290,6 +9196,10 @@
           {
             "key": "aria-label=Toggle navigation",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -9312,7 +9222,7 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
@@ -9382,11 +9292,11 @@
             "count": 1
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 2
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -9395,170 +9305,185 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "harbor__brand",
-          "harbor__cta",
-          "harbor__dock",
-          "harbor__legal",
-          "harbor__sigil",
-          "harbor__split",
-          "harbor__toggle",
-          "legal",
-          "legal__back",
-          "legal__copy",
-          "legal__heading",
-          "legal__lead",
-          "legal__opening",
-          "legal__reading",
-          "legal__section",
-          "legal__stamp",
-          "legal__title",
-          "legal__wall",
+          "cmd",
+          "cmd--ghost",
+          "colophon",
+          "colophon__base",
+          "colophon__blurb",
+          "colophon__brand",
+          "colophon__copy",
+          "colophon__group",
+          "colophon__group-title",
+          "colophon__index",
+          "colophon__inner",
+          "colophon__legal",
+          "colophon__links",
+          "colophon__mark",
+          "colophon__notice",
+          "colophon__sep",
+          "colophon__social",
+          "colophon__social--pending",
+          "colophon__socials",
+          "colophon__top",
+          "colophon__word",
+          "glyph",
+          "kicker",
+          "module",
+          "module--first",
+          "module__bar",
+          "module__inner",
           "router-link-active",
           "router-link-exact-active",
-          "scene",
-          "scene--tall",
-          "scene__inner",
-          "shore",
-          "shore__base",
-          "shore__blurb",
-          "shore__brand",
-          "shore__copy",
-          "shore__crest",
-          "shore__group",
-          "shore__group-title",
-          "shore__index",
-          "shore__inner",
-          "shore__legal",
-          "shore__links",
-          "shore__notice",
-          "shore__sep",
-          "shore__sigil",
-          "shore__social",
-          "shore__social--pending",
-          "shore__socials",
-          "shore__word",
-          "tide",
-          "tide-button",
-          "tide-button--fill",
-          "tide-button--line",
-          "tide-kicker",
-          "tide__aurora",
-          "tide__main"
+          "statute",
+          "statute__back",
+          "statute__copy",
+          "statute__grid",
+          "statute__heading",
+          "statute__lead",
+          "statute__opening",
+          "statute__reading",
+          "statute__section",
+          "statute__stamp",
+          "statute__title",
+          "statute__wall",
+          "sysbar",
+          "sysbar__aux",
+          "sysbar__brand",
+          "sysbar__glyph",
+          "sysbar__inner",
+          "sysbar__launch",
+          "sysbar__mark",
+          "sysbar__toggle",
+          "term",
+          "term__field",
+          "term__main"
         ],
         "fingerprint": [
           "a@10:0",
           "a@11:0",
-          "a@7:1",
           "a@7:2",
+          "a@8:1",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@6:2",
-          "button@7:0",
-          "button@7:1",
+          "button@8:0",
+          "button@8:1",
+          "code@10:0",
+          "code@13:0",
+          "code@9:0",
+          "div@10:4+",
           "div@3:1",
           "div@4:4+",
           "div@5:0",
+          "div@6:3",
           "div@6:4+",
           "div@7:1",
           "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:2",
           "div@8:4+",
           "div@9:1",
-          "div@9:4+",
+          "div@9:3",
           "footer@5:1",
           "h1@9:0",
-          "h2@11:0",
-          "h4@9:0",
+          "h2@12:1",
+          "h4@9:1",
+          "header@5:2",
+          "i@10:0",
+          "i@9:0",
           "li@10:1",
           "main@5:1",
-          "nav@6:4+",
-          "p@11:0",
+          "p@10:0",
+          "p@12:0",
           "p@8:0",
+          "p@8:1",
           "p@9:0",
+          "p@9:1",
           "path@10:0",
-          "path@11:0",
-          "path@9:0",
-          "rect@9:0",
-          "section@10:2",
-          "span@7:0",
+          "rect@10:0",
+          "section@11:2",
+          "small@10:0",
           "span@8:1",
           "span@9:0",
           "span@9:1",
           "strong@8:0",
-          "svg@10:1",
-          "svg@8:1",
-          "svg@8:2",
-          "svg@9:1",
+          "svg@9:2",
+          "time@10:0",
+          "time@9:0",
           "ul@9:4+"
         ],
         "landmarks": [
+          {
+            "tag": "header",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 390,
+            "height": 55
+          },
           {
             "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 2167
+            "height": 1576
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 2207,
+            "top": 1600,
             "left": 0,
             "width": 390,
-            "height": 1124
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 772,
-            "left": 27,
-            "width": 337,
-            "height": 58
+            "height": 936
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 85
+            "hex": "#eef6fb",
+            "count": 74
           },
           {
-            "hex": "#546a7d",
-            "count": 22
+            "hex": "#a3b8c8",
+            "count": 27
           },
           {
-            "hex": "#ffffff",
-            "count": 8
+            "hex": "#7b93a4",
+            "count": 16
           },
           {
-            "hex": "#0b64cc",
-            "count": 6
+            "hex": "#ff9b91",
+            "count": 7
           },
           {
-            "hex": "#eaf4ff",
+            "hex": "#ff3b30",
+            "count": 5
+          },
+          {
+            "hex": "#070b10",
+            "count": 4
+          },
+          {
+            "hex": "#04070b",
             "count": 3
           },
           {
-            "hex": "#b3d2ec",
+            "hex": "#0a121a",
             "count": 2
           },
           {
-            "hex": "#e8f3ff",
+            "hex": "#2a4355",
             "count": 2
           },
           {
-            "hex": "#8a5a00",
-            "count": 1
-          },
-          {
-            "hex": "#d8e7f5",
+            "hex": "#f2c94c",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 39,
+        "contrastChecked": 41,
         "headings": [
           {
             "tag": "h1",
@@ -9623,7 +9548,7 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Terms of Use — Seclura",
+          "title": "Terms of Use — Veilary",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 2352,
@@ -10253,14 +10178,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 8
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 3
-          },
-          {
             "word": "security",
             "count": 1
           },
@@ -10401,6 +10318,14 @@
             "count": 2
           },
           {
+            "word": "Veilary",
+            "count": 8
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 3
+          },
+          {
             "word": "violate",
             "count": 1
           },
@@ -10475,16 +10400,16 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
-          },
-          {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
           },
           {
             "key": "aria-label=Terms of Use",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -10507,7 +10432,7 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
@@ -10581,11 +10506,11 @@
             "count": 1
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 3
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -10594,181 +10519,202 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "harbor__brand",
-          "harbor__cta",
-          "harbor__dock",
-          "harbor__label",
-          "harbor__legal",
-          "harbor__link",
-          "harbor__marker",
-          "harbor__paper",
-          "harbor__sigil",
-          "harbor__split",
-          "harbor__word",
-          "legal",
-          "legal__back",
-          "legal__copy",
-          "legal__heading",
-          "legal__lead",
-          "legal__opening",
-          "legal__reading",
-          "legal__section",
-          "legal__stamp",
-          "legal__title",
-          "legal__wall",
+          "cmd",
+          "cmd--ghost",
+          "colophon",
+          "colophon__base",
+          "colophon__blurb",
+          "colophon__brand",
+          "colophon__copy",
+          "colophon__group",
+          "colophon__group-title",
+          "colophon__index",
+          "colophon__inner",
+          "colophon__legal",
+          "colophon__links",
+          "colophon__mark",
+          "colophon__notice",
+          "colophon__sep",
+          "colophon__social",
+          "colophon__social--pending",
+          "colophon__socials",
+          "colophon__top",
+          "colophon__word",
+          "glyph",
+          "kicker",
+          "module",
+          "module--first",
+          "module__bar",
+          "module__inner",
           "router-link-active",
           "router-link-exact-active",
-          "scene",
-          "scene--tall",
-          "scene__inner",
-          "shore",
-          "shore__base",
-          "shore__blurb",
-          "shore__brand",
-          "shore__copy",
-          "shore__crest",
-          "shore__group",
-          "shore__group-title",
-          "shore__index",
-          "shore__inner",
-          "shore__legal",
-          "shore__links",
-          "shore__notice",
-          "shore__sep",
-          "shore__sigil",
-          "shore__social",
-          "shore__social--pending",
-          "shore__socials",
-          "shore__word",
-          "tide",
-          "tide-button",
-          "tide-button--fill",
-          "tide-button--line",
-          "tide-kicker",
-          "tide__aurora",
-          "tide__dots",
-          "tide__main"
+          "statute",
+          "statute__back",
+          "statute__copy",
+          "statute__grid",
+          "statute__heading",
+          "statute__lead",
+          "statute__meta",
+          "statute__opening",
+          "statute__rail",
+          "statute__reading",
+          "statute__section",
+          "statute__stamp",
+          "statute__title",
+          "statute__wall",
+          "sysbar",
+          "sysbar__aux",
+          "sysbar__brand",
+          "sysbar__cmd",
+          "sysbar__cmd-label",
+          "sysbar__doc",
+          "sysbar__glyph",
+          "sysbar__inner",
+          "sysbar__launch",
+          "sysbar__mark",
+          "sysbar__name",
+          "sysbar__rail",
+          "term",
+          "term__field",
+          "term__main"
         ],
         "fingerprint": [
           "a@10:0",
           "a@11:0",
-          "a@7:0",
-          "a@7:1",
           "a@7:2",
+          "a@8:0",
+          "a@8:1",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@6:2",
-          "button@7:0",
+          "button@8:0",
+          "code@10:0",
+          "code@13:0",
+          "code@8:0",
+          "code@9:0",
+          "div@10:0",
+          "div@10:4+",
           "div@3:1",
           "div@4:4+",
           "div@5:0",
-          "div@5:4+",
+          "div@6:3",
           "div@6:4+",
           "div@7:1",
           "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:2",
           "div@8:4+",
           "div@9:1",
-          "div@9:4+",
+          "div@9:3",
           "footer@5:1",
           "h1@9:0",
-          "h2@11:0",
-          "h4@9:0",
+          "h2@12:1",
+          "h4@9:1",
+          "header@5:2",
+          "i@10:0",
+          "i@9:0",
           "li@10:1",
           "main@5:1",
-          "nav@6:4+",
-          "p@11:0",
+          "nav@7:4+",
+          "p@10:0",
+          "p@12:0",
           "p@8:0",
+          "p@8:1",
           "p@9:0",
+          "p@9:1",
           "path@10:0",
-          "path@11:0",
-          "path@9:0",
-          "rect@9:0",
-          "section@10:2",
-          "span@6:0",
-          "span@7:0",
-          "span@8:0",
+          "rect@10:0",
+          "section@11:2",
+          "small@10:0",
           "span@8:1",
           "span@9:0",
           "span@9:1",
           "strong@8:0",
-          "svg@10:1",
-          "svg@8:2",
-          "svg@9:1",
+          "svg@9:2",
+          "time@10:0",
+          "time@9:0",
           "ul@9:4+"
         ],
         "landmarks": [
           {
-            "tag": "main",
+            "tag": "header",
             "role": "",
-            "top": -30,
+            "top": 0,
             "left": 0,
             "width": 1440,
-            "height": 2330
-          },
-          {
-            "tag": "footer",
-            "role": "",
-            "top": 2386,
-            "left": 0,
-            "width": 1440,
-            "height": 766
+            "height": 55
           },
           {
             "tag": "nav",
             "role": "",
-            "top": 814,
-            "left": 198,
-            "width": 1044,
-            "height": 58
+            "top": 2,
+            "left": 180,
+            "width": 909,
+            "height": 52
+          },
+          {
+            "tag": "main",
+            "role": "",
+            "top": -152,
+            "left": 0,
+            "width": 1440,
+            "height": 1615
+          },
+          {
+            "tag": "footer",
+            "role": "",
+            "top": 1511,
+            "left": 0,
+            "width": 1440,
+            "height": 600
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 95
+            "hex": "#eef6fb",
+            "count": 78
           },
           {
-            "hex": "#546a7d",
-            "count": 41
+            "hex": "#a3b8c8",
+            "count": 40
           },
           {
-            "hex": "#298dff",
-            "count": 9
+            "hex": "#7b93a4",
+            "count": 16
           },
           {
-            "hex": "#b3d2ec",
+            "hex": "#ff9b91",
             "count": 8
           },
           {
-            "hex": "#0b64cc",
-            "count": 7
+            "hex": "#ff3b30",
+            "count": 5
           },
           {
-            "hex": "#ffffff",
-            "count": 7
+            "hex": "#070b10",
+            "count": 4
           },
           {
-            "hex": "#eaf4ff",
+            "hex": "#04070b",
             "count": 3
           },
           {
-            "hex": "#e8f3ff",
+            "hex": "#0a121a",
             "count": 2
           },
           {
-            "hex": "#8a5a00",
-            "count": 1
+            "hex": "#2a4355",
+            "count": 2
           },
           {
-            "hex": "#d8e7f5",
+            "hex": "#f2c94c",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 49,
+        "contrastChecked": 51,
         "headings": [
           {
             "tag": "h1",
@@ -10835,7 +10781,7 @@
       },
       "mobile": {
         "meta": {
-          "title": "Terms of Use — Seclura",
+          "title": "Terms of Use — Veilary",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 2283,
@@ -11457,14 +11403,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 7
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 3
-          },
-          {
             "word": "security",
             "count": 1
           },
@@ -11605,6 +11543,14 @@
             "count": 2
           },
           {
+            "word": "Veilary",
+            "count": 7
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 3
+          },
+          {
             "word": "violate",
             "count": 1
           },
@@ -11671,16 +11617,8 @@
             "count": 1
           },
           {
-            "key": "aria-label=Primary",
-            "count": 1
-          },
-          {
             "key": "aria-label=Privacy Policy",
             "count": 1
-          },
-          {
-            "key": "aria-label=Seclura home",
-            "count": 2
           },
           {
             "key": "aria-label=Telegram (link pending)",
@@ -11693,6 +11631,10 @@
           {
             "key": "aria-label=Toggle navigation",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -11715,7 +11657,7 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
@@ -11785,11 +11727,11 @@
             "count": 1
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 2
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -11798,170 +11740,185 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "harbor__brand",
-          "harbor__cta",
-          "harbor__dock",
-          "harbor__legal",
-          "harbor__sigil",
-          "harbor__split",
-          "harbor__toggle",
-          "legal",
-          "legal__back",
-          "legal__copy",
-          "legal__heading",
-          "legal__lead",
-          "legal__opening",
-          "legal__reading",
-          "legal__section",
-          "legal__stamp",
-          "legal__title",
-          "legal__wall",
+          "cmd",
+          "cmd--ghost",
+          "colophon",
+          "colophon__base",
+          "colophon__blurb",
+          "colophon__brand",
+          "colophon__copy",
+          "colophon__group",
+          "colophon__group-title",
+          "colophon__index",
+          "colophon__inner",
+          "colophon__legal",
+          "colophon__links",
+          "colophon__mark",
+          "colophon__notice",
+          "colophon__sep",
+          "colophon__social",
+          "colophon__social--pending",
+          "colophon__socials",
+          "colophon__top",
+          "colophon__word",
+          "glyph",
+          "kicker",
+          "module",
+          "module--first",
+          "module__bar",
+          "module__inner",
           "router-link-active",
           "router-link-exact-active",
-          "scene",
-          "scene--tall",
-          "scene__inner",
-          "shore",
-          "shore__base",
-          "shore__blurb",
-          "shore__brand",
-          "shore__copy",
-          "shore__crest",
-          "shore__group",
-          "shore__group-title",
-          "shore__index",
-          "shore__inner",
-          "shore__legal",
-          "shore__links",
-          "shore__notice",
-          "shore__sep",
-          "shore__sigil",
-          "shore__social",
-          "shore__social--pending",
-          "shore__socials",
-          "shore__word",
-          "tide",
-          "tide-button",
-          "tide-button--fill",
-          "tide-button--line",
-          "tide-kicker",
-          "tide__aurora",
-          "tide__main"
+          "statute",
+          "statute__back",
+          "statute__copy",
+          "statute__grid",
+          "statute__heading",
+          "statute__lead",
+          "statute__opening",
+          "statute__reading",
+          "statute__section",
+          "statute__stamp",
+          "statute__title",
+          "statute__wall",
+          "sysbar",
+          "sysbar__aux",
+          "sysbar__brand",
+          "sysbar__glyph",
+          "sysbar__inner",
+          "sysbar__launch",
+          "sysbar__mark",
+          "sysbar__toggle",
+          "term",
+          "term__field",
+          "term__main"
         ],
         "fingerprint": [
           "a@10:0",
           "a@11:0",
-          "a@7:1",
           "a@7:2",
+          "a@8:1",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@6:2",
-          "button@7:0",
-          "button@7:1",
+          "button@8:0",
+          "button@8:1",
+          "code@10:0",
+          "code@13:0",
+          "code@9:0",
+          "div@10:4+",
           "div@3:1",
           "div@4:4+",
           "div@5:0",
+          "div@6:3",
           "div@6:4+",
           "div@7:1",
           "div@7:2",
           "div@7:3",
+          "div@7:4+",
           "div@8:2",
           "div@8:4+",
           "div@9:1",
-          "div@9:4+",
+          "div@9:3",
           "footer@5:1",
           "h1@9:0",
-          "h2@11:0",
-          "h4@9:0",
+          "h2@12:1",
+          "h4@9:1",
+          "header@5:2",
+          "i@10:0",
+          "i@9:0",
           "li@10:1",
           "main@5:1",
-          "nav@6:4+",
-          "p@11:0",
+          "p@10:0",
+          "p@12:0",
           "p@8:0",
+          "p@8:1",
           "p@9:0",
+          "p@9:1",
           "path@10:0",
-          "path@11:0",
-          "path@9:0",
-          "rect@9:0",
-          "section@10:2",
-          "span@7:0",
+          "rect@10:0",
+          "section@11:2",
+          "small@10:0",
           "span@8:1",
           "span@9:0",
           "span@9:1",
           "strong@8:0",
-          "svg@10:1",
-          "svg@8:1",
-          "svg@8:2",
-          "svg@9:1",
+          "svg@9:2",
+          "time@10:0",
+          "time@9:0",
           "ul@9:4+"
         ],
         "landmarks": [
+          {
+            "tag": "header",
+            "role": "",
+            "top": 0,
+            "left": 0,
+            "width": 390,
+            "height": 55
+          },
           {
             "tag": "main",
             "role": "",
             "top": 0,
             "left": 0,
             "width": 390,
-            "height": 2305
+            "height": 1674
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 2345,
+            "top": 1698,
             "left": 0,
             "width": 390,
-            "height": 1124
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 772,
-            "left": 27,
-            "width": 337,
-            "height": 58
+            "height": 936
           }
         ],
         "colors": [
           {
-            "hex": "#081b2b",
-            "count": 87
+            "hex": "#eef6fb",
+            "count": 77
           },
           {
-            "hex": "#546a7d",
-            "count": 23
+            "hex": "#a3b8c8",
+            "count": 28
           },
           {
-            "hex": "#ffffff",
-            "count": 8
+            "hex": "#7b93a4",
+            "count": 16
           },
           {
-            "hex": "#0b64cc",
-            "count": 6
+            "hex": "#ff9b91",
+            "count": 7
           },
           {
-            "hex": "#eaf4ff",
+            "hex": "#ff3b30",
+            "count": 5
+          },
+          {
+            "hex": "#070b10",
+            "count": 4
+          },
+          {
+            "hex": "#04070b",
             "count": 3
           },
           {
-            "hex": "#b3d2ec",
+            "hex": "#0a121a",
             "count": 2
           },
           {
-            "hex": "#e8f3ff",
+            "hex": "#2a4355",
             "count": 2
           },
           {
-            "hex": "#8a5a00",
-            "count": 1
-          },
-          {
-            "hex": "#d8e7f5",
+            "hex": "#f2c94c",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 41,
+        "contrastChecked": 43,
         "headings": [
           {
             "tag": "h1",

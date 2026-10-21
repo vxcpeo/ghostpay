@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Seclura — capture the live seclura.xyz homepage and diff it against this build.
+ * Veilary — capture the live veilary.xyz homepage and diff it against this build.
  *
  * WHY THIS EXISTS
  * ---------------
@@ -25,7 +25,7 @@ import { fileURLToPath } from 'node:url'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const OUT_DIR = join(ROOT, 'docs', 'capture')
-const DEFAULT_URL = 'https://seclura.xyz/'
+const DEFAULT_URL = 'https://veilary.xyz/'
 
 /* ------------------------------------------------------------------ args */
 
@@ -461,7 +461,7 @@ async function main() {
   writeFileSync(jsonPath, JSON.stringify({ source, cap, crawl, diff }, null, 2), 'utf8')
 
   const md = [
-    '# Capture diff — live seclura.xyz vs this build',
+    '# Capture diff — live veilary.xyz vs this build',
     '',
     `- Source: \`${source.finalUrl || url}\` (HTTP ${source.status})`,
     `- Captured: ${cap.fetchedAt}`,

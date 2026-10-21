@@ -1,16 +1,17 @@
-# Seclura — Website (Vue 3 + Vite)
+# Veilary — Website (Vue 3 + Vite)
 
-A Vue 3 marketing site for **Seclura**, built around a **Tidal Sui / Gallery Scroll**
-art direction: a white-water ground with soft aqua caustics, full-viewport scene panels, bento
-mosaics, horizontal scroll-snap rails, a floating bottom dock with the wordmark and an icon index,
-bright-blue `#298DFF` accents and generous negative space. The earlier split-stage shell, its pinned
-narrative rail and its cobalt palette are gone. Every non-brand content token, route and handler
-survived both the rebrand and this rebuild.
+A Vue 3 marketing site for **Veilary**, rebuilt around an **Abyss Liquidity / Terminal Console**
+art direction: a black command field, hairline rules, monospace display type, a fixed top status bar
+whose route names read as commands, and each section composed as a three-track console (index
+gutter / data body / readout). Red `#FF3B30` is the signal colour, magenta `#FF5CD6` and mint
+`#4DF0D0` carry data and status. The earlier Tidal Sui shell — white ground, aqua scenes, a floating
+bottom dock and a bento mosaic — is gone. Every non-brand content token, route and handler survived
+the rebrand and this rebuild.
 
 > **Read [`docs/status.md`](docs/status.md)** for the research provenance and claim-confidence
 > notes. The short version: this project began as a **research-based reconstruction** of a live
 > Solana privacy-payments site that could not be fetched from the authoring environment, so copy was
-> rebuilt from confirmed public facts. The Seclura identity is new: `seclura.xyz` and `@seclura` are
+> rebuilt from confirmed public facts. The Veilary identity is new: `veilary.xyz` and `@veilary` are
 > confirmed available but **not registered**, and the original `$GHOST` ticker and Solana mint are
 > preserved as on-chain identity.
 >
@@ -32,7 +33,7 @@ table and source URLs.
 
 | Fact | Value | Source |
 | --- | --- | --- |
-| Product | Payments interface of the GhostWareOS privacy stack; this site publishes it under the Seclura identity | [GitBook: core modules → payment module](https://ghostwareos.gitbook.io/docs/core-modules/ghostpay) |
+| Product | Payments interface of the GhostWareOS privacy stack; this site publishes it under the Veilary identity | [GitBook: core modules → payment module](https://ghostwareos.gitbook.io/docs/core-modules/ghostpay) |
 | Network / ticker | Solana · `$GHOST` | Coinbase, OpenSea, DEXrabbit listings |
 | Mint address | `BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST` | Solflare, DEXrabbit, GeckoTerminal |
 | Launch | 26 Nov 2025 | [CryptoTimes](https://www.cryptotimes.io/2025/11/27/ghostpay-debuts-on-solana-with-full-private-payments/) |
@@ -44,11 +45,11 @@ table and source URLs.
 
 - **Tokenomics** (supply, the 30/20/18/15/12/5 split, 0%/0% tax) — no published source; rendered with
   a visible “illustrative allocation” warning in `TokenomicsSection.vue`.
-- **Social handles** — `@seclura` is confirmed available but not registered; the site links to
-  `https://x.com/seclura`. Telegram, Discord and GitHub remain disabled `handle TBA` placeholders
+- **Social handles** — `@veilary` is confirmed available but not registered; the site links to
+  `https://x.com/veilary`. Telegram, Discord and GitHub remain disabled `handle TBA` placeholders
   until real profiles exist.
 - **Zero-knowledge / shielded-pool claims** — deliberately *removed* from the copy: no source ties zk
-  proofs or a shielded pool to Seclura. The site now describes only documented primitives.
+  proofs or a shielded pool to Veilary. The site now describes only documented primitives.
 - **Tagline, feature blurbs, hero stats, FAQ wording and the four-part “how it works”* — written for
   this build. Rewrite them from the live site if verbatim fidelity is required.
 
@@ -60,9 +61,9 @@ table and source URLs.
 | Check | Status |
 | --- | --- |
 | `npm install` + `npm run build` | ✅ passed — Vite 6.4.4, production bundle emitted to `dist/` |
-| `npm run validate` | ✅ passed — imports, icons, anchors, CSS tokens, routes, assets, host whitelist, breakpoints and tooling |
+| `npm run validate` | ✅ passed — imports, icons, anchors, CSS tokens, routes, assets, host whitelist, breakpoints, status-bar pairing and tooling |
 | Reskin content + skeleton + browser gate | ✅ passed — 3/3 routes, exact rendered words, 0 contrast failures, 0 serious axe issues, no mobile overflow |
-| 404 fallback, index-sheet Escape, legal shortcut, form error/success, FAQ, copy, back-to-top | ✅ smoke-tested in Chromium (24/24, see `.reskin/current/interaction-checks.json`) |
+| 404 fallback, command palette Escape, legal shortcut, form error/success, FAQ, copy, back-to-top | ✅ smoke-tested in Chromium (27/27, see `.reskin/current/interaction-checks.json`) |
 | `npm run capture` — diff against the live page | ⚠️ still requires a normal network; DNS remains blocked in the original authoring environment |
 | CI (`.github/workflows/verify.yml`) | ⚠️ not run here; it performs install → validate → build |
 
@@ -95,8 +96,8 @@ use `npm run preview` for a local production build.
 | Framework  | Vue 3 (`<script setup>` SFCs)      |
 | Build tool | Vite 6                             |
 | Routing    | vue-router 4 (hash history)        |
-| Styling    | Hand-written CSS with tidal tokens (`src/styles/tide.css`) |
-| Icons      | Inline SVG sprite component (no deps) |
+| Styling    | Hand-written CSS with Abyss console tokens (`src/styles/abyss.css`) |
+| Icons      | CSS-masked glyph component driven by path data (no deps) |
 | Motion     | CSS transitions only; reduced-motion guard |
 
 Zero UI/icon/animation dependencies — only `vue` and `vue-router`.
@@ -139,7 +140,7 @@ npm run check      # validate + build, the same pair CI runs
 `scripts/validate.mjs` has no dependencies, needs no network, and exits non-zero on failure. Its
 checks cover local imports, icon names, in-page anchors, CSS custom properties, router-link targets
 (including the hash-history anchor form), referenced assets, external-source hosts, responsive
-breakpoints, dock/toggle pairing, npm-script and runner wiring, and the **copy guard** — reintroducing `zero-knowledge`, a shielded pool, the invalid placeholder mint address or the
+breakpoints, status-bar/toggle pairing, npm-script and runner wiring, and the **copy guard** — reintroducing `zero-knowledge`, a shielded pool, the invalid placeholder mint address or the
 invented social handles fails the run. Content parity for the reskin is enforced separately by the reskin skill harness
 (`.reskin/hash-route-server.mjs` maps the hash-history legal routes, `verify.mjs` runs the gates).
 
@@ -161,7 +162,7 @@ source real. Last verified results:
 
 | Domain | State | Note |
 | --- | --- | --- |
-| `seclura.xyz` + `www` | ✅ available, not registered | availability snapshot 2026-10-20; register before launch |
+| `veilary.xyz` + `www` | ✅ available, not registered | availability snapshot 2026-10-20; register before launch |
 | `ghostwareos.gitbook.io` | ✅ live | the only verified documentation host |
 | `solflare.com` · `cryptotimes.io` · `coincodex.com` · `kucoin.com` | ✅ live | cited integration and press sources |
 | `ghostwareos.org` | ✅ NXDOMAIN | flagged as a crypto drainer, and it does not resolve |
@@ -215,7 +216,7 @@ website/
 ├── package.json · package-lock.json
 ├── public/
 │   ├── robots.txt · sitemap.xml   # crawler hints (validator checks they agree)
-│   └── assets/og-cover.svg|png    # 1200x630 tidal social card (PNG rendered from the SVG)
+│   └── assets/og-cover.svg|png    # 1200x630 terminal-console social card (PNG rendered from the SVG)
 ├── verify.ps1 / verify.sh         # one-shot: install → validate → build → report
 ├── scripts/
 │   ├── validate.mjs               # dependency-free static self-check + copy guard
@@ -224,29 +225,29 @@ website/
 ├── docs/capture/                  # output of `npm run capture` (evidence + DIFF.md)
 ├── .reskin/                       # reskin evidence: gates, screenshots, verification-only helpers
 └── src/
-    ├── main.js                    # app bootstrap + tide.css import
-    ├── App.vue                    # tide shell: aurora, main, footer, dock, dot index, back-to-top
+    ├── main.js                    # app bootstrap + abyss.css import
+    ├── App.vue                    # console shell: field, status bar, main, colophon, back-to-top
     ├── router/index.js            # / , /privacy , /terms , 404 fallback + scroll behavior
     ├── data/site.js               # ⚙️ ALL site content: nav, features, tokenomics, roadmap, FAQ
-    ├── styles/tide.css            # Tidal Sui tokens, reset, scenes, bento, rails, dock primitives
+    ├── styles/abyss.css           # Abyss tokens, reset, console grammar, status bar, colophon
     ├── components/
-    │   ├── Icon.vue               # inline SVG icon set
-    │   ├── TideDock.vue           # floating bottom dock: brand, section index, Whitepaper, legal, CTA
-    │   ├── TideFooter.vue         # light shore footer: brand crest, socials, link index, risk notice
+    │   ├── Icon.vue               # CSS-masked glyph set driven by path data
+    │   ├── SysBar.vue             # fixed top status bar: commands, legal glyphs, CTA, mobile palette
+    │   ├── Colophon.vue           # console footer: brand, socials, link index, risk notice
     │   └── sections/
-    │       ├── HeroSection.vue    # opening scene: headline, transmit ticket, mint, counters, register
-    │       ├── FeaturesSection.vue    # eight feature specimens on a horizontal snap rail
-    │       ├── HowItWorksSection.vue  # four-step ladder + pale readout slab
-    │       ├── ComparisonSection.vue  # frameless tide table + three tenets
-    │       ├── TokenomicsSection.vue  # bento vault: supply, distribution, ledger, utility, buy
-    │       ├── RoadmapSection.vue     # four-phase horizontal rail
-    │       ├── AboutSection.vue       # deep-water mission slab + bento protocol record
-    │       ├── FaqSection.vue         # prompt column + accordion wall
-    │       └── LaunchSection.vue      # deep-water closing scene + validated access form
+    │       ├── HeroSection.vue    # boot console: command line, transaction pane, counters, relay
+    │       ├── FeaturesSection.vue    # ruled registry of the eight core modules
+    │       ├── HowItWorksSection.vue  # four-command process list + sticky trace readout
+    │       ├── ComparisonSection.vue  # definition-list comparison ledger + three tenets
+    │       ├── TokenomicsSection.vue  # data console: supply, distribution meters, facts, buy
+    │       ├── RoadmapSection.vue     # four-phase process ledger
+    │       ├── AboutSection.vue       # mission creed + protocol record + manifest stats
+    │       ├── FaqSection.vue         # index column + accordion log
+    │       └── LaunchSection.vue      # closing gate console + validated access form
     └── views/
-        ├── HomeView.vue           # composes every scene in order
-        ├── LegalView.vue          # /privacy and /terms reading wall (shared, prop-driven)
-        └── NotFoundView.vue       # "this page has gone quiet" signal-lost view
+        ├── HomeView.vue           # boot console followed by every module, in order
+        ├── LegalView.vue          # /privacy and /terms legal reading console (shared, prop-driven)
+        └── NotFoundView.vue       # "this page has gone quiet" fault console
 ```
 
 ## Editing content
@@ -262,34 +263,36 @@ Everything textual and numeric lives in **`src/data/site.js`**:
 
 ## Design tokens
 
-Defined once in `src/styles/tide.css` (`:root`):
+Defined once in `src/styles/abyss.css` (`:root`):
 
 | Token                  | Value     | Use                                |
 | ---------------------- | --------- | ---------------------------------- |
-| `--bg` / `--surface`   | `#FFFFFF` | white-water ground and raised slabs |
-| `--surface-alt`        | `#E8F3FF` | aqua scene slabs and pale panels   |
-| `--surface-soft`       | `#F4F9FF` | quiet bands inside the ground      |
-| `--ink`                | `#081B2B` | primary type                       |
-| `--muted`              | `#546A7D` | running text (≥ 5.0:1 on aqua)     |
-| `--accent`             | `#298DFF` | fills, large display type, markers |
-| `--accent-safe`        | `#0B64CC` | small accent text and focus rings  |
-| `--line` / `--line-strong` | `#D8E7F5` / `#B3D2EC` | hairlines and table rules |
-| `--shade` … `--shade-link` | `#06182A` … `#7CC0FF` | deep-water scenes and form card |
-| `--font-display` / `--font-body` / `--font-mono` | Segoe UI Variable Display / Segoe UI · Segoe UI · Cascadia Mono | type system |
+| `--void`               | `#04070B` | page ground and the fixed command field |
+| `--deck` / `--plate`   | `#0A121A` / `#0F1B25` | console consoles and raised data |
+| `--plate-2`            | `#14232E` | transaction console and readouts   |
+| `--ink`                | `#EEF6FB` | primary type                       |
+| `--dim`                | `#A3B8C8` | running text (≥ 7:1 on the deck)   |
+| `--faint` / `--edge-3` | `#7B93A4` / `#3B5B70` | micro labels and inactive rules |
+| `--red` / `--red-safe` | `#FF3B30` / `#FF9B91` | signal fills, large display / small accent text |
+| `--magenta`            | `#FF5CD6` | HPKE / secondary data              |
+| `--mint`               | `#4DF0D0` | status LEDs and focus rings        |
+| `--edge` / `--edge-2`  | `#1A2A36` / `#2A4355` | hairlines and console borders |
+| `--mono` / `--body` / `--display` | Cascadia Mono · Segoe UI · Cascadia Mono | type system |
 
-Rounded surfaces (12/22/36/52px), one soft tidal shadow and pale caustic gradients carry the
-hierarchy; the accent is the only saturated colour in the interface. Scenes are framed by space and
-surface tone rather than borders.
+Sharp, flat surfaces (2–14px radii), 1px hairlines and monospace display type carry the hierarchy;
+`--red` is the only saturated signal colour, with magenta and mint reserved for data and status.
+The console grammar (`.module`, `.module__grid`, `.ledger`, `.cmd`, `.sysbar`, `.colophon`) is the
+shared vocabulary; sections never fall back to rounded cards or a bento mosaic.
 
 ## Accessibility & performance notes
 
-- Semantic `main` / `footer` / `nav` landmarks (content first in DOM order), one `h1` per view, visible
-  blue focus rings, and a dock that keeps the route shortcuts reachable from 320px up (the index sheet
+- Semantic `header` → `nav` → `main` → `footer` landmarks, one `h1` per view, visible mint focus rings,
+  and a status bar that keeps both route shortcuts reachable from 320px up (the command palette
   closes on Escape).
-- The dock is fixed at the bottom; the footer and closing scene reserve padding so final content
-  clears it. Both horizontal rails are focusable, labelled scroll regions.
-- All form fields are labelled; icons are `aria-hidden`; the accordion exposes `aria-expanded`; the
-  icon-only legal shortcuts carry accessible names.
+- The status bar is fixed at the top; `scroll-padding-top` clears it for in-page anchors. The mobile
+  palette is a disclosure with `aria-expanded` + `aria-controls`, not a second navigation tree.
+- All form fields are labelled; icons are `aria-hidden` CSS masks; the accordion exposes
+  `aria-expanded`; the two icon-only legal shortcuts carry accessible names.
 - `prefers-reduced-motion` disables smooth scrolling and transitions.
 - No canvas, no external font requests, no icon/runtime dependencies; only route-level code splitting
   for `/privacy`, `/terms` and the 404 view.
@@ -300,8 +303,8 @@ There are no opacity-gated scroll reveals in this build, so content is never hid
 IntersectionObserver. `index.html` still sets a `no-js` marker before the module loads and `main.js`
 removes it after mount; if the bundle fails, the layout is simply static rather than blank.
 
-The dock/legal shortcuts keep the raw legal paths (`/privacy`, `/terms`) as accessible shortcut links
-with JavaScript enhancement, and the index sheet closes on Escape. These are additive-only
+The status bar keeps the raw legal paths (`/privacy`, `/terms`) as accessible shortcut links with
+JavaScript enhancement, and the mobile command palette closes on Escape. These are additive-only
 accessibility controls: no visible copy was added, and the original content tokens, bindings and
 handlers are unchanged.
 

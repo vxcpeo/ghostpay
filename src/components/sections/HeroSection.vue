@@ -29,102 +29,100 @@ async function copyContract() {
 </script>
 
 <template>
-  <section id="home" class="splash">
-    <div class="splash__inner">
-      <div class="splash__copy">
-        <p class="splash__stamp">
-          <span class="splash__chain">{{ site.chain }}</span>
-          <span class="splash__date">mainnet · live private payments</span>
-        </p>
+  <section id="home" class="module module--first boot">
+    <div class="module__inner">
+      <div class="boot__grid">
+        <div class="boot__copy">
+          <p class="boot__stamp">
+            <span class="tag">{{ site.chain }}</span>
+            <span class="boot__date"><code>mainnet · live private payments</code></span>
+          </p>
 
-        <h1 class="splash__title">
-          Private payments,
-          <span class="splash__ink">invisible by design.</span>
-        </h1>
+          <h1 class="boot__title">
+            Private payments,
+            <span class="boot__ink">invisible by design.</span>
+          </h1>
 
-        <p class="splash__lede">
-          Seclura is the private payment rail for Solana. Send, receive and swap with stealth
-          addresses and HPKE-sealed instructions — your counterparties, your balances and your
-          amounts stay yours alone.
-        </p>
+          <p class="boot__lede">
+            Veilary is the private payment rail for Solana. Send, receive and swap with stealth
+            addresses and HPKE-sealed instructions — your counterparties, your balances and your
+            amounts stay yours alone.
+          </p>
 
-        <div class="splash__acts">
-          <button class="tide-button tide-button--fill" type="button" @click="go('#launch')">
-            Launch App
-            <Icon name="arrow" :size="16" />
-          </button>
-          <button class="tide-button tide-button--line" type="button" @click="go('#how-it-works')">
-            <Icon name="eye" :size="16" />
-            See how it works
-          </button>
-        </div>
-      </div>
-
-      <div class="splash__stage">
-        <span class="splash__halo" aria-hidden="true" />
-
-        <div class="ticket">
-          <div class="ticket__bar">
-            <span class="ticket__route">seclura://send</span>
-            <span class="ticket__flag">
-              <Icon name="lock" :size="11" />
-              private
-            </span>
+          <div class="boot__acts">
+            <button class="cmd" type="button" @click="go('#launch')">
+              Launch App
+              <Icon name="arrow" :size="16" />
+            </button>
+            <button class="cmd cmd--ghost" type="button" @click="go('#how-it-works')">
+              <Icon name="eye" :size="16" />
+              See how it works
+            </button>
           </div>
-
-          <dl class="ticket__rows">
-            <div class="ticket__row">
-              <dt>From</dt>
-              <dd>0x7f…a91c · Seclura balance</dd>
-            </div>
-            <div class="ticket__row">
-              <dt>To</dt>
-              <dd>stealth ●●9d4f</dd>
-            </div>
-            <div class="ticket__row ticket__row--veil">
-              <dt>Amount</dt>
-              <dd>▮▮▮▮▮▮ · hidden</dd>
-            </div>
-          </dl>
-
-          <div class="ticket__seal">
-            <div class="ticket__seal-head">
-              <span>hpke seal</span>
-              <span class="ticket__seal-ok">sealed ✓</span>
-            </div>
-            <p class="ticket__hash">0x8ac4 f19b 22de 77a0 4c31 9fbe 08d2 5c66</p>
-          </div>
-
-          <button class="ticket__send" type="button" @click="go('#launch')">
-            <Icon name="send" :size="15" />
-            Send privately
-          </button>
         </div>
 
-        <div class="splash__aside">
+        <div class="boot__stack">
+          <div class="tx">
+            <div class="tx__bar">
+              <code class="tx__route">veilary://send</code>
+              <span class="tx__flag">
+                <Icon name="lock" :size="11" />
+                private
+              </span>
+            </div>
+
+            <dl class="tx__rows">
+              <div class="tx__row">
+                <dt>From</dt>
+                <dd>0x7f…a91c · Veilary balance</dd>
+              </div>
+              <div class="tx__row">
+                <dt>To</dt>
+                <dd>stealth ●●9d4f</dd>
+              </div>
+              <div class="tx__row tx__row--veil">
+                <dt>Amount</dt>
+                <dd>▮▮▮▮▮▮ · hidden</dd>
+              </div>
+            </dl>
+
+            <div class="tx__seal">
+              <div class="tx__seal-head">
+                <span>hpke seal</span>
+                <span class="tx__seal-ok">sealed ✓</span>
+              </div>
+              <pre class="tx__hash">0x8ac4 f19b 22de 77a0 4c31 9fbe 08d2 5c66</pre>
+            </div>
+
+            <button class="tx__send" type="button" @click="go('#launch')">
+              <Icon name="send" :size="15" />
+              Send privately
+            </button>
+          </div>
+
           <button
-            class="mintline"
+            class="readout"
             type="button"
             :title="site.contract"
             :aria-label="`Copy the $GHOST mint address ${site.contract}`"
             @click="copyContract"
           >
-            <span class="mintline__key">CA</span>
-            <span class="mintline__value">{{ shortContract }}</span>
-            <span class="mintline__act" :class="{ 'mintline__act--done': copied }">
+            <code class="readout__key">CA</code>
+            <code class="readout__value">{{ shortContract }}</code>
+            <span class="readout__act" :class="{ 'readout__act--done': copied }">
               <Icon :name="copied ? 'check' : 'copy'" :size="13" />
               {{ copied ? 'Copied' : 'Copy' }}
             </span>
           </button>
 
-          <dl class="splash__stats">
-            <div v-for="stat in heroStats" :key="stat.label" class="splash__stat">
+          <dl class="readout__stats">
+            <div v-for="stat in heroStats" :key="stat.label" class="readout__stat">
               <dt>{{ stat.label }}</dt>
-              <dd>{{ stat.value }}</dd>
+              <dd><output>{{ stat.value }}</output></dd>
             </div>
           </dl>
 
-          <ul class="splash__notes">
+          <ul class="readout__notes">
             <li>
               <Icon name="mask" :size="14" />
               No address link
@@ -142,439 +140,392 @@ async function copyContract() {
       </div>
     </div>
 
-    <div class="splash__belt">
-      <ul class="splash__logos">
-        <li v-for="(logo, i) in [...trustLogos, ...trustLogos]" :key="`${logo}-${i}`">
-          <Icon name="layers" :size="12" />
-          <span>{{ logo }}</span>
-        </li>
-      </ul>
+    <div class="relay">
+      <div class="module__inner relay__inner">
+        <ul class="relay__list">
+          <li v-for="(logo, i) in [...trustLogos, ...trustLogos]" :key="`${logo}-${i}`">
+            <Icon name="layers" :size="12" />
+            <span>{{ logo }}</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-.splash {
-  position: relative;
+.boot__grid {
   display: grid;
-  align-content: center;
-  min-height: 100svh;
-  padding-block: clamp(92px, 10vw, 136px) 0;
-  overflow-x: clip;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: clamp(26px, 4vw, 62px);
+  align-items: start;
 }
 
-.splash__inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
-  gap: clamp(28px, 4vw, 64px);
-  align-items: center;
-  width: min(100% - 2 * var(--gutter), var(--shell));
-  margin-inline: auto;
-}
-
-.splash__stamp {
+.boot__stamp {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 14px;
-  margin-bottom: clamp(18px, 2.2vw, 28px);
+  gap: 12px;
+  margin-bottom: clamp(16px, 2vw, 24px);
 }
 
-.splash__chain {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  padding: 7px 15px;
-  border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.78);
-  color: var(--accent-safe);
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  box-shadow: 0 8px 22px rgba(20, 96, 173, 0.1);
-}
-
-.splash__chain::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 3px rgba(41, 141, 255, 0.18);
-}
-
-.splash__date {
-  color: var(--muted);
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.14em;
+.boot__date {
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-.splash__title {
-  font-size: clamp(2.7rem, 4.9vw, 4.4rem);
-  line-height: 0.92;
-  letter-spacing: -0.052em;
+.boot__title {
+  max-width: 21ch;
+  font-size: clamp(2.2rem, 4.6vw, 4.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
 }
 
-.splash__ink {
+.boot__ink {
   display: block;
-  color: var(--accent);
-  text-wrap: balance;
+  color: var(--red);
 }
 
-.splash__lede {
-  max-width: 46ch;
-  margin-top: clamp(20px, 2.4vw, 28px);
-  color: var(--muted);
-  font-size: clamp(1rem, 1.1vw, 1.12rem);
+.boot__lede {
+  max-width: 52ch;
+  margin-top: clamp(18px, 2.4vw, 28px);
+  color: var(--dim);
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
   line-height: 1.68;
 }
 
-.splash__acts {
+.boot__acts {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: clamp(24px, 3vw, 34px);
+  gap: 10px;
+  margin-top: clamp(22px, 2.8vw, 32px);
 }
 
-.splash__stage {
-  position: relative;
+.boot__stack {
   display: grid;
-  gap: 16px;
+  gap: 10px;
   min-width: 0;
 }
 
-.splash__halo {
-  position: absolute;
-  inset: -18% -10% auto;
-  z-index: 0;
-  height: 82%;
-  border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(41, 141, 255, 0.24), rgba(41, 141, 255, 0) 72%);
-  pointer-events: none;
-}
-
-.splash__halo::after {
-  content: "";
-  position: absolute;
-  inset: 16%;
-  border: 1px dashed rgba(41, 141, 255, 0.32);
-  border-radius: 50%;
-}
-
-.ticket {
-  position: relative;
-  z-index: 1;
+/* transaction console */
+.tx {
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-md);
+  background:
+    linear-gradient(180deg, rgba(20, 35, 46, 0.92), rgba(10, 18, 26, 0.98)),
+    var(--deck);
+  box-shadow: 0 0 60px rgba(255, 59, 48, 0.08);
   overflow: hidden;
-  border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: var(--shadow-lift);
-  backdrop-filter: blur(10px);
 }
 
-.ticket__bar {
+.tx__bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding: 14px 20px;
-  border-bottom: 1px solid var(--line);
-  background: var(--surface-soft);
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--edge-2);
+  background: rgba(255, 59, 48, 0.06);
 }
 
-.ticket__route {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
+.tx__route {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
 }
 
-.ticket__flag {
+.tx__flag {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--accent-safe);
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
+  color: var(--red-safe);
+  font-family: var(--mono);
+  font-size: 0.58rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.ticket__rows {
-  padding-inline: 20px;
+.tx__rows {
+  padding-inline: 16px;
 }
 
-.ticket__row {
+.tx__row {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
+  grid-template-columns: 62px minmax(0, 1fr);
   gap: 12px;
-  padding-block: 11px;
-  border-bottom: 1px solid var(--line);
+  padding-block: 10px;
+  border-bottom: 1px dashed var(--edge);
 }
 
-.ticket__row dt {
-  color: var(--muted);
-  font-family: var(--font-mono);
+.tx__row dt {
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-.ticket__row dd {
+.tx__row dd {
   overflow-wrap: anywhere;
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.72rem;
   line-height: 1.5;
   text-align: right;
 }
 
-.ticket__row--veil dd {
-  color: var(--accent-safe);
+.tx__row--veil dd {
+  color: var(--red-safe);
   letter-spacing: 0.1em;
 }
 
-.ticket__seal {
-  margin: 16px 20px;
-  padding: 13px 15px;
-  border-radius: var(--radius-md);
-  background: var(--surface-alt);
+.tx__seal {
+  margin: 14px 16px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 92, 214, 0.26);
+  border-radius: var(--r-sm);
+  background: rgba(255, 92, 214, 0.055);
 }
 
-.ticket__seal-head {
+.tx__seal-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  color: var(--accent-safe);
-  font-family: var(--font-mono);
+  color: var(--magenta);
+  font-family: var(--mono);
   font-size: 0.58rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.ticket__seal-ok {
-  color: var(--success);
+.tx__seal-ok {
+  color: var(--ok);
 }
 
-.ticket__hash {
-  margin-top: 8px;
-  color: var(--muted);
-  font-family: var(--font-mono);
+.tx__hash {
+  margin: 7px 0 0;
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.58rem;
   line-height: 1.7;
   letter-spacing: 0.02em;
   word-spacing: 3px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
-.ticket__send {
+.tx__send {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 9px;
   width: 100%;
-  padding: 16px;
+  padding: 14px;
   border: 0;
-  background: var(--shade);
-  color: #ffffff;
-  font-size: 0.92rem;
-  font-weight: 600;
+  background: var(--red);
+  color: #070b10;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: background var(--motion) var(--ease);
+  transition: background var(--tick) var(--ease);
 }
 
-.ticket__send:hover {
-  background: var(--fill);
+.tx__send:hover {
+  background: var(--red-safe);
 }
 
-.splash__aside {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  gap: 12px;
-}
-
-.mintline {
+/* CA readout + stats */
+.readout {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   gap: 10px;
   width: 100%;
-  padding: 13px 18px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.88);
+  padding: 11px 14px;
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-sm);
+  background: rgba(10, 18, 26, 0.86);
+  color: var(--ink);
   text-align: left;
   cursor: pointer;
   transition:
-    border-color var(--motion) var(--ease),
-    background var(--motion) var(--ease);
+    border-color var(--tick) var(--ease),
+    background var(--tick) var(--ease);
 }
 
-.mintline:hover {
-  border-color: var(--accent);
-  background: #ffffff;
+.readout:hover {
+  border-color: var(--red);
+  background: var(--plate);
 }
 
-.mintline__key {
-  color: var(--accent-safe);
-  font-family: var(--font-mono);
+.readout__key {
+  color: var(--red-safe);
+  font-family: var(--mono);
   font-size: 0.58rem;
   font-weight: 700;
   letter-spacing: 0.14em;
 }
 
-.mintline__value {
+.readout__value {
   overflow: hidden;
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.mintline__act {
+.readout__act {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   padding-left: 12px;
-  border-left: 1px solid var(--line);
-  color: var(--muted);
-  font-family: var(--font-mono);
+  border-left: 1px solid var(--edge);
+  color: var(--dim);
+  font-family: var(--mono);
   font-size: 0.6rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.mintline__act--done {
-  color: var(--success);
+.readout__act--done {
+  color: var(--ok);
 }
 
-.splash__stats {
+.readout__stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-sm);
+  background: var(--edge-2);
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: var(--line);
 }
 
-.splash__stat {
+.readout__stat {
   display: flex;
   flex-direction: column-reverse;
-  gap: 7px;
-  padding: 15px 17px;
-  background: rgba(255, 255, 255, 0.9);
+  gap: 6px;
+  padding: 12px 14px;
+  background: rgba(10, 18, 26, 0.94);
 }
 
-.splash__stat dd {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.3vw, 1.9rem);
+.readout__stat dd {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: clamp(1.35rem, 2.1vw, 1.8rem);
   font-weight: 700;
   line-height: 1;
-  letter-spacing: -0.045em;
 }
 
-.splash__stat dt {
-  color: var(--muted);
-  font-family: var(--font-mono);
+.readout__stat dt {
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.56rem;
   line-height: 1.4;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
-.splash__notes {
-  display: grid;
-  gap: 2px;
+.readout__notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
-.splash__notes li {
-  display: flex;
+.readout__notes li {
+  display: inline-flex;
   align-items: center;
-  gap: 9px;
-  padding: 9px 15px;
-  border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--muted);
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid var(--edge);
+  border-radius: var(--r-xs);
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.6rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.splash__notes svg {
+.readout__notes svg {
   flex: none;
-  color: var(--accent-safe);
+  color: var(--red-safe);
 }
 
-.splash__belt {
-  width: min(100% - 2 * var(--gutter), var(--shell));
-  margin: clamp(36px, 4.4vw, 52px) auto 0;
-  padding-block: clamp(22px, 2.6vw, 30px) clamp(30px, 4vw, 46px);
-  border-top: 1px solid var(--line);
+/* relay strip */
+.relay {
+  margin-top: clamp(30px, 4vw, 48px);
+  border-top: 1px solid var(--edge);
+  border-bottom: 1px solid var(--edge);
+  background: rgba(10, 18, 26, 0.5);
 }
 
-.splash__logos {
+.relay__inner {
+  padding-block: 14px;
+}
+
+.relay__list {
   display: grid;
   grid-template-columns: repeat(8, minmax(0, 1fr));
-  gap: 12px 20px;
+  gap: 10px 18px;
 }
 
-.splash__logos li {
+.relay__list li {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: var(--muted);
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 0.56rem;
   line-height: 1.35;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.splash__logos svg {
+.relay__list svg {
   flex: none;
-  color: var(--line-strong);
+  color: var(--edge-3);
 }
 
 @media (max-width: 1180px) {
-  .splash {
-    padding-block: clamp(88px, 11vw, 110px) 0;
-  }
-
-  .splash__inner {
+  .boot__grid {
     grid-template-columns: minmax(0, 1fr);
-    gap: clamp(30px, 5vw, 46px);
+    gap: clamp(26px, 4vw, 40px);
   }
 
-  .splash__title {
-    max-width: none;
+  .boot__stack {
+    max-width: 620px;
   }
 
-  .splash__logos {
+  .relay__list {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 640px) {
-  .splash__title {
-    font-size: clamp(2.5rem, 11.6vw, 3.4rem);
+  .boot__title {
+    font-size: clamp(1.75rem, 7.5vw, 2.6rem);
   }
 
-  .splash__acts .tide-button {
+  .boot__acts .cmd {
     flex: 1 1 100%;
   }
 
-  .splash__logos {
+  .relay__list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .ticket__row {
+  .tx__row {
     grid-template-columns: 52px minmax(0, 1fr);
   }
 }

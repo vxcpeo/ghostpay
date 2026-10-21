@@ -1,0 +1,111 @@
+{
+  "old": {
+    "display": "Seclura",
+    "slug": "seclura",
+    "variants": {
+      "display": "Seclura",
+      "lower": "seclura",
+      "upper": "SECLURA",
+      "title": "Seclura",
+      "kebab": "seclura",
+      "snake": "seclura",
+      "camel": "seclura",
+      "pascal": "Seclura",
+      "compact": "Seclura",
+      "compactLower": "seclura",
+      "first": "Seclura",
+      "firstLower": "seclura",
+      "firstUpper": "SECLURA"
+    },
+    "variantList": [
+      {
+        "value": "Seclura",
+        "kind": "display"
+      },
+      {
+        "value": "seclura",
+        "kind": "lower"
+      },
+      {
+        "value": "SECLURA",
+        "kind": "upper"
+      }
+    ],
+    "domains": [
+      "seclura.xyz"
+    ],
+    "handles": [
+      "seclura"
+    ],
+    "emails": [],
+    "packageNames": [
+      "seclura-website"
+    ],
+    "initials": "",
+    "allowFiles": [],
+    "allowStrings": []
+  },
+  "usedBrands": [
+    "GhostPay",
+    "Cifruna",
+    "Nummula",
+    "Seclura",
+    "Mathlana",
+    "Qubitlane",
+    "Zero Art Protocol",
+    "Provenia",
+    "Loch",
+    "Tidevel",
+    "Miston",
+    "Ivorane",
+    "Filza",
+    "Backers",
+    "Kudorix",
+    "Tessella",
+    "ORAsol",
+    "Attesio",
+    "YOVINX",
+    "Settiva",
+    "Cindral",
+    "Stakri",
+    "Tracefolio",
+    "Tracevio",
+    "lockRH",
+    "Latchera",
+    "Pretiola",
+    "Clepsyra",
+    "Trovane",
+    "Librova",
+    "Ledgiva",
+    "Actoria"
+  ],
+  "notes": "",
+  "new": {
+    "display": "Veilary",
+    "slug": "veilary",
+    "handle": "veilary",
+    "domain": "veilary.xyz",
+    "email": "hello@veilary.xyz",
+    "url": "https://veilary.xyz",
+    "note": "Availability is a snapshot; register the domain and X account separately."
+  },
+  "selection": {
+    "candidate": "veilary",
+    "score": 96,
+    "checkedAt": "2026-10-21T16:55:51.143Z",
+    "evidence": [
+      {
+        "kind": "domain",
+        "status": "available",
+        "signal": "rdap-unregistered",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-rdap.png"
+      },
+      {
+        "kind": "x",
+        "status": "available",
+        "signal": "not-found-text",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-x.png"
+      }
+    ]
+  }
+}

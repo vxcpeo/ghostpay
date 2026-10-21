@@ -5,6 +5,7 @@
 history: GhostPay
 history: Cifruna
 history: Nummula
+history: Seclura
 
 # Current brand (exactly one)
-current: Seclura
+current: Veilary

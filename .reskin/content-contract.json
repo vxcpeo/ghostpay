@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "meta": {
-    "projectName": "seclura-website",
-    "title": "seclura-website",
+    "projectName": "veilary-website",
+    "title": "veilary-website",
     "lang": "en"
   },
   "routes": [
@@ -32,7 +32,7 @@
       "count": 1
     },
     {
-      "value": "0x7f…a91c · Seclura balance",
+      "value": "0x7f…a91c · Veilary balance",
       "count": 1
     },
     {
@@ -108,7 +108,7 @@
       "count": 1
     },
     {
-      "value": "Every card payment you make is private. Every salary transfer is private. Crypto is the only money system where the opposite is true — where your landlord, your employer and your competitors can audit you in real time. Seclura exists to close that gap.",
+      "value": "Every card payment you make is private. Every salary transfer is private. Crypto is the only money system where the opposite is true — where your landlord, your employer and your competitors can audit you in real time. Veilary exists to close that gap.",
       "count": 1
     },
     {
@@ -188,7 +188,7 @@
       "count": 3
     },
     {
-      "value": "Launch Seclura",
+      "value": "Launch Veilary",
       "count": 1
     },
     {
@@ -240,11 +240,11 @@
       "count": 1
     },
     {
-      "value": "On a transparent chain, your employer knows your rent, your competitors know your treasury, and anyone with a block explorer knows your net worth. Seclura keeps verifiability and removes the surveillance.",
+      "value": "On a transparent chain, your employer knows your rent, your competitors know your treasury, and anyone with a block explorer knows your net worth. Veilary keeps verifiability and removes the surveillance.",
       "count": 1
     },
     {
-      "value": "Privacy is not a one-off launch feature — it is a network effect. Here is how the Seclura protocol opens up, phase by phase.",
+      "value": "Privacy is not a one-off launch feature — it is a network effect. Here is how the Veilary protocol opens up, phase by phase.",
       "count": 1
     },
     {
@@ -312,22 +312,6 @@
       "count": 1
     },
     {
-      "value": "Seclura",
-      "count": 1
-    },
-    {
-      "value": "Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions — your counterparties, your balances and your amounts stay yours alone.",
-      "count": 1
-    },
-    {
-      "value": "Seclura replaces the transparent ledger with verifiable secrecy: payments that anyone can validate but nobody can trace.",
-      "count": 1
-    },
-    {
-      "value": "seclura://send",
-      "count": 1
-    },
-    {
       "value": "See how it works",
       "count": 1
     },
@@ -364,7 +348,7 @@
       "count": 1
     },
     {
-      "value": "Thanks — you’ll hear from us when the next Seclura module goes live.",
+      "value": "Thanks — you’ll hear from us when the next Veilary module goes live.",
       "count": 1
     },
     {
@@ -380,7 +364,7 @@
       "count": 1
     },
     {
-      "value": "The Seclura app is open to everyone — connect a wallet and start sending privately. Leave your email if you want the mobile build, merchant SDK and payroll console the day they ship.",
+      "value": "The Veilary app is open to everyone — connect a wallet and start sending privately. Leave your email if you want the mobile build, merchant SDK and payroll console the day they ship.",
       "count": 1
     },
     {
@@ -429,6 +413,22 @@
     },
     {
       "value": "Unverified figures are labelled on this page · confirm everything at the official source",
+      "count": 1
+    },
+    {
+      "value": "Veilary",
+      "count": 1
+    },
+    {
+      "value": "Veilary is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions — your counterparties, your balances and your amounts stay yours alone.",
+      "count": 1
+    },
+    {
+      "value": "Veilary replaces the transparent ledger with verifiable secrecy: payments that anyone can validate but nobody can trace.",
+      "count": 1
+    },
+    {
+      "value": "veilary://send",
       "count": 1
     },
     {
@@ -555,11 +555,6 @@
     },
     {
       "name": "name",
-      "value": "seclura",
-      "count": 3
-    },
-    {
-      "name": "name",
       "value": "send",
       "count": 2
     },
@@ -567,6 +562,11 @@
       "name": "name",
       "value": "shield",
       "count": 2
+    },
+    {
+      "name": "name",
+      "value": "veilary",
+      "count": 3
     },
     {
       "name": "name",

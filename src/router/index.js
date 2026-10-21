@@ -6,27 +6,27 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-    meta: { title: 'Seclura — Private Payments, Invisible by Design' }
+    meta: { title: 'Veilary — Private Payments, Invisible by Design' }
   },
   {
     path: '/privacy',
     name: 'privacy',
     component: () => import('@/views/LegalView.vue'),
     props: { kind: 'privacy' },
-    meta: { title: 'Privacy Policy — Seclura' }
+    meta: { title: 'Privacy Policy — Veilary' }
   },
   {
     path: '/terms',
     name: 'terms',
     component: () => import('@/views/LegalView.vue'),
     props: { kind: 'terms' },
-    meta: { title: 'Terms of Use — Seclura' }
+    meta: { title: 'Terms of Use — Veilary' }
   },
   {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: () => import('@/views/NotFoundView.vue'),
-    meta: { title: 'Signal lost — Seclura' }
+    meta: { title: 'Signal lost — Veilary' }
   }
 ]
 

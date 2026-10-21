@@ -1,0 +1,1150 @@
+{
+  "schemaVersion": 1,
+  "project": "E:\\workspace\\chuangye\\solana\\ghostpay\\website",
+  "generatedAt": "2026-10-22T00:28:01+08:00",
+  "git": {
+    "isGit": false
+  },
+  "packageManager": {
+    "name": "npm",
+    "lockfile": "package-lock.json"
+  },
+  "stats": {
+    "files": 47,
+    "textFiles": 44,
+    "imageFiles": 3
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "kind": "text",
+      "size": 146,
+      "hash": "411d37a1d62a21dc3598f6017b6e85284fc9f76ada9d517915e580d31f635657",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "README.md",
+      "kind": "text",
+      "size": 18191,
+      "hash": "c1a2d6fe6c410d98b825545d19dcbc72e0456132af5d5e9c2b2fd2b45a55cd40",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 10
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 10
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "index.html",
+      "kind": "text",
+      "size": 3860,
+      "hash": "48ebec7861edf86eef75085ae3ebc10f5255df8cf03f73702a61dcc540416003",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 14
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 14
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "netlify.toml",
+      "kind": "text",
+      "size": 363,
+      "hash": "8731f24515c10ad3d55763e251734b19b4a881f0da0f9913df9e4ef96d3f0b10",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "package.json",
+      "kind": "text",
+      "size": 610,
+      "hash": "63a77ebfda9fe0638d021b0aab4c1461092ca156c1b20c0bab1c6be157350b9a",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 3
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 3
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "vercel.json",
+      "kind": "text",
+      "size": 710,
+      "hash": "31c46802a3b72f432e6d525b4ff6a03474f19ce6fb499681f64f87ca69b8a06a",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "verify.ps1",
+      "kind": "text",
+      "size": 3652,
+      "hash": "bbc21a4caa0e7cc1907e1b1c9d49799af3e6a7e85ed89c687f54c64729d51ead",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "verify.sh",
+      "kind": "text",
+      "size": 3152,
+      "hash": "e8043c038fc98d2d808e4e55632675075d243e03f5b74ceb5c4d0c36578a435a",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "vite.config.js",
+      "kind": "text",
+      "size": 437,
+      "hash": "cd30850abc9041f3254cf4c0c809b634905acd9ab2ff209a0e918fc42b8b58d5",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "docs/environment-notes.md",
+      "kind": "text",
+      "size": 6150,
+      "hash": "1e4e8321dd837a6744fa90758c9a20fdc6f1585ac2e28490182b49d1fe00abe2",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "docs/index.md",
+      "kind": "text",
+      "size": 823,
+      "hash": "4a4e4ba58ba9535dbc7972af92da6f8c40e305da16517e0f97fb5a356355d59a",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "docs/original-site-analysis.md",
+      "kind": "text",
+      "size": 40812,
+      "hash": "496b853dd388f5e6d5e86ae054023544dcb0b5c840e24ebc33c9c522f3c69fc6",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "docs/research-brief.md",
+      "kind": "text",
+      "size": 6954,
+      "hash": "36edda667ebca1007004213d5f74be5b5d6652bed0d4e7f887a060d1365f4727",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "docs/status.md",
+      "kind": "text",
+      "size": 4457,
+      "hash": "7bfa70be8617155c17593e242d4948a9af17234a008814ea8f28a40166303239",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "docs/capture/README.md",
+      "kind": "text",
+      "size": 2673,
+      "hash": "889d83b5235e4b31b05f7ebe9319d5eaadf44f60b47d0ba329caaceb50af7629",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "public/robots.txt",
+      "kind": "text",
+      "size": 135,
+      "hash": "2434a7bf9b3402f1dfee3e5c581c74e9dce9a2d67de805b85538ac9e3078a681",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "public/sitemap.xml",
+      "kind": "text",
+      "size": 601,
+      "hash": "b66966a85a7f79722fc0e7509073d4e44cb6bece51e4c2be665f9a99352cb33a",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "public/assets/README.md",
+      "kind": "text",
+      "size": 1381,
+      "hash": "bff00318cf6f540c2c629e8595185a9c9414fe72c7c57be7177d35d8de9c5642",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "public/assets/README.txt",
+      "kind": "text",
+      "size": 539,
+      "hash": "d8545cf4ad1bc0ae60abf724819e93e07a358e77f7e56fbe7ad876eb33d63ae3",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "public/assets/favicon.svg",
+      "kind": "text",
+      "size": 623,
+      "hash": "e41cf32955a039cbbed3afc989d98b03d23af165136806d69b6ca0cb94326f90",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "public/assets/og-cover.svg",
+      "kind": "text",
+      "size": 4787,
+      "hash": "1b8f3ea739c1b471e429f40795c8f62e436473f163f864c7bce8be30cb7cde8d",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "kind": "text",
+      "size": 19870,
+      "hash": "16c97d3d8f477f5c246f4b5c3608e07c277d746f7ed0858163998c5facf9a0a2",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "scripts/dns.mjs",
+      "kind": "text",
+      "size": 6989,
+      "hash": "220c6e08f3574c82a5215fd07df1f2076f74fdd1400be037ebf032b371e61c7f",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "scripts/validate.mjs",
+      "kind": "text",
+      "size": 21174,
+      "hash": "18e08ada4ad2e75f939bec5004f738a82843d86eae0f674278ef981bb5533582",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 8
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 8
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/App.vue",
+      "kind": "text",
+      "size": 1471,
+      "hash": "a1af602824e01fb73802cda55dc602e59e5c37eba428208417472ef4a571025c",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/main.js",
+      "kind": "text",
+      "size": 294,
+      "hash": "69e479259a41afcd3c0b8f40af62dbe8858fea4f6042f941b6f639858130ade0",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/Icon.vue",
+      "kind": "text",
+      "size": 3746,
+      "hash": "8271bd6ffee89f58b0d5d4af4edc0f21a5a783659021e25294fd2f58921fb386",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/TideDock.vue",
+      "kind": "text",
+      "size": 7673,
+      "hash": "07bfc7be5716099a08a69ea9c5400a6a71d0f56aaff5c9d6efe342fc03a70d35",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/TideFooter.vue",
+      "kind": "text",
+      "size": 8343,
+      "hash": "54306d33a8037b8ead7ae9c86de39a81702d90b051fa95478849d31421d5c536",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/AboutSection.vue",
+      "kind": "text",
+      "size": 5702,
+      "hash": "a92e20ddf0420f4ca2a67142cb59efe2251ea818ff8e8d53d11a7078e924e023",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/ComparisonSection.vue",
+      "kind": "text",
+      "size": 6945,
+      "hash": "f4784ad93d4fb775bada3e5df10a876ea172b5fe4be26303d7236231a964870c",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 2
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 2
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/FaqSection.vue",
+      "kind": "text",
+      "size": 5254,
+      "hash": "45a0e72efa47d87fb9e6dda464546694d99060f8f4513709bb5b580f8cd93f34",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/FeaturesSection.vue",
+      "kind": "text",
+      "size": 2490,
+      "hash": "64c4b43817be8358dd8dd10bf8359d8c6639ac3ab12434e918950dbc1ff75dbf",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/HeroSection.vue",
+      "kind": "text",
+      "size": 12930,
+      "hash": "8474611faef4e9068b312af89e73ae7ecaaf439ef546815f530b3683268d773a",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 3
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 3
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/HowItWorksSection.vue",
+      "kind": "text",
+      "size": 7238,
+      "hash": "439a87edfbef0ba97d524380e10c81eb3b037979c989d8a5d4addbd7ad825a93",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/LaunchSection.vue",
+      "kind": "text",
+      "size": 7168,
+      "hash": "66882793c839a8e4a7bceba7b09a09777ea7a991d52fa910c8f61cea5481ce90",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 3
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 3
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/RoadmapSection.vue",
+      "kind": "text",
+      "size": 3966,
+      "hash": "1d0f9156e91d5fa57039dab2754bbcf9cd17862c9228425dea389c8cf6cc95c9",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/components/sections/TokenomicsSection.vue",
+      "kind": "text",
+      "size": 8207,
+      "hash": "117eecc22f77caeae78415d1a9c23b70568aa04975b782c92e8501b04f93f787",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/data/site.js",
+      "kind": "text",
+      "size": 11707,
+      "hash": "3533e49d58e0224e1d22675e7e7dd10a3abb80e4fef5da6242d0da992dfdea96",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 22
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 22
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/router/index.js",
+      "kind": "text",
+      "size": 2489,
+      "hash": "d0cd510d9d90ea7cd2a7277fcc1bc2e1e1ea84dc7fc7d825ec6ed000c904ffe9",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 4
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 4
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/styles/tide.css",
+      "kind": "text",
+      "size": 10648,
+      "hash": "f8ee482a2169c071eb43ddc8567d2b13fa2b3c6810e025efdbcd86c337df11a1",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/HomeView.vue",
+      "kind": "text",
+      "size": 921,
+      "hash": "f550008c66ffebf361f5149814879719a4d43a10055760617e0975bfcf25ba10",
+      "encoding": "utf-8",
+      "hits": [],
+      "brandHits": [],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/LegalView.vue",
+      "kind": "text",
+      "size": 6748,
+      "hash": "b9f766b1506d6c98f5e5441e232833d9836589007c57e822ffae3c8924fef2ad",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 6
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 6
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "src/views/NotFoundView.vue",
+      "kind": "text",
+      "size": 2694,
+      "hash": "c5ec13586593bbc085ff95abd974a6f14105d5ca13569bb2891bda38db43359c",
+      "encoding": "utf-8",
+      "hits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "brandHits": [
+        {
+          "value": "Seclura",
+          "count": 1
+        }
+      ],
+      "protectedHits": []
+    },
+    {
+      "path": "public/assets/favicon.svg",
+      "kind": "image",
+      "size": 623,
+      "hash": "e41cf32955a039cbbed3afc989d98b03d23af165136806d69b6ca0cb94326f90",
+      "brandHits": []
+    },
+    {
+      "path": "public/assets/og-cover.png",
+      "kind": "image",
+      "size": 182368,
+      "hash": "8f81fcdbb88d4835d225c0a445b7119e916b9fd2eec509459f24f829ad3f126a",
+      "brandHits": []
+    },
+    {
+      "path": "public/assets/og-cover.svg",
+      "kind": "image",
+      "size": 4787,
+      "hash": "1b8f3ea739c1b471e429f40795c8f62e436473f163f864c7bce8be30cb7cde8d",
+      "brandHits": []
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/assets/favicon.svg",
+      "format": "svg",
+      "kind": "favicon",
+      "bytes": 623,
+      "width": 64.0,
+      "height": 64.0,
+      "aspect": 1.0,
+      "hasAlpha": false,
+      "colors": [
+        "#2E95FF",
+        "#0B64CC",
+        "#FFFFFF",
+        "#EAF4FF"
+      ],
+      "text": [],
+      "containsBrand": false,
+      "usedBy": [
+        "index.html"
+      ],
+      "needsVisualReview": true,
+      "title": "",
+      "viewBox": "0 0 64 64"
+    },
+    {
+      "path": "public/assets/og-cover.png",
+      "format": "png",
+      "kind": "og",
+      "bytes": 182368,
+      "width": 1200,
+      "height": 630,
+      "aspect": 1.905,
+      "hasAlpha": false,
+      "colors": [
+        "#ffffff",
+        "#fdfeff",
+        "#fefeff",
+        "#f4faff",
+        "#edeff1",
+        "#e1efff",
+        "#fdfdfd",
+        "#f9fcff"
+      ],
+      "text": [],
+      "containsBrand": false,
+      "usedBy": [
+        "index.html"
+      ],
+      "needsVisualReview": true
+    },
+    {
+      "path": "public/assets/og-cover.svg",
+      "format": "svg",
+      "kind": "og",
+      "bytes": 4787,
+      "width": 1200.0,
+      "height": 630.0,
+      "aspect": 1.905,
+      "hasAlpha": false,
+      "colors": [
+        "#FFFFFF",
+        "#F4FAFF",
+        "#E3F1FF",
+        "#298DFF",
+        "#298DFF",
+        "#4DA2FF",
+        "#4DA2FF",
+        "#2E95FF",
+        "#0B64CC",
+        "#298DFF",
+        "#298DFF",
+        "#298DFF",
+        "#298DFF",
+        "#FFFFFF",
+        "#081B2B",
+        "#FFFFFF",
+        "#E2F0FC",
+        "#E8F3FF",
+        "#298DFF",
+        "#0B64CC",
+        "#546A7D",
+        "#081B2B",
+        "#298DFF",
+        "#546A7D",
+        "#546A7D",
+        "#D8E7F5",
+        "#0B64CC",
+        "#546A7D",
+        "#546A7D",
+        "#546A7D"
+      ],
+      "text": [
+        "Seclura",
+        "SOLANA",
+        "MAINNET · LIVE PRIVATE PAYMENTS",
+        "Private payments,",
+        "invisible by design.",
+        "Seclura is the private payment rail for Solana. Send, receive and swap with stealth",
+        "addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record.",
+        "$GHOST",
+        "·",
+        "SOLANA MAINNET",
+        "seclura.xyz"
+      ],
+      "containsBrand": true,
+      "usedBy": [],
+      "needsVisualReview": true,
+      "title": "",
+      "viewBox": "0 0 1200 630"
+    }
+  ],
+  "brand": {
+    "display": "Seclura",
+    "slug": "seclura",
+    "confidence": 0.755,
+    "source": "scan",
+    "evidence": [
+      {
+        "value": "Seclura",
+        "source": "html:title",
+        "weight": 1,
+        "files": [
+          "index.html"
+        ]
+      },
+      {
+        "value": "Seclura",
+        "source": "html:og:site_name",
+        "weight": 1,
+        "files": [
+          "index.html"
+        ]
+      },
+      {
+        "value": "Seclura",
+        "source": "html:og:title",
+        "weight": 1,
+        "files": [
+          "index.html"
+        ]
+      },
+      {
+        "value": "Seclura",
+        "source": "package:name",
+        "weight": 1,
+        "files": [
+          "package.json"
+        ]
+      }
+    ],
+    "alternatives": [
+      {
+        "value": "Actions after capture",
+        "score": 8.0
+      },
+      {
+        "value": "Verification status",
+        "score": 8.0
+      },
+      {
+        "value": "Project structure",
+        "score": 8.0
+      },
+      {
+        "value": "Seclura Website",
+        "score": 8.0
+      },
+      {
+        "value": "Capture output",
+        "score": 8.0
+      }
+    ],
+    "variants": {
+      "display": "Seclura",
+      "lower": "seclura",
+      "upper": "SECLURA",
+      "title": "Seclura",
+      "kebab": "seclura",
+      "snake": "seclura",
+      "camel": "seclura",
+      "pascal": "Seclura",
+      "compact": "Seclura",
+      "compactLower": "seclura",
+      "first": "Seclura",
+      "firstLower": "seclura",
+      "firstUpper": "SECLURA"
+    },
+    "variantList": [
+      {
+        "value": "Seclura",
+        "kind": "display"
+      },
+      {
+        "value": "seclura",
+        "kind": "lower"
+      },
+      {
+        "value": "SECLURA",
+        "kind": "upper"
+      }
+    ],
+    "domains": [
+      {
+        "host": "seclura.xyz",
+        "urls": [
+          "https://seclura.xyz/",
+          "https://seclura.xyz/sitemap.xml"
+        ],
+        "functional": false,
+        "files": [
+          "index.html",
+          "public/robots.txt",
+          "public/sitemap.xml",
+          "scripts/capture.mjs",
+          "src/data/site.js"
+        ],
+        "sources": []
+      }
+    ],
+    "handles": [
+      "seclura"
+    ],
+    "emails": [],
+    "packageNames": [
+      "seclura-website"
+    ],
+    "initials": "",
+    "usedBrands": [
+      "GhostPay",
+      "Cifruna",
+      "Nummula",
+      "Seclura",
+      "Mathlana",
+      "Qubitlane",
+      "Zero Art Protocol",
+      "Provenia",
+      "Loch",
+      "Tidevel",
+      "Miston",
+      "Ivorane",
+      "Filza",
+      "Backers",
+      "Kudorix",
+      "Tessella",
+      "ORAsol",
+      "Attesio",
+      "YOVINX",
+      "Settiva",
+      "Cindral",
+      "Stakri",
+      "Tracefolio",
+      "Tracevio",
+      "lockRH",
+      "Latchera",
+      "Pretiola",
+      "Clepsyra",
+      "Trovane",
+      "Librova",
+      "Ledgiva",
+      "Actoria"
+    ]
+  },
+  "protected": {
+    "urls": [],
+    "hosts": [],
+    "strings": [],
+    "thirdParty": [
+      "@vitejs/plugin-vue",
+      "amazon",
+      "angular",
+      "anthropic",
+      "apple",
+      "aws",
+      "bootstrap",
+      "cloudflare",
+      "deepseek",
+      "digitalocean",
+      "discord",
+      "django",
+      "docker",
+      "facebook",
+      "fastapi",
+      "figma",
+      "flask",
+      "github",
+      "gitlab",
+      "google",
+      "googleanalytics",
+      "googletagmanager",
+      "heroku",
+      "hotjar",
+      "instagram",
+      "intercom",
+      "javascript",
+      "jquery",
+      "kubernetes",
+      "laravel",
+      "linkedin",
+      "meta",
+      "microsoft",
+      "mixpanel",
+      "netlify",
+      "nextjs",
+      "node",
+      "notion",
+      "npm",
+      "nuxt",
+      "openai",
+      "paypal",
+      "plausible",
+      "pnpm",
+      "posthog",
+      "python",
+      "rails",
+      "react",
+      "segment",
+      "sentry",
+      "shopify",
+      "slack",
+      "stripe",
+      "svelte",
+      "tailwind",
+      "tiktok",
+      "twitter",
+      "typescript",
+      "vercel",
+      "vite",
+      "vue",
+      "vue-router",
+      "webpack",
+      "wordpress",
+      "x",
+      "yarn",
+      "youtube",
+      "zendesk"
+    ]
+  },
+  "palette": {
+    "primary": "#298dff",
+    "accent": "#298dff",
+    "background": "#ffffff",
+    "foreground": "#111827",
+    "colors": [
+      "#ffffff",
+      "#298dff",
+      "#546a7d",
+      "#0b64cc",
+      "#e8f3ff",
+      "#4da2ff",
+      "#081b2b",
+      "#2e95ff",
+      "#eaf4ff",
+      "#1460ad",
+      "#d8e7f5",
+      "#f4faff"
+    ],
+    "cssVars": {
+      "surface": "#ffffff",
+      "surface-alt": "#e8f3ff",
+      "surface-soft": "#f4f9ff",
+      "surface-mist": "#dceeff",
+      "accent": "#298dff",
+      "accent-2": "#4da2ff",
+      "accent-safe": "#0b64cc",
+      "accent-wash": "#d9ecff"
+    }
+  },
+  "routes": [
+    "/"
+  ],
+  "web": {
+    "isWeb": true,
+    "entryHtml": [
+      "index.html"
+    ],
+    "hasPackageJson": true
+  },
+  "brandRegistry": {
+    "path": "brand.txt",
+    "exists": true,
+    "history": [
+      "GhostPay",
+      "Cifruna",
+      "Nummula"
+    ],
+    "current": "Seclura",
+    "warnings": []
+  },
+  "warnings": []
+}

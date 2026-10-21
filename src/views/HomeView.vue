@@ -11,7 +11,7 @@ import LaunchSection from '@/components/sections/LaunchSection.vue'
 </script>
 
 <template>
-  <div class="tide-home">
+  <div class="console-stack">
     <HeroSection />
     <FeaturesSection />
     <HowItWorksSection />

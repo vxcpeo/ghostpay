@@ -1,7 +1,7 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import TideDock from '@/components/TideDock.vue'
-import TideFooter from '@/components/TideFooter.vue'
+import SysBar from '@/components/SysBar.vue'
+import Colophon from '@/components/Colophon.vue'
 import Icon from '@/components/Icon.vue'
 
 const showTop = ref(false)
@@ -27,10 +27,12 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="tide">
-    <div class="tide__aurora" aria-hidden="true" />
+  <div class="term">
+    <div class="term__field" aria-hidden="true" />
 
-    <main id="main" class="tide__main">
+    <SysBar />
+
+    <main id="main" class="term__main">
       <router-view v-slot="{ Component }">
         <transition name="page" mode="out-in">
           <component :is="Component" />
@@ -38,24 +40,11 @@ onBeforeUnmount(() => {
       </router-view>
     </main>
 
-    <TideFooter />
-    <TideDock />
-
-    <div class="tide__dots" aria-hidden="true">
-      <span />
-      <span />
-      <span />
-      <span />
-      <span />
-      <span />
-      <span />
-      <span />
-      <span />
-    </div>
+    <Colophon />
 
     <transition name="fade">
-      <button v-show="showTop" class="tidetop" type="button" aria-label="Back to top" @click="toTop">
-        <Icon name="arrow" :size="18" class="tidetop__glyph" />
+      <button v-show="showTop" class="term__jump" type="button" aria-label="Back to top" @click="toTop">
+        <Icon name="arrow" :size="17" />
       </button>
     </transition>
   </div>

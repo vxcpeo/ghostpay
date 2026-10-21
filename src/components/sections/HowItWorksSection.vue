@@ -7,72 +7,75 @@ const activeStep = ref(0)
 </script>
 
 <template>
-  <section id="how-it-works" class="scene drift">
-    <div class="scene__inner">
-      <div class="scene__head drift__head">
-        <p class="tide-kicker">How it works</p>
-        <h2 class="tide-title">
+  <section id="how-it-works" class="module process">
+    <div class="module__inner">
+      <div class="module__bar">
+        <p class="kicker">How it works</p>
+      </div>
+
+      <div class="process__head">
+        <h2 class="scene-title">
           Private money in <em>four moves</em>
         </h2>
-        <p class="tide-deck">
+        <p class="deck">
           No sign-up, no verification queue, no shared pool to wait on. Connect a wallet and the
           protocol handles the cryptography.
         </p>
       </div>
 
-      <div class="drift__stage">
-        <ol class="drift__sequence">
+      <div class="process__grid">
+        <ol class="process__list">
           <li
             v-for="(s, i) in steps"
             :key="s.step"
-            class="drift__step"
-            :class="{ 'drift__step--on': activeStep === i }"
+            class="process__step"
+            :class="{ 'process__step--on': activeStep === i }"
             @mouseenter="activeStep = i"
             @focusin="activeStep = i"
           >
-            <button class="drift__move" type="button" @click="activeStep = i">
-              <span class="drift__num">{{ s.step }}</span>
-              <span class="drift__body">
-                <span class="drift__name">{{ s.title }}</span>
-                <span class="drift__text">{{ s.text }}</span>
+            <button class="process__move" type="button" @click="activeStep = i">
+              <output class="process__num">{{ s.step }}</output>
+              <span class="process__body">
+                <span class="process__name">{{ s.title }}</span>
+                <span class="process__text">{{ s.text }}</span>
               </span>
-              <span class="drift__go" aria-hidden="true">
+              <span class="process__go" aria-hidden="true">
                 <Icon name="arrow" :size="15" />
               </span>
             </button>
           </li>
         </ol>
 
-        <div class="drift__readout">
-          <div class="drift__meta">
-            <span class="drift__tag">
+        <div class="process__readout">
+          <div class="process__meta">
+            <code class="process__tag">
               <Icon name="code" :size="12" />
               step {{ steps[activeStep].step }}
-            </span>
-            <span class="drift__live">live</span>
+            </code>
+            <span class="process__live">live</span>
           </div>
-          <h3 class="drift__current">{{ steps[activeStep].title }}</h3>
-          <p class="drift__detail">{{ steps[activeStep].text }}</p>
+          <h3 class="process__current">{{ steps[activeStep].title }}</h3>
+          <p class="process__detail">{{ steps[activeStep].text }}</p>
 
-          <div class="drift__route">
+          <div class="trace">
             <div
               v-for="(f, i) in ['Wallet', 'Stealth address', 'HPKE seal', 'Broadcast', 'Settled']"
               :key="f"
-              class="drift__node"
-              :class="{ 'drift__node--on': i <= activeStep + 1 }"
+              class="trace__node"
+              :class="{ 'trace__node--on': i <= activeStep + 1 }"
             >
-              <span class="drift__dot" aria-hidden="true" />
-              <span class="drift__label">{{ f }}</span>
+              <span class="trace__dot" aria-hidden="true" />
+              <code class="trace__label">{{ f }}</code>
               <span
                 v-if="i < 4"
-                class="drift__line"
-                :class="{ 'drift__line--on': i < activeStep + 1 }"
+                class="trace__line"
+                :class="{ 'trace__line--on': i < activeStep + 1 }"
                 aria-hidden="true"
               />
             </div>
           </div>
 
-          <ul class="drift__checks">
+          <ul class="process__checks">
             <li>
               <Icon name="check" :size="14" />
               Address derivation happens in your wallet — keys never leave your device
@@ -93,128 +96,141 @@ const activeStep = ref(0)
 </template>
 
 <style scoped>
-.drift__head {
-  margin-bottom: clamp(30px, 4vw, 54px);
+.process__head {
+  display: grid;
+  gap: clamp(12px, 1.6vw, 18px);
+  max-width: 64ch;
+  margin-bottom: clamp(24px, 3.4vw, 42px);
 }
 
-.drift__stage {
+.process__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.96fr);
-  gap: clamp(20px, 3vw, 44px);
+  grid-template-columns: minmax(0, 1.06fr) minmax(300px, 0.94fr);
+  gap: clamp(20px, 3vw, 46px);
   align-items: start;
 }
 
-.drift__sequence {
-  border-top: 1px solid var(--line-strong);
+.process__list {
+  border-top: 1px solid var(--edge-2);
 }
 
-.drift__step {
-  border-bottom: 1px solid var(--line);
+.process__step {
+  border-bottom: 1px solid var(--edge);
+  border-left: 2px solid transparent;
+  transition: border-color var(--tick) var(--ease);
 }
 
-.drift__move {
+.process__step--on {
+  border-left-color: var(--red);
+}
+
+.process__move {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) 22px;
-  gap: clamp(14px, 2vw, 26px);
+  gap: clamp(12px, 1.8vw, 24px);
   width: 100%;
-  padding: clamp(16px, 2vw, 24px) 4px;
+  padding: clamp(14px, 1.8vw, 22px) 6px clamp(14px, 1.8vw, 22px) 12px;
   border: 0;
   background: transparent;
+  color: var(--ink);
   text-align: left;
   cursor: pointer;
 }
 
-.drift__num {
-  color: #6f8ca3;
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3.4vw, 3.1rem);
-  font-weight: 600;
-  line-height: 0.84;
-  letter-spacing: -0.05em;
-  transition: color var(--motion) var(--ease);
+.process__num {
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  transition: color var(--tick) var(--ease);
 }
 
-.drift__step--on .drift__num {
-  color: var(--accent);
+.process__step--on .process__num {
+  color: var(--red);
 }
 
-.drift__body {
+.process__body {
   display: grid;
-  gap: 7px;
+  gap: 6px;
   min-width: 0;
   padding-top: 2px;
 }
 
-.drift__name {
-  font-family: var(--font-display);
-  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
-  font-weight: 600;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+.process__name {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: clamp(0.94rem, 1.3vw, 1.12rem);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.drift__text {
-  color: var(--muted);
-  font-size: 0.88rem;
+.process__text {
+  color: var(--dim);
+  font-size: 0.87rem;
   line-height: 1.6;
 }
 
-.drift__go {
-  padding-top: 6px;
-  color: var(--line-strong);
+.process__go {
+  padding-top: 4px;
+  color: var(--edge-3);
   transition:
-    color var(--motion) var(--ease),
-    transform var(--motion) var(--ease);
+    color var(--tick) var(--ease),
+    transform var(--tick) var(--ease);
 }
 
-.drift__step--on .drift__go {
-  color: var(--accent-safe);
+.process__step--on .process__go {
+  color: var(--red-safe);
   transform: translateX(3px);
 }
 
-.drift__readout {
+.process__readout {
   position: sticky;
-  top: clamp(24px, 4vw, 52px);
-  padding: clamp(22px, 2.6vw, 38px);
-  border-radius: var(--radius-lg);
+  top: calc(var(--bar) + 22px);
+  padding: clamp(18px, 2.4vw, 30px);
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-md);
   background:
-    radial-gradient(120% 90% at 100% 0%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 60%),
-    var(--surface-alt);
+    linear-gradient(180deg, rgba(20, 35, 46, 0.78), rgba(10, 18, 26, 0.96)),
+    var(--deck);
 }
 
-.drift__meta {
+.process__meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--edge);
 }
 
-.drift__tag {
+.process__tag {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: var(--accent-safe);
-  font-family: var(--font-mono);
+  color: var(--red-safe);
+  font-family: var(--mono);
   font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.process__live {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--mint);
+  font-family: var(--mono);
+  font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.drift__live {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  color: var(--success);
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.drift__live::before {
+.process__live::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -222,27 +238,28 @@ const activeStep = ref(0)
   background: currentColor;
 }
 
-.drift__current {
-  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+.process__current {
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
   line-height: 1.06;
 }
 
-.drift__detail {
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.66;
+.process__detail {
+  margin-top: 10px;
+  color: var(--dim);
+  font-size: 0.9rem;
+  line-height: 1.64;
 }
 
-.drift__route {
+.trace {
   display: grid;
-  margin-top: clamp(18px, 2.2vw, 26px);
-  padding: 14px 16px;
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.8);
+  margin-top: clamp(16px, 2vw, 24px);
+  padding: 12px 14px;
+  border: 1px solid var(--edge);
+  border-radius: var(--r-sm);
+  background: rgba(4, 7, 11, 0.6);
 }
 
-.drift__node {
+.trace__node {
   position: relative;
   display: flex;
   align-items: center;
@@ -250,72 +267,73 @@ const activeStep = ref(0)
   padding-block: 5px;
 }
 
-.drift__dot {
+.trace__dot {
   flex: none;
   width: 8px;
   height: 8px;
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--edge-3);
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--void);
   transition:
-    border-color var(--motion) var(--ease),
-    background var(--motion) var(--ease);
+    border-color var(--tick) var(--ease),
+    background var(--tick) var(--ease);
 }
 
-.drift__node--on .drift__dot {
-  border-color: var(--accent);
-  background: var(--accent);
+.trace__node--on .trace__dot {
+  border-color: var(--red);
+  background: var(--red);
+  box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.12);
 }
 
-.drift__label {
-  color: var(--muted);
-  font-family: var(--font-mono);
+.trace__label {
+  color: var(--dim);
+  font-family: var(--mono);
   font-size: 0.6rem;
   line-height: 1.3;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.drift__line {
+.trace__line {
   position: absolute;
   bottom: -5px;
   left: 3px;
   width: 1px;
   height: 10px;
-  background: var(--line);
+  background: var(--edge);
 }
 
-.drift__line--on {
-  background: var(--accent);
+.trace__line--on {
+  background: var(--red);
 }
 
-.drift__checks {
+.process__checks {
   display: grid;
-  gap: 10px;
-  margin-top: clamp(16px, 2vw, 22px);
+  gap: 9px;
+  margin-top: clamp(14px, 2vw, 20px);
 }
 
-.drift__checks li {
+.process__checks li {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  color: var(--muted);
-  font-size: 0.83rem;
+  color: var(--dim);
+  font-size: 0.82rem;
   line-height: 1.52;
 }
 
-.drift__checks svg {
+.process__checks svg {
   flex: none;
   margin-top: 3px;
-  color: var(--success);
+  color: var(--ok);
 }
 
 @media (max-width: 980px) {
-  .drift__stage {
+  .process__grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .drift__readout {
+  .process__readout {
     position: static;
   }
 }

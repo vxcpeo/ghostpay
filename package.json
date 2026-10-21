@@ -1,8 +1,8 @@
 {
-  "name": "seclura-website",
+  "name": "veilary-website",
   "private": true,
   "version": "1.0.0",
-  "description": "Seclura (seclura.xyz) marketing site rebuilt with Vue 3 + Vite",
+  "description": "Veilary (veilary.xyz) marketing site rebuilt with Vue 3 + Vite",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Seclura does not run tracking crawlers and asks the same of others.
-Sitemap: https://seclura.xyz/sitemap.xml
+# Veilary does not run tracking crawlers and asks the same of others.
+Sitemap: https://veilary.xyz/sitemap.xml

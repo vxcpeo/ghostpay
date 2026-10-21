@@ -18,71 +18,74 @@ async function copyContract() {
 </script>
 
 <template>
-  <section id="tokenomics" class="scene vault">
-    <div class="scene__inner">
-      <div class="scene__head vault__head">
-        <p class="tide-kicker">Tokenomics</p>
-        <h2 class="tide-title">
+  <section id="tokenomics" class="module data">
+    <div class="module__inner">
+      <div class="module__bar">
+        <p class="kicker">Tokenomics</p>
+      </div>
+
+      <div class="data__head">
+        <h2 class="scene-title">
           {{ site.ticker }} — the fuel of
           <em>invisible money</em>
         </h2>
-        <p class="tide-deck">
+        <p class="deck">
           A utility token for the private payment rail — it pays for access, backs ecosystem
           incentives and puts how the privacy stack evolves in the hands of the people using it.
         </p>
       </div>
 
-      <div class="vault__board tide-bento">
-        <div class="tide-bento__cell vault__supply">
-          <div class="vault__supply-head">
-            <span class="vault__label">total supply</span>
-            <strong class="vault__figure">{{ tokenomics.supply }}</strong>
+      <div class="data__grid">
+        <div class="data__supply">
+          <div class="data__supply-head">
+            <span class="data__label">total supply</span>
+            <output class="data__figure">{{ tokenomics.supply }}</output>
           </div>
 
-          <div class="vault__rows">
-            <div v-for="d in tokenomics.distribution" :key="d.label" class="vault__row">
-              <span class="vault__name">{{ d.label }}</span>
-              <span class="vault__track">
-                <span class="vault__bar" :style="{ width: `${d.pct}%` }" />
+          <div class="data__rows">
+            <div v-for="d in tokenomics.distribution" :key="d.label" class="data__row">
+              <small class="data__name">{{ d.label }}</small>
+              <span class="data__track">
+                <span class="data__bar" :style="{ width: `${d.pct}%` }" />
               </span>
-              <span class="vault__pct">{{ d.pct }}%</span>
+              <output class="data__pct">{{ d.pct }}%</output>
             </div>
           </div>
         </div>
 
-        <div class="tide-bento__cell tide-bento__cell--wash vault__ledger">
-          <dl class="vault__facts">
-            <div class="vault__fact">
+        <div class="data__facts">
+          <dl>
+            <div class="data__fact">
               <dt>Token</dt>
-              <dd>{{ site.ticker }}</dd>
+              <dd><code>{{ site.ticker }}</code></dd>
             </div>
-            <div class="vault__fact">
+            <div class="data__fact">
               <dt>Network</dt>
-              <dd>{{ site.chain }}</dd>
+              <dd><code>{{ site.chain }}</code></dd>
             </div>
-            <div class="vault__fact">
+            <div class="data__fact">
               <dt>Total supply</dt>
-              <dd>{{ tokenomics.supply }}*</dd>
+              <dd><code>{{ tokenomics.supply }}*</code></dd>
             </div>
-            <div class="vault__fact">
+            <div class="data__fact">
               <dt>Trade tax</dt>
-              <dd>{{ tokenomics.tax }}*</dd>
+              <dd><code>{{ tokenomics.tax }}*</code></dd>
             </div>
-            <div class="vault__fact">
+            <div class="data__fact">
               <dt>Custody</dt>
-              <dd>Non-custodial</dd>
+              <dd><code>Non-custodial</code></dd>
             </div>
-            <div class="vault__fact">
+            <div class="data__fact">
               <dt>Mint address</dt>
               <dd>
                 <button
-                  class="vault__copy"
+                  class="data__copy"
                   type="button"
                   :title="site.contract"
                   :aria-label="`Copy the $GHOST mint address ${site.contract}`"
                   @click="copyContract"
                 >
-                  {{ site.contract.slice(0, 10) }}…
+                  <code>{{ site.contract.slice(0, 10) }}…</code>
                   <Icon :name="copied ? 'check' : 'copy'" :size="13" />
                 </button>
               </dd>
@@ -90,9 +93,9 @@ async function copyContract() {
           </dl>
         </div>
 
-        <div class="tide-bento__cell vault__utility">
-          <h3 class="vault__utility-title">What {{ site.ticker }} unlocks</h3>
-          <ul class="vault__uses">
+        <div class="data__utility">
+          <h3 class="data__utility-title">What {{ site.ticker }} unlocks</h3>
+          <ul class="data__uses">
             <li v-for="u in tokenomics.utility" :key="u">
               <Icon name="check" :size="14" />
               <span>{{ u }}</span>
@@ -100,12 +103,12 @@ async function copyContract() {
           </ul>
         </div>
 
-        <div class="tide-bento__cell tide-bento__cell--wash vault__act">
-          <a class="tide-button tide-button--fill vault__buy" href="#launch">
+        <div class="data__act">
+          <a class="cmd cmd--block" href="#launch">
             Buy {{ site.ticker }}
             <Icon name="arrowUpRight" :size="15" />
           </a>
-          <p class="vault__fine">
+          <p class="data__fine">
             <Icon name="shield" :size="14" />
             <span>* {{ tokenomics.disclaimer }}</span>
           </p>
@@ -116,160 +119,184 @@ async function copyContract() {
 </template>
 
 <style scoped>
-.vault__head {
-  margin-bottom: clamp(30px, 4vw, 54px);
+.data__head {
+  display: grid;
+  gap: clamp(12px, 1.6vw, 18px);
+  max-width: 66ch;
+  margin-bottom: clamp(24px, 3.4vw, 42px);
 }
 
-.vault__board {
-  align-items: start;
+.data__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--edge-2);
+  background: var(--edge);
 }
 
-.vault__supply {
+.data__supply,
+.data__facts,
+.data__utility,
+.data__act {
+  min-width: 0;
+  padding: clamp(18px, 2.4vw, 30px);
+  background: var(--deck);
+}
+
+.data__supply {
   grid-column: span 7;
   background:
-    radial-gradient(120% 100% at 94% 0%, var(--surface-alt) 0%, rgba(232, 243, 255, 0) 58%),
-    var(--surface);
+    radial-gradient(120% 100% at 94% 0%, rgba(255, 59, 48, 0.08), transparent 62%),
+    var(--deck);
 }
 
-.vault__ledger {
+.data__facts {
   grid-column: span 5;
+  background: var(--plate);
 }
 
-.vault__utility {
+.data__utility {
   grid-column: span 7;
 }
 
-.vault__act {
+.data__act {
   grid-column: span 5;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
+  gap: 14px;
+  align-items: stretch;
+  justify-content: center;
+  background: var(--plate);
 }
 
-.vault__supply-head {
+.data__supply-head {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 18px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--edge-2);
 }
 
-.vault__label {
-  color: var(--muted);
-  font-family: var(--font-mono);
+.data__label {
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.vault__figure {
-  font-family: var(--font-display);
-  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
-  font-weight: 600;
+.data__figure {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: clamp(1.8rem, 3.4vw, 2.7rem);
+  font-weight: 700;
   line-height: 0.9;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
 }
 
-.vault__rows {
-  padding-top: 8px;
+.data__rows {
+  padding-top: 6px;
 }
 
-.vault__row {
+.data__row {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(64px, 1fr) 44px;
   align-items: center;
   gap: 14px;
-  padding-block: 10px;
-  border-bottom: 1px solid var(--line);
+  padding-block: 9px;
+  border-bottom: 1px dashed var(--edge);
 }
 
-.vault__row:last-child {
+.data__row:last-child {
   border-bottom: 0;
 }
 
-.vault__name {
-  font-size: 0.88rem;
+.data__name {
+  color: var(--ink);
+  font-size: 0.87rem;
   line-height: 1.38;
 }
 
-.vault__track {
-  height: 8px;
+.data__track {
+  height: 7px;
   overflow: hidden;
-  border-radius: var(--radius-pill);
-  background: var(--surface-soft);
+  border-radius: 1px;
+  background: rgba(255, 255, 255, 0.06);
 }
 
-.vault__bar {
+.data__bar {
   display: block;
   height: 100%;
-  border-radius: var(--radius-pill);
-  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  border-radius: 1px;
+  background: linear-gradient(90deg, var(--magenta), var(--red));
 }
 
-.vault__row:nth-child(2) .vault__bar {
-  opacity: 0.84;
+.data__row:nth-child(2) .data__bar {
+  opacity: 0.86;
 }
 
-.vault__row:nth-child(3) .vault__bar {
-  opacity: 0.74;
+.data__row:nth-child(3) .data__bar {
+  opacity: 0.76;
 }
 
-.vault__row:nth-child(4) .vault__bar {
-  opacity: 0.64;
+.data__row:nth-child(4) .data__bar {
+  opacity: 0.66;
 }
 
-.vault__row:nth-child(5) .vault__bar {
-  opacity: 0.54;
+.data__row:nth-child(5) .data__bar {
+  opacity: 0.56;
 }
 
-.vault__row:nth-child(6) .vault__bar {
-  opacity: 0.44;
+.data__row:nth-child(6) .data__bar {
+  opacity: 0.46;
 }
 
-.vault__pct {
-  color: var(--ink);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
+.data__pct {
+  display: block;
+  color: var(--red-safe);
+  font-family: var(--mono);
+  font-size: 0.7rem;
   font-weight: 700;
   text-align: right;
 }
 
-.vault__facts {
+.data__facts dl {
   display: grid;
 }
 
-.vault__fact {
+.data__fact {
   display: grid;
-  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
   gap: 10px;
   align-items: baseline;
-  padding-block: 11px;
-  border-bottom: 1px solid rgba(179, 210, 236, 0.6);
+  padding-block: 10px;
+  border-bottom: 1px solid var(--edge-2);
 }
 
-.vault__fact:last-child {
+.data__fact:last-child {
   border-bottom: 0;
 }
 
-.vault__fact dt {
-  color: var(--muted);
-  font-family: var(--font-mono);
+.data__fact dt {
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.6rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.vault__fact dd {
+.data__fact dd {
   overflow-wrap: anywhere;
-  font-size: 0.9rem;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.82rem;
   line-height: 1.4;
   text-align: right;
 }
 
-.vault__copy {
+.data__copy {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
@@ -277,92 +304,88 @@ async function copyContract() {
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--accent-safe);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
+  color: var(--red-safe);
+  font-family: var(--mono);
+  font-size: 0.7rem;
   text-align: right;
   cursor: pointer;
 }
 
-.vault__utility-title {
-  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
-  line-height: 1.1;
+.data__utility-title {
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  line-height: 1.12;
 }
 
-.vault__uses {
+.data__uses {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px 22px;
-  margin-top: 16px;
+  gap: 9px 20px;
+  margin-top: 14px;
 }
 
-.vault__uses li {
+.data__uses li {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  color: var(--muted);
-  font-size: 0.86rem;
+  color: var(--dim);
+  font-size: 0.85rem;
   line-height: 1.52;
 }
 
-.vault__uses svg {
+.data__uses svg {
   flex: none;
   margin-top: 3px;
-  color: var(--success);
+  color: var(--ok);
 }
 
-.vault__buy {
-  align-self: stretch;
-}
-
-.vault__fine {
+.data__fine {
   display: flex;
   align-items: flex-start;
   gap: 9px;
-  padding: 13px 14px;
-  border-left: 3px solid var(--warning);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  background: var(--warning-wash);
-  color: var(--warning);
-  font-size: 0.77rem;
+  padding: 11px 12px;
+  border: 1px solid rgba(242, 201, 76, 0.28);
+  border-left: 2px solid var(--warn);
+  color: var(--dim);
+  font-size: 0.74rem;
   line-height: 1.6;
 }
 
-.vault__fine svg {
+.data__fine svg {
   flex: none;
   margin-top: 3px;
+  color: var(--warn);
 }
 
 @media (max-width: 980px) {
-  .vault__supply,
-  .vault__ledger,
-  .vault__utility,
-  .vault__act {
+  .data__supply,
+  .data__facts,
+  .data__utility,
+  .data__act {
     grid-column: span 12;
   }
 }
 
 @media (max-width: 640px) {
-  .vault__row {
+  .data__row {
     grid-template-columns: minmax(0, 1fr) 44px;
     gap: 8px;
   }
 
-  .vault__track {
+  .data__track {
     grid-column: 1 / -1;
     grid-row: 2;
   }
 
-  .vault__pct {
+  .data__pct {
     grid-column: 2;
     grid-row: 1;
   }
 
-  .vault__uses {
+  .data__uses {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .vault__supply-head {
+  .data__supply-head {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;

@@ -1,0 +1,51 @@
+{
+  "summary": "A private payment rail on Solana: stealth addresses and HPKE-sealed instructions keep the sender, receiver and amount off the public ledger while settlement stays sub-second and non-custodial.",
+  "audience": [
+    "individuals and organisations that need financial discretion",
+    "merchant operations and treasury functions",
+    "participants in decentralised ecosystems"
+  ],
+  "values": [
+    "confidentiality",
+    "invisibility",
+    "composure",
+    "cryptographic assurance",
+    "subsecond settlement",
+    "self-custodial"
+  ],
+  "keywords": [
+    "veilcraft",
+    "veilline",
+    "hushline",
+    "quietude",
+    "sealcraft",
+    "shroudline",
+    "cloakwork",
+    "stealthing",
+    "cipherwork",
+    "concealment",
+    "seclusion",
+    "anonymity",
+    "obfuscation",
+    "discretion",
+    "confidentiality",
+    "unlinkability",
+    "noncustodial",
+    "paymentrail",
+    "recipientonly",
+    "cryptographic"
+  ],
+  "avoid": [
+    "Seclura",
+    "Nummula",
+    "Cifruna",
+    "GhostPay",
+    "GhostWareOS",
+    "Ghost",
+    "Solana",
+    "privacy",
+    "private",
+    "wallet",
+    "crypto"
+  ]
+}

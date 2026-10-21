@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Seclura website — one-shot setup and verification (macOS / Linux / WSL).
+# Veilary website — one-shot setup and verification (macOS / Linux / WSL).
 #
 # The agent that wrote this site could not run a single shell command on its side
 # (every attempt returned 0xC0000142), so the Vue app has never been compiled.

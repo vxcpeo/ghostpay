@@ -4,29 +4,32 @@ import { features } from '@/data/site'
 </script>
 
 <template>
-  <section id="features" class="scene modules">
-    <div class="scene__inner">
-      <div class="modules__head">
-        <div class="modules__lede">
-          <p class="tide-kicker">Core modules</p>
-          <h2 class="tide-title modules__title">
-            Everything a public chain
-            <em>shows the world</em> — gone.
-          </h2>
-        </div>
-        <p class="tide-deck modules__deck">
-          Seclura replaces the transparent ledger with verifiable secrecy: payments that anyone can
+  <section id="features" class="module registry">
+    <div class="module__inner">
+      <div class="module__bar">
+        <p class="kicker">Core modules</p>
+      </div>
+
+      <div class="registry__head">
+        <h2 class="scene-title registry__title">
+          Everything a public chain
+          <em>shows the world</em> — gone.
+        </h2>
+        <p class="deck registry__deck">
+          Veilary replaces the transparent ledger with verifiable secrecy: payments that anyone can
           validate but nobody can trace.
         </p>
       </div>
 
-      <div class="tide-rail modules__rail" role="group" aria-label="Core modules" tabindex="0">
-        <article v-for="f in features" :key="f.title" class="modules__item">
-          <span class="modules__icon">
-            <Icon :name="f.icon" :size="20" />
+      <div class="registry__grid" role="group" aria-label="Core modules">
+        <article v-for="f in features" :key="f.title" class="registry__item">
+          <span class="registry__icon">
+            <Icon :name="f.icon" :size="19" />
           </span>
-          <h3 class="modules__name">{{ f.title }}</h3>
-          <p class="modules__text">{{ f.text }}</p>
+          <div class="registry__body">
+            <h3 class="registry__name">{{ f.title }}</h3>
+            <p class="registry__text"><small>{{ f.text }}</small></p>
+          </div>
         </article>
       </div>
     </div>
@@ -34,78 +37,98 @@ import { features } from '@/data/site'
 </template>
 
 <style scoped>
-.modules__head {
+.registry__head {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
-  gap: clamp(20px, 4vw, 64px);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: clamp(18px, 3vw, 46px);
   align-items: end;
-  margin-bottom: clamp(30px, 4vw, 54px);
+  margin-bottom: clamp(24px, 3.4vw, 42px);
 }
 
-.modules__lede {
-  display: grid;
-  gap: clamp(14px, 1.8vw, 22px);
+.registry__title {
+  max-width: 26ch;
 }
 
-.modules__title {
-  max-width: 24ch;
-}
-
-.modules__deck {
+.registry__deck {
   justify-self: end;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 
-.modules__rail {
-  margin-inline: calc(-1 * clamp(0px, 1vw, 10px));
-  padding-inline: clamp(0px, 1vw, 10px);
-}
-
-.modules__item {
+.registry__grid {
   display: grid;
-  align-content: start;
-  gap: 15px;
-  min-height: clamp(280px, 30vw, 360px);
-  padding: clamp(22px, 2.4vw, 34px);
-  border-radius: var(--radius-lg);
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--edge-2);
 }
 
-.modules__item:nth-child(3n + 2) {
-  background: var(--surface-alt);
-  box-shadow: none;
+.registry__item {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: clamp(12px, 1.6vw, 18px);
+  align-items: start;
+  padding: clamp(18px, 2.2vw, 26px) 0;
+  border-bottom: 1px solid var(--edge);
 }
 
-.modules__icon {
+.registry__item:nth-child(odd) {
+  padding-right: clamp(16px, 2.4vw, 34px);
+  border-right: 1px solid var(--edge);
+}
+
+.registry__item:nth-child(even) {
+  padding-left: clamp(16px, 2.4vw, 34px);
+}
+
+.registry__icon {
   display: grid;
   place-items: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: var(--accent-wash);
-  color: var(--accent-safe);
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-sm);
+  background: rgba(255, 59, 48, 0.06);
+  color: var(--red-safe);
 }
 
-.modules__name {
-  font-size: clamp(1.14rem, 1.4vw, 1.32rem);
-  line-height: 1.12;
+.registry__body {
+  min-width: 0;
 }
 
-.modules__text {
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.66;
+.registry__name {
+  font-size: clamp(1rem, 1.3vw, 1.22rem);
+  line-height: 1.15;
+}
+
+.registry__text {
+  max-width: 46ch;
+  margin-top: 7px;
+  color: var(--dim);
+  font-size: 0.88rem;
+  line-height: 1.62;
 }
 
 @media (max-width: 980px) {
-  .modules__head {
+  .registry__head {
     grid-template-columns: minmax(0, 1fr);
-    gap: 16px;
+    gap: 14px;
   }
 
-  .modules__deck {
+  .registry__deck {
     justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .registry__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .registry__item:nth-child(odd) {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .registry__item:nth-child(even) {
+    padding-left: 0;
   }
 }
 </style>

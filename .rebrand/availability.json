@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-21T16:55:51.143Z",
+  "finishedAt": "2026-10-21T16:56:29.259Z",
+  "browser": {
+    "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "version": "Chrome/155.0.8059.85",
+    "headless": true,
+    "proxy": null,
+    "method": "chrome-cdp",
+    "checkedAt": "2026-10-21T16:56:29.259Z"
+  },
+  "candidates": [
+    {
+      "name": "veilary",
+      "slug": "veilary",
+      "score": 96,
+      "domain": {
+        "host": "veilary.xyz",
+        "status": "available",
+        "confidence": "medium",
+        "signal": "rdap-unregistered",
+        "rdap": {
+          "url": "https://rdap.centralnic.com/xyz/domain/veilary.xyz",
+          "status": 404,
+          "mimeType": "application/rdap+json",
+          "excerpt": "{\"rdapConformance\":[\"icann_rdap_response_profile_1\",\"icann_rdap_technical_implementation_guide_1\",\"rdap_level_0\"],\"lang\":\"en\",\"objectClassName\":\"error\",\"notices\":[{\"title\":\"Status Codes\",\"description\":[\"For more information on domain status codes, please visit https:\\/\\/icann.org\\/epp\"],\"links\":[{\"title\":\"More information on domain status codes\",\"rel\":\"glossary\",\"value\":\"https:\\/\\/rdap.centralnic.com\\/xyz\\/domain\\/veilary.xyz\",\"href\":\"https:\\/\\/icann.org\\/epp\"}]},{\"title\":\"Terms of Use\",\"description\":[\"For more information on Whois status codes, please visit https:\\/\\/icann.org\\/epp\",\"\",\"The registration data available in this service is limited. Additional\",\"data may be available at https:\\/\\/lookup.icann.org\",\"\",\"The Whois and RDAP services are provided by CentralNic, and contain\",\"information pertaining to Internet domain names registered by our\",\"our customers. By using this service you are agreeing (1) not to use any\",\"information presented here for any purpose other than determining\",\"ownership of domain names, (2) not to store or reproduce this data in\",\"any way, (3) not to use any high-volume, automated, electronic processes\",\"to obtain data from this service. Abuse of this service is monitored and\",\"actions in contravention of these terms will result in being permanently\",\"blacklisted. All data is (c) CentralNic Ltd (https:\\/\\/www.centralnicregistry.com)\",\"\",\"Access to the Whois and RDAP services is rate limited. For more\",\"information, visit https:\\/\\/centralnicregistry.com\\/policies\\/whois-guidance.\"],\"links\":[{\"title\":\"Terms of Use\",\"rel\":\"terms-of-service\",\"val",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-rdap.png"
+        },
+        "registrar": null,
+        "evidence": [
+          {
+            "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+            "httpStatus": 200,
+            "finalUrl": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+            "state": "unknown",
+            "signal": "empty",
+            "excerpt": "",
+            "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-registrar-1.png"
+          },
+          {
+            "url": "https://porkbun.com/checkout/search?q=veilary.xyz",
+            "httpStatus": 200,
+            "finalUrl": "https://porkbun.com/checkout/search?q=veilary.xyz",
+            "state": "unknown",
+            "signal": "challenge",
+            "excerpt": "porkbun PRODUCTS TRANSFER SALE! ABOUT RESOURCES $0.00 (0) SIGN IN bulk search AI Search | Auction Search | Marketplace Search Not seeing all the results? We've shown you a shorter list than usual. Confirm you're a person and we'll load the full set of suggestions for your search. Awaiting verification. I'm not a robot Pork Captcha V1.3.1 .COM .TODAY .ORG show results by extension relevance Searches again showing only the extensions that best fit your search, most relevant first. veilary.xyz veilary.inc veilary.lol veilary.blog veilary.tech veilary.llc veilary.fyi veilary.now veilary.online veilary.io Show All Extensions Generate AI Suggestions 422dec0842ba55b572bd16e7e9fb0b8b7f3d10b3a4fe2dfa1f366118ec66e4f3 porkbun Porkbun is an amazingly awesome ICANN accredited domain name registrar based out of the Pacific Northwest. We're different, we're easy, and we're affordable. Use us, you won't",
+            "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-registrar-3.png"
+          }
+        ],
+        "checkedAt": "2026-10-21T16:55:54.412Z",
+        "registrarErrors": [
+          {
+            "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+            "state": "unknown",
+            "signal": "empty"
+          },
+          {
+            "url": "https://www.namecheap.com/domains/registration/results/?domain=veilary.xyz",
+            "error": "Navigation failed for https://www.namecheap.com/domains/registration/results/?domain=veilary.xyz: net::ERR_ABORTED"
+          },
+          {
+            "url": "https://porkbun.com/checkout/search?q=veilary.xyz",
+            "state": "unknown",
+            "signal": "challenge"
+          }
+        ]
+      },
+      "x": {
+        "handle": "veilary",
+        "status": "available",
+        "signal": "not-found-text",
+        "url": "https://x.com/veilary",
+        "checkedAt": "2026-10-21T16:56:20.336Z",
+        "httpStatus": 404,
+        "finalUrl": "https://x.com/veilary",
+        "title": "User Profile Not Found - X | 404 Error",
+        "excerpt": "Hmm...this page doesn’t exist. Try searching for something else. Search Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · US TIDA · Ads Info · More © 2026 X Corp.",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-x.png"
+      },
+      "verdict": "pass",
+      "checkedAt": "2026-10-21T16:56:28.699Z"
+    }
+  ],
+  "selected": {
+    "name": "veilary",
+    "slug": "veilary",
+    "score": 96,
+    "domain": {
+      "host": "veilary.xyz",
+      "status": "available",
+      "confidence": "medium",
+      "signal": "rdap-unregistered",
+      "rdap": {
+        "url": "https://rdap.centralnic.com/xyz/domain/veilary.xyz",
+        "status": 404,
+        "mimeType": "application/rdap+json",
+        "excerpt": "{\"rdapConformance\":[\"icann_rdap_response_profile_1\",\"icann_rdap_technical_implementation_guide_1\",\"rdap_level_0\"],\"lang\":\"en\",\"objectClassName\":\"error\",\"notices\":[{\"title\":\"Status Codes\",\"description\":[\"For more information on domain status codes, please visit https:\\/\\/icann.org\\/epp\"],\"links\":[{\"title\":\"More information on domain status codes\",\"rel\":\"glossary\",\"value\":\"https:\\/\\/rdap.centralnic.com\\/xyz\\/domain\\/veilary.xyz\",\"href\":\"https:\\/\\/icann.org\\/epp\"}]},{\"title\":\"Terms of Use\",\"description\":[\"For more information on Whois status codes, please visit https:\\/\\/icann.org\\/epp\",\"\",\"The registration data available in this service is limited. Additional\",\"data may be available at https:\\/\\/lookup.icann.org\",\"\",\"The Whois and RDAP services are provided by CentralNic, and contain\",\"information pertaining to Internet domain names registered by our\",\"our customers. By using this service you are agreeing (1) not to use any\",\"information presented here for any purpose other than determining\",\"ownership of domain names, (2) not to store or reproduce this data in\",\"any way, (3) not to use any high-volume, automated, electronic processes\",\"to obtain data from this service. Abuse of this service is monitored and\",\"actions in contravention of these terms will result in being permanently\",\"blacklisted. All data is (c) CentralNic Ltd (https:\\/\\/www.centralnicregistry.com)\",\"\",\"Access to the Whois and RDAP services is rate limited. For more\",\"information, visit https:\\/\\/centralnicregistry.com\\/policies\\/whois-guidance.\"],\"links\":[{\"title\":\"Terms of Use\",\"rel\":\"terms-of-service\",\"val",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-rdap.png"
+      },
+      "registrar": null,
+      "evidence": [
+        {
+          "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+          "httpStatus": 200,
+          "finalUrl": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+          "state": "unknown",
+          "signal": "empty",
+          "excerpt": "",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-registrar-1.png"
+        },
+        {
+          "url": "https://porkbun.com/checkout/search?q=veilary.xyz",
+          "httpStatus": 200,
+          "finalUrl": "https://porkbun.com/checkout/search?q=veilary.xyz",
+          "state": "unknown",
+          "signal": "challenge",
+          "excerpt": "porkbun PRODUCTS TRANSFER SALE! ABOUT RESOURCES $0.00 (0) SIGN IN bulk search AI Search | Auction Search | Marketplace Search Not seeing all the results? We've shown you a shorter list than usual. Confirm you're a person and we'll load the full set of suggestions for your search. Awaiting verification. I'm not a robot Pork Captcha V1.3.1 .COM .TODAY .ORG show results by extension relevance Searches again showing only the extensions that best fit your search, most relevant first. veilary.xyz veilary.inc veilary.lol veilary.blog veilary.tech veilary.llc veilary.fyi veilary.now veilary.online veilary.io Show All Extensions Generate AI Suggestions 422dec0842ba55b572bd16e7e9fb0b8b7f3d10b3a4fe2dfa1f366118ec66e4f3 porkbun Porkbun is an amazingly awesome ICANN accredited domain name registrar based out of the Pacific Northwest. We're different, we're easy, and we're affordable. Use us, you won't",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-registrar-3.png"
+        }
+      ],
+      "checkedAt": "2026-10-21T16:55:54.412Z",
+      "registrarErrors": [
+        {
+          "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+          "state": "unknown",
+          "signal": "empty"
+        },
+        {
+          "url": "https://www.namecheap.com/domains/registration/results/?domain=veilary.xyz",
+          "error": "Navigation failed for https://www.namecheap.com/domains/registration/results/?domain=veilary.xyz: net::ERR_ABORTED"
+        },
+        {
+          "url": "https://porkbun.com/checkout/search?q=veilary.xyz",
+          "state": "unknown",
+          "signal": "challenge"
+        }
+      ]
+    },
+    "x": {
+      "handle": "veilary",
+      "status": "available",
+      "signal": "not-found-text",
+      "url": "https://x.com/veilary",
+      "checkedAt": "2026-10-21T16:56:20.336Z",
+      "httpStatus": 404,
+      "finalUrl": "https://x.com/veilary",
+      "title": "User Profile Not Found - X | 404 Error",
+      "excerpt": "Hmm...this page doesn’t exist. Try searching for something else. Search Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · US TIDA · Ads Info · More © 2026 X Corp.",
+      "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-x.png"
+    },
+    "verdict": "pass",
+    "checkedAt": "2026-10-21T16:56:28.699Z"
+  }
+}

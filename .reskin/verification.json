@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T16:36:53.177Z",
+  "generatedAt": "2026-10-21T17:36:56.931Z",
   "project": {
     "root": "E:/workspace/chuangye/solana/ghostpay/website",
-    "name": "seclura-website",
+    "name": "veilary-website",
     "baseUrl": "http://127.0.0.1:4326/"
   },
   "passed": true,
@@ -20,32 +20,11 @@
       "passed": true,
       "issues": [],
       "warnings": [],
-      "hash": "c2aacd4a908acc88a114506cee8c468a61f313a90a8f2e71503a19ae109b459e"
+      "hash": "c781e8f4d3152655ddf7aca003646398e1aadf802c4e511f7d2316e2cb85cfe9"
     },
     "skeleton": {
       "passed": true,
       "original": {
-        "id": "ticker-stage",
-        "family": "linear",
-        "traits": {
-          "sidebar": false,
-          "topbar": false,
-          "cards": true,
-          "hero": false,
-          "table": true,
-          "grid": true,
-          "tabs": false,
-          "modal": false,
-          "charts": true,
-          "sticky": true,
-          "orbital": false,
-          "terminal": false,
-          "bento": false,
-          "ticker": true,
-          "gallery": false
-        }
-      },
-      "current": {
         "id": "bento-canvas",
         "family": "spatial",
         "traits": {
@@ -66,10 +45,31 @@
           "gallery": true
         }
       },
+      "current": {
+        "id": "terminal-console",
+        "family": "linear",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": true,
+          "hero": false,
+          "table": false,
+          "grid": true,
+          "tabs": false,
+          "modal": false,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": true,
+          "bento": false,
+          "ticker": true,
+          "gallery": false
+        }
+      },
       "accent": {
-        "original": "#0000ff",
-        "current": "#298dff",
-        "deltaE": 83.88,
+        "original": "#298dff",
+        "current": "#ff3b30",
+        "deltaE": 130.98,
         "min": 30
       }
     },
@@ -79,18 +79,10 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute changed/removed: aria-label=Back to top",
-          "aria attribute added: aria-label=Core modules",
-          "aria attribute added: aria-label=Privacy Policy",
-          "aria attribute added: aria-label=Roadmap",
-          "aria attribute added: aria-label=Terms of Use",
-          "link target added: /privacy",
-          "link target added: /terms"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.306,
-          "landmarkSimilarity": 0.667,
+          "fingerprintSimilarity": 0.48,
+          "landmarkSimilarity": 0.5,
           "classOverlap": 0
         },
         "content": {
@@ -126,16 +118,11 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute added: aria-label=Privacy Policy",
-          "aria attribute added: aria-label=Terms of Use",
-          "link target added: /privacy",
-          "link target added: /terms"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.338,
-          "landmarkSimilarity": 0.667,
-          "classOverlap": 0.019
+          "fingerprintSimilarity": 0.382,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.018
         },
         "content": {
           "missing": [],
@@ -170,16 +157,11 @@
         "passed": true,
         "skipped": false,
         "failures": [],
-        "warnings": [
-          "aria attribute added: aria-label=Privacy Policy",
-          "aria attribute added: aria-label=Terms of Use",
-          "link target added: /privacy",
-          "link target added: /terms"
-        ],
+        "warnings": [],
         "structure": {
-          "fingerprintSimilarity": 0.338,
-          "landmarkSimilarity": 0.667,
-          "classOverlap": 0.019
+          "fingerprintSimilarity": 0.382,
+          "landmarkSimilarity": 0.5,
+          "classOverlap": 0.018
         },
         "content": {
           "missing": [],
@@ -212,25 +194,9 @@
     ]
   },
   "failures": [],
-  "warnings": [
-    "/: aria attribute changed/removed: aria-label=Back to top",
-    "/: aria attribute added: aria-label=Core modules",
-    "/: aria attribute added: aria-label=Privacy Policy",
-    "/: aria attribute added: aria-label=Roadmap",
-    "/: aria attribute added: aria-label=Terms of Use",
-    "/: link target added: /privacy",
-    "/: link target added: /terms",
-    "/privacy: aria attribute added: aria-label=Privacy Policy",
-    "/privacy: aria attribute added: aria-label=Terms of Use",
-    "/privacy: link target added: /privacy",
-    "/privacy: link target added: /terms",
-    "/terms: aria attribute added: aria-label=Privacy Policy",
-    "/terms: aria attribute added: aria-label=Terms of Use",
-    "/terms: link target added: /privacy",
-    "/terms: link target added: /terms"
-  ],
+  "warnings": [],
   "baseline": {
-    "generatedAt": "2026-10-20T16:01:54.434Z",
+    "generatedAt": "2026-10-21T17:04:21.977Z",
     "routes": [
       "/",
       "/privacy",

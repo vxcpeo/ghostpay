@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-22T00:58:28+08:00",
+  "project": "E:\\workspace\\chuangye\\solana\\ghostpay\\website",
+  "backupDir": "E:/workspace/chuangye/solana/ghostpay/website/.rebrand/backup/20261022-005828",
+  "files": [
+    {
+      "path": ".gitignore",
+      "backupPath": ".gitignore",
+      "replacements": 0,
+      "hashBefore": "411d37a1d62a21dc3598f6017b6e85284fc9f76ada9d517915e580d31f635657",
+      "hashAfter": "411d37a1d62a21dc3598f6017b6e85284fc9f76ada9d517915e580d31f635657"
+    },
+    {
+      "path": "README.md",
+      "backupPath": "README.md",
+      "replacements": 10,
+      "hashBefore": "c1a2d6fe6c410d98b825545d19dcbc72e0456132af5d5e9c2b2fd2b45a55cd40",
+      "hashAfter": "9d0b407aee048831b4fa6391caef32c12c4c755dc4ad7719c9517bc92279c37e"
+    },
+    {
+      "path": "index.html",
+      "backupPath": "index.html",
+      "replacements": 14,
+      "hashBefore": "48ebec7861edf86eef75085ae3ebc10f5255df8cf03f73702a61dcc540416003",
+      "hashAfter": "8bbf4ed0e43864f3b255af5ce130131833ba5bfb978e569bcbf7ac066fc7e0b1"
+    },
+    {
+      "path": "netlify.toml",
+      "backupPath": "netlify.toml",
+      "replacements": 0,
+      "hashBefore": "8731f24515c10ad3d55763e251734b19b4a881f0da0f9913df9e4ef96d3f0b10",
+      "hashAfter": "8731f24515c10ad3d55763e251734b19b4a881f0da0f9913df9e4ef96d3f0b10"
+    },
+    {
+      "path": "package.json",
+      "backupPath": "package.json",
+      "replacements": 3,
+      "hashBefore": "63a77ebfda9fe0638d021b0aab4c1461092ca156c1b20c0bab1c6be157350b9a",
+      "hashAfter": "99565583befc6c6b5d25a38b2ab40f4946fefdcd20134e6d32601e8514272b40"
+    },
+    {
+      "path": "vercel.json",
+      "backupPath": "vercel.json",
+      "replacements": 0,
+      "hashBefore": "31c46802a3b72f432e6d525b4ff6a03474f19ce6fb499681f64f87ca69b8a06a",
+      "hashAfter": "31c46802a3b72f432e6d525b4ff6a03474f19ce6fb499681f64f87ca69b8a06a"
+    },
+    {
+      "path": "verify.ps1",
+      "backupPath": "verify.ps1",
+      "replacements": 1,
+      "hashBefore": "bbc21a4caa0e7cc1907e1b1c9d49799af3e6a7e85ed89c687f54c64729d51ead",
+      "hashAfter": "67aea14a82097626782eda66a5c545a4f0cf2ab536d8f6d4559195e8f5d47469"
+    },
+    {
+      "path": "verify.sh",
+      "backupPath": "verify.sh",
+      "replacements": 1,
+      "hashBefore": "e8043c038fc98d2d808e4e55632675075d243e03f5b74ceb5c4d0c36578a435a",
+      "hashAfter": "9a560b41b570227694c0a467a12bd8c9517f128897fa838600ebb9d7ab342d04"
+    },
+    {
+      "path": "vite.config.js",
+      "backupPath": "vite.config.js",
+      "replacements": 0,
+      "hashBefore": "cd30850abc9041f3254cf4c0c809b634905acd9ab2ff209a0e918fc42b8b58d5",
+      "hashAfter": "cd30850abc9041f3254cf4c0c809b634905acd9ab2ff209a0e918fc42b8b58d5"
+    },
+    {
+      "path": "docs/environment-notes.md",
+      "backupPath": "docs/environment-notes.md",
+      "replacements": 0,
+      "hashBefore": "1e4e8321dd837a6744fa90758c9a20fdc6f1585ac2e28490182b49d1fe00abe2",
+      "hashAfter": "1e4e8321dd837a6744fa90758c9a20fdc6f1585ac2e28490182b49d1fe00abe2"
+    },
+    {
+      "path": "docs/index.md",
+      "backupPath": "docs/index.md",
+      "replacements": 0,
+      "hashBefore": "4a4e4ba58ba9535dbc7972af92da6f8c40e305da16517e0f97fb5a356355d59a",
+      "hashAfter": "4a4e4ba58ba9535dbc7972af92da6f8c40e305da16517e0f97fb5a356355d59a"
+    },
+    {
+      "path": "docs/original-site-analysis.md",
+      "backupPath": "docs/original-site-analysis.md",
+      "replacements": 0,
+      "hashBefore": "496b853dd388f5e6d5e86ae054023544dcb0b5c840e24ebc33c9c522f3c69fc6",
+      "hashAfter": "496b853dd388f5e6d5e86ae054023544dcb0b5c840e24ebc33c9c522f3c69fc6"
+    },
+    {
+      "path": "docs/research-brief.md",
+      "backupPath": "docs/research-brief.md",
+      "replacements": 0,
+      "hashBefore": "36edda667ebca1007004213d5f74be5b5d6652bed0d4e7f887a060d1365f4727",
+      "hashAfter": "36edda667ebca1007004213d5f74be5b5d6652bed0d4e7f887a060d1365f4727"
+    },
+    {
+      "path": "docs/status.md",
+      "backupPath": "docs/status.md",
+      "replacements": 0,
+      "hashBefore": "7bfa70be8617155c17593e242d4948a9af17234a008814ea8f28a40166303239",
+      "hashAfter": "7bfa70be8617155c17593e242d4948a9af17234a008814ea8f28a40166303239"
+    },
+    {
+      "path": "docs/capture/README.md",
+      "backupPath": "docs/capture/README.md",
+      "replacements": 0,
+      "hashBefore": "889d83b5235e4b31b05f7ebe9319d5eaadf44f60b47d0ba329caaceb50af7629",
+      "hashAfter": "889d83b5235e4b31b05f7ebe9319d5eaadf44f60b47d0ba329caaceb50af7629"
+    },
+    {
+      "path": "public/robots.txt",
+      "backupPath": "public/robots.txt",
+      "replacements": 2,
+      "hashBefore": "2434a7bf9b3402f1dfee3e5c581c74e9dce9a2d67de805b85538ac9e3078a681",
+      "hashAfter": "88aef7d54d495675b0d1bb01501226d1272c67859983162b8f88cfda830b56f3"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "backupPath": "public/sitemap.xml",
+      "replacements": 1,
+      "hashBefore": "b66966a85a7f79722fc0e7509073d4e44cb6bece51e4c2be665f9a99352cb33a",
+      "hashAfter": "a3c0fe2bffd6feee9f8441f78c5095ec0942f1d917dfff61bcd588c539f270d0"
+    },
+    {
+      "path": "public/assets/README.md",
+      "backupPath": "public/assets/README.md",
+      "replacements": 1,
+      "hashBefore": "bff00318cf6f540c2c629e8595185a9c9414fe72c7c57be7177d35d8de9c5642",
+      "hashAfter": "2e5c8a9ba15f1d5d9d1a6ecf8c2b77500210784c41eac034acd9e5e5c0687d48"
+    },
+    {
+      "path": "public/assets/README.txt",
+      "backupPath": "public/assets/README.txt",
+      "replacements": 1,
+      "hashBefore": "d8545cf4ad1bc0ae60abf724819e93e07a358e77f7e56fbe7ad876eb33d63ae3",
+      "hashAfter": "877dc3ccf768a570712f9e6121b3ded64e062faefd4e3e2e6c032498943f6e64"
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "backupPath": "scripts/capture.mjs",
+      "replacements": 4,
+      "hashBefore": "16c97d3d8f477f5c246f4b5c3608e07c277d746f7ed0858163998c5facf9a0a2",
+      "hashAfter": "193c4eeb3173102a669120ae24dc7046f92d23963b3731c9aa95213ea9d6943a"
+    },
+    {
+      "path": "scripts/dns.mjs",
+      "backupPath": "scripts/dns.mjs",
+      "replacements": 4,
+      "hashBefore": "220c6e08f3574c82a5215fd07df1f2076f74fdd1400be037ebf032b371e61c7f",
+      "hashAfter": "74414927dcc1ac048e460ca2850e1f18134845c590a79b552edb9825f3086d33"
+    },
+    {
+      "path": "scripts/validate.mjs",
+      "backupPath": "scripts/validate.mjs",
+      "replacements": 8,
+      "hashBefore": "18e08ada4ad2e75f939bec5004f738a82843d86eae0f674278ef981bb5533582",
+      "hashAfter": "d9aa88036f93e143062723f7166d712f411d85756914e4156998d193e62a839a"
+    },
+    {
+      "path": "src/App.vue",
+      "backupPath": "src/App.vue",
+      "replacements": 0,
+      "hashBefore": "a1af602824e01fb73802cda55dc602e59e5c37eba428208417472ef4a571025c",
+      "hashAfter": "a1af602824e01fb73802cda55dc602e59e5c37eba428208417472ef4a571025c"
+    },
+    {
+      "path": "src/main.js",
+      "backupPath": "src/main.js",
+      "replacements": 0,
+      "hashBefore": "69e479259a41afcd3c0b8f40af62dbe8858fea4f6042f941b6f639858130ade0",
+      "hashAfter": "69e479259a41afcd3c0b8f40af62dbe8858fea4f6042f941b6f639858130ade0"
+    },
+    {
+      "path": "src/components/Icon.vue",
+      "backupPath": "src/components/Icon.vue",
+      "replacements": 1,
+      "hashBefore": "8271bd6ffee89f58b0d5d4af4edc0f21a5a783659021e25294fd2f58921fb386",
+      "hashAfter": "c73e3e0582a2406d7ce1fd9c522a7615cbd39be91517845e049166dd4dd0d3fd"
+    },
+    {
+      "path": "src/components/TideDock.vue",
+      "backupPath": "src/components/TideDock.vue",
+      "replacements": 2,
+      "hashBefore": "07bfc7be5716099a08a69ea9c5400a6a71d0f56aaff5c9d6efe342fc03a70d35",
+      "hashAfter": "b6aa4596c95534ab910cfeb7bb418d36bc504374d9f5f8a3ff7f920873c3c00a"
+    },
+    {
+      "path": "src/components/TideFooter.vue",
+      "backupPath": "src/components/TideFooter.vue",
+      "replacements": 2,
+      "hashBefore": "54306d33a8037b8ead7ae9c86de39a81702d90b051fa95478849d31421d5c536",
+      "hashAfter": "f3fd16790e0a03fb9b6150808aeafbd9e2a9015e6a51da35ffebe768a98174d4"
+    },
+    {
+      "path": "src/components/sections/AboutSection.vue",
+      "backupPath": "src/components/sections/AboutSection.vue",
+      "replacements": 1,
+      "hashBefore": "a92e20ddf0420f4ca2a67142cb59efe2251ea818ff8e8d53d11a7078e924e023",
+      "hashAfter": "2b16175c7e8c8abd74f913f9e0ac072de406601c39f4141c657089adeea850f0"
+    },
+    {
+      "path": "src/components/sections/ComparisonSection.vue",
+      "backupPath": "src/components/sections/ComparisonSection.vue",
+      "replacements": 2,
+      "hashBefore": "f4784ad93d4fb775bada3e5df10a876ea172b5fe4be26303d7236231a964870c",
+      "hashAfter": "afff532f28b22e8d11c72165567b6c76c50e4af74cd1ea5c9207a68e478596dd"
+    },
+    {
+      "path": "src/components/sections/FaqSection.vue",
+      "backupPath": "src/components/sections/FaqSection.vue",
+      "replacements": 0,
+      "hashBefore": "45a0e72efa47d87fb9e6dda464546694d99060f8f4513709bb5b580f8cd93f34",
+      "hashAfter": "45a0e72efa47d87fb9e6dda464546694d99060f8f4513709bb5b580f8cd93f34"
+    },
+    {
+      "path": "src/components/sections/FeaturesSection.vue",
+      "backupPath": "src/components/sections/FeaturesSection.vue",
+      "replacements": 1,
+      "hashBefore": "64c4b43817be8358dd8dd10bf8359d8c6639ac3ab12434e918950dbc1ff75dbf",
+      "hashAfter": "d078451cb81a6793f2bbfaa90eb31c7f10adeee204972f34e5ed13213010effa"
+    },
+    {
+      "path": "src/components/sections/HeroSection.vue",
+      "backupPath": "src/components/sections/HeroSection.vue",
+      "replacements": 3,
+      "hashBefore": "8474611faef4e9068b312af89e73ae7ecaaf439ef546815f530b3683268d773a",
+      "hashAfter": "ac3223e9b7aa47e27c6f4cac68363d2e31cf476902c5f536e7b8efbd34155328"
+    },
+    {
+      "path": "src/components/sections/HowItWorksSection.vue",
+      "backupPath": "src/components/sections/HowItWorksSection.vue",
+      "replacements": 0,
+      "hashBefore": "439a87edfbef0ba97d524380e10c81eb3b037979c989d8a5d4addbd7ad825a93",
+      "hashAfter": "439a87edfbef0ba97d524380e10c81eb3b037979c989d8a5d4addbd7ad825a93"
+    },
+    {
+      "path": "src/components/sections/LaunchSection.vue",
+      "backupPath": "src/components/sections/LaunchSection.vue",
+      "replacements": 3,
+      "hashBefore": "66882793c839a8e4a7bceba7b09a09777ea7a991d52fa910c8f61cea5481ce90",
+      "hashAfter": "c21937d42e87d427bd83c8f0b48fd6bab7169cae3ff184dc32e7d21c3a86bd0f"
+    },
+    {
+      "path": "src/components/sections/RoadmapSection.vue",
+      "backupPath": "src/components/sections/RoadmapSection.vue",
+      "replacements": 1,
+      "hashBefore": "1d0f9156e91d5fa57039dab2754bbcf9cd17862c9228425dea389c8cf6cc95c9",
+      "hashAfter": "a639c4bbbb7ccb918a63a6e06994d477ba1c43a89bad0cf68ca3ff087875b781"
+    },
+    {
+      "path": "src/components/sections/TokenomicsSection.vue",
+      "backupPath": "src/components/sections/TokenomicsSection.vue",
+      "replacements": 0,
+      "hashBefore": "117eecc22f77caeae78415d1a9c23b70568aa04975b782c92e8501b04f93f787",
+      "hashAfter": "117eecc22f77caeae78415d1a9c23b70568aa04975b782c92e8501b04f93f787"
+    },
+    {
+      "path": "src/data/site.js",
+      "backupPath": "src/data/site.js",
+      "replacements": 22,
+      "hashBefore": "3533e49d58e0224e1d22675e7e7dd10a3abb80e4fef5da6242d0da992dfdea96",
+      "hashAfter": "a2cb79baa62e1482aa1b7925b330ce36a94e46796fcffff7ef36bea217111cd7"
+    },
+    {
+      "path": "src/router/index.js",
+      "backupPath": "src/router/index.js",
+      "replacements": 4,
+      "hashBefore": "d0cd510d9d90ea7cd2a7277fcc1bc2e1e1ea84dc7fc7d825ec6ed000c904ffe9",
+      "hashAfter": "7b5aed7a6ef458703296d5492e0c683e7c0a7239e78b8292267b3cb0e474f793"
+    },
+    {
+      "path": "src/styles/tide.css",
+      "backupPath": "src/styles/tide.css",
+      "replacements": 1,
+      "hashBefore": "f8ee482a2169c071eb43ddc8567d2b13fa2b3c6810e025efdbcd86c337df11a1",
+      "hashAfter": "7a03debc1900261fbae8d557f502c06a477e4b018fd4ee155a24857e64417252"
+    },
+    {
+      "path": "src/views/HomeView.vue",
+      "backupPath": "src/views/HomeView.vue",
+      "replacements": 0,
+      "hashBefore": "f550008c66ffebf361f5149814879719a4d43a10055760617e0975bfcf25ba10",
+      "hashAfter": "f550008c66ffebf361f5149814879719a4d43a10055760617e0975bfcf25ba10"
+    },
+    {
+      "path": "src/views/LegalView.vue",
+      "backupPath": "src/views/LegalView.vue",
+      "replacements": 6,
+      "hashBefore": "b9f766b1506d6c98f5e5441e232833d9836589007c57e822ffae3c8924fef2ad",
+      "hashAfter": "1a3bfac4887dd55410e4ebd180c34ba39df0adbec77d02c961a5c9379a2091a7"
+    },
+    {
+      "path": "src/views/NotFoundView.vue",
+      "backupPath": "src/views/NotFoundView.vue",
+      "replacements": 1,
+      "hashBefore": "c5ec13586593bbc085ff95abd974a6f14105d5ca13569bb2891bda38db43359c",
+      "hashAfter": "d2550a32f07a99f8721768ca582f9f2bbd12680784c2b586a45117ed72fb5928"
+    }
+  ],
+  "renames": [],
+  "assets": [
+    {
+      "source": "public/assets/favicon.svg",
+      "target": "public/assets/favicon.svg",
+      "generated": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\generated\\public\\assets\\favicon.svg",
+      "backupPath": "public/assets/favicon.svg"
+    },
+    {
+      "source": "public/assets/og-cover.png",
+      "target": "public/assets/og-cover.png",
+      "generated": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\generated\\public\\assets\\og-cover.png",
+      "backupPath": "public/assets/og-cover.png"
+    },
+    {
+      "source": "public/assets/og-cover.svg",
+      "target": "public/assets/og-cover.svg",
+      "generated": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\generated\\public\\assets\\og-cover.svg",
+      "backupPath": "public/assets/og-cover.svg"
+    }
+  ],
+  "old": {
+    "display": "Seclura",
+    "slug": "seclura",
+    "variants": {
+      "display": "Seclura",
+      "lower": "seclura",
+      "upper": "SECLURA",
+      "title": "Seclura",
+      "kebab": "seclura",
+      "snake": "seclura",
+      "camel": "seclura",
+      "pascal": "Seclura",
+      "compact": "Seclura",
+      "compactLower": "seclura",
+      "first": "Seclura",
+      "firstLower": "seclura",
+      "firstUpper": "SECLURA"
+    },
+    "variantList": [
+      {
+        "value": "Seclura",
+        "kind": "display"
+      },
+      {
+        "value": "seclura",
+        "kind": "lower"
+      },
+      {
+        "value": "SECLURA",
+        "kind": "upper"
+      }
+    ],
+    "domains": [
+      "seclura.xyz"
+    ],
+    "handles": [
+      "seclura"
+    ],
+    "emails": [],
+    "packageNames": [
+      "seclura-website"
+    ],
+    "initials": "",
+    "allowFiles": [],
+    "allowStrings": []
+  },
+  "new": {
+    "display": "Veilary",
+    "slug": "veilary",
+    "handle": "veilary",
+    "domain": "veilary.xyz",
+    "email": "hello@veilary.xyz",
+    "url": "https://veilary.xyz",
+    "note": "Availability is a snapshot; register the domain and X account separately."
+  }
+}

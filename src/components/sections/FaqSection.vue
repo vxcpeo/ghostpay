@@ -11,25 +11,28 @@ function toggle(i) {
 </script>
 
 <template>
-  <section id="faq" class="scene shallows">
-    <div class="scene__inner">
-      <div class="shallows__grid">
-        <div class="shallows__aside">
-          <div class="scene__head shallows__head">
-            <p class="tide-kicker">FAQ</p>
-            <h2 class="tide-title">
+  <section id="faq" class="module log">
+    <div class="module__inner">
+      <div class="module__bar">
+        <p class="kicker">FAQ</p>
+      </div>
+
+      <div class="log__grid">
+        <div class="log__index">
+          <div class="log__head">
+            <h2 class="scene-title">
               Questions, <em>answered plainly</em>
             </h2>
-            <p class="tide-deck">
+            <p class="deck">
               Still curious? The community and the docs go deeper than any landing page can.
             </p>
           </div>
 
-          <div class="shallows__prompt">
-            <p class="shallows__question">Can’t find what you’re looking for?</p>
-            <div class="shallows__links">
+          <div class="log__prompt">
+            <p class="log__question">Can’t find what you’re looking for?</p>
+            <div class="log__links">
               <a
-                class="tide-button tide-button--line tide-button--small"
+                class="cmd cmd--ghost cmd--sm"
                 href="https://ghostwareos.gitbook.io/docs/core-modules/ghostpay"
                 target="_blank"
                 rel="noopener"
@@ -38,7 +41,7 @@ function toggle(i) {
                 Read the docs
               </a>
               <a
-                class="tide-button tide-button--line tide-button--small"
+                class="cmd cmd--ghost cmd--sm"
                 href="https://ghostwareos.gitbook.io/docs/vision-and-principles"
                 target="_blank"
                 rel="noopener"
@@ -50,26 +53,26 @@ function toggle(i) {
           </div>
         </div>
 
-        <div class="shallows__list">
+        <div class="log__list">
           <div
             v-for="(item, i) in faqs"
             :key="item.q"
-            class="shallows__qa"
-            :class="{ 'shallows__qa--open': open === i }"
+            class="log__item"
+            :class="{ 'log__item--open': open === i }"
           >
             <button
-              class="shallows__trigger"
+              class="log__trigger"
               type="button"
               :aria-expanded="open === i"
               @click="toggle(i)"
             >
-              <span class="shallows__index">{{ String(i + 1).padStart(2, '0') }}</span>
-              <span class="shallows__ask">{{ item.q }}</span>
-              <span class="shallows__mark">
+              <code class="log__num">{{ String(i + 1).padStart(2, '0') }}</code>
+              <small class="log__ask">{{ item.q }}</small>
+              <span class="log__mark">
                 <Icon :name="open === i ? 'close' : 'plus'" :size="15" />
               </span>
             </button>
-            <div class="shallows__answer" :class="{ 'shallows__answer--open': open === i }">
+            <div class="log__answer" :class="{ 'log__answer--open': open === i }">
               <p>{{ item.a }}</p>
             </div>
           </div>
@@ -80,149 +83,163 @@ function toggle(i) {
 </template>
 
 <style scoped>
-.shallows__grid {
+.log__grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.56fr) minmax(0, 1.44fr);
-  gap: clamp(26px, 4vw, 64px);
+  grid-template-columns: minmax(0, 0.54fr) minmax(0, 1.46fr);
+  gap: clamp(24px, 4vw, 60px);
   align-items: start;
 }
 
-.shallows__aside {
+.log__index {
   position: sticky;
-  top: clamp(24px, 4vw, 52px);
+  top: calc(var(--bar) + 22px);
   display: grid;
-  gap: clamp(24px, 3vw, 36px);
+  gap: clamp(22px, 3vw, 34px);
 }
 
-.shallows__prompt {
-  padding: clamp(18px, 2.2vw, 26px);
-  border-radius: var(--radius-lg);
-  background: var(--surface-alt);
+.log__head {
+  display: grid;
+  gap: clamp(12px, 1.6vw, 18px);
 }
 
-.shallows__question {
+.log__prompt {
+  padding: clamp(16px, 2vw, 22px);
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-sm);
+  background: var(--deck);
+}
+
+.log__question {
   color: var(--ink);
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   line-height: 1.5;
 }
 
-.shallows__links {
+.log__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 16px;
+  gap: 8px;
+  margin-top: 14px;
 }
 
-.shallows__list {
-  border-top: 1px solid var(--line-strong);
+.log__list {
+  border-top: 1px solid var(--edge-2);
 }
 
-.shallows__qa {
-  border-bottom: 1px solid var(--line);
+.log__item {
+  border-bottom: 1px solid var(--edge);
+  border-left: 2px solid transparent;
+  transition: border-color var(--tick) var(--ease);
 }
 
-.shallows__trigger {
+.log__item--open {
+  border-left-color: var(--red);
+}
+
+.log__trigger {
   display: grid;
-  grid-template-columns: 40px minmax(0, 1fr) 30px;
+  grid-template-columns: 38px minmax(0, 1fr) 28px;
   gap: 12px;
   align-items: start;
   width: 100%;
-  padding: 17px 2px;
+  padding: 15px 4px 15px 10px;
   border: 0;
   background: transparent;
+  color: var(--ink);
   text-align: left;
   cursor: pointer;
-  transition: color var(--motion) var(--ease);
+  transition: color var(--tick) var(--ease);
 }
 
-.shallows__trigger:hover {
-  color: var(--accent-safe);
+.log__trigger:hover {
+  color: var(--red-safe);
 }
 
-.shallows__index {
-  padding-top: 4px;
-  color: var(--muted);
-  font-family: var(--font-mono);
+.log__num {
+  padding-top: 3px;
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.06em;
 }
 
-.shallows__ask {
-  font-family: var(--font-display);
-  font-size: clamp(1.02rem, 1.4vw, 1.16rem);
+.log__ask {
+  font-family: var(--mono);
+  font-size: clamp(0.94rem, 1.3vw, 1.08rem);
   font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.025em;
+  line-height: 1.38;
 }
 
-.shallows__mark {
+.log__mark {
   display: grid;
   place-items: center;
   width: 26px;
   height: 26px;
-  margin-top: 2px;
-  border-radius: 50%;
-  background: var(--surface-soft);
-  color: var(--muted);
+  margin-top: 1px;
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-xs);
+  color: var(--dim);
   transition:
-    background var(--motion) var(--ease),
-    color var(--motion) var(--ease);
+    background var(--tick) var(--ease),
+    border-color var(--tick) var(--ease),
+    color var(--tick) var(--ease);
 }
 
-.shallows__qa--open .shallows__index {
-  color: var(--accent-safe);
+.log__item--open .log__num {
+  color: var(--red-safe);
 }
 
-.shallows__qa--open .shallows__mark {
-  background: var(--fill);
-  color: #ffffff;
+.log__item--open .log__mark {
+  border-color: var(--red);
+  background: var(--red);
+  color: #070b10;
 }
 
-.shallows__answer {
+.log__answer {
   display: grid;
   grid-template-rows: 0fr;
   overflow: hidden;
-  transition: grid-template-rows var(--motion) var(--ease);
+  transition: grid-template-rows var(--tick) var(--ease);
 }
 
-.shallows__answer--open {
+.log__answer--open {
   grid-template-rows: 1fr;
 }
 
-.shallows__answer p {
+.log__answer p {
   min-height: 0;
-  padding: 0 42px 0 52px;
-  color: var(--muted);
-  font-size: 0.92rem;
+  padding: 0 40px 0 60px;
+  color: var(--dim);
+  font-size: 0.9rem;
   line-height: 1.7;
-  transition: padding var(--motion) var(--ease);
+  transition: padding var(--tick) var(--ease);
 }
 
-.shallows__answer--open p {
-  padding-bottom: 18px;
+.log__answer--open p {
+  padding-bottom: 16px;
 }
 
 @media (max-width: 980px) {
-  .shallows__grid {
+  .log__grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .shallows__aside {
+  .log__index {
     position: static;
   }
 }
 
 @media (max-width: 640px) {
-  .shallows__trigger {
+  .log__trigger {
     grid-template-columns: 28px minmax(0, 1fr) 26px;
     gap: 9px;
-    padding: 14px 0;
+    padding: 13px 0 13px 8px;
   }
 
-  .shallows__answer p {
-    padding-left: 37px;
-    padding-right: 28px;
+  .log__answer p {
+    padding-left: 45px;
+    padding-right: 26px;
   }
 }
 </style>

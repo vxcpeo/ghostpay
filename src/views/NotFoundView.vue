@@ -3,117 +3,117 @@ import Icon from '@/components/Icon.vue'
 </script>
 
 <template>
-  <section class="signal">
-    <div class="signal__inner">
-      <span class="signal__mark">
-        <Icon name="seclura" :size="44" :stroke="1.1" />
-      </span>
-      <p class="signal__code">404 · signal lost</p>
-      <h1 class="signal__title">This page has gone <em>quiet</em>.</h1>
-      <p class="signal__text">
-        The link you followed doesn’t exist — or it was never meant to be found. Either way, nothing
-        here is traceable.
-      </p>
-      <div class="signal__acts">
-        <router-link class="tide-button tide-button--fill" to="/">
-          <Icon name="arrow" :size="15" class="signal__back" />
-          Back to home
-        </router-link>
-        <router-link class="tide-button tide-button--line" to="/#features">Explore features</router-link>
+  <section class="module module--first fault">
+    <div class="module__inner">
+      <div class="fault__inner">
+        <span class="fault__mark">
+          <Icon name="veilary" :size="40" :stroke="1.15" />
+        </span>
+        <samp class="fault__code">404 · signal lost</samp>
+        <h1 class="fault__title">This page has gone <em>quiet</em>.</h1>
+        <p class="fault__text">
+          The link you followed doesn’t exist — or it was never meant to be found. Either way, nothing
+          here is traceable.
+        </p>
+        <div class="fault__acts">
+          <router-link class="cmd" to="/">
+            <Icon name="arrow" :size="15" class="fault__back" />
+            Back to home
+          </router-link>
+          <router-link class="cmd cmd--ghost" to="/#features">Explore features</router-link>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-.signal {
+.fault {
   display: grid;
-  place-items: center;
-  min-height: 86svh;
-  padding-block: clamp(100px, 12vw, 150px) clamp(56px, 8vw, 100px);
-  padding-inline: var(--gutter);
-  overflow-x: clip;
+  align-content: center;
+  min-height: calc(100svh - var(--bar) - 120px);
+  padding-block: clamp(50px, 8vw, 110px);
 }
 
-.signal__inner {
+.fault__inner {
   position: relative;
   display: grid;
   justify-items: start;
-  gap: 0;
-  width: min(100%, 760px);
-  padding: clamp(28px, 4vw, 56px);
-  border-radius: var(--radius-xl);
-  background: rgba(255, 255, 255, 0.68);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
+  max-width: 760px;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-md);
+  background:
+    linear-gradient(180deg, rgba(20, 35, 46, 0.78), rgba(10, 18, 26, 0.96)),
+    var(--deck);
 }
 
-.signal__inner::after {
+.fault__inner::after {
   content: "";
   position: absolute;
-  top: -18%;
-  right: -14%;
-  width: clamp(160px, 24vw, 300px);
-  aspect-ratio: 1;
-  border: 1px dashed rgba(41, 141, 255, 0.34);
-  border-radius: 50%;
-  pointer-events: none;
+  top: -1px;
+  right: -1px;
+  width: 90px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--red));
 }
 
-.signal__mark {
+.fault__mark {
   display: grid;
   place-items: center;
-  width: clamp(76px, 9vw, 104px);
-  height: clamp(76px, 9vw, 104px);
-  margin-bottom: clamp(18px, 2.4vw, 26px);
-  border-radius: 50%;
-  background: var(--surface-alt);
-  color: var(--accent-safe);
+  width: clamp(66px, 8vw, 88px);
+  height: clamp(66px, 8vw, 88px);
+  margin-bottom: clamp(16px, 2.2vw, 24px);
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-sm);
+  background: rgba(255, 59, 48, 0.06);
+  color: var(--red);
 }
 
-.signal__code {
-  color: var(--accent-safe);
-  font-family: var(--font-mono);
+.fault__code {
+  color: var(--red-safe);
+  font-family: var(--mono);
   font-size: 0.64rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
-.signal__title {
-  max-width: 16ch;
-  margin-top: 14px;
-  font-size: clamp(2.5rem, 6vw, 4.6rem);
-  line-height: 0.94;
-  letter-spacing: -0.055em;
+.fault__title {
+  max-width: 17ch;
+  margin-top: 12px;
+  color: var(--ink);
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
 }
 
-.signal__title em {
-  color: var(--accent);
+.fault__title em {
+  color: var(--red);
   font-style: normal;
 }
 
-.signal__text {
-  max-width: 46ch;
-  margin-top: 20px;
-  color: var(--muted);
-  font-size: clamp(0.98rem, 1.2vw, 1.08rem);
+.fault__text {
+  max-width: 50ch;
+  margin-top: 16px;
+  color: var(--dim);
+  font-size: clamp(0.96rem, 1.15vw, 1.06rem);
   line-height: 1.7;
 }
 
-.signal__acts {
+.fault__acts {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: clamp(24px, 3vw, 32px);
+  gap: 9px;
+  margin-top: clamp(22px, 3vw, 30px);
 }
 
-.signal__back {
+.fault__back {
   transform: rotate(180deg);
 }
 
 @media (max-width: 640px) {
-  .signal__acts .tide-button {
+  .fault__acts .cmd {
     flex: 1 1 100%;
   }
 }

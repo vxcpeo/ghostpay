@@ -1,0 +1,596 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-22T00:58:28+08:00",
+  "project": "E:\\workspace\\chuangye\\solana\\ghostpay\\website",
+  "old": {
+    "display": "Seclura",
+    "slug": "seclura",
+    "variants": {
+      "display": "Seclura",
+      "lower": "seclura",
+      "upper": "SECLURA",
+      "title": "Seclura",
+      "kebab": "seclura",
+      "snake": "seclura",
+      "camel": "seclura",
+      "pascal": "Seclura",
+      "compact": "Seclura",
+      "compactLower": "seclura",
+      "first": "Seclura",
+      "firstLower": "seclura",
+      "firstUpper": "SECLURA"
+    },
+    "variantList": [
+      {
+        "value": "Seclura",
+        "kind": "display"
+      },
+      {
+        "value": "seclura",
+        "kind": "lower"
+      },
+      {
+        "value": "SECLURA",
+        "kind": "upper"
+      }
+    ],
+    "domains": [
+      "seclura.xyz"
+    ],
+    "handles": [
+      "seclura"
+    ],
+    "emails": [],
+    "packageNames": [
+      "seclura-website"
+    ],
+    "initials": "",
+    "allowFiles": [],
+    "allowStrings": []
+  },
+  "new": {
+    "display": "Veilary",
+    "slug": "veilary",
+    "handle": "veilary",
+    "domain": "veilary.xyz",
+    "email": "hello@veilary.xyz",
+    "url": "https://veilary.xyz",
+    "note": "Availability is a snapshot; register the domain and X account separately."
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "411d37a1d62a21dc3598f6017b6e85284fc9f76ada9d517915e580d31f635657"
+    },
+    {
+      "path": "README.md",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 10,
+      "counts": {
+        "seclura.xyz": 2,
+        "@seclura": 2,
+        "Seclura": 5,
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "c1a2d6fe6c410d98b825545d19dcbc72e0456132af5d5e9c2b2fd2b45a55cd40"
+    },
+    {
+      "path": "index.html",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 14,
+      "counts": {
+        "seclura.xyz": 4,
+        "Seclura": 10
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "48ebec7861edf86eef75085ae3ebc10f5255df8cf03f73702a61dcc540416003"
+    },
+    {
+      "path": "netlify.toml",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "8731f24515c10ad3d55763e251734b19b4a881f0da0f9913df9e4ef96d3f0b10"
+    },
+    {
+      "path": "package.json",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 3,
+      "counts": {
+        "seclura-website": 1,
+        "seclura.xyz": 1,
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "63a77ebfda9fe0638d021b0aab4c1461092ca156c1b20c0bab1c6be157350b9a"
+    },
+    {
+      "path": "vercel.json",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "31c46802a3b72f432e6d525b4ff6a03474f19ce6fb499681f64f87ca69b8a06a"
+    },
+    {
+      "path": "verify.ps1",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "bbc21a4caa0e7cc1907e1b1c9d49799af3e6a7e85ed89c687f54c64729d51ead"
+    },
+    {
+      "path": "verify.sh",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "e8043c038fc98d2d808e4e55632675075d243e03f5b74ceb5c4d0c36578a435a"
+    },
+    {
+      "path": "vite.config.js",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "cd30850abc9041f3254cf4c0c809b634905acd9ab2ff209a0e918fc42b8b58d5"
+    },
+    {
+      "path": "docs/environment-notes.md",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "1e4e8321dd837a6744fa90758c9a20fdc6f1585ac2e28490182b49d1fe00abe2"
+    },
+    {
+      "path": "docs/index.md",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "4a4e4ba58ba9535dbc7972af92da6f8c40e305da16517e0f97fb5a356355d59a"
+    },
+    {
+      "path": "docs/original-site-analysis.md",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 8,
+      "hashBefore": "496b853dd388f5e6d5e86ae054023544dcb0b5c840e24ebc33c9c522f3c69fc6"
+    },
+    {
+      "path": "docs/research-brief.md",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "36edda667ebca1007004213d5f74be5b5d6652bed0d4e7f887a060d1365f4727"
+    },
+    {
+      "path": "docs/status.md",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "7bfa70be8617155c17593e242d4948a9af17234a008814ea8f28a40166303239"
+    },
+    {
+      "path": "docs/capture/README.md",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "889d83b5235e4b31b05f7ebe9319d5eaadf44f60b47d0ba329caaceb50af7629"
+    },
+    {
+      "path": "public/robots.txt",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 2,
+      "counts": {
+        "seclura.xyz": 1,
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "2434a7bf9b3402f1dfee3e5c581c74e9dce9a2d67de805b85538ac9e3078a681"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "seclura.xyz": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "b66966a85a7f79722fc0e7509073d4e44cb6bece51e4c2be665f9a99352cb33a"
+    },
+    {
+      "path": "public/assets/README.md",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "bff00318cf6f540c2c629e8595185a9c9414fe72c7c57be7177d35d8de9c5642"
+    },
+    {
+      "path": "public/assets/README.txt",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "d8545cf4ad1bc0ae60abf724819e93e07a358e77f7e56fbe7ad876eb33d63ae3"
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 4,
+      "counts": {
+        "seclura.xyz": 3,
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "16c97d3d8f477f5c246f4b5c3608e07c277d746f7ed0858163998c5facf9a0a2"
+    },
+    {
+      "path": "scripts/dns.mjs",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 4,
+      "counts": {
+        "seclura.xyz": 2,
+        "Seclura": 1,
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "220c6e08f3574c82a5215fd07df1f2076f74fdd1400be037ebf032b371e61c7f"
+    },
+    {
+      "path": "scripts/validate.mjs",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 8,
+      "counts": {
+        "seclura\\.xyz": 1,
+        "seclura.xyz": 1,
+        "Seclura": 5,
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "18e08ada4ad2e75f939bec5004f738a82843d86eae0f674278ef981bb5533582"
+    },
+    {
+      "path": "src/App.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "a1af602824e01fb73802cda55dc602e59e5c37eba428208417472ef4a571025c"
+    },
+    {
+      "path": "src/main.js",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "69e479259a41afcd3c0b8f40af62dbe8858fea4f6042f941b6f639858130ade0"
+    },
+    {
+      "path": "src/components/Icon.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "8271bd6ffee89f58b0d5d4af4edc0f21a5a783659021e25294fd2f58921fb386"
+    },
+    {
+      "path": "src/components/TideDock.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 2,
+      "counts": {
+        "Seclura": 1,
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "07bfc7be5716099a08a69ea9c5400a6a71d0f56aaff5c9d6efe342fc03a70d35"
+    },
+    {
+      "path": "src/components/TideFooter.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 2,
+      "counts": {
+        "Seclura": 1,
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "54306d33a8037b8ead7ae9c86de39a81702d90b051fa95478849d31421d5c536"
+    },
+    {
+      "path": "src/components/sections/AboutSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "a92e20ddf0420f4ca2a67142cb59efe2251ea818ff8e8d53d11a7078e924e023"
+    },
+    {
+      "path": "src/components/sections/ComparisonSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 2,
+      "counts": {
+        "Seclura": 2
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "f4784ad93d4fb775bada3e5df10a876ea172b5fe4be26303d7236231a964870c"
+    },
+    {
+      "path": "src/components/sections/FaqSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "45a0e72efa47d87fb9e6dda464546694d99060f8f4513709bb5b580f8cd93f34"
+    },
+    {
+      "path": "src/components/sections/FeaturesSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "64c4b43817be8358dd8dd10bf8359d8c6639ac3ab12434e918950dbc1ff75dbf"
+    },
+    {
+      "path": "src/components/sections/HeroSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 3,
+      "counts": {
+        "Seclura": 2,
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "8474611faef4e9068b312af89e73ae7ecaaf439ef546815f530b3683268d773a"
+    },
+    {
+      "path": "src/components/sections/HowItWorksSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "439a87edfbef0ba97d524380e10c81eb3b037979c989d8a5d4addbd7ad825a93"
+    },
+    {
+      "path": "src/components/sections/LaunchSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 3,
+      "counts": {
+        "Seclura": 3
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "66882793c839a8e4a7bceba7b09a09777ea7a991d52fa910c8f61cea5481ce90"
+    },
+    {
+      "path": "src/components/sections/RoadmapSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "1d0f9156e91d5fa57039dab2754bbcf9cd17862c9228425dea389c8cf6cc95c9"
+    },
+    {
+      "path": "src/components/sections/TokenomicsSection.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "117eecc22f77caeae78415d1a9c23b70568aa04975b782c92e8501b04f93f787"
+    },
+    {
+      "path": "src/data/site.js",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 22,
+      "counts": {
+        "seclura.xyz": 3,
+        "@seclura": 3,
+        "Seclura": 15,
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "3533e49d58e0224e1d22675e7e7dd10a3abb80e4fef5da6242d0da992dfdea96"
+    },
+    {
+      "path": "src/router/index.js",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 4,
+      "counts": {
+        "Seclura": 4
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "d0cd510d9d90ea7cd2a7277fcc1bc2e1e1ea84dc7fc7d825ec6ed000c904ffe9"
+    },
+    {
+      "path": "src/styles/tide.css",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "Seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "f8ee482a2169c071eb43ddc8567d2b13fa2b3c6810e025efdbcd86c337df11a1"
+    },
+    {
+      "path": "src/views/HomeView.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 0,
+      "counts": {},
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "f550008c66ffebf361f5149814879719a4d43a10055760617e0975bfcf25ba10"
+    },
+    {
+      "path": "src/views/LegalView.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 6,
+      "counts": {
+        "Seclura": 6
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "b9f766b1506d6c98f5e5441e232833d9836589007c57e822ffae3c8924fef2ad"
+    },
+    {
+      "path": "src/views/NotFoundView.vue",
+      "encoding": "utf-8",
+      "bom": false,
+      "replacements": 1,
+      "counts": {
+        "seclura": 1
+      },
+      "unprotectedHits": [],
+      "protectedCount": 0,
+      "hashBefore": "c5ec13586593bbc085ff95abd974a6f14105d5ca13569bb2891bda38db43359c"
+    }
+  ],
+  "renames": [],
+  "assets": [
+    {
+      "source": "public/assets/favicon.svg",
+      "generated": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\generated\\public\\assets\\favicon.svg",
+      "target": "public/assets/favicon.svg",
+      "kind": "favicon"
+    },
+    {
+      "source": "public/assets/og-cover.png",
+      "generated": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\generated\\public\\assets\\og-cover.png",
+      "target": "public/assets/og-cover.png",
+      "kind": "og"
+    },
+    {
+      "source": "public/assets/og-cover.svg",
+      "generated": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\generated\\public\\assets\\og-cover.svg",
+      "target": "public/assets/og-cover.svg",
+      "kind": "og"
+    }
+  ],
+  "protectedHits": [
+    "docs/original-site-analysis.md: 8 protected occurrence(s)"
+  ],
+  "protectedCount": 8,
+  "brandRegistry": {
+    "ok": true,
+    "problems": [],
+    "path": "E:/workspace/chuangye/solana/ghostpay/website/brand.txt",
+    "exists": true,
+    "history": [
+      "GhostPay",
+      "Cifruna",
+      "Nummula",
+      "Seclura"
+    ],
+    "current": "Veilary",
+    "currentCount": 1,
+    "warnings": [],
+    "unknownLines": []
+  },
+  "blocked": false,
+  "blockers": []
+}

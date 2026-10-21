@@ -13,60 +13,61 @@ const facts = [
 </script>
 
 <template>
-  <section id="about" class="scene scene--deep crest">
-    <div class="scene__inner">
-      <div class="scene__head crest__head">
-        <p class="tide-kicker">The mission</p>
-        <h2 class="tide-title">
+  <section id="about" class="module manifest">
+    <div class="module__inner">
+      <div class="module__bar">
+        <p class="kicker">The mission</p>
+      </div>
+
+      <div class="manifest__head">
+        <h2 class="scene-title">
           Financial privacy is not a loophole.
           <em>It is the default.</em>
         </h2>
-        <p class="tide-deck">
+        <p class="deck">
           Every card payment you make is private. Every salary transfer is private. Crypto is the
           only money system where the opposite is true — where your landlord, your employer and your
-          competitors can audit you in real time. Seclura exists to close that gap.
+          competitors can audit you in real time. Veilary exists to close that gap.
         </p>
       </div>
 
-      <blockquote class="crest__creed">“{{ site.description }}”</blockquote>
+      <blockquote class="manifest__creed">“{{ site.description }}”</blockquote>
 
-      <div class="crest__board tide-bento">
-        <article
-          v-for="p in brandPillars"
-          :key="p.title"
-          class="tide-bento__cell tide-bento__cell--deep crest__pillar"
-        >
-          <h3 class="crest__pillar-title">{{ p.title }}</h3>
-          <p class="crest__pillar-text">{{ p.text }}</p>
-        </article>
+      <div class="manifest__grid">
+        <div class="manifest__pillars">
+          <article v-for="p in brandPillars" :key="p.title" class="manifest__pillar">
+            <h3 class="manifest__pillar-title">{{ p.title }}</h3>
+            <p class="manifest__pillar-text">{{ p.text }}</p>
+          </article>
+        </div>
 
-        <div class="tide-bento__cell tide-bento__cell--deep crest__record">
-          <div class="crest__record-head">
+        <div class="manifest__record">
+          <div class="manifest__record-head">
             <span>protocol facts</span>
-            <span class="crest__live">mainnet</span>
+            <span class="manifest__live">mainnet</span>
           </div>
-          <dl class="crest__facts">
-            <div v-for="f in facts" :key="f.k" class="crest__fact">
+          <dl class="manifest__facts">
+            <div v-for="f in facts" :key="f.k" class="manifest__fact">
               <dt>{{ f.k }}</dt>
-              <dd>{{ f.v }}</dd>
+              <dd><code>{{ f.v }}</code></dd>
             </div>
           </dl>
         </div>
 
-        <div class="tide-bento__cell tide-bento__cell--deep crest__stats">
-          <div v-for="s in heroStats" :key="s.label" class="crest__stat">
-            <strong>{{ s.value }}</strong>
+        <div class="manifest__stats">
+          <div v-for="s in heroStats" :key="s.label" class="manifest__stat">
+            <output>{{ s.value }}</output>
             <span>{{ s.label }}</span>
           </div>
         </div>
 
-        <div class="tide-bento__cell tide-bento__cell--deep crest__foot">
-          <div class="crest__audit">
+        <div class="manifest__foot">
+          <div class="manifest__audit">
             <Icon name="shield" :size="16" />
             {{ site.audit }}
           </div>
-          <p class="crest__source">
-            Unverified figures are labelled on this page · confirm everything at the official source
+          <p class="manifest__source">
+            <small>Unverified figures are labelled on this page · confirm everything at the official source</small>
           </p>
         </div>
       </div>
@@ -75,156 +76,184 @@ const facts = [
 </template>
 
 <style scoped>
-.crest {
-  margin-inline: clamp(0px, 2vw, 26px);
-  border-radius: var(--radius-xl);
+.manifest__head {
+  display: grid;
+  gap: clamp(12px, 1.6vw, 18px);
+  max-width: 66ch;
+  margin-bottom: clamp(22px, 3.2vw, 38px);
 }
 
-.crest__head {
-  margin-bottom: clamp(28px, 3.6vw, 46px);
-}
-
-.crest__creed {
-  max-width: 34ch;
-  margin-bottom: clamp(28px, 4vw, 48px);
-  padding-inline-start: clamp(16px, 2.4vw, 28px);
-  border-left: 3px solid var(--accent);
-  color: var(--shade-ink);
-  font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2.7vw, 2.2rem);
-  font-weight: 600;
-  line-height: 1.32;
-  letter-spacing: -0.035em;
+.manifest__creed {
+  max-width: 42ch;
+  margin-bottom: clamp(26px, 3.6vw, 44px);
+  padding-inline-start: clamp(14px, 2.2vw, 24px);
+  border-left: 3px solid var(--red);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: clamp(1.15rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.36;
+  letter-spacing: -0.02em;
   text-wrap: balance;
 }
 
-.crest__pillar {
-  grid-column: span 4;
-}
-
-.crest__record {
-  grid-column: span 7;
-}
-
-.crest__stats {
-  grid-column: span 5;
+.manifest__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 22px 18px;
-  align-content: start;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+  gap: 1px;
+  border: 1px solid var(--edge-2);
+  background: var(--edge);
 }
 
-.crest__foot {
-  grid-column: span 12;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px 32px;
+.manifest__pillars {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  background: var(--deck);
 }
 
-.crest__pillar-title {
-  color: var(--shade-ink);
-  font-size: 1.1rem;
+.manifest__pillar {
+  padding: clamp(18px, 2.4vw, 30px);
+  border-bottom: 1px solid var(--edge);
+}
+
+.manifest__pillar:last-child {
+  border-bottom: 0;
+}
+
+.manifest__pillar-title {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
   line-height: 1.14;
-  letter-spacing: -0.03em;
 }
 
-.crest__pillar-text {
-  margin-top: 10px;
-  color: var(--shade-muted);
+.manifest__pillar-text {
+  margin-top: 8px;
+  color: var(--dim);
   font-size: 0.88rem;
   line-height: 1.64;
 }
 
-.crest__record-head {
+.manifest__record {
+  grid-column: 2;
+  grid-row: 1;
+  padding: clamp(18px, 2.4vw, 28px);
+  background: var(--plate);
+}
+
+.manifest__record-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding-bottom: 11px;
-  border-bottom: 1px solid rgba(169, 198, 221, 0.28);
-  color: var(--shade-muted);
-  font-family: var(--font-mono);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--edge-2);
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.crest__live {
-  color: var(--shade-link);
+.manifest__live {
+  color: var(--mint);
 }
 
-.crest__facts {
+.manifest__facts {
   display: grid;
 }
 
-.crest__fact {
+.manifest__fact {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 10px;
-  padding-block: 9px;
-  border-bottom: 1px solid rgba(169, 198, 221, 0.16);
+  padding-block: 8px;
+  border-bottom: 1px dashed var(--edge);
 }
 
-.crest__fact:last-child {
+.manifest__fact:last-child {
   border-bottom: 0;
 }
 
-.crest__fact dt {
-  color: var(--shade-muted);
-  font-size: 0.84rem;
+.manifest__fact dt {
+  color: var(--faint);
+  font-size: 0.82rem;
 }
 
-.crest__fact dd {
-  color: var(--shade-ink);
-  font-size: 0.86rem;
+.manifest__fact dd {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.8rem;
   line-height: 1.4;
   text-align: right;
 }
 
-.crest__stat strong {
-  display: block;
-  color: var(--shade-link);
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.4vw, 2rem);
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.045em;
+.manifest__stats {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--edge);
 }
 
-.crest__stat span {
+.manifest__stat {
+  padding: clamp(14px, 1.8vw, 20px);
+  background: var(--deck);
+}
+
+.manifest__stat output {
+  display: block;
+  color: var(--red);
+  font-family: var(--mono);
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.manifest__stat span {
   display: block;
   margin-top: 6px;
-  color: var(--shade-muted);
-  font-family: var(--font-mono);
-  font-size: 0.56rem;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 0.55rem;
   line-height: 1.45;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.crest__audit {
+.manifest__foot {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px 30px;
+  padding: clamp(16px, 2.2vw, 24px);
+  border-top: 1px solid var(--edge-2);
+  background: var(--plate);
+}
+
+.manifest__audit {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  max-width: 44ch;
-  color: var(--shade-ink);
+  gap: 9px;
+  max-width: 46ch;
+  color: var(--ink);
   font-size: 0.86rem;
   line-height: 1.52;
 }
 
-.crest__audit svg {
+.manifest__audit svg {
   flex: none;
   margin-top: 2px;
-  color: var(--shade-link);
+  color: var(--red-safe);
 }
 
-.crest__source {
-  max-width: 40ch;
-  color: var(--shade-muted);
-  font-family: var(--font-mono);
+.manifest__source {
+  max-width: 44ch;
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.58rem;
   line-height: 1.62;
   letter-spacing: 0.04em;
@@ -232,17 +261,26 @@ const facts = [
 }
 
 @media (max-width: 980px) {
-  .crest__pillar,
-  .crest__record,
-  .crest__stats,
-  .crest__foot {
-    grid-column: span 12;
+  .manifest__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .manifest__pillars,
+  .manifest__record,
+  .manifest__stats,
+  .manifest__foot {
+    grid-column: 1;
+    grid-row: auto;
   }
 }
 
 @media (max-width: 640px) {
-  .crest__creed {
+  .manifest__creed {
     max-width: none;
+  }
+
+  .manifest__stats {
+    grid-template-columns: 1fr 1fr;
   }
 }
 </style>

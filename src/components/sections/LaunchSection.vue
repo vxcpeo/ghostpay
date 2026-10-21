@@ -23,28 +23,31 @@ function reset() {
 </script>
 
 <template>
-  <section id="launch" class="scene scene--deep inlet">
-    <div class="scene__inner">
-      <div class="inlet__grid">
-        <div class="inlet__copy">
-          <p class="tide-kicker">Private beta</p>
-          <h2 class="inlet__title">
+  <section id="launch" class="module gate">
+    <div class="module__inner">
+      <div class="module__bar">
+        <p class="kicker">Private beta</p>
+      </div>
+
+      <div class="gate__grid">
+        <div class="gate__copy">
+          <h2 class="gate__title">
             Go invisible in
             <em>under a minute</em>
           </h2>
-          <p class="inlet__deck">
-            The Seclura app is open to everyone — connect a wallet and start sending privately. Leave
+          <p class="gate__deck">
+            The Veilary app is open to everyone — connect a wallet and start sending privately. Leave
             your email if you want the mobile build, merchant SDK and payroll console the day they
             ship.
           </p>
 
-          <div class="inlet__acts">
-            <a class="tide-button tide-button--light" :href="site.url" target="_blank" rel="noopener">
+          <div class="gate__acts">
+            <a class="cmd" :href="site.url" target="_blank" rel="noopener">
               <Icon name="wallet" :size="16" />
-              Launch Seclura
+              Launch Veilary
             </a>
             <a
-              class="tide-button tide-button--outline"
+              class="cmd cmd--ghost"
               href="https://ghostwareos.gitbook.io/docs/core-modules/ghostpay"
               target="_blank"
               rel="noopener"
@@ -54,23 +57,23 @@ function reset() {
             </a>
           </div>
 
-          <ul class="inlet__ticks">
+          <ul class="gate__ticks">
             <li><Icon name="check" :size="13" /> No sign-up, no KYC</li>
             <li><Icon name="check" :size="13" /> Non-custodial from day one</li>
             <li><Icon name="check" :size="13" /> Stealth addresses on every payment</li>
           </ul>
         </div>
 
-        <div class="inlet__card">
+        <div class="gate__shell">
           <template v-if="state !== 'done'">
-            <h3 class="inlet__form-title">Early access list</h3>
-            <p class="inlet__form-sub">Product drops, audits and privacy-stack news. No spam, ever.</p>
-            <form class="inlet__form" novalidate @submit.prevent="submit">
-              <label class="inlet__label" for="email">email</label>
+            <h3 class="gate__form-title">Early access list</h3>
+            <p class="gate__form-sub">Product drops, audits and privacy-stack news. No spam, ever.</p>
+            <form class="gate__form" novalidate @submit.prevent="submit">
+              <label class="gate__label" for="email">email</label>
               <input
                 id="email"
                 v-model="email"
-                class="inlet__field"
+                class="gate__field"
                 type="email"
                 inputmode="email"
                 autocomplete="email"
@@ -78,26 +81,26 @@ function reset() {
                 :aria-invalid="state === 'error'"
                 @input="reset"
               />
-              <p v-if="state === 'error'" class="inlet__error">Enter a valid email address.</p>
-              <button class="tide-button tide-button--fill inlet__submit" type="submit">
+              <p v-if="state === 'error'" class="gate__error">Enter a valid email address.</p>
+              <button class="cmd cmd--block gate__submit" type="submit">
                 <Icon name="send" :size="15" />
                 Join the list
               </button>
-              <p class="inlet__fine">
+              <p class="gate__fine">
                 We store nothing but your address, and you can ask us to delete it at any time.
               </p>
             </form>
           </template>
 
-          <div v-else class="inlet__receipt">
-            <span class="inlet__receipt-mark">
+          <div v-else class="gate__receipt">
+            <span class="gate__receipt-mark">
               <Icon name="check" :size="22" />
             </span>
-            <h3 class="inlet__form-title">You’re on the list</h3>
-            <p class="inlet__form-sub">
-              Thanks — you’ll hear from us when the next Seclura module goes live.
+            <h3 class="gate__form-title">You’re on the list</h3>
+            <p class="gate__form-sub">
+              Thanks — you’ll hear from us when the next Veilary module goes live.
             </p>
-            <button class="tide-button tide-button--line tide-button--small" type="button" @click="reset">
+            <button class="cmd cmd--ghost cmd--sm" type="button" @click="reset">
               Add another address
             </button>
           </div>
@@ -108,201 +111,185 @@ function reset() {
 </template>
 
 <style scoped>
-.inlet {
-  overflow: hidden;
-  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-}
-
-.inlet::before {
-  content: "";
-  position: absolute;
-  top: -32%;
-  right: -12%;
-  width: min(58vw, 720px);
-  aspect-ratio: 1;
-  border: 1px solid rgba(124, 192, 255, 0.24);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.inlet::after {
-  content: "";
-  position: absolute;
-  top: -18%;
-  right: -2%;
-  width: min(40vw, 500px);
-  aspect-ratio: 1;
-  border: 1px solid rgba(124, 192, 255, 0.16);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.inlet__grid {
-  position: relative;
+.gate__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.82fr);
-  gap: clamp(28px, 5vw, 76px);
+  grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.82fr);
+  gap: clamp(26px, 4.6vw, 68px);
   align-items: center;
 }
 
-.inlet__copy {
+.gate__copy {
   display: grid;
-  gap: clamp(14px, 1.8vw, 20px);
+  gap: clamp(13px, 1.7vw, 19px);
 }
 
-.inlet__title {
+.gate__title {
   max-width: 17ch;
-  color: var(--shade-ink);
-  font-size: clamp(2.4rem, 4.8vw, 4.3rem);
-  line-height: 0.94;
-  letter-spacing: -0.05em;
+  font-size: clamp(2.1rem, 4.4vw, 3.9rem);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
 }
 
-.inlet__title em {
+.gate__title em {
   display: block;
-  color: var(--shade-link);
+  color: var(--red);
   font-style: normal;
 }
 
-.inlet__deck {
-  max-width: 50ch;
-  color: var(--shade-muted);
-  font-size: 1rem;
+.gate__deck {
+  max-width: 52ch;
+  color: var(--dim);
+  font-size: 0.98rem;
   line-height: 1.7;
 }
 
-.inlet__acts {
+.gate__acts {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 6px;
-}
-
-.inlet__ticks {
-  display: grid;
   gap: 9px;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
-.inlet__ticks li {
+.gate__ticks {
+  display: grid;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.gate__ticks li {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  color: var(--shade-muted);
+  color: var(--dim);
   font-size: 0.84rem;
   line-height: 1.5;
 }
 
-.inlet__ticks svg {
+.gate__ticks svg {
   flex: none;
   margin-top: 3px;
-  color: var(--shade-link);
+  color: var(--ok);
 }
 
-.inlet__card {
-  padding: clamp(20px, 2.6vw, 34px);
-  border-radius: var(--radius-lg);
-  background: #ffffff;
-  color: var(--ink);
-  box-shadow: var(--shadow-lift);
+.gate__shell {
+  position: relative;
+  padding: clamp(18px, 2.4vw, 30px);
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-md);
+  background:
+    linear-gradient(180deg, rgba(20, 35, 46, 0.82), rgba(10, 18, 26, 0.97)),
+    var(--deck);
+  box-shadow: 0 0 70px rgba(255, 59, 48, 0.08);
 }
 
-.inlet__form-title {
-  font-size: clamp(1.15rem, 1.5vw, 1.32rem);
-  line-height: 1.1;
+.gate__shell::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 46px;
+  height: 2px;
+  background: var(--red);
 }
 
-.inlet__form-sub {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 0.85rem;
+.gate__form-title {
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  line-height: 1.12;
+}
+
+.gate__form-sub {
+  margin-top: 7px;
+  color: var(--dim);
+  font-size: 0.84rem;
   line-height: 1.58;
 }
 
-.inlet__form {
+.gate__form {
   display: flex;
   flex-direction: column;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
-.inlet__label {
-  color: var(--accent-safe);
-  font-family: var(--font-mono);
+.gate__label {
+  color: var(--red-safe);
+  font-family: var(--mono);
   font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.inlet__field {
+.gate__field {
   width: 100%;
-  margin-top: 7px;
-  padding: 12px 14px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-sm);
-  background: var(--surface-soft);
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
+  margin-top: 6px;
+  padding: 11px 12px;
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-sm);
+  background: rgba(4, 7, 11, 0.72);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.86rem;
   transition:
-    border-color var(--motion) var(--ease),
-    background var(--motion) var(--ease);
+    border-color var(--tick) var(--ease),
+    background var(--tick) var(--ease);
 }
 
-.inlet__field::placeholder {
-  color: var(--muted);
+.gate__field::placeholder {
+  color: var(--faint);
 }
 
-.inlet__field:focus {
-  border-color: var(--accent);
-  background: #ffffff;
+.gate__field:focus {
+  border-color: var(--mint);
+  background: rgba(4, 7, 11, 0.95);
+  outline: none;
 }
 
-.inlet__error {
-  margin-top: 8px;
-  color: var(--danger);
+.gate__error {
+  margin-top: 7px;
+  color: var(--bad);
   font-size: 0.8rem;
 }
 
-.inlet__submit {
-  margin-top: 16px;
+.gate__submit {
+  margin-top: 14px;
 }
 
-.inlet__fine {
-  margin-top: 11px;
-  color: var(--muted);
+.gate__fine {
+  margin-top: 10px;
+  color: var(--faint);
   font-size: 0.72rem;
   line-height: 1.58;
 }
 
-.inlet__receipt {
+.gate__receipt {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.inlet__receipt-mark {
+.gate__receipt-mark {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 16px;
-  border-radius: 50%;
-  background: var(--success-wash);
-  color: var(--success);
+  width: 44px;
+  height: 44px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(92, 225, 160, 0.35);
+  border-radius: var(--r-sm);
+  color: var(--ok);
 }
 
-.inlet__receipt .tide-button {
-  margin-top: 18px;
+.gate__receipt .cmd {
+  margin-top: 16px;
 }
 
 @media (max-width: 980px) {
-  .inlet__grid {
+  .gate__grid {
     grid-template-columns: minmax(0, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .inlet__acts .tide-button {
+  .gate__acts .cmd {
     flex: 1 1 100%;
   }
 }

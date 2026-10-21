@@ -1,96 +1,93 @@
-# Reskin report — Seclura website (Tidal Sui / Gallery Scroll)
+# Reskin report — Veilary website + X kit (Abyss Liquidity / Terminal Console)
 
-Generated: 2026-10-21 · Project: `seclura-website` · Framework: Vue 3.5 + Vite 6 + vue-router 4
-(SPA, hash history) · Target: `website/`
+Generated: 2026-10-22 · Project: `veilary-website` · Vue 3.5 + Vite 6 + vue-router 4 (SPA, hash
+history) · Scope: `website/` and the X / Twitter kit in `twitter/`
 
-> The UI was rebuilt around **Tidal Sui** / **Gallery Scroll**; the original **ticker-stage**
+> The UI was rebuilt around **Abyss Liquidity** / **Terminal Console**; the original **bento-canvas**
 > shell and palette were removed while the content contract stayed byte-for-byte intact.
 
 ## 1. Direction
 
 | Item | Value |
 |---|---|
-| Art direction | **Tidal Sui** (`sui-tidal`, clean-fintech) |
-| Reference DNA | [sui.io](https://sui.io) — live sampled (4110 ms), palette/texture/type mood only |
-| Skeleton | **Gallery Scroll** (`gallery-scroll`, spatial) — implemented; classifier label differs (see §2) |
-| Original detected | `ticker-stage` / `linear`; the rendered baseline was a *Split Stage* shell |
-| New accent | `#298dff` — **83.88 ΔE** from `#0000ff` (minimum 30) |
-| Ground / surfaces | white `#ffffff` · aqua `#e8f3ff` · soft `#f4f9ff` · deep water `#06182a` |
-| Type | Segoe UI Variable Display / Segoe UI (display), Segoe UI (body), Cascadia Mono (micro) |
-| Motion | 260 ms `cubic-bezier(.22,1,.36,1)`, reduced-motion guard |
-| Screenshots | [baseline home](baseline/home-desktop.png) → [current home](current/home-desktop.png) · [side by side](current/compare-home-top.png) |
+| Art direction | **Abyss Liquidity** (`aave-abyss`, dark-technical) |
+| Reference DNA | [aave.com](https://aave.com) — live sampled (3032 ms); palette/texture/type mood only, no assets or copy |
+| Skeleton | **Terminal Console** (`terminal-console`, linear) — classifier confirmed |
+| Original detected | `bento-canvas` / `spatial`; the rendered baseline was the Tidal Sui site |
+| New accent | `#ff3b30` — **130.98 ΔE** from `#298dff` (minimum 30) |
+| Ground / surfaces | `#04070b` void · `#0a121a` deck · `#0f1b25` plate · `#14232e` raised data |
+| Type | Cascadia Mono / Consolas for display, labels and commands; Segoe UI for body |
+| Motion | 180–240 ms `cubic-bezier(.2,.8,.2,1)`, reduced-motion guard |
+| Screenshots | [baseline home](baseline/home-desktop.png) → [current home](current/home-desktop.png) · [current privacy](current/privacy-desktop.png) |
 
-Live sampling reached 4 of 10 blockchain references (sui.io, base.org, polygon.technology,
-cosmos.network); the deterministic selector chose Tidal Sui from the full candidate set. No logo,
-image, copy or code was taken from any reference — only palette, shape grammar, type mood, density
-and motion. Raw selector output: [STYLE.md](STYLE.md).
+Live sampling reached 9 of 10 blockchain references; the deterministic selector chose Abyss
+Liquidity from the full candidate set. Raw selector output: [STYLE.md](STYLE.md).
+
+The selector's live-sample anchor was `#ff0000`; the implementation uses `#ff3b30` for fills and
+large display, and `#ff9b91` for small accent text on dark plates. Same red family, adjusted for
+contrast: `#ff0000` as small text is borderline on the deck, while `#ff9b91` measures ≥ 7:1 and the
+verified accent distance is still 130.98 ΔE.
 
 ## 2. Skeleton change (not a reskin of the old shell)
 
-The baseline was a **Split Stage**: a 41/59 grid with a pinned left rail (cobalt wordmark, numbered
-vertical index, full-width Launch button), a white scrolling stage of hairline-separated sections, a
-dark full-width closing band, and a 3 px cobalt progress meter. Navigation lived in the rail; the
-first viewport was a two-column hero with a transmit-panel + 2×2 stats board.
+The baseline was Tidal Sui: a white-water ground, a floating pill dock at the bottom centre, framed
+scene panels, a bento vault, horizontal snap rails and rounded aqua slabs.
 
-The new shell is a **Gallery Scroll** built from framed scenes:
+The new shell is a **terminal console**:
 
-- **No persistent side rail and no top bar.** Navigation is a single floating pill **dock** at the
-  bottom centre (brand lockup, six section links with dot markers, Whitepaper, two icon-only legal
-  shortcuts, filled Launch App) plus a **focused index sheet** on mobile.
-- **A sequence of framed scenes** rather than a continuous content well: a full-height white-water
-  opening, a horizontal snap rail of feature specimens, a four-move mechanics ladder beside a pale
-  readout slab, a frameless tide table, a **bento** vault mosaic, a horizontal roadmap rail, a
-  deep-water mission slab, a two-column FAQ wall, and a deep-water closing scene with the form.
-- **Light “shore” footer** (aqua, rounded top, brand crest, three horizontal link index rows), not the
-  old near-black closing band.
-- **Decorative vertical dot index** on the right edge and a floating Back-to-top control.
-- **Sky/water surfaces**: white ground, pale aqua slabs, soft caustic gradients, 36–52 px radii, no
-  hairline box grid, one saturated accent (`#298dff` fills / large type, `#0b64cc` small text).
+- **Fixed 52 px status bar at the top** whose route names read as monospace commands, with two legal
+  glyphs and a red `Launch App` block; on mobile the rail collapses into a command palette
+  (`aria-expanded` + `aria-controls`, Escape closes it). There is no bottom dock and no logo block.
+- **Boot console** instead of a marketing hero: a left command line (status chip, H1, lede, actions)
+  and a right `veilary://send` transaction pane (From / To / Amount / HPKE seal / send key), then a
+  CA readout, four stat cells, three notes and a relay strip.
+- **Eight module consoles**, each with a hairline bar and a three-track grid (index gutter / data body
+  / readout): a ruled feature registry, a four-command process list with a sticky trace, a
+  definition-list comparison ledger, a data console with distribution meters, a four-phase process
+  ledger, a mission manifest, an accordion log, and a closing gate console with the form.
+- **Legal console**: numbered opening, a reading wall framed by a tick rail and a dot-matrix meta rail.
+- **Console colophon** instead of a light shore footer: brand, blurb, social glyphs, three index rows,
+  risk notice, © line and legal links.
+- **Flat data surfaces**: 1 px hairlines, 2–14 px radii, no soft shadows or caustics, red as the only
+  saturated signal, magenta for HPKE data and mint for status.
 
-DOM landmark order changed from `main → nav → footer` to `main → footer → nav` (the dock is the only
-`nav`; there is no `header` or `aside` anywhere). Measured divergence in [verification.json](verification.json):
+Measured divergence (`verification.json`):
 
 | Route | DOM fingerprint similarity | Landmark similarity | CSS class overlap |
 |---|---:|---:|---:|
-| `/` | 0.306 (max 0.50) | 0.667 (max 0.68) | 0.000 (max 0.10) |
-| `/privacy` | 0.338 | 0.667 | 0.019 |
-| `/terms` | 0.338 | 0.667 | 0.019 |
+| `/` | 0.480 (max 0.50) | 0.500 (max 0.68) | 0.000 (max 0.10) |
+| `/privacy` | 0.382 | 0.500 | 0.018 |
+| `/terms` | 0.382 | 0.500 | 0.018 |
 
-### Classifier note
+The 0.018 class overlap is Vue Router's own `router-link-active` / `router-link-exact-active`
+classes in the footer plus the dynamic `row.legacy` / `row.ours` expressions — the authored class
+set is disjoint from the baseline.
 
-The selector asked for `gallery-scroll`, and that is the grammar implemented (full-height scenes,
-snap rails, floating dock, dot index, no persistent chrome). The inventory's regex classifier instead
-reports **`bento-canvas` / spatial**:
+### Skeleton evidence
 
-- the frozen binding `{{ site.ticker }}` (6 occurrences, byte-locked by the contract) makes the
-  `ticker` trait true, and `ticker` outranks `gallery` in the classifier's decision tree, so it can
-  never label this content `gallery-scroll`;
-- the scene mosaics genuinely use a **bento** composition (`.tide-bento`, varied 4/7/5-column spans),
-  which is the earlier trait the classifier detects.
-
-Both the id and the family therefore differ from `ticker-stage` / `linear`, and the gate is satisfied
-by real structure (landmarks, DOM depth, navigation placement), not by relabelling. The full trait set
-is recorded in [verification.json](verification.json): `bento: true`, `gallery: true`,
-`ticker: true`, `sidebar: false`, `topbar: false`.
+The classifier reports `terminal-console` / `linear` with `terminal: true, bento: false,
+gallery: false`; the baseline was `bento-canvas` / `spatial`. The old `tide.css`, `TideDock.vue`
+and `TideFooter.vue` were moved out of the project (see §6), so no stale `bento`/`gallery` selectors
+can influence the source scan.
 
 ## 3. Before / after
 
-| View | Before | After | Side by side |
-|---|---|---|---|
-| Home desktop | [baseline](baseline/home-desktop.png) | [current](current/home-desktop.png) | [top 900 px](current/compare-home-top.png) |
-| Privacy desktop | [baseline](baseline/privacy-desktop.png) | [current](current/privacy-desktop.png) | [top 900 px](current/compare-privacy-top.png) |
-| Home mobile | [baseline](baseline/home-mobile.png) | [current](current/home-mobile.png) | [390 × 844](current/compare-home-mobile.png) |
-| Home scenes | — | [opening](current/home-0.png) · [modules](current/home-900.png) · [mechanics](current/home-1900.png) · [why](current/home-3000.png) · [vault](current/home-4200.png) · [roadmap](current/home-5400.png) · [mission](current/home-6600.png) · [FAQ](current/home-7800.png) · [closing](current/home-8900.png) | — |
-| Privacy | — | [opening](current/privacy-0.png) · [reading wall](current/privacy-700.png) | — |
-| Terms | — | [opening](current/terms-0.png) | — |
-| 404 | — | [current](current/notfound-0.png) | — |
-| Social card | — | [og-cover.png](../public/assets/og-cover.png) | — |
+| View | Before | After |
+|---|---|---|
+| Home desktop | [baseline](baseline/home-desktop.png) | [current](current/home-desktop.png) |
+| Privacy desktop | [baseline](baseline/privacy-desktop.png) | [current](current/privacy-desktop.png) |
+| Terms desktop | [baseline](baseline/terms-desktop.png) | [current](current/terms-desktop.png) |
+| Home mobile | [baseline](baseline/home-mobile.png) | [current](current/home-mobile.png) |
+| Privacy mobile | [baseline](baseline/privacy-mobile.png) | [current](current/privacy-mobile.png) |
+| Home slices | — | [boot](current/review/home2-0.png) · [registry](current/review/home2-900.png) · [ledger](current/review/home2-2900.png) · [data](current/review/home2-3900.png) · [phases](current/review/home2-4900.png) · [manifest](current/review/home2-5900.png) · [log](current/review/home2-6900.png) · [gate](current/review/home2-7900.png) · [colophon](current/review/home2-8900.png) |
+| X kit | archived S-mark kit | [logo](../twitter/logo.png) · [banner](../twitter/banner.png) · [tweet card](../twitter/tweet-card.png) |
 
-Phase-4 visual review: the two screenshots share no layout signature. Navigation moved from a pinned
-left rail to a bottom dock, the first viewport from a split rail/stage to a centred scene, the palette
-from cobalt `#0000ff` on blueprint grey to `#298dff` on white water, and the footer from near-black to
-pale aqua. The old cobalt, the rail silhouette, the numbered vertical index and the hairline section
-stack are all absent.
+[Side-by-side baseline vs current (top 900 px)](current/review/compare-baseline-current.png)
+
+Phase-4 visual review: the two designs share no layout signature. Navigation moved from a floating
+bottom dock to a fixed top status bar, the first viewport from a split hero + stats board to a
+command line + transaction console, the ground from white water to black, the accent from cobalt to
+red, and the texture from rounded aqua slabs to ruled ledger rows.
 
 ## 4. Verification verdict
 
@@ -100,133 +97,126 @@ replaced, usability clean). Machine evidence: [VERIFICATION.md](VERIFICATION.md)
 
 | Gate | Result |
 |---|---|
-| Production build (Vite 6) | **PASS** — 0 errors · `dist/` 3.96 kB HTML (1.45 kB gzip), 46.40 kB CSS (8.80 kB gzip), 146.38 kB JS (55.52 kB gzip) + legal/404 chunks |
-| Source content contract | **PASS** — hash `c2aacd4a908a…`, **byte-for-byte identical** to the frozen baseline; 0 removals, 0 count changes, 0 additive warnings |
-| Rendered visible words | **PASS** — exactly 656 / 230 / 205 unique words (1,626 / 358 / 363 tokens), identical multisets |
-| Rendered attributes & forms | **PASS** — titles, placeholders, icons, links and the `input[type=email]` field unchanged |
+| Production build (Vite 6) | **PASS** — 0 errors |
+| Source content contract | **PASS** — hash `c781e8f4d315…`, byte-for-byte identical to the frozen baseline; 0 removals, 0 count changes, 0 additive warnings |
+| Rendered visible words | **PASS** — exactly 656 / 230 / 205 unique words (identical multisets) |
+| Rendered attributes & forms | **PASS** — titles, placeholders, links and the `input[type=email]` field unchanged |
 | Routes | **PASS** — all three HTTP 200, 0 console or page errors |
-| DOM fingerprint similarity | **PASS** — 0.306 / 0.338 / 0.338 |
-| Landmark sequence similarity | **PASS** — 0.667 on every route (`main → footer → nav` vs `main → nav → footer`) |
-| CSS class reuse | **PASS** — 0.000 / 0.019 / 0.019 (the 0.019 is Vue Router’s own `router-link-active` classes in the footer, present in both builds) |
-| Accent distance | **PASS** — 83.88 ΔE (`#0000ff` → `#298dff`) |
-| Contrast | **PASS** — 0 failures across 295 / 47 / 49 text runs |
-| Axe WCAG 2.x serious/critical | **PASS** — 0 serious and 0 moderate on all routes |
-| Mobile overflow at 390×844 | **PASS** — no horizontal scroll; width sweep 320–1280 px also clean |
-| Mobile navigation | **PASS** — `/privacy` + `/terms` shortcuts visible, index sheet opens with six labels, Escape closes it |
-| Keyboard focus visibility | **PASS** — 8/8 sampled controls show a visible ring |
+| DOM fingerprint similarity | **PASS** — 0.480 / 0.382 / 0.382 |
+| Landmark sequence similarity | **PASS** — 0.500 (`header → nav → main → footer` vs `main → footer → nav`) |
+| CSS class reuse | **PASS** — 0.000 / 0.018 / 0.018 |
+| Accent distance | **PASS** — 130.98 ΔE (`#298dff` → `#ff3b30`) |
+| Contrast | **PASS** — 0 failures across 296 / 49 / 51 text runs |
+| Axe WCAG 2.x serious/critical | **PASS** — 0 serious, 0 critical on all routes |
+| Mobile overflow at 390×844 | **PASS** — no horizontal scroll; 1440 and 390 both `scrollWidth === clientWidth` |
+| Mobile navigation | **PASS** — rail hidden, legal glyphs visible, palette opens with 6 commands, Escape closes it |
+| Keyboard focus visibility | **PASS** — mint 2 px rings on all sampled controls |
 | Labels / accessible names / alt | **PASS** — 0 issues (no `<img>` on the site) |
-| Static validator (`npm run validate`) | **PASS** — 17 checks, 0 failures (retargeted to the dock + tide breakpoints) |
-| Interaction smoke test | **PASS** — 24/24 checks, 0 console errors ([interaction-checks.json](current/interaction-checks.json)) |
+| Static validator (`npm run validate`) | **PASS** — 17 checks, 0 failures (retargeted to `SysBar` + console scale) |
+| Interaction smoke test | **PASS** — 27/27 checks, 0 console errors ([interaction-checks.json](current/interaction-checks.json)) |
 
-Fifteen non-blocking warnings remain: the two legal icon-shortcuts and the two scroll rails add
-accessibility-only `aria-label`s; their `/privacy` + `/terms` targets are now visible in the dock at
-desktop; and the baseline capture happened to catch the Back-to-top control while it was still
-visible (it is scroll-gated at 900 px). None of these are visible copy.
+One non-blocking warning was eliminated during the loop by restoring the baseline
+`aria-label="Roadmap"` on the phase list; the final check run is clean.
 
 ## 5. Accessibility and responsive result
 
-- One `h1` per route, logical `h2`/`h3`/`h4` order, landmarks `main` → `contentinfo` → `navigation`.
-- Icon-only controls (legal shortcuts, Back to top, index toggle) all carry accessible names; the
-  toggle keeps `aria-expanded` + `aria-controls`; Escape closes the index sheet.
-- Both horizontal rails are focusable scroll regions (`tabindex="0"`, `role="group"`, labelled), so
-  keyboard users can arrow-scroll them; they snap and never widen the document.
-- Focus: global 2 px `#0b64cc` ring with 3 px offset; white ring inside deep-water scenes.
-- Contrast verified, not assumed: body `#081b2b` on white 17.5:1; muted `#546a7d` 5.6:1 on white and
-  5.0:1 on aqua; small accent text `#0b64cc` 5.7:1 on white / 5.0:1 on aqua; large accent display
-  `#298dff` 3.3:1 on white (≥3:1 large-text requirement); deep-water text `#eaf4ff`/`#a9c6dd`/`#7cc0ff`
-  all ≥9:1.
-- Mobile is a genuine linear version: opening scene, single-column rails with snap, stacked bento
-  cells, accordion FAQ, and a compact dock (brand glyph, two legal shortcuts, index toggle, Launch
-  App). Nothing is hidden to avoid layout work.
-- `prefers-reduced-motion` disables smooth scrolling, transitions and animation.
-- No third-party fonts, no tracking, no imagery; route-level code splitting for `/privacy`, `/terms`
+- Landmarks: `header` (banner) → `nav` → `main` → `footer` (contentinfo); one `h1` per route, logical
+  `h2`/`h3`/`h4` order.
+- Every icon-only control (legal glyphs, palette toggle, back-to-top) carries an accessible name; the
+  palette keeps `aria-expanded` + `aria-controls` and closes on Escape.
+- All form fields are labelled (`label for="email"`), the error state uses `aria-invalid`, and the
+  receipt/reset branch is preserved.
+- Focus: mint ring with 3 px offset; contrast verified, not assumed — ink `#eef6fb` on the void is
+  ~18:1, dim `#a3b8c8` ~8:1, red-safe `#ff9b91` ≥ 7:1 on the deck; small red text never uses `#ff3b30`.
+- Mobile is a genuine linear version: status bar, boot console, single-column module consoles,
+  ruled registry, stacked facts and a one-column footer; nothing is hidden to avoid layout work.
+- `prefers-reduced-motion` disables smooth scrolling, transitions and animations.
+- No third-party fonts, no tracking, no images; route-level code splitting for `/privacy`, `/terms`
   and the 404 view.
 
 ## 6. Files changed
 
 **Added**
 
-- `src/styles/tide.css` — Tidal Sui tokens, reset, type, primitives, scenes, bento, rails, shell.
-- `src/components/TideDock.vue` — floating dock (brand, index, Whitepaper, legal shortcuts, CTA,
-  mobile sheet) and the only `nav`.
-- `src/components/TideFooter.vue` — light shore footer (brand crest, socials, three index rows, risk
-  notice, legal base).
+- `src/styles/abyss.css` — Abyss tokens, reset, type, console grammar, status bar, colophon, motion.
+- `src/components/SysBar.vue` — fixed status bar, route commands, legal glyphs, CTA and mobile palette.
+- `src/components/Colophon.vue` — console footer (brand, socials, three index rows, risk notice, © line).
 - `.reskin/` evidence — inventory, style selection, wireframe, baseline/current captures,
-  comparison strips, `verification.json`, this report, and verification-only helpers
-  (`hash-route-server.mjs`, `contract-diff.mjs`, `preview.mjs`, `interaction-check.mjs`,
-  `width-sweep.mjs`, `render-og-cover.mjs`).
+  `contract-diff.mjs`, `hash-route-server.mjs`, `interaction-console.mjs`, `verification.json`, this report.
 
 **Rewritten**
 
-- `src/App.vue` — `tide` shell (`main` → footer → nav), aurora, dot index, Back to top.
-- `src/main.js` — imports `tide.css`; still removes the `no-js` marker.
-- all nine `src/components/sections/*.vue` — new templates and scoped styles around the frozen
-  content blocks (same bindings, handlers, icons, ids).
+- `src/App.vue` — `term` console shell; status bar / main / colophon / back-to-top.
+- `src/main.js` — imports `abyss.css`; still removes the `no-js` marker.
+- `src/components/Icon.vue` — CSS-masked glyphs (`<i class="glyph">` with a data-URI mask) instead of
+  inline `<svg>/<path>`; the icon name set is unchanged.
+- all nine `src/components/sections/*.vue` — new templates and scoped styles around the frozen tokens.
 - `src/views/HomeView.vue`, `LegalView.vue`, `NotFoundView.vue`.
-- `index.html` — theme colour `#E8F3FF`, updated layout comment; meta/JSON-LD untouched.
-- `public/assets/og-cover.svg` + `.png` — regenerated in the tidal palette (PNG rendered from the SVG
-  in headless Chrome so the pair cannot drift).
-- `public/assets/favicon.svg` — new blue gradient mark.
-- `scripts/validate.mjs` — retargeted to `tide.css`, the 1180/980/820/760/640 scale and the
-  dock/toggle pairing; every original check kept.
-- `README.md` — direction, styling row, verification status, validator description.
+- `index.html` — dark `theme-color`, updated layout comment; meta/JSON-LD untouched.
+- `public/assets/favicon.svg`, `og-cover.svg`, `og-cover.png` — console-palette mark and social card;
+  the PNG is rendered from the SVG in headless Chrome at 1200×630.
+- `scripts/validate.mjs` — retargeted to `abyss.css`, the `SysBar` toggle/rail pairing and the
+  1180/980/820/760/640 scale; every original check kept.
+- `README.md` (website + workspace) and `twitter/README.md`, `tweet.md`, `bio.md` — direction, asset
+  sizes, design notes, alt text and verification status.
+- X kit: `twitter/logo.svg`, `src/banner.html`, `src/tweet.html`, `src/logo.html`; `logo.png`,
+  `banner.png`, `tweet-card.png` re-rendered from source.
 
-**Removed**
+**Removed from the project (moved, not deleted)**
 
-- `src/components/BriefRail.vue`
-- `src/components/ClosingBand.vue`
-- `src/styles/blueprint.css`
+- `src/components/TideDock.vue`, `src/components/TideFooter.vue` and `src/styles/tide.css` →
+  `../.reskin-archive/round4-removed/` (plus the pre-reskin favicon/OG copies).
+- The pre-clean reskin attempt and the earlier Tidal evidence → `.reskin-archive/`.
 
-Application logic is untouched: `src/data/site.js`, `src/router/index.js`, all handlers, computed
-values, form semantics and route paths are byte-identical. `App.vue` lost only the old progress-meter
-computation; the scroll listener and `toTop` behavior remain. Vue transition names `page`, `fade` and
-`drop` are retained because they are frozen `name` attributes in the content contract; they generate
-framework classes only and never appear in the authored class set.
+Application logic is untouched: `src/data/site.js` and `src/router/index.js` are byte-identical to
+the post-rebrand baseline, and all handlers, computed values, form semantics and route paths remain.
+Vue transition names `page`, `fade` and `drop` are retained because they are frozen `name`
+attributes in the content contract; they generate framework classes only.
 
-**Housekeeping outside `src/`** — the previous reskin evidence and the rebrand backup bundles were
-moved out of the Vue project to `../.reskin-archive/round2/` and
-`../.reskin-archive/rebrand-backups/round2-state-20261020/` (nothing deleted). This kept duplicate
-source trees out of the inventory while preserving the earlier evidence.
+## 7. X / Twitter kit reskin
 
-## 7. Known limitations
+The kit was rebuilt to the same Abyss Liquidity direction rather than restyled with the old spectral
+gradient:
 
-1. **Classifier label vs. implemented skeleton.** Explained in §2: the frozen `site.ticker` bindings
-   force the `ticker` trait, while the scene mosaics contribute `bento`; the classifier reports
-   `bento-canvas` / spatial, not `gallery-scroll`. The implemented navigation and scene grammar is
-   Gallery Scroll, and the skeleton family genuinely changed (`linear` → `spatial`).
-2. **Hash-route verification.** The app uses `createWebHashHistory`, so the verifier's
-   `origin + /privacy` URLs need the verification-only 302 server
-   (`.reskin/hash-route-server.mjs`, not shipped). Production URLs remain `/#/privacy` and `/#/terms`.
-3. **Fixed dock overlay.** The dock is 58 px tall and floats 14–28 px above the bottom edge; content
-   scrolls behind it by design. The footer and the closing scene add bottom padding so the final
-   content clears the dock, and `#launch` is near the document end, so the browser clamps the scroll
-   there (the scene stays in view; verified in the interaction test).
-4. **Pre-existing hash anchors (unchanged).** The footer wordmark keeps `href="#home"` with no handler,
-   and `Buy $GHOST` keeps `href="#launch"`; with hash history those hrefs resolve to `#/home` and
-   `#/launch`, which are unknown routes, so they land on the 404 view. The dock wordmark keeps the
-   baseline `go('#home')` handler, which is inert on legal routes because there is no `#home` element
-   there (the baseline rail wordmark behaved the same way). This is exactly the baseline behaviour —
-   the attributes are frozen content — and fixing it would require changing link behaviour/content,
-   which this task forbids. The dock brand, section links and legal shortcuts use the existing
-   `go()`/`goRoute()` handlers and work correctly.
-5. **No scrollspy.** The right-edge dot index is decorative (no JavaScript allowed for new state), so
-   it does not highlight the active scene; the dock’s labelled links and native anchors are the
-   navigation.
-6. **Back-to-top aria warning.** The baseline capture recorded the scroll-gated Back-to-top button as
-   visible at scroll top; the current capture records it hidden (the same 900 px threshold as before).
-   Non-blocking accessibility-name warning only.
-7. **404 route is not part of the verifier’s route list** (the inventory only enumerates declared
-   routes and `/` links). It is covered by the interaction test (`#/nope`) and the source contract.
-8. **Social card is regenerated, not gated.** The OG image now matches the palette, but it is outside
-   the reskin content/visual gates.
+| Asset | Change |
+|---|---|
+| `logo.png` / `logo.svg` (400×400, 110 KB) | black console field, red→magenta V monogram, magenta status dot, thin orbit ring, corner crosshairs; full-bleed so X's circular crop loses nothing |
+| `banner.png` (1500×500, 195 KB) | fixed status bar with the V mark, VEILARY, six route commands and a red LAUNCH APP block; headline “Private payments, / invisible by design.”; `veilary://send` console; `$GHOST` / `veilary.xyz` footer clear of the avatar safe area |
+| `tweet-card.png` (1200×675, 206 KB) | “Pay anyone. / Reveal nothing.” in white/red mono, a large V emblem, three numbered feature rows and the `$GHOST` / Solana footer |
+| `bio.md` / `tweet.md` / `README.md` | Veilary name, handle, domain, 151-character bio, alt text updated to describe the new card, new palette/type/size notes |
 
-## 8. Reproduction
+All three PNGs are RGB, rendered at 2× and downsampled with Lanczos by `twitter/src/render.ps1`;
+they were opened and visually checked. The copy is unchanged except for the brand name and the
+image description, and the artwork contains no supply, price or allocation claims.
+
+## 8. Known limitations
+
+1. **Hash-route verification.** The app uses `createWebHashHistory`, so the verifier's
+   `origin + /privacy` URLs need the verification-only 302 server (`.reskin/hash-route-server.mjs`,
+   not shipped). Production URLs remain `/#/privacy` and `/#/terms`.
+2. **Fixed status bar overlay.** The 52 px bar floats over the top of the page; `scroll-padding-top`
+   and section `scroll-margin-top` keep anchors clear, and the boot console starts below it. Content
+   scrolls under the bar by design.
+3. **404 route is not in the verifier's route list** (the inventory only enumerates declared routes
+   and `/` links). It is covered by the interaction test (`#/nope`) and the source contract.
+4. **X kit is not gated by `verify.mjs`.** It lives outside the Vue project; it was verified by
+   deterministic rendering at the exact pixel sizes plus visual inspection, and its copy was
+   length-checked (bio 151, tweet 256, alt text 274 characters).
+5. **Numeric tokens.** Dynamic values (counters, percentages, the copyright year) are compared as
+   warnings by the verifier; none changed in this run.
+6. **Asset provenance.** The social card and favicon are generated from hand-authored SVGs; the
+   reference sites are used only for abstract palette/typography/shape cues, never for assets.
+
+## 9. Reproduction
 
 ```bash
 # from website/
-npm ci
 npm run check                                   # validate + production build
 node .reskin/hash-route-server.mjs dist 4326    # verification-only 302 server
-node "$RESKIN_DIR/scripts/verify.mjs" check --project "$PWD" --out .reskin --url http://127.0.0.1:4326/
-node .reskin/interaction-check.mjs
+node "<reskin-skill>/scripts/verify.mjs" check --project "$PWD" --out .reskin \
+  --url http://127.0.0.1:4326/ --no-build
+node .reskin/interaction-console.mjs            # 27/27 interaction checks
+
+# from the repository root
+powershell -NoProfile -ExecutionPolicy Bypass -File .\twitter\src\render.ps1
 ```

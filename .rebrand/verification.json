@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-22T01:00:59+08:00",
+  "ok": true,
+  "gates": {
+    "old_brand_source": {
+      "ok": true,
+      "filesChecked": 44,
+      "hits": [],
+      "pathHits": [],
+      "allowedFiles": []
+    },
+    "new_brand_presence": {
+      "ok": true,
+      "surfaces": {
+        "title": true,
+        "meta": true,
+        "logo": false,
+        "canonical": true,
+        "package": true,
+        "readme": true,
+        "newValues": [
+          "Veilary",
+          "veilary",
+          "veilary.xyz",
+          "veilary"
+        ]
+      },
+      "count": 5
+    },
+    "assets": {
+      "ok": true,
+      "problems": [],
+      "checks": [
+        {
+          "source": "public/assets/favicon.svg",
+          "target": "public/assets/favicon.svg",
+          "kind": "favicon",
+          "ok": true,
+          "image": {
+            "path": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\public\\assets\\favicon.svg",
+            "ok": true,
+            "format": "svg",
+            "bytes": 558
+          }
+        },
+        {
+          "source": "public/assets/og-cover.png",
+          "target": "public/assets/og-cover.png",
+          "kind": "og",
+          "ok": true,
+          "image": {
+            "path": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\public\\assets\\og-cover.png",
+            "ok": true,
+            "format": "PNG",
+            "width": 1200,
+            "height": 630
+          }
+        },
+        {
+          "source": "public/assets/og-cover.svg",
+          "target": "public/assets/og-cover.svg",
+          "kind": "og",
+          "ok": true,
+          "image": {
+            "path": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\public\\assets\\og-cover.svg",
+            "ok": true,
+            "format": "svg",
+            "bytes": 25641
+          }
+        }
+      ],
+      "manualReview": []
+    },
+    "references": {
+      "ok": true,
+      "problems": [],
+      "checked": 4
+    },
+    "build_test": {
+      "ok": true,
+      "problems": [],
+      "notes": [
+        "test skipped: script not defined"
+      ],
+      "current": {
+        "build": {
+          "script": "build",
+          "skipped": false,
+          "ok": true,
+          "code": 0,
+          "timedOut": false,
+          "cmd": "C:\\Program Files\\nodejs\\npm.CMD run build --if-present",
+          "stdout": "\n> veilary-website@1.0.0 build\n> vite build\n\nvite v6.4.4 building for production...\ntransforming...\n✓ 57 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                          3.96 kB │ gzip:  1.45 kB\ndist/assets/NotFoundView-NtESNoTv.css    1.65 kB │ gzip:  0.73 kB\ndist/assets/LegalView-DCJHO0p_.css       1.93 kB │ gzip:  0.76 kB\ndist/assets/index-DfuSzKel.css          46.40 kB │ gzip:  8.79 kB\ndist/assets/NotFoundView-Cl4xta4o.js     1.07 kB │ gzip:  0.63 kB\ndist/assets/LegalView-C0yotSer.js        4.00 kB │ gzip:  2.01 kB\ndist/assets/index-DTTUfyEf.js          146.34 kB │ gzip: 55.50 kB\n✓ built in 4.12s\n",
+          "stderr": ""
+        },
+        "test": {
+          "script": "test",
+          "skipped": true,
+          "ok": true,
+          "note": "script not defined"
+        }
+      },
+      "baseline": {
+        "createdAt": "2026-10-22T00:28:35+08:00",
+        "project": "E:\\workspace\\chuangye\\solana\\ghostpay\\website",
+        "build": {
+          "script": "build",
+          "skipped": false,
+          "ok": true,
+          "code": 0,
+          "timedOut": false,
+          "cmd": "C:\\Program Files\\nodejs\\npm.CMD run build --if-present",
+          "stdout": "\n> seclura-website@1.0.0 build\n> vite build\n\nvite v6.4.4 building for production...\ntransforming...\n✓ 57 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                          3.96 kB │ gzip:  1.45 kB\ndist/assets/NotFoundView-D2m2W5uy.css    1.65 kB │ gzip:  0.73 kB\ndist/assets/LegalView-C7sDOjCS.css       1.93 kB │ gzip:  0.76 kB\ndist/assets/index-Ccx5Zp4d.css          46.40 kB │ gzip:  8.80 kB\ndist/assets/NotFoundView-UXPfTjYn.js     1.07 kB │ gzip:  0.63 kB\ndist/assets/LegalView-Dl2p_8h-.js        4.00 kB │ gzip:  2.01 kB\ndist/assets/index-THnmmPsi.js          146.38 kB │ gzip: 55.52 kB\n✓ built in 2.16s\n",
+          "stderr": ""
+        },
+        "test": {
+          "script": "test",
+          "skipped": true,
+          "ok": true,
+          "note": "script not defined"
+        },
+        "browser": {
+          "ok": true,
+          "cmd": "C:\\Program Files\\nodejs\\node.EXE C:\\Users\\Administrator\\.dsh\\skills\\rebrand\\scripts\\check.mjs --screenshots --project E:\\workspace\\chuangye\\solana\\ghostpay\\website --out E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand --url http://127.0.0.1:59421 --routes /",
+          "code": 0,
+          "stdout": "{\n  \"ok\": true,\n  \"url\": \"http://127.0.0.1:59421\",\n  \"screenshots\": 2,\n  \"oldBrandRoutes\": [\n    \"/:desktop\",\n    \"/:mobile\"\n  ],\n  \"browserJson\": \"E:\\\\workspace\\\\chuangye\\\\solana\\\\ghostpay\\\\website\\\\.rebrand\\\\browser.json\"\n}\n",
+          "stderr": "",
+          "browser": {
+            "schemaVersion": 1,
+            "checkedAt": "2026-10-21T16:28:35.434Z",
+            "browser": {
+              "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+              "version": "Chrome/155.0.8059.85",
+              "headless": true,
+              "proxy": null,
+              "method": "chrome-cdp"
+            },
+            "baseUrl": "http://127.0.0.1:59421",
+            "routes": [
+              "/"
+            ],
+            "results": [
+              {
+                "route": "/",
+                "device": "desktop",
+                "url": "http://127.0.0.1:59421/",
+                "finalUrl": "http://127.0.0.1:59421/",
+                "httpStatus": 200,
+                "title": "Seclura — Private Payments, Invisible by Design",
+                "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\screenshots\\root-desktop.png",
+                "oldBrand": {
+                  "textHits": [
+                    "seclura",
+                    "seclura",
+                    "seclura",
+                    "seclura.xyz"
+                  ],
+                  "attributeHits": [
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record. Powered by $GHOST.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record. Powered by $GHOST.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record. Powered by $GHOST.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura, GHOST, private payments, crypto privacy, stealth address, HPKE, Solana privacy, untraceable",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura, GHOST, private payments, crypto privacy, stealth address, HPKE, Solana privacy, untraceable",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura, GHOST, private payments, crypto privacy, stealth address, HPKE, Solana privacy, untraceable",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://seclura.xyz/",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://seclura.xyz/",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://seclura.xyz/",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://seclura.xyz/",
+                      "variant": "seclura.xyz"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — private payments, invisible by design. The private payment rail for Solana.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — private payments, invisible by design. The private payment rail for Solana.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — private payments, invisible by design. The private payment rail for Solana.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "title",
+                      "value": "X / Twitter — @seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "title",
+                      "value": "X / Twitter — @seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "title",
+                      "value": "X / Twitter — @seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    }
+                  ]
+                },
+                "newBrandPresent": [],
+                "consoleErrors": [],
+                "pageErrors": [],
+                "failedRequests": []
+              },
+              {
+                "route": "/",
+                "device": "mobile",
+                "url": "http://127.0.0.1:59421/",
+                "finalUrl": "http://127.0.0.1:59421/",
+                "httpStatus": 200,
+                "title": "Seclura — Private Payments, Invisible by Design",
+                "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\screenshots\\root-mobile.png",
+                "oldBrand": {
+                  "textHits": [
+                    "seclura",
+                    "seclura",
+                    "seclura",
+                    "seclura.xyz"
+                  ],
+                  "attributeHits": [
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record. Powered by $GHOST.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record. Powered by $GHOST.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record. Powered by $GHOST.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura, GHOST, private payments, crypto privacy, stealth address, HPKE, Solana privacy, untraceable",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura, GHOST, private payments, crypto privacy, stealth address, HPKE, Solana privacy, untraceable",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura, GHOST, private payments, crypto privacy, stealth address, HPKE, Solana privacy, untraceable",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://seclura.xyz/",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://seclura.xyz/",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://seclura.xyz/",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "https://seclura.xyz/",
+                      "variant": "seclura.xyz"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — private payments, invisible by design. The private payment rail for Solana.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — private payments, invisible by design. The private payment rail for Solana.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — private payments, invisible by design. The private payment rail for Solana.",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "meta",
+                      "attr": "content",
+                      "value": "Seclura — Private Payments, Invisible by Design",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "title",
+                      "value": "X / Twitter — @seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "title",
+                      "value": "X / Twitter — @seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "title",
+                      "value": "X / Twitter — @seclura",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    },
+                    {
+                      "tag": "a",
+                      "attr": "aria-label",
+                      "value": "Seclura home",
+                      "variant": "seclura"
+                    }
+                  ]
+                },
+                "newBrandPresent": [],
+                "consoleErrors": [],
+                "pageErrors": [],
+                "failedRequests": []
+              }
+            ]
+          }
+        },
+        "web": true
+      }
+    },
+    "availability": {
+      "ok": true,
+      "selected": {
+        "name": "veilary",
+        "slug": "veilary"
+      },
+      "method": "chrome-cdp",
+      "mock": false,
+      "evidence": {
+        "domain": {
+          "host": "veilary.xyz",
+          "status": "available",
+          "confidence": "medium",
+          "signal": "rdap-unregistered",
+          "rdap": {
+            "url": "https://rdap.centralnic.com/xyz/domain/veilary.xyz",
+            "status": 404,
+            "mimeType": "application/rdap+json",
+            "excerpt": "{\"rdapConformance\":[\"icann_rdap_response_profile_1\",\"icann_rdap_technical_implementation_guide_1\",\"rdap_level_0\"],\"lang\":\"en\",\"objectClassName\":\"error\",\"notices\":[{\"title\":\"Status Codes\",\"description\":[\"For more information on domain status codes, please visit https:\\/\\/icann.org\\/epp\"],\"links\":[{\"title\":\"More information on domain status codes\",\"rel\":\"glossary\",\"value\":\"https:\\/\\/rdap.centralnic.com\\/xyz\\/domain\\/veilary.xyz\",\"href\":\"https:\\/\\/icann.org\\/epp\"}]},{\"title\":\"Terms of Use\",\"description\":[\"For more information on Whois status codes, please visit https:\\/\\/icann.org\\/epp\",\"\",\"The registration data available in this service is limited. Additional\",\"data may be available at https:\\/\\/lookup.icann.org\",\"\",\"The Whois and RDAP services are provided by CentralNic, and contain\",\"information pertaining to Internet domain names registered by our\",\"our customers. By using this service you are agreeing (1) not to use any\",\"information presented here for any purpose other than determining\",\"ownership of domain names, (2) not to store or reproduce this data in\",\"any way, (3) not to use any high-volume, automated, electronic processes\",\"to obtain data from this service. Abuse of this service is monitored and\",\"actions in contravention of these terms will result in being permanently\",\"blacklisted. All data is (c) CentralNic Ltd (https:\\/\\/www.centralnicregistry.com)\",\"\",\"Access to the Whois and RDAP services is rate limited. For more\",\"information, visit https:\\/\\/centralnicregistry.com\\/policies\\/whois-guidance.\"],\"links\":[{\"title\":\"Terms of Use\",\"rel\":\"terms-of-service\",\"val",
+            "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-rdap.png"
+          },
+          "registrar": null,
+          "evidence": [
+            {
+              "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+              "httpStatus": 200,
+              "finalUrl": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+              "state": "unknown",
+              "signal": "empty",
+              "excerpt": "",
+              "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-registrar-1.png"
+            },
+            {
+              "url": "https://porkbun.com/checkout/search?q=veilary.xyz",
+              "httpStatus": 200,
+              "finalUrl": "https://porkbun.com/checkout/search?q=veilary.xyz",
+              "state": "unknown",
+              "signal": "challenge",
+              "excerpt": "porkbun PRODUCTS TRANSFER SALE! ABOUT RESOURCES $0.00 (0) SIGN IN bulk search AI Search | Auction Search | Marketplace Search Not seeing all the results? We've shown you a shorter list than usual. Confirm you're a person and we'll load the full set of suggestions for your search. Awaiting verification. I'm not a robot Pork Captcha V1.3.1 .COM .TODAY .ORG show results by extension relevance Searches again showing only the extensions that best fit your search, most relevant first. veilary.xyz veilary.inc veilary.lol veilary.blog veilary.tech veilary.llc veilary.fyi veilary.now veilary.online veilary.io Show All Extensions Generate AI Suggestions 422dec0842ba55b572bd16e7e9fb0b8b7f3d10b3a4fe2dfa1f366118ec66e4f3 porkbun Porkbun is an amazingly awesome ICANN accredited domain name registrar based out of the Pacific Northwest. We're different, we're easy, and we're affordable. Use us, you won't",
+              "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-registrar-3.png"
+            }
+          ],
+          "checkedAt": "2026-10-21T16:55:54.412Z",
+          "registrarErrors": [
+            {
+              "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+              "state": "unknown",
+              "signal": "empty"
+            },
+            {
+              "url": "https://www.namecheap.com/domains/registration/results/?domain=veilary.xyz",
+              "error": "Navigation failed for https://www.namecheap.com/domains/registration/results/?domain=veilary.xyz: net::ERR_ABORTED"
+            },
+            {
+              "url": "https://porkbun.com/checkout/search?q=veilary.xyz",
+              "state": "unknown",
+              "signal": "challenge"
+            }
+          ]
+        },
+        "x": {
+          "handle": "veilary",
+          "status": "available",
+          "signal": "not-found-text",
+          "url": "https://x.com/veilary",
+          "checkedAt": "2026-10-21T16:56:20.336Z",
+          "httpStatus": 404,
+          "finalUrl": "https://x.com/veilary",
+          "title": "User Profile Not Found - X | 404 Error",
+          "excerpt": "Hmm...this page doesn’t exist. Try searching for something else. Search Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · US TIDA · Ads Info · More © 2026 X Corp.",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-x.png"
+        }
+      }
+    },
+    "brand_registry": {
+      "ok": true,
+      "problems": [],
+      "path": "E:/workspace/chuangye/solana/ghostpay/website/brand.txt",
+      "history": [
+        "GhostPay",
+        "Cifruna",
+        "Nummula",
+        "Seclura"
+      ],
+      "current": "Veilary",
+      "exists": true
+    },
+    "browser": {
+      "ok": true,
+      "problems": [],
+      "oldBrandHits": [],
+      "pageErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\screenshots\\root-desktop.png",
+        "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\screenshots\\root-mobile.png"
+      ],
+      "routes": [
+        "/"
+      ],
+      "run": {
+        "ok": true,
+        "cmd": "C:\\Program Files\\nodejs\\node.EXE C:\\Users\\Administrator\\.dsh\\skills\\rebrand\\scripts\\check.mjs --screenshots --project E:\\workspace\\chuangye\\solana\\ghostpay\\website --out E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand --url http://127.0.0.1:57911 --routes /",
+        "code": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"url\": \"http://127.0.0.1:57911\",\n  \"screenshots\": 2,\n  \"oldBrandRoutes\": [],\n  \"browserJson\": \"E:\\\\workspace\\\\chuangye\\\\solana\\\\ghostpay\\\\website\\\\.rebrand\\\\browser.json\"\n}\n",
+        "stderr": ""
+      }
+    },
+    "report": {
+      "ok": true,
+      "path": "E:/workspace/chuangye/solana/ghostpay/website/.rebrand/REPORT.md"
+    }
+  },
+  "build": {
+    "build": {
+      "script": "build",
+      "skipped": false,
+      "ok": true,
+      "code": 0,
+      "timedOut": false,
+      "cmd": "C:\\Program Files\\nodejs\\npm.CMD run build --if-present",
+      "stdout": "\n> veilary-website@1.0.0 build\n> vite build\n\nvite v6.4.4 building for production...\ntransforming...\n✓ 57 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                          3.96 kB │ gzip:  1.45 kB\ndist/assets/NotFoundView-NtESNoTv.css    1.65 kB │ gzip:  0.73 kB\ndist/assets/LegalView-DCJHO0p_.css       1.93 kB │ gzip:  0.76 kB\ndist/assets/index-DfuSzKel.css          46.40 kB │ gzip:  8.79 kB\ndist/assets/NotFoundView-Cl4xta4o.js     1.07 kB │ gzip:  0.63 kB\ndist/assets/LegalView-C0yotSer.js        4.00 kB │ gzip:  2.01 kB\ndist/assets/index-DTTUfyEf.js          146.34 kB │ gzip: 55.50 kB\n✓ built in 4.12s\n",
+      "stderr": ""
+    },
+    "test": {
+      "script": "test",
+      "skipped": true,
+      "ok": true,
+      "note": "script not defined"
+    }
+  },
+  "browser": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-10-21T17:00:58.479Z",
+    "browser": {
+      "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "version": "Chrome/155.0.8059.85",
+      "headless": true,
+      "proxy": null,
+      "method": "chrome-cdp"
+    },
+    "baseUrl": "http://127.0.0.1:57911",
+    "routes": [
+      "/"
+    ],
+    "results": [
+      {
+        "route": "/",
+        "device": "desktop",
+        "url": "http://127.0.0.1:57911/",
+        "finalUrl": "http://127.0.0.1:57911/",
+        "httpStatus": 200,
+        "title": "Veilary — Private Payments, Invisible by Design",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\screenshots\\root-desktop.png",
+        "oldBrand": {
+          "textHits": [],
+          "attributeHits": []
+        },
+        "newBrandPresent": [
+          "Veilary",
+          "veilary",
+          "veilary.xyz",
+          "veilary"
+        ],
+        "consoleErrors": [],
+        "pageErrors": [],
+        "failedRequests": []
+      },
+      {
+        "route": "/",
+        "device": "mobile",
+        "url": "http://127.0.0.1:57911/",
+        "finalUrl": "http://127.0.0.1:57911/",
+        "httpStatus": 200,
+        "title": "Veilary — Private Payments, Invisible by Design",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\screenshots\\root-mobile.png",
+        "oldBrand": {
+          "textHits": [],
+          "attributeHits": []
+        },
+        "newBrandPresent": [
+          "Veilary",
+          "veilary",
+          "veilary.xyz",
+          "veilary"
+        ],
+        "consoleErrors": [],
+        "pageErrors": [],
+        "failedRequests": []
+      }
+    ]
+  },
+  "availability": {
+    "selected": {
+      "name": "veilary",
+      "slug": "veilary",
+      "score": 96,
+      "domain": {
+        "host": "veilary.xyz",
+        "status": "available",
+        "confidence": "medium",
+        "signal": "rdap-unregistered",
+        "rdap": {
+          "url": "https://rdap.centralnic.com/xyz/domain/veilary.xyz",
+          "status": 404,
+          "mimeType": "application/rdap+json",
+          "excerpt": "{\"rdapConformance\":[\"icann_rdap_response_profile_1\",\"icann_rdap_technical_implementation_guide_1\",\"rdap_level_0\"],\"lang\":\"en\",\"objectClassName\":\"error\",\"notices\":[{\"title\":\"Status Codes\",\"description\":[\"For more information on domain status codes, please visit https:\\/\\/icann.org\\/epp\"],\"links\":[{\"title\":\"More information on domain status codes\",\"rel\":\"glossary\",\"value\":\"https:\\/\\/rdap.centralnic.com\\/xyz\\/domain\\/veilary.xyz\",\"href\":\"https:\\/\\/icann.org\\/epp\"}]},{\"title\":\"Terms of Use\",\"description\":[\"For more information on Whois status codes, please visit https:\\/\\/icann.org\\/epp\",\"\",\"The registration data available in this service is limited. Additional\",\"data may be available at https:\\/\\/lookup.icann.org\",\"\",\"The Whois and RDAP services are provided by CentralNic, and contain\",\"information pertaining to Internet domain names registered by our\",\"our customers. By using this service you are agreeing (1) not to use any\",\"information presented here for any purpose other than determining\",\"ownership of domain names, (2) not to store or reproduce this data in\",\"any way, (3) not to use any high-volume, automated, electronic processes\",\"to obtain data from this service. Abuse of this service is monitored and\",\"actions in contravention of these terms will result in being permanently\",\"blacklisted. All data is (c) CentralNic Ltd (https:\\/\\/www.centralnicregistry.com)\",\"\",\"Access to the Whois and RDAP services is rate limited. For more\",\"information, visit https:\\/\\/centralnicregistry.com\\/policies\\/whois-guidance.\"],\"links\":[{\"title\":\"Terms of Use\",\"rel\":\"terms-of-service\",\"val",
+          "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-rdap.png"
+        },
+        "registrar": null,
+        "evidence": [
+          {
+            "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+            "httpStatus": 200,
+            "finalUrl": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+            "state": "unknown",
+            "signal": "empty",
+            "excerpt": "",
+            "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-registrar-1.png"
+          },
+          {
+            "url": "https://porkbun.com/checkout/search?q=veilary.xyz",
+            "httpStatus": 200,
+            "finalUrl": "https://porkbun.com/checkout/search?q=veilary.xyz",
+            "state": "unknown",
+            "signal": "challenge",
+            "excerpt": "porkbun PRODUCTS TRANSFER SALE! ABOUT RESOURCES $0.00 (0) SIGN IN bulk search AI Search | Auction Search | Marketplace Search Not seeing all the results? We've shown you a shorter list than usual. Confirm you're a person and we'll load the full set of suggestions for your search. Awaiting verification. I'm not a robot Pork Captcha V1.3.1 .COM .TODAY .ORG show results by extension relevance Searches again showing only the extensions that best fit your search, most relevant first. veilary.xyz veilary.inc veilary.lol veilary.blog veilary.tech veilary.llc veilary.fyi veilary.now veilary.online veilary.io Show All Extensions Generate AI Suggestions 422dec0842ba55b572bd16e7e9fb0b8b7f3d10b3a4fe2dfa1f366118ec66e4f3 porkbun Porkbun is an amazingly awesome ICANN accredited domain name registrar based out of the Pacific Northwest. We're different, we're easy, and we're affordable. Use us, you won't",
+            "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-xyz-registrar-3.png"
+          }
+        ],
+        "checkedAt": "2026-10-21T16:55:54.412Z",
+        "registrarErrors": [
+          {
+            "url": "https://www.godaddy.com/domainsearch/find?checkAvail=1&domainToCheck=veilary.xyz",
+            "state": "unknown",
+            "signal": "empty"
+          },
+          {
+            "url": "https://www.namecheap.com/domains/registration/results/?domain=veilary.xyz",
+            "error": "Navigation failed for https://www.namecheap.com/domains/registration/results/?domain=veilary.xyz: net::ERR_ABORTED"
+          },
+          {
+            "url": "https://porkbun.com/checkout/search?q=veilary.xyz",
+            "state": "unknown",
+            "signal": "challenge"
+          }
+        ]
+      },
+      "x": {
+        "handle": "veilary",
+        "status": "available",
+        "signal": "not-found-text",
+        "url": "https://x.com/veilary",
+        "checkedAt": "2026-10-21T16:56:20.336Z",
+        "httpStatus": 404,
+        "finalUrl": "https://x.com/veilary",
+        "title": "User Profile Not Found - X | 404 Error",
+        "excerpt": "Hmm...this page doesn’t exist. Try searching for something else. Search Log in or sign up for X See what’s happening and join the conversation Continue with phone Continue with Apple Continue with Google or Log in with username or email Terms · Privacy · Cookies · Accessibility · US TIDA · Ads Info · More © 2026 X Corp.",
+        "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\availability\\veilary-x.png"
+      },
+      "verdict": "pass",
+      "checkedAt": "2026-10-21T16:56:28.699Z"
+    },
+    "method": "chrome-cdp"
+  }
+}

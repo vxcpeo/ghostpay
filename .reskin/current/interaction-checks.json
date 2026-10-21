@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T16:30:26.630Z",
+  "generatedAt": "2026-10-21T17:37:14.071Z",
   "checks": [
     {
       "name": "single h1 on home",
@@ -9,27 +9,37 @@
     {
       "name": "home title",
       "ok": true,
-      "detail": "Seclura — Private Payments, Invisible by Design"
+      "detail": "Veilary — Private Payments, Invisible by Design"
     },
     {
-      "name": "dock floats at the bottom",
+      "name": "status bar is fixed at the top",
       "ok": true,
-      "detail": "{\"x\":197.984375,\"y\":814,\"width\":1044.03125,\"height\":58}"
+      "detail": "{\"x\":0,\"y\":0,\"width\":1440,\"height\":55}"
     },
     {
-      "name": "dock link scrolls to features",
+      "name": "masked icon glyphs render",
       "ok": true,
-      "detail": "{\"y\":926,\"top\":56}"
+      "detail": "122 glyphs"
     },
     {
-      "name": "dock stays visible after scroll",
+      "name": "no retired shell classes",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "name": "status-bar command scrolls to features",
+      "ok": true,
+      "detail": "{\"y\":872,\"top\":18}"
+    },
+    {
+      "name": "status bar stays visible after scroll",
       "ok": true,
       "detail": "visible"
     },
     {
-      "name": "launch app reaches #launch",
+      "name": "launch command reaches #launch",
       "ok": true,
-      "detail": "{\"y\":8098,\"top\":376,\"view\":900,\"max\":9130}"
+      "detail": "{\"y\":8158,\"top\":76,\"view\":900}"
     },
     {
       "name": "back-to-top appears after scrolling",
@@ -37,19 +47,19 @@
       "detail": "visible"
     },
     {
-      "name": "back-to-top returns to the opening",
+      "name": "back-to-top returns to the boot console",
       "ok": true,
-      "detail": "13"
+      "detail": "10"
     },
     {
-      "name": "mint button reports copied",
+      "name": "mint readout reports copied",
       "ok": true,
       "detail": "CA BBKPiLM9…eBGHST COPIED"
     },
     {
       "name": "faq opens and reports state",
       "ok": true,
-      "detail": "true / 93px"
+      "detail": "true / 89px"
     },
     {
       "name": "faq closes again",
@@ -64,7 +74,7 @@
     {
       "name": "valid email shows receipt",
       "ok": true,
-      "detail": "You’re on the list Thanks — you’ll hear from us when the next Seclura "
+      "detail": "You’re on the list Thanks — you’ll hear from us when the next Veilary "
     },
     {
       "name": "receipt reset restores form",
@@ -84,12 +94,12 @@
     {
       "name": "404 title",
       "ok": true,
-      "detail": "Signal lost — Seclura"
+      "detail": "Signal lost — Veilary"
     },
     {
       "name": "404 routes home",
       "ok": true,
-      "detail": "two actions"
+      "detail": "two commands"
     },
     {
       "name": "mobile legal shortcuts visible",
@@ -97,12 +107,17 @@
       "detail": "two shortcuts"
     },
     {
-      "name": "mobile index sheet opens",
+      "name": "mobile rail is collapsed",
+      "ok": true,
+      "detail": "hidden"
+    },
+    {
+      "name": "mobile command palette opens",
       "ok": true,
       "detail": "6"
     },
     {
-      "name": "escape closes the index sheet",
+      "name": "escape closes the command palette",
       "ok": true,
       "detail": "closed"
     },

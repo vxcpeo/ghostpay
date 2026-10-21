@@ -1,19 +1,19 @@
 # Reskin verification — PASS
 
-Generated: 2026-10-20T16:36:53.177Z
+Generated: 2026-10-21T17:36:56.931Z
 
-- Project: **seclura-website**
+- Project: **veilary-website**
 - URL: http://127.0.0.1:4326/
-- Original skeleton: `ticker-stage` (linear)
-- New skeleton: `bento-canvas` (spatial)
-- Accent: #0000ff -> #298dff (83.88 ΔE; min 30)
-- Source contract: intact (`c2aacd4a908a`)
+- Original skeleton: `bento-canvas` (spatial)
+- New skeleton: `terminal-console` (linear)
+- Accent: #298dff -> #ff3b30 (130.98 ΔE; min 30)
+- Source contract: intact (`c781e8f4d315`)
 
 | Route | Result | DOM similarity | Landmark similarity | Axe serious | Screenshot |
 |---|---|---:|---:|---:|---|
-| `/` | PASS | 0.306 | 0.667 | 0 | [desktop](current/home-desktop.png) |
-| `/privacy` | PASS | 0.338 | 0.667 | 0 | [desktop](current/privacy-desktop.png) |
-| `/terms` | PASS | 0.338 | 0.667 | 0 | [desktop](current/terms-desktop.png) |
+| `/` | PASS | 0.48 | 0.5 | 0 | [desktop](current/home-desktop.png) |
+| `/privacy` | PASS | 0.382 | 0.5 | 0 | [desktop](current/privacy-desktop.png) |
+| `/terms` | PASS | 0.382 | 0.5 | 0 | [desktop](current/terms-desktop.png) |
 
 ## Blocking issues
 
@@ -21,21 +21,7 @@ Generated: 2026-10-20T16:36:53.177Z
 
 ## Warnings
 
-- /: aria attribute changed/removed: aria-label=Back to top
-- /: aria attribute added: aria-label=Core modules
-- /: aria attribute added: aria-label=Privacy Policy
-- /: aria attribute added: aria-label=Roadmap
-- /: aria attribute added: aria-label=Terms of Use
-- /: link target added: /privacy
-- /: link target added: /terms
-- /privacy: aria attribute added: aria-label=Privacy Policy
-- /privacy: aria attribute added: aria-label=Terms of Use
-- /privacy: link target added: /privacy
-- /privacy: link target added: /terms
-- /terms: aria attribute added: aria-label=Privacy Policy
-- /terms: aria attribute added: aria-label=Terms of Use
-- /terms: link target added: /privacy
-- /terms: link target added: /terms
+- None.
 
 ## Thresholds
 

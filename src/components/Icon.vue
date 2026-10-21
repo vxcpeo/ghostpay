@@ -1,7 +1,13 @@
 <script setup>
 /**
- * Inline SVG icon set — no external icon dependency.
+ * Icon set rendered as CSS-masked glyphs.
+ *
+ * Keeping the vector geometry in a data URI means the page carries no inline
+ * <svg>/<path> nodes for decorative icons: the accessible name always belongs
+ * to the control that owns the glyph, and the console DOM stays flat.
  */
+import { computed } from 'vue'
+
 const props = defineProps({
   name: { type: String, required: true },
   size: { type: [Number, String], default: 22 },
@@ -37,26 +43,47 @@ const paths = {
   github:
     'M9.5 20.5v-2.8c-2.6.5-3.3-1.2-3.3-1.2-.4-1-1-1.3-1-1.3-.9-.6 0-.6 0-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.1-.2-4.3-1-4.3-4.6 0-1 .4-1.9 1-2.5-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9 9 0 014.8 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.6 1 1.5 1 2.5 0 3.6-2.2 4.4-4.3 4.6.4.4.7 1 .7 2v3.5 M12 21a9 9 0 100-18 9 9 0 000 18z',
   book: 'M4.5 5.5A2 2 0 016.5 3.5H19v13H6.5a2 2 0 00-2 2v-13z M4.5 18.5A2 2 0 016.5 16.5H19v4H6.5a2 2 0 01-2-2z M8.5 8h6 M8.5 11h4',
-  seclura:
-    'M18.3 6.6c0-3.6-12.6-3.6-12.6 1.2 0 3.6 12.6 3.6 12.6 8.4 0 4.8-12.6 4.8-12.6 1.2'
+  veilary:
+    'M4.7 5.1L12 18.5l7.3-13.4 M20.1 3.2h.01'
 }
 
 const d = () => paths[props.name] || paths.spark
+
+const px = computed(() => {
+  const value = props.size
+  if (typeof value === 'number') return `${value}px`
+  return /^\d+(?:\.\d+)?$/.test(String(value)) ? `${value}px` : String(value)
+})
+
+const maskStyle = computed(() => {
+  const svg =
+    `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' ` +
+    `stroke-width='${props.stroke}' stroke-linecap='round' stroke-linejoin='round'><path d='${d()}'/></svg>`
+  const uri = `url("data:image/svg+xml,${encodeURIComponent(svg)}")`
+  return {
+    width: px.value,
+    height: px.value,
+    maskImage: uri,
+    WebkitMaskImage: uri
+  }
+})
 </script>
 
 <template>
-  <svg
-    :width="size"
-    :height="size"
-    viewBox="0 0 24 24"
-    fill="none"
-    :stroke-width="stroke"
-    stroke="currentColor"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    aria-hidden="true"
-    focusable="false"
-  >
-    <path :d="d()" />
-  </svg>
+  <i class="glyph" :style="maskStyle" aria-hidden="true" />
 </template>
+
+<style scoped>
+.glyph {
+  display: inline-block;
+  flex: none;
+  background-color: currentColor;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  vertical-align: middle;
+}
+</style>

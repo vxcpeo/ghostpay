@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "baseline",
-  "generatedAt": "2026-10-20T16:01:54.434Z",
+  "generatedAt": "2026-10-21T17:04:21.977Z",
   "baseUrl": "http://127.0.0.1:4326/",
   "browser": {
     "executablePath": "C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\chromium-1247\\chrome-win64\\chrome.exe",
@@ -15,13 +15,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Seclura — Private Payments, Invisible by Design",
+          "title": "Veilary — Private Payments, Invisible by Design",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 11952,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 52
+          "focusableCount": 55
         },
         "words": [
           {
@@ -2005,18 +2005,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 21
-          },
-          {
-            "word": "seclura://send",
-            "count": 1
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 2
-          },
-          {
             "word": "second",
             "count": 4
           },
@@ -2481,6 +2469,18 @@
             "count": 2
           },
           {
+            "word": "Veilary",
+            "count": 21
+          },
+          {
+            "word": "veilary://send",
+            "count": 1
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 2
+          },
+          {
             "word": "verifiability",
             "count": 1
           },
@@ -2651,12 +2651,12 @@
         ],
         "attrs": [
           {
-            "key": "aria-label=Back to top",
-            "count": 1
-          },
-          {
             "key": "aria-label=Copy the $GHOST mint address BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST",
             "count": 2
+          },
+          {
+            "key": "aria-label=Core modules",
+            "count": 1
           },
           {
             "key": "aria-label=Discord (link pending)",
@@ -2675,12 +2675,24 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
+            "key": "aria-label=Privacy Policy",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Roadmap",
+            "count": 1
           },
           {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
+          },
+          {
+            "key": "aria-label=Terms of Use",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -2711,11 +2723,19 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
         "links": [
+          {
+            "href": "/privacy",
+            "count": 1
+          },
+          {
+            "href": "/terms",
+            "count": 1
+          },
           {
             "href": "#/privacy",
             "count": 1
@@ -2777,11 +2797,11 @@
             "count": 2
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 4
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -2795,241 +2815,275 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "access",
-          "access__button",
-          "access__field",
-          "access__fine",
-          "access__label",
-          "access__sub",
-          "access__title",
-          "atlas",
-          "atlas__meter",
-          "atlas__rail",
-          "atlas__stage",
-          "bp-btn",
-          "bp-btn--block",
-          "bp-btn--ghost",
-          "bp-btn--small",
-          "bp-btn--solid",
-          "bp-deck",
-          "bp-kicker",
-          "bp-title",
-          "checks",
-          "chips",
-          "chips__item",
-          "closing",
-          "closing__blurb",
-          "closing__brand",
-          "closing__chip",
-          "closing__column",
-          "closing__column-title",
-          "closing__columns",
-          "closing__foot",
-          "closing__grid",
-          "closing__identity",
-          "closing__inner",
-          "closing__legal",
-          "closing__name",
-          "closing__notice",
-          "closing__sep",
-          "closing__social",
-          "closing__social--pending",
-          "closing__socials",
-          "creed",
-          "gauge",
-          "gauge__cell",
-          "home",
-          "invite",
-          "invite__acts",
-          "invite__copy",
-          "invite__deck",
-          "invite__form",
-          "invite__ticks",
-          "invite__title",
-          "lane",
-          "lane--active",
-          "lane--done",
-          "lane--next",
-          "lane__badge",
-          "lane__items",
-          "lane__meta",
-          "lane__phase",
-          "lane__status",
-          "lane__title",
-          "lanes",
-          "ledger",
-          "ledger__copy",
-          "ledger__key",
-          "ledger__row",
-          "ledger__value",
-          "list",
-          "matrix",
-          "matrix__mark",
-          "matrix__mark--off",
-          "matrix__mark--on",
-          "matrix__mark--own",
-          "matrix__note",
-          "matrix__own",
-          "matrix__sign--negative",
-          "matrix__sign--own",
-          "matrix__sign--positive",
-          "matrix__table",
-          "mint",
-          "mint__act",
-          "mint__key",
-          "mint__value",
-          "more",
-          "more__links",
-          "more__question",
-          "notes",
-          "notes__item",
-          "opener",
-          "opener__acts",
-          "opener__board",
-          "opener__chain",
-          "opener__date",
-          "opener__lede",
-          "opener__register",
-          "opener__side",
-          "opener__title",
-          "opener__top",
-          "opener__turn",
-          "pillars",
-          "pillars__item",
-          "pillars__text",
-          "pillars__title",
-          "qa",
-          "qa--open",
-          "qa__answer",
-          "qa__answer--open",
-          "qa__icon",
-          "qa__num",
-          "qa__q",
-          "qa__trigger",
-          "rail",
-          "rail__brand",
-          "rail__chip",
-          "rail__foot",
-          "rail__glyph",
-          "rail__head",
-          "rail__index",
-          "rail__label",
-          "rail__link",
-          "rail__name",
-          "rail__paper",
-          "readout",
-          "readout__aside",
-          "readout__live",
-          "readout__main",
-          "readout__meta",
-          "readout__tag",
-          "readout__text",
-          "readout__title",
-          "record",
-          "record__audit",
-          "record__facts",
-          "record__foot",
-          "record__head",
-          "record__list",
-          "record__live",
-          "record__row",
-          "record__source",
-          "record__stat",
-          "record__stats",
-          "route",
-          "route__label",
-          "route__line",
-          "route__line--on",
-          "route__node",
-          "route__node--on",
-          "route__step",
-          "seal",
-          "seal__hash",
-          "seal__head",
-          "seal__ok",
-          "spec",
-          "spec__icon",
-          "spec__item",
-          "spec__text",
-          "spec__title",
-          "stop",
-          "stop__head",
-          "supply",
-          "supply__bar",
-          "supply__figure",
-          "supply__head",
-          "supply__label",
-          "supply__name",
-          "supply__pct",
-          "supply__row",
-          "supply__rows",
-          "supply__sheet",
-          "supply__track",
-          "tenets",
-          "tenets__icon",
-          "tenets__item",
-          "tenets__text",
-          "tenets__title",
-          "to-top",
-          "to-top__glyph",
-          "track",
-          "track__body",
-          "track__button",
-          "track__go",
-          "track__num",
-          "track__step",
-          "track__step--on",
-          "track__text",
-          "track__title",
-          "transmit",
-          "transmit__bar",
-          "transmit__flag",
-          "transmit__route",
-          "transmit__row",
-          "transmit__row--amount",
-          "transmit__rows",
-          "transmit__send",
-          "utility",
-          "utility__act",
-          "utility__fine",
-          "utility__list",
-          "utility__title"
+          "crest",
+          "crest__audit",
+          "crest__board",
+          "crest__creed",
+          "crest__fact",
+          "crest__facts",
+          "crest__foot",
+          "crest__head",
+          "crest__live",
+          "crest__pillar",
+          "crest__pillar-text",
+          "crest__pillar-title",
+          "crest__record",
+          "crest__record-head",
+          "crest__source",
+          "crest__stat",
+          "crest__stats",
+          "drift",
+          "drift__body",
+          "drift__checks",
+          "drift__current",
+          "drift__detail",
+          "drift__dot",
+          "drift__go",
+          "drift__head",
+          "drift__label",
+          "drift__line",
+          "drift__line--on",
+          "drift__live",
+          "drift__meta",
+          "drift__move",
+          "drift__name",
+          "drift__node",
+          "drift__node--on",
+          "drift__num",
+          "drift__readout",
+          "drift__route",
+          "drift__sequence",
+          "drift__stage",
+          "drift__step",
+          "drift__step--on",
+          "drift__tag",
+          "drift__text",
+          "expanse",
+          "expanse__body",
+          "expanse__head",
+          "expanse__icon",
+          "expanse__note",
+          "expanse__tablewrap",
+          "expanse__tenet",
+          "expanse__tenets",
+          "expanse__text",
+          "expanse__title",
+          "harbor__brand",
+          "harbor__cta",
+          "harbor__dock",
+          "harbor__label",
+          "harbor__legal",
+          "harbor__link",
+          "harbor__marker",
+          "harbor__paper",
+          "harbor__sigil",
+          "harbor__split",
+          "harbor__word",
+          "horizon",
+          "horizon__badge",
+          "horizon__head",
+          "horizon__items",
+          "horizon__meta",
+          "horizon__phase",
+          "horizon__phase--active",
+          "horizon__phase--done",
+          "horizon__phase--next",
+          "horizon__phase-name",
+          "horizon__rail",
+          "horizon__status",
+          "horizon__title",
+          "inlet",
+          "inlet__acts",
+          "inlet__card",
+          "inlet__copy",
+          "inlet__deck",
+          "inlet__field",
+          "inlet__fine",
+          "inlet__form",
+          "inlet__form-sub",
+          "inlet__form-title",
+          "inlet__grid",
+          "inlet__label",
+          "inlet__submit",
+          "inlet__ticks",
+          "inlet__title",
+          "mintline",
+          "mintline__act",
+          "mintline__key",
+          "mintline__value",
+          "modules",
+          "modules__deck",
+          "modules__head",
+          "modules__icon",
+          "modules__item",
+          "modules__lede",
+          "modules__name",
+          "modules__rail",
+          "modules__text",
+          "modules__title",
+          "scene",
+          "scene--deep",
+          "scene__head",
+          "scene__inner",
+          "shallows",
+          "shallows__answer",
+          "shallows__answer--open",
+          "shallows__aside",
+          "shallows__ask",
+          "shallows__grid",
+          "shallows__head",
+          "shallows__index",
+          "shallows__links",
+          "shallows__list",
+          "shallows__mark",
+          "shallows__prompt",
+          "shallows__qa",
+          "shallows__qa--open",
+          "shallows__question",
+          "shallows__trigger",
+          "shore",
+          "shore__base",
+          "shore__blurb",
+          "shore__brand",
+          "shore__copy",
+          "shore__crest",
+          "shore__group",
+          "shore__group-title",
+          "shore__index",
+          "shore__inner",
+          "shore__legal",
+          "shore__links",
+          "shore__notice",
+          "shore__sep",
+          "shore__sigil",
+          "shore__social",
+          "shore__social--pending",
+          "shore__socials",
+          "shore__word",
+          "splash",
+          "splash__acts",
+          "splash__aside",
+          "splash__belt",
+          "splash__chain",
+          "splash__copy",
+          "splash__date",
+          "splash__halo",
+          "splash__ink",
+          "splash__inner",
+          "splash__lede",
+          "splash__logos",
+          "splash__notes",
+          "splash__stage",
+          "splash__stamp",
+          "splash__stat",
+          "splash__stats",
+          "splash__title",
+          "ticket",
+          "ticket__bar",
+          "ticket__flag",
+          "ticket__hash",
+          "ticket__route",
+          "ticket__row",
+          "ticket__row--veil",
+          "ticket__rows",
+          "ticket__seal",
+          "ticket__seal-head",
+          "ticket__seal-ok",
+          "ticket__send",
+          "tide",
+          "tide-bento",
+          "tide-bento__cell",
+          "tide-bento__cell--deep",
+          "tide-bento__cell--wash",
+          "tide-button",
+          "tide-button--fill",
+          "tide-button--light",
+          "tide-button--line",
+          "tide-button--outline",
+          "tide-button--small",
+          "tide-deck",
+          "tide-home",
+          "tide-kicker",
+          "tide-mark",
+          "tide-mark--no",
+          "tide-mark--own",
+          "tide-mark--yes",
+          "tide-rail",
+          "tide-sign--no",
+          "tide-sign--own",
+          "tide-sign--yes",
+          "tide-table",
+          "tide-table__own",
+          "tide-title",
+          "tide__aurora",
+          "tide__dots",
+          "tide__main",
+          "vault",
+          "vault__act",
+          "vault__bar",
+          "vault__board",
+          "vault__buy",
+          "vault__copy",
+          "vault__fact",
+          "vault__facts",
+          "vault__figure",
+          "vault__fine",
+          "vault__head",
+          "vault__label",
+          "vault__ledger",
+          "vault__name",
+          "vault__pct",
+          "vault__row",
+          "vault__rows",
+          "vault__supply",
+          "vault__supply-head",
+          "vault__track",
+          "vault__uses",
+          "vault__utility",
+          "vault__utility-title"
         ],
         "fingerprint": [
-          "a@10:1",
           "a@11:0",
           "a@11:1",
-          "a@8:0",
+          "a@12:1",
+          "a@13:1",
+          "a@7:0",
+          "a@7:1",
+          "a@7:2",
           "a@8:2",
+          "a@9:0",
           "a@9:1",
-          "article@9:3",
-          "article@9:4+",
-          "blockquote@8:0",
-          "button@10:1",
-          "button@10:3",
+          "article@10:2",
+          "article@10:3",
+          "article@11:3",
+          "blockquote@9:0",
           "button@11:1",
+          "button@11:3",
           "button@12:1",
-          "button@4:1",
-          "button@8:0",
-          "button@9:1",
-          "dd@11:0",
-          "dd@11:1",
-          "dd@12:0",
+          "button@12:3",
+          "button@14:1",
+          "button@7:0",
+          "dd@13:0",
+          "dd@13:1",
           "div@10:1",
           "div@10:2",
+          "div@10:3",
           "div@10:4+",
+          "div@11:1",
           "div@11:2",
           "div@11:3",
-          "div@3:3",
-          "div@4:2",
-          "div@5:2",
-          "div@5:3",
-          "div@6:1",
-          "div@6:2",
+          "div@11:4+",
+          "div@12:1",
+          "div@12:2",
+          "div@12:3",
+          "div@3:1",
+          "div@4:4+",
+          "div@5:0",
+          "div@5:4+",
           "div@6:4+",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
           "div@8:3",
@@ -3037,174 +3091,192 @@
           "div@9:2",
           "div@9:3",
           "div@9:4+",
-          "dl@10:3",
-          "dl@10:4+",
-          "dl@9:4+",
-          "dt@11:0",
-          "dt@12:0",
-          "em@10:0",
+          "dl@11:3",
+          "dl@11:4+",
+          "dt@13:0",
           "em@11:0",
-          "footer@4:1",
-          "form@10:4+",
-          "h1@8:1",
+          "em@12:0",
+          "em@13:0",
+          "footer@5:1",
+          "form@11:4+",
+          "h1@10:1",
           "h2@10:1",
-          "h2@9:1",
-          "h3@10:0",
+          "h2@11:1",
+          "h2@12:1",
+          "h3@11:0",
+          "h3@12:0",
           "h4@9:0",
-          "input@11:0",
-          "label@11:0",
+          "input@12:0",
+          "label@12:0",
           "li@10:1",
           "li@10:2",
           "li@11:1",
-          "li@11:2",
-          "li@9:1",
+          "li@12:1",
+          "li@12:2",
           "main@5:1",
-          "nav@7:4+",
-          "ol@8:4+",
+          "nav@6:4+",
+          "ol@10:4+",
           "p@10:0",
           "p@10:2",
           "p@11:0",
-          "p@7:0",
+          "p@11:2",
+          "p@12:0",
+          "p@13:0",
           "p@8:0",
-          "p@9:0",
+          "path@10:0",
           "path@11:0",
           "path@12:0",
           "path@13:0",
           "path@14:0",
           "path@15:0",
-          "path@6:0",
+          "path@16:0",
+          "path@17:0",
+          "path@9:0",
+          "rect@9:0",
           "section@7:1",
           "section@7:2",
-          "section@7:3",
-          "section@7:4+",
-          "span@10:1",
+          "span@10:0",
           "span@11:0",
           "span@11:1",
-          "span@11:2",
           "span@12:0",
           "span@12:1",
           "span@13:0",
           "span@13:1",
+          "span@13:2",
+          "span@14:0",
+          "span@15:1",
           "span@6:0",
+          "span@7:0",
           "span@8:0",
+          "span@8:1",
           "span@9:0",
           "span@9:1",
-          "strong@11:0",
           "strong@12:0",
-          "strong@7:0",
+          "strong@8:0",
           "svg@10:1",
           "svg@11:1",
           "svg@12:1",
           "svg@13:1",
           "svg@14:1",
-          "svg@5:1",
-          "table@9:2",
-          "tbody@10:4+",
-          "td@12:1",
-          "th@12:0",
-          "thead@10:1",
-          "tr@11:3",
-          "ul@10:3",
-          "ul@10:4+",
+          "svg@15:1",
+          "svg@16:1",
+          "svg@8:2",
+          "svg@9:1",
+          "table@11:2",
+          "tbody@12:4+",
+          "td@14:1",
+          "th@14:0",
+          "thead@12:1",
+          "tr@13:3",
+          "ul@11:3",
+          "ul@11:4+",
           "ul@9:4+"
         ],
         "landmarks": [
           {
             "tag": "main",
             "role": "",
-            "top": -1272,
-            "left": 590,
-            "width": 850,
-            "height": 8450
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 138,
-            "left": 49,
-            "width": 492,
-            "height": 308
+            "top": 0,
+            "left": 0,
+            "width": 1440,
+            "height": 9178
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 7178,
+            "top": 9265,
             "left": 0,
             "width": 1440,
-            "height": 521
+            "height": 766
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 814,
+            "left": 199,
+            "width": 1041,
+            "height": 58
           }
         ],
         "colors": [
           {
-            "hex": "#0a0b0d",
-            "count": 357
+            "hex": "#081b2b",
+            "count": 381
           },
           {
-            "hex": "#585c63",
-            "count": 189
+            "hex": "#546a7d",
+            "count": 196
           },
           {
-            "hex": "#0000ff",
-            "count": 115
+            "hex": "#0b64cc",
+            "count": 89
+          },
+          {
+            "hex": "#b3d2ec",
+            "count": 81
           },
           {
             "hex": "#ffffff",
-            "count": 77
+            "count": 80
           },
           {
-            "hex": "#b6c0cc",
-            "count": 73
+            "hex": "#087a55",
+            "count": 48
           },
           {
-            "hex": "#006b47",
-            "count": 54
+            "hex": "#eaf4ff",
+            "count": 46
           },
           {
-            "hex": "#f4f6f9",
-            "count": 44
+            "hex": "#298dff",
+            "count": 31
           },
           {
-            "hex": "#e9eaff",
-            "count": 27
+            "hex": "#a9c6dd",
+            "count": 21
           },
           {
-            "hex": "#aeb6c1",
-            "count": 22
+            "hex": "#7cc0ff",
+            "count": 17
           },
           {
-            "hex": "#f1f4f7",
-            "count": 15
+            "hex": "#f4f9ff",
+            "count": 17
           },
           {
-            "hex": "#d7dde5",
+            "hex": "#d9ecff",
+            "count": 11
+          },
+          {
+            "hex": "#e8f3ff",
+            "count": 10
+          },
+          {
+            "hex": "#0b2540",
+            "count": 6
+          },
+          {
+            "hex": "#8a5a00",
             "count": 5
           },
           {
-            "hex": "#7a4f00",
-            "count": 4
+            "hex": "#d8e7f5",
+            "count": 5
           },
           {
-            "hex": "#a3a3ff",
+            "hex": "#06182a",
             "count": 3
           },
           {
-            "hex": "#0000c8",
-            "count": 2
+            "hex": "#6f8ca3",
+            "count": 3
           },
           {
             "hex": "#e8f5ee",
             "count": 2
           },
           {
-            "hex": "#171a1f",
-            "count": 1
-          },
-          {
             "hex": "#fdf6e7",
-            "count": 1
-          },
-          {
-            "hex": "#ffc46b",
             "count": 1
           }
         ],
@@ -3345,11 +3417,54 @@
           }
         ],
         "navTargets": [
-          ""
+          "",
+          "/privacy",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
-          "offenders": []
+          "offenders": [
+            {
+              "selector": "div.scene__inner > div.tide-rail.modules__rail > article.modules__item",
+              "right": 1636,
+              "width": 380
+            },
+            {
+              "selector": "div.tide-rail.modules__rail > article.modules__item > h3.modules__name",
+              "right": 1602,
+              "width": 312
+            },
+            {
+              "selector": "div.tide-rail.modules__rail > article.modules__item > p.modules__text",
+              "right": 1602,
+              "width": 312
+            },
+            {
+              "selector": "div.scene__inner > div.tide-rail.modules__rail > article.modules__item",
+              "right": 2036,
+              "width": 380
+            },
+            {
+              "selector": "div.tide-rail.modules__rail > article.modules__item > span.modules__icon",
+              "right": 1736,
+              "width": 46
+            },
+            {
+              "selector": "article.modules__item > span.modules__icon > svg",
+              "right": 1723,
+              "width": 20
+            },
+            {
+              "selector": "span.modules__icon > svg > path",
+              "right": 1719,
+              "width": 13
+            },
+            {
+              "selector": "div.tide-rail.modules__rail > article.modules__item > h3.modules__name",
+              "right": 2002,
+              "width": 312
+            }
+          ]
         }
       },
       "axe": {
@@ -3366,13 +3481,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Seclura — Private Payments, Invisible by Design",
+          "title": "Veilary — Private Payments, Invisible by Design",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 11930,
+          "bodyTextLength": 11883,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 50
+          "focusableCount": 49
         },
         "words": [
           {
@@ -3637,7 +3752,7 @@
           },
           {
             "word": "App",
-            "count": 1
+            "count": 2
           },
           {
             "word": "apps",
@@ -4173,7 +4288,7 @@
           },
           {
             "word": "FAQ",
-            "count": 2
+            "count": 1
           },
           {
             "word": "feature",
@@ -4181,7 +4296,7 @@
           },
           {
             "word": "Features",
-            "count": 2
+            "count": 1
           },
           {
             "word": "fee",
@@ -4356,16 +4471,12 @@
             "count": 4
           },
           {
-            "word": "Home",
-            "count": 1
-          },
-          {
             "word": "how",
             "count": 6
           },
           {
             "word": "How",
-            "count": 5
+            "count": 4
           },
           {
             "word": "hpke",
@@ -4489,7 +4600,7 @@
           },
           {
             "word": "it",
-            "count": 16
+            "count": 15
           },
           {
             "word": "It",
@@ -4557,7 +4668,7 @@
           },
           {
             "word": "Launch",
-            "count": 3
+            "count": 4
           },
           {
             "word": "Launched",
@@ -5317,7 +5428,7 @@
           },
           {
             "word": "Roadmap",
-            "count": 3
+            "count": 2
           },
           {
             "word": "route",
@@ -5354,18 +5465,6 @@
           {
             "word": "sealing",
             "count": 1
-          },
-          {
-            "word": "Seclura",
-            "count": 21
-          },
-          {
-            "word": "seclura://send",
-            "count": 1
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 2
           },
           {
             "word": "second",
@@ -5701,7 +5800,7 @@
           },
           {
             "word": "Tokenomics",
-            "count": 3
+            "count": 2
           },
           {
             "word": "tokens",
@@ -5832,6 +5931,18 @@
             "count": 2
           },
           {
+            "word": "Veilary",
+            "count": 20
+          },
+          {
+            "word": "veilary://send",
+            "count": 1
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 2
+          },
+          {
             "word": "verifiability",
             "count": 1
           },
@@ -5957,7 +6068,7 @@
           },
           {
             "word": "works",
-            "count": 4
+            "count": 3
           },
           {
             "word": "world",
@@ -6006,6 +6117,10 @@
             "count": 2
           },
           {
+            "key": "aria-label=Core modules",
+            "count": 1
+          },
+          {
             "key": "aria-label=Discord (link pending)",
             "count": 1
           },
@@ -6022,16 +6137,28 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
+            "key": "aria-label=Privacy Policy",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Roadmap",
+            "count": 1
           },
           {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
           },
           {
+            "key": "aria-label=Terms of Use",
+            "count": 1
+          },
+          {
             "key": "aria-label=Toggle navigation",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -6062,11 +6189,19 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
         "links": [
+          {
+            "href": "/privacy",
+            "count": 1
+          },
+          {
+            "href": "/terms",
+            "count": 1
+          },
           {
             "href": "#/privacy",
             "count": 1
@@ -6076,20 +6211,16 @@
             "count": 1
           },
           {
-            "href": "#faq",
+            "href": "#features",
             "count": 1
           },
           {
-            "href": "#features",
-            "count": 2
-          },
-          {
             "href": "#home",
-            "count": 3
+            "count": 2
           },
           {
             "href": "#how-it-works",
-            "count": 2
+            "count": 1
           },
           {
             "href": "#launch",
@@ -6097,11 +6228,11 @@
           },
           {
             "href": "#roadmap",
-            "count": 2
+            "count": 1
           },
           {
             "href": "#tokenomics",
-            "count": 2
+            "count": 1
           },
           {
             "href": "https://ghostwareos.gitbook.io/docs",
@@ -6128,11 +6259,11 @@
             "count": 2
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 3
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -6146,236 +6277,269 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "access",
-          "access__button",
-          "access__field",
-          "access__fine",
-          "access__label",
-          "access__sub",
-          "access__title",
-          "atlas",
-          "atlas__rail",
-          "atlas__stage",
-          "bp-btn",
-          "bp-btn--block",
-          "bp-btn--ghost",
-          "bp-btn--small",
-          "bp-btn--solid",
-          "bp-deck",
-          "bp-kicker",
-          "bp-title",
-          "checks",
-          "chips",
-          "chips__item",
-          "closing",
-          "closing__blurb",
-          "closing__brand",
-          "closing__chip",
-          "closing__column",
-          "closing__column-title",
-          "closing__columns",
-          "closing__foot",
-          "closing__grid",
-          "closing__identity",
-          "closing__inner",
-          "closing__legal",
-          "closing__name",
-          "closing__notice",
-          "closing__sep",
-          "closing__social",
-          "closing__social--pending",
-          "closing__socials",
-          "creed",
-          "gauge",
-          "gauge__cell",
-          "home",
-          "invite",
-          "invite__acts",
-          "invite__copy",
-          "invite__deck",
-          "invite__form",
-          "invite__ticks",
-          "invite__title",
-          "lane",
-          "lane--active",
-          "lane--done",
-          "lane--next",
-          "lane__badge",
-          "lane__items",
-          "lane__meta",
-          "lane__phase",
-          "lane__status",
-          "lane__title",
-          "lanes",
-          "ledger",
-          "ledger__copy",
-          "ledger__key",
-          "ledger__row",
-          "ledger__value",
-          "list",
-          "matrix",
-          "matrix__mark",
-          "matrix__mark--off",
-          "matrix__mark--on",
-          "matrix__mark--own",
-          "matrix__note",
-          "matrix__own",
-          "matrix__sign--negative",
-          "matrix__sign--own",
-          "matrix__sign--positive",
-          "matrix__table",
-          "mint",
-          "mint__act",
-          "mint__key",
-          "mint__value",
-          "more",
-          "more__links",
-          "more__question",
-          "notes",
-          "notes__item",
-          "opener",
-          "opener__acts",
-          "opener__board",
-          "opener__chain",
-          "opener__date",
-          "opener__lede",
-          "opener__register",
-          "opener__side",
-          "opener__title",
-          "opener__top",
-          "opener__turn",
-          "pillars",
-          "pillars__item",
-          "pillars__text",
-          "pillars__title",
-          "qa",
-          "qa--open",
-          "qa__answer",
-          "qa__answer--open",
-          "qa__icon",
-          "qa__num",
-          "qa__q",
-          "qa__trigger",
-          "rail",
-          "rail__brand",
-          "rail__chip",
-          "rail__glyph",
-          "rail__head",
-          "rail__index",
-          "rail__label",
-          "rail__link",
-          "rail__name",
-          "rail__toggle",
-          "readout",
-          "readout__aside",
-          "readout__live",
-          "readout__main",
-          "readout__meta",
-          "readout__tag",
-          "readout__text",
-          "readout__title",
-          "record",
-          "record__audit",
-          "record__facts",
-          "record__foot",
-          "record__head",
-          "record__list",
-          "record__live",
-          "record__row",
-          "record__source",
-          "record__stat",
-          "record__stats",
-          "route",
-          "route__label",
-          "route__line",
-          "route__line--on",
-          "route__node",
-          "route__node--on",
-          "route__step",
-          "seal",
-          "seal__hash",
-          "seal__head",
-          "seal__ok",
-          "spec",
-          "spec__icon",
-          "spec__item",
-          "spec__text",
-          "spec__title",
-          "stop",
-          "stop__head",
-          "supply",
-          "supply__bar",
-          "supply__figure",
-          "supply__head",
-          "supply__label",
-          "supply__name",
-          "supply__pct",
-          "supply__row",
-          "supply__rows",
-          "supply__sheet",
-          "supply__track",
-          "tenets",
-          "tenets__icon",
-          "tenets__item",
-          "tenets__text",
-          "tenets__title",
-          "track",
-          "track__body",
-          "track__button",
-          "track__go",
-          "track__num",
-          "track__step",
-          "track__step--on",
-          "track__text",
-          "track__title",
-          "transmit",
-          "transmit__bar",
-          "transmit__flag",
-          "transmit__route",
-          "transmit__row",
-          "transmit__row--amount",
-          "transmit__rows",
-          "transmit__send",
-          "utility",
-          "utility__act",
-          "utility__fine",
-          "utility__list",
-          "utility__title"
+          "crest",
+          "crest__audit",
+          "crest__board",
+          "crest__creed",
+          "crest__fact",
+          "crest__facts",
+          "crest__foot",
+          "crest__head",
+          "crest__live",
+          "crest__pillar",
+          "crest__pillar-text",
+          "crest__pillar-title",
+          "crest__record",
+          "crest__record-head",
+          "crest__source",
+          "crest__stat",
+          "crest__stats",
+          "drift",
+          "drift__body",
+          "drift__checks",
+          "drift__current",
+          "drift__detail",
+          "drift__dot",
+          "drift__go",
+          "drift__head",
+          "drift__label",
+          "drift__line",
+          "drift__line--on",
+          "drift__live",
+          "drift__meta",
+          "drift__move",
+          "drift__name",
+          "drift__node",
+          "drift__node--on",
+          "drift__num",
+          "drift__readout",
+          "drift__route",
+          "drift__sequence",
+          "drift__stage",
+          "drift__step",
+          "drift__step--on",
+          "drift__tag",
+          "drift__text",
+          "expanse",
+          "expanse__body",
+          "expanse__head",
+          "expanse__icon",
+          "expanse__note",
+          "expanse__tablewrap",
+          "expanse__tenet",
+          "expanse__tenets",
+          "expanse__text",
+          "expanse__title",
+          "harbor__brand",
+          "harbor__cta",
+          "harbor__dock",
+          "harbor__legal",
+          "harbor__sigil",
+          "harbor__split",
+          "harbor__toggle",
+          "horizon",
+          "horizon__badge",
+          "horizon__head",
+          "horizon__items",
+          "horizon__meta",
+          "horizon__phase",
+          "horizon__phase--active",
+          "horizon__phase--done",
+          "horizon__phase--next",
+          "horizon__phase-name",
+          "horizon__rail",
+          "horizon__status",
+          "horizon__title",
+          "inlet",
+          "inlet__acts",
+          "inlet__card",
+          "inlet__copy",
+          "inlet__deck",
+          "inlet__field",
+          "inlet__fine",
+          "inlet__form",
+          "inlet__form-sub",
+          "inlet__form-title",
+          "inlet__grid",
+          "inlet__label",
+          "inlet__submit",
+          "inlet__ticks",
+          "inlet__title",
+          "mintline",
+          "mintline__act",
+          "mintline__key",
+          "mintline__value",
+          "modules",
+          "modules__deck",
+          "modules__head",
+          "modules__icon",
+          "modules__item",
+          "modules__lede",
+          "modules__name",
+          "modules__rail",
+          "modules__text",
+          "modules__title",
+          "scene",
+          "scene--deep",
+          "scene__head",
+          "scene__inner",
+          "shallows",
+          "shallows__answer",
+          "shallows__answer--open",
+          "shallows__aside",
+          "shallows__ask",
+          "shallows__grid",
+          "shallows__head",
+          "shallows__index",
+          "shallows__links",
+          "shallows__list",
+          "shallows__mark",
+          "shallows__prompt",
+          "shallows__qa",
+          "shallows__qa--open",
+          "shallows__question",
+          "shallows__trigger",
+          "shore",
+          "shore__base",
+          "shore__blurb",
+          "shore__brand",
+          "shore__copy",
+          "shore__crest",
+          "shore__group",
+          "shore__group-title",
+          "shore__index",
+          "shore__inner",
+          "shore__legal",
+          "shore__links",
+          "shore__notice",
+          "shore__sep",
+          "shore__sigil",
+          "shore__social",
+          "shore__social--pending",
+          "shore__socials",
+          "shore__word",
+          "splash",
+          "splash__acts",
+          "splash__aside",
+          "splash__belt",
+          "splash__chain",
+          "splash__copy",
+          "splash__date",
+          "splash__halo",
+          "splash__ink",
+          "splash__inner",
+          "splash__lede",
+          "splash__logos",
+          "splash__notes",
+          "splash__stage",
+          "splash__stamp",
+          "splash__stat",
+          "splash__stats",
+          "splash__title",
+          "ticket",
+          "ticket__bar",
+          "ticket__flag",
+          "ticket__hash",
+          "ticket__route",
+          "ticket__row",
+          "ticket__row--veil",
+          "ticket__rows",
+          "ticket__seal",
+          "ticket__seal-head",
+          "ticket__seal-ok",
+          "ticket__send",
+          "tide",
+          "tide-bento",
+          "tide-bento__cell",
+          "tide-bento__cell--deep",
+          "tide-bento__cell--wash",
+          "tide-button",
+          "tide-button--fill",
+          "tide-button--light",
+          "tide-button--line",
+          "tide-button--outline",
+          "tide-button--small",
+          "tide-deck",
+          "tide-home",
+          "tide-kicker",
+          "tide-mark",
+          "tide-mark--no",
+          "tide-mark--own",
+          "tide-mark--yes",
+          "tide-rail",
+          "tide-sign--no",
+          "tide-sign--own",
+          "tide-sign--yes",
+          "tide-table",
+          "tide-table__own",
+          "tide-title",
+          "tide__aurora",
+          "tide__main",
+          "vault",
+          "vault__act",
+          "vault__bar",
+          "vault__board",
+          "vault__buy",
+          "vault__copy",
+          "vault__fact",
+          "vault__facts",
+          "vault__figure",
+          "vault__fine",
+          "vault__head",
+          "vault__label",
+          "vault__ledger",
+          "vault__name",
+          "vault__pct",
+          "vault__row",
+          "vault__rows",
+          "vault__supply",
+          "vault__supply-head",
+          "vault__track",
+          "vault__uses",
+          "vault__utility",
+          "vault__utility-title"
         ],
         "fingerprint": [
-          "a@10:1",
           "a@11:0",
           "a@11:1",
-          "a@8:0",
+          "a@12:1",
+          "a@13:1",
+          "a@7:1",
+          "a@7:2",
           "a@8:2",
+          "a@9:0",
           "a@9:1",
-          "article@9:3",
-          "article@9:4+",
-          "blockquote@8:0",
-          "button@10:1",
-          "button@10:3",
+          "article@10:2",
+          "article@10:3",
+          "article@11:3",
+          "blockquote@9:0",
           "button@11:1",
+          "button@11:3",
           "button@12:1",
-          "button@8:1",
-          "button@9:1",
-          "dd@11:0",
-          "dd@11:1",
-          "dd@12:0",
+          "button@12:3",
+          "button@14:1",
+          "button@7:0",
+          "button@7:1",
+          "dd@13:0",
+          "dd@13:1",
           "div@10:1",
           "div@10:2",
+          "div@10:3",
           "div@10:4+",
+          "div@11:1",
           "div@11:2",
           "div@11:3",
-          "div@3:3",
-          "div@4:2",
-          "div@5:2",
-          "div@5:3",
-          "div@6:1",
-          "div@6:2",
+          "div@11:4+",
+          "div@12:1",
+          "div@12:2",
+          "div@12:3",
+          "div@3:1",
+          "div@4:4+",
+          "div@5:0",
           "div@6:4+",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
           "div@8:1",
           "div@8:2",
           "div@8:3",
@@ -6383,178 +6547,196 @@
           "div@9:2",
           "div@9:3",
           "div@9:4+",
-          "dl@10:3",
-          "dl@10:4+",
-          "dl@9:4+",
-          "dt@11:0",
-          "dt@12:0",
-          "em@10:0",
+          "dl@11:3",
+          "dl@11:4+",
+          "dt@13:0",
           "em@11:0",
-          "footer@4:1",
-          "form@10:4+",
-          "h1@8:1",
+          "em@12:0",
+          "em@13:0",
+          "footer@5:1",
+          "form@11:4+",
+          "h1@10:1",
           "h2@10:1",
-          "h2@9:1",
-          "h3@10:0",
+          "h2@11:1",
+          "h2@12:1",
+          "h3@11:0",
+          "h3@12:0",
           "h4@9:0",
-          "input@11:0",
-          "label@11:0",
+          "input@12:0",
+          "label@12:0",
           "li@10:1",
           "li@10:2",
           "li@11:1",
-          "li@11:2",
-          "li@9:1",
+          "li@12:1",
+          "li@12:2",
           "main@5:1",
-          "nav@7:4+",
-          "ol@8:4+",
+          "nav@6:4+",
+          "ol@10:4+",
           "p@10:0",
           "p@10:2",
           "p@11:0",
-          "p@7:0",
+          "p@11:2",
+          "p@12:0",
+          "p@13:0",
           "p@8:0",
-          "p@9:0",
           "path@10:0",
           "path@11:0",
           "path@12:0",
           "path@13:0",
           "path@14:0",
           "path@15:0",
+          "path@16:0",
+          "path@17:0",
+          "path@9:0",
+          "rect@9:0",
           "section@7:1",
           "section@7:2",
-          "section@7:3",
-          "section@7:4+",
-          "span@10:1",
+          "span@10:0",
           "span@11:0",
           "span@11:1",
-          "span@11:2",
           "span@12:0",
           "span@12:1",
           "span@13:0",
           "span@13:1",
-          "span@8:0",
+          "span@13:2",
+          "span@14:0",
+          "span@15:1",
+          "span@7:0",
+          "span@8:1",
           "span@9:0",
           "span@9:1",
-          "strong@11:0",
           "strong@12:0",
-          "strong@7:0",
+          "strong@8:0",
           "svg@10:1",
           "svg@11:1",
           "svg@12:1",
           "svg@13:1",
           "svg@14:1",
+          "svg@15:1",
+          "svg@16:1",
+          "svg@8:1",
+          "svg@8:2",
           "svg@9:1",
-          "table@9:2",
-          "tbody@10:4+",
-          "td@12:1",
-          "th@12:0",
-          "thead@10:1",
-          "tr@11:3",
-          "ul@10:3",
-          "ul@10:4+",
+          "table@11:2",
+          "tbody@12:4+",
+          "td@14:1",
+          "th@14:0",
+          "thead@12:1",
+          "tr@13:3",
+          "ul@11:3",
+          "ul@11:4+",
           "ul@9:4+"
         ],
         "landmarks": [
           {
             "tag": "main",
             "role": "",
-            "top": 117,
+            "top": 0,
             "left": 0,
             "width": 390,
-            "height": 11593
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 74,
-            "left": 18,
-            "width": 355,
-            "height": 42
+            "height": 11055
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 11710,
+            "top": 11095,
             "left": 0,
             "width": 390,
-            "height": 1076
+            "height": 1124
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 772,
+            "left": 27,
+            "width": 337,
+            "height": 58
           }
         ],
         "colors": [
           {
-            "hex": "#0a0b0d",
-            "count": 358
+            "hex": "#081b2b",
+            "count": 373
           },
           {
-            "hex": "#585c63",
-            "count": 188
+            "hex": "#546a7d",
+            "count": 178
           },
           {
-            "hex": "#0000ff",
-            "count": 112
+            "hex": "#0b64cc",
+            "count": 88
           },
           {
             "hex": "#ffffff",
-            "count": 74
+            "count": 81
           },
           {
-            "hex": "#b6c0cc",
-            "count": 73
+            "hex": "#b3d2ec",
+            "count": 75
           },
           {
-            "hex": "#006b47",
-            "count": 54
+            "hex": "#087a55",
+            "count": 48
           },
           {
-            "hex": "#f4f6f9",
-            "count": 44
+            "hex": "#eaf4ff",
+            "count": 46
           },
           {
-            "hex": "#e9eaff",
-            "count": 27
-          },
-          {
-            "hex": "#aeb6c1",
+            "hex": "#298dff",
             "count": 22
           },
           {
-            "hex": "#f1f4f7",
-            "count": 15
+            "hex": "#a9c6dd",
+            "count": 21
           },
           {
-            "hex": "#d7dde5",
+            "hex": "#7cc0ff",
+            "count": 17
+          },
+          {
+            "hex": "#f4f9ff",
+            "count": 17
+          },
+          {
+            "hex": "#d9ecff",
+            "count": 11
+          },
+          {
+            "hex": "#e8f3ff",
+            "count": 10
+          },
+          {
+            "hex": "#0b2540",
+            "count": 6
+          },
+          {
+            "hex": "#8a5a00",
             "count": 5
           },
           {
-            "hex": "#7a4f00",
-            "count": 4
+            "hex": "#d8e7f5",
+            "count": 5
           },
           {
-            "hex": "#a3a3ff",
+            "hex": "#06182a",
             "count": 3
           },
           {
-            "hex": "#0000c8",
-            "count": 2
+            "hex": "#6f8ca3",
+            "count": 3
           },
           {
             "hex": "#e8f5ee",
             "count": 2
           },
           {
-            "hex": "#171a1f",
-            "count": 1
-          },
-          {
             "hex": "#fdf6e7",
-            "count": 1
-          },
-          {
-            "hex": "#ffc46b",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 293,
+        "contrastChecked": 287,
         "headings": [
           {
             "tag": "h1",
@@ -6690,46 +6872,58 @@
           }
         ],
         "navTargets": [
-          ""
+          "",
+          "/privacy",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
           "offenders": [
             {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
+              "selector": "div.splash__inner > div.splash__stage > span.splash__halo",
+              "right": 405,
+              "width": 420
+            },
+            {
+              "selector": "div.scene__inner > div.tide-rail.modules__rail > article.modules__item",
+              "right": 668,
+              "width": 320
+            },
+            {
+              "selector": "div.tide-rail.modules__rail > article.modules__item > span.modules__icon",
+              "right": 416,
+              "width": 46
+            },
+            {
+              "selector": "article.modules__item > span.modules__icon > svg",
+              "right": 403,
+              "width": 20
+            },
+            {
+              "selector": "span.modules__icon > svg > path",
               "right": 398,
-              "width": 92
+              "width": 11
             },
             {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 398,
-              "width": 74
+              "selector": "div.tide-rail.modules__rail > article.modules__item > h3.modules__name",
+              "right": 646,
+              "width": 276
             },
             {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
-              "right": 497,
-              "width": 79
+              "selector": "div.tide-rail.modules__rail > article.modules__item > p.modules__text",
+              "right": 646,
+              "width": 276
             },
             {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 497,
-              "width": 60
-            },
-            {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
-              "right": 561,
-              "width": 45
-            },
-            {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 561,
-              "width": 26
+              "selector": "div.scene__inner > div.tide-rail.modules__rail > article.modules__item",
+              "right": 999,
+              "width": 320
             }
           ]
         }
       },
       "mobileNav": {
-        "opened": true,
+        "opened": false,
         "targets": [
           "",
           "/privacy",
@@ -6740,83 +6934,83 @@
       "focus": {
         "samples": [
           {
-            "tag": "a",
-            "text": "Home",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(0, 0, 255)",
-            "boxShadow": "none",
-            "borderColor": "rgb(1, 1, 239) rgb(1, 1, 239) rgb(215, 221, 229)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Features",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(0, 0, 255)",
-            "boxShadow": "none",
-            "borderColor": "rgb(3, 3, 193) rgb(3, 3, 193) rgb(215, 221, 229)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "How it works",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(0, 0, 255)",
-            "boxShadow": "none",
-            "borderColor": "rgb(4, 4, 166) rgb(4, 4, 166) rgb(215, 221, 229)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Tokenomics",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(0, 0, 255)",
-            "boxShadow": "none",
-            "borderColor": "rgb(4, 4, 165) rgb(4, 4, 165) rgb(215, 221, 229)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "Roadmap",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(0, 0, 255)",
-            "boxShadow": "none",
-            "borderColor": "rgb(2, 2, 212) rgb(2, 2, 212) rgb(215, 221, 229)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
-            "tag": "a",
-            "text": "FAQ",
-            "outlineStyle": "solid",
-            "outlineWidth": "2px",
-            "outlineColor": "rgb(0, 0, 255)",
-            "boxShadow": "none",
-            "borderColor": "rgb(2, 2, 212) rgb(2, 2, 212) rgb(215, 221, 229)",
-            "backgroundColor": "rgba(0, 0, 0, 0)"
-          },
-          {
             "tag": "button",
             "text": "Launch App",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(0, 0, 255)",
-            "boxShadow": "rgba(0, 0, 255, 0.22) 0px 12px 26px 0px",
-            "borderColor": "rgb(0, 0, 255)",
-            "backgroundColor": "rgb(0, 0, 255)"
+            "outlineColor": "rgb(11, 100, 204)",
+            "boxShadow": "rgba(20, 96, 173, 0.28) 0px 16px 36px 0px",
+            "borderColor": "rgb(11, 100, 204)",
+            "backgroundColor": "rgb(11, 100, 204)"
           },
           {
-            "tag": "a",
-            "text": "WHITEPAPER",
+            "tag": "button",
+            "text": "See how it works",
             "outlineStyle": "solid",
             "outlineWidth": "2px",
-            "outlineColor": "rgb(0, 0, 255)",
+            "outlineColor": "rgb(11, 100, 204)",
             "boxShadow": "none",
-            "borderColor": "rgb(88, 92, 99)",
+            "borderColor": "rgb(179, 210, 236)",
+            "backgroundColor": "rgba(255, 255, 255, 0.7)"
+          },
+          {
+            "tag": "button",
+            "text": "Send privately",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(11, 100, 204)",
+            "boxShadow": "none",
+            "borderColor": "rgb(255, 255, 255)",
+            "backgroundColor": "rgb(6, 24, 42)"
+          },
+          {
+            "tag": "button",
+            "text": "Copy the $GHOST mint address BBKPiLM9KjdJW7oQSKt99RVWcZdhF6s",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(11, 100, 204)",
+            "boxShadow": "none",
+            "borderColor": "rgb(216, 231, 245)",
+            "backgroundColor": "rgba(255, 255, 255, 0.88)"
+          },
+          {
+            "tag": "div",
+            "text": "Core modules",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(11, 100, 204)",
+            "boxShadow": "none",
+            "borderColor": "rgb(8, 27, 43)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "button",
+            "text": "01 Connect your Solana wallet Phantom, Solflare, Backpack or",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(11, 100, 204)",
+            "boxShadow": "none",
+            "borderColor": "rgb(8, 27, 43)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "button",
+            "text": "02 Fund your private balance Move SOL or SPL tokens into Vei",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(11, 100, 204)",
+            "boxShadow": "none",
+            "borderColor": "rgb(8, 27, 43)",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "tag": "button",
+            "text": "03 Pay to a stealth address Send to a fresh one-time address",
+            "outlineStyle": "solid",
+            "outlineWidth": "2px",
+            "outlineColor": "rgb(11, 100, 204)",
+            "boxShadow": "none",
+            "borderColor": "rgb(8, 27, 43)",
             "backgroundColor": "rgba(0, 0, 0, 0)"
           }
         ],
@@ -6830,13 +7024,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Privacy Policy — Seclura",
+          "title": "Privacy Policy — Veilary",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 2300,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 28
+          "focusableCount": 30
         },
         "words": [
           {
@@ -7508,14 +7702,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 6
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 2
-          },
-          {
             "word": "seed",
             "count": 1
           },
@@ -7684,6 +7870,14 @@
             "count": 1
           },
           {
+            "word": "Veilary",
+            "count": 6
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 2
+          },
+          {
             "word": "Vision",
             "count": 1
           },
@@ -7778,12 +7972,20 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
+            "key": "aria-label=Privacy Policy",
+            "count": 1
           },
           {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
+          },
+          {
+            "key": "aria-label=Terms of Use",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -7806,11 +8008,19 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
         "links": [
+          {
+            "href": "/privacy",
+            "count": 1
+          },
+          {
+            "href": "/terms",
+            "count": 1
+          },
           {
             "href": "#/",
             "count": 1
@@ -7872,11 +8082,11 @@
             "count": 1
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 3
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -7885,160 +8095,176 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas",
-          "atlas__meter",
-          "atlas__rail",
-          "atlas__stage",
-          "bp-btn",
-          "bp-btn--block",
-          "bp-btn--ghost",
-          "bp-btn--small",
-          "bp-btn--solid",
-          "bp-kicker",
-          "closing",
-          "closing__blurb",
-          "closing__brand",
-          "closing__chip",
-          "closing__column",
-          "closing__column-title",
-          "closing__columns",
-          "closing__foot",
-          "closing__grid",
-          "closing__identity",
-          "closing__inner",
-          "closing__legal",
-          "closing__name",
-          "closing__notice",
-          "closing__sep",
-          "closing__social",
-          "closing__social--pending",
-          "closing__socials",
-          "dossier",
-          "dossier__back",
-          "dossier__body",
-          "dossier__copy",
-          "dossier__head",
-          "dossier__heading",
-          "dossier__lead",
-          "dossier__section",
-          "dossier__stamp",
-          "dossier__title",
-          "rail",
-          "rail__brand",
-          "rail__chip",
-          "rail__foot",
-          "rail__glyph",
-          "rail__head",
-          "rail__index",
-          "rail__label",
-          "rail__link",
-          "rail__name",
-          "rail__paper",
+          "harbor__brand",
+          "harbor__cta",
+          "harbor__dock",
+          "harbor__label",
+          "harbor__legal",
+          "harbor__link",
+          "harbor__marker",
+          "harbor__paper",
+          "harbor__sigil",
+          "harbor__split",
+          "harbor__word",
+          "legal",
+          "legal__back",
+          "legal__copy",
+          "legal__heading",
+          "legal__lead",
+          "legal__opening",
+          "legal__reading",
+          "legal__section",
+          "legal__stamp",
+          "legal__title",
+          "legal__wall",
           "router-link-active",
-          "router-link-exact-active"
+          "router-link-exact-active",
+          "scene",
+          "scene--tall",
+          "scene__inner",
+          "shore",
+          "shore__base",
+          "shore__blurb",
+          "shore__brand",
+          "shore__copy",
+          "shore__crest",
+          "shore__group",
+          "shore__group-title",
+          "shore__index",
+          "shore__inner",
+          "shore__legal",
+          "shore__links",
+          "shore__notice",
+          "shore__sep",
+          "shore__sigil",
+          "shore__social",
+          "shore__social--pending",
+          "shore__socials",
+          "shore__word",
+          "tide",
+          "tide-button",
+          "tide-button--fill",
+          "tide-button--line",
+          "tide-kicker",
+          "tide__aurora",
+          "tide__dots",
+          "tide__main"
         ],
         "fingerprint": [
+          "a@10:0",
           "a@11:0",
-          "a@8:0",
+          "a@7:0",
+          "a@7:1",
+          "a@7:2",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@6:2",
-          "button@8:0",
-          "div@3:3",
-          "div@4:2",
-          "div@5:2",
-          "div@5:3",
-          "div@6:1",
-          "div@6:2",
+          "button@7:0",
+          "div@3:1",
+          "div@4:4+",
+          "div@5:0",
+          "div@5:4+",
           "div@6:4+",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
-          "div@8:1",
           "div@8:2",
           "div@8:4+",
-          "footer@4:1",
-          "h1@8:0",
-          "h2@9:0",
+          "div@9:1",
+          "div@9:4+",
+          "footer@5:1",
+          "h1@9:0",
+          "h2@11:0",
           "h4@9:0",
           "li@10:1",
           "main@5:1",
-          "nav@7:4+",
-          "p@7:0",
+          "nav@6:4+",
+          "p@11:0",
           "p@8:0",
           "p@9:0",
+          "path@10:0",
           "path@11:0",
-          "section@8:2",
+          "path@9:0",
+          "rect@9:0",
+          "section@10:2",
           "span@6:0",
+          "span@7:0",
           "span@8:0",
+          "span@8:1",
           "span@9:0",
           "span@9:1",
-          "strong@7:0",
+          "strong@8:0",
           "svg@10:1",
+          "svg@8:2",
+          "svg@9:1",
           "ul@9:4+"
         ],
         "landmarks": [
           {
             "tag": "main",
             "role": "",
-            "top": -15,
-            "left": 590,
-            "width": 850,
-            "height": 1300
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 138,
-            "left": 49,
-            "width": 492,
-            "height": 308
+            "top": -93,
+            "left": 0,
+            "width": 1440,
+            "height": 2154
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 1285,
+            "top": 2147,
             "left": 0,
             "width": 1440,
-            "height": 521
+            "height": 766
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 814,
+            "left": 199,
+            "width": 1041,
+            "height": 58
           }
         ],
         "colors": [
           {
-            "hex": "#f4f6f9",
-            "count": 44
+            "hex": "#081b2b",
+            "count": 93
           },
           {
-            "hex": "#0a0b0d",
+            "hex": "#546a7d",
             "count": 40
           },
           {
-            "hex": "#aeb6c1",
-            "count": 22
+            "hex": "#298dff",
+            "count": 9
           },
           {
-            "hex": "#585c63",
+            "hex": "#b3d2ec",
             "count": 8
+          },
+          {
+            "hex": "#0b64cc",
+            "count": 7
           },
           {
             "hex": "#ffffff",
             "count": 7
           },
           {
-            "hex": "#0000ff",
-            "count": 4
-          },
-          {
-            "hex": "#a3a3ff",
+            "hex": "#eaf4ff",
             "count": 3
           },
           {
-            "hex": "#171a1f",
+            "hex": "#e8f3ff",
+            "count": 2
+          },
+          {
+            "hex": "#8a5a00",
             "count": 1
           },
           {
-            "hex": "#ffc46b",
+            "hex": "#d8e7f5",
             "count": 1
           }
         ],
@@ -8083,7 +8309,9 @@
           }
         ],
         "navTargets": [
-          ""
+          "",
+          "/privacy",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -8104,13 +8332,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Privacy Policy — Seclura",
+          "title": "Privacy Policy — Veilary",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2278,
+          "bodyTextLength": 2231,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 27
+          "focusableCount": 24
         },
         "words": [
           {
@@ -8211,6 +8439,10 @@
           },
           {
             "word": "anywhere",
+            "count": 1
+          },
+          {
+            "word": "App",
             "count": 1
           },
           {
@@ -8370,12 +8602,8 @@
             "count": 1
           },
           {
-            "word": "FAQ",
-            "count": 1
-          },
-          {
             "word": "Features",
-            "count": 2
+            "count": 1
           },
           {
             "word": "financial",
@@ -8438,12 +8666,8 @@
             "count": 1
           },
           {
-            "word": "Home",
-            "count": 1
-          },
-          {
             "word": "How",
-            "count": 2
+            "count": 1
           },
           {
             "word": "HPKE",
@@ -8503,7 +8727,7 @@
           },
           {
             "word": "it",
-            "count": 2
+            "count": 1
           },
           {
             "word": "its",
@@ -8523,6 +8747,10 @@
           },
           {
             "word": "Last",
+            "count": 1
+          },
+          {
+            "word": "Launch",
             "count": 1
           },
           {
@@ -8763,7 +8991,7 @@
           },
           {
             "word": "Roadmap",
-            "count": 2
+            "count": 1
           },
           {
             "word": "RPC",
@@ -8772,14 +9000,6 @@
           {
             "word": "sealed",
             "count": 1
-          },
-          {
-            "word": "Seclura",
-            "count": 6
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 2
           },
           {
             "word": "seed",
@@ -8907,7 +9127,7 @@
           },
           {
             "word": "Tokenomics",
-            "count": 2
+            "count": 1
           },
           {
             "word": "tokens",
@@ -8948,6 +9168,14 @@
           {
             "word": "value",
             "count": 1
+          },
+          {
+            "word": "Veilary",
+            "count": 5
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 2
           },
           {
             "word": "Vision",
@@ -9003,7 +9231,7 @@
           },
           {
             "word": "works",
-            "count": 2
+            "count": 1
           },
           {
             "word": "write",
@@ -9044,16 +9272,24 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
+            "key": "aria-label=Privacy Policy",
+            "count": 1
           },
           {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
           },
           {
+            "key": "aria-label=Terms of Use",
+            "count": 1
+          },
+          {
             "key": "aria-label=Toggle navigation",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -9076,11 +9312,19 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
         "links": [
+          {
+            "href": "/privacy",
+            "count": 1
+          },
+          {
+            "href": "/terms",
+            "count": 1
+          },
           {
             "href": "#/",
             "count": 1
@@ -9094,28 +9338,24 @@
             "count": 1
           },
           {
-            "href": "#faq",
+            "href": "#features",
             "count": 1
           },
           {
-            "href": "#features",
-            "count": 2
-          },
-          {
             "href": "#home",
-            "count": 3
+            "count": 2
           },
           {
             "href": "#how-it-works",
-            "count": 2
+            "count": 1
           },
           {
             "href": "#roadmap",
-            "count": 2
+            "count": 1
           },
           {
             "href": "#tokenomics",
-            "count": 2
+            "count": 1
           },
           {
             "href": "https://ghostwareos.gitbook.io/docs",
@@ -9142,11 +9382,11 @@
             "count": 1
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 2
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -9155,93 +9395,101 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas",
-          "atlas__rail",
-          "atlas__stage",
-          "bp-btn",
-          "bp-btn--ghost",
-          "bp-btn--small",
-          "bp-kicker",
-          "closing",
-          "closing__blurb",
-          "closing__brand",
-          "closing__chip",
-          "closing__column",
-          "closing__column-title",
-          "closing__columns",
-          "closing__foot",
-          "closing__grid",
-          "closing__identity",
-          "closing__inner",
-          "closing__legal",
-          "closing__name",
-          "closing__notice",
-          "closing__sep",
-          "closing__social",
-          "closing__social--pending",
-          "closing__socials",
-          "dossier",
-          "dossier__back",
-          "dossier__body",
-          "dossier__copy",
-          "dossier__head",
-          "dossier__heading",
-          "dossier__lead",
-          "dossier__section",
-          "dossier__stamp",
-          "dossier__title",
-          "rail",
-          "rail__brand",
-          "rail__chip",
-          "rail__glyph",
-          "rail__head",
-          "rail__index",
-          "rail__label",
-          "rail__link",
-          "rail__name",
-          "rail__toggle",
+          "harbor__brand",
+          "harbor__cta",
+          "harbor__dock",
+          "harbor__legal",
+          "harbor__sigil",
+          "harbor__split",
+          "harbor__toggle",
+          "legal",
+          "legal__back",
+          "legal__copy",
+          "legal__heading",
+          "legal__lead",
+          "legal__opening",
+          "legal__reading",
+          "legal__section",
+          "legal__stamp",
+          "legal__title",
+          "legal__wall",
           "router-link-active",
-          "router-link-exact-active"
+          "router-link-exact-active",
+          "scene",
+          "scene--tall",
+          "scene__inner",
+          "shore",
+          "shore__base",
+          "shore__blurb",
+          "shore__brand",
+          "shore__copy",
+          "shore__crest",
+          "shore__group",
+          "shore__group-title",
+          "shore__index",
+          "shore__inner",
+          "shore__legal",
+          "shore__links",
+          "shore__notice",
+          "shore__sep",
+          "shore__sigil",
+          "shore__social",
+          "shore__social--pending",
+          "shore__socials",
+          "shore__word",
+          "tide",
+          "tide-button",
+          "tide-button--fill",
+          "tide-button--line",
+          "tide-kicker",
+          "tide__aurora",
+          "tide__main"
         ],
         "fingerprint": [
+          "a@10:0",
           "a@11:0",
-          "a@8:0",
+          "a@7:1",
+          "a@7:2",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@6:2",
-          "button@8:1",
-          "div@3:3",
-          "div@4:2",
-          "div@5:2",
-          "div@5:3",
-          "div@6:1",
-          "div@6:2",
+          "button@7:0",
+          "button@7:1",
+          "div@3:1",
+          "div@4:4+",
+          "div@5:0",
           "div@6:4+",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
-          "div@8:1",
           "div@8:2",
           "div@8:4+",
-          "footer@4:1",
-          "h1@8:0",
-          "h2@9:0",
+          "div@9:1",
+          "div@9:4+",
+          "footer@5:1",
+          "h1@9:0",
+          "h2@11:0",
           "h4@9:0",
           "li@10:1",
           "main@5:1",
-          "nav@7:4+",
-          "p@7:0",
+          "nav@6:4+",
+          "p@11:0",
           "p@8:0",
           "p@9:0",
           "path@10:0",
           "path@11:0",
-          "section@8:2",
-          "span@8:0",
+          "path@9:0",
+          "rect@9:0",
+          "section@10:2",
+          "span@7:0",
+          "span@8:1",
           "span@9:0",
           "span@9:1",
-          "strong@7:0",
+          "strong@8:0",
           "svg@10:1",
+          "svg@8:1",
+          "svg@8:2",
           "svg@9:1",
           "ul@9:4+"
         ],
@@ -9249,68 +9497,68 @@
           {
             "tag": "main",
             "role": "",
-            "top": 117,
+            "top": 0,
             "left": 0,
             "width": 390,
-            "height": 1329
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 74,
-            "left": 18,
-            "width": 355,
-            "height": 42
+            "height": 2167
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 1446,
+            "top": 2207,
             "left": 0,
             "width": 390,
-            "height": 1076
+            "height": 1124
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 772,
+            "left": 27,
+            "width": 337,
+            "height": 58
           }
         ],
         "colors": [
           {
-            "hex": "#f4f6f9",
-            "count": 44
+            "hex": "#081b2b",
+            "count": 85
           },
           {
-            "hex": "#0a0b0d",
-            "count": 41
-          },
-          {
-            "hex": "#aeb6c1",
+            "hex": "#546a7d",
             "count": 22
           },
           {
-            "hex": "#585c63",
-            "count": 7
-          },
-          {
             "hex": "#ffffff",
-            "count": 7
+            "count": 8
           },
           {
-            "hex": "#a3a3ff",
+            "hex": "#0b64cc",
+            "count": 6
+          },
+          {
+            "hex": "#eaf4ff",
             "count": 3
           },
           {
-            "hex": "#0000ff",
+            "hex": "#b3d2ec",
             "count": 2
           },
           {
-            "hex": "#171a1f",
+            "hex": "#e8f3ff",
+            "count": 2
+          },
+          {
+            "hex": "#8a5a00",
             "count": 1
           },
           {
-            "hex": "#ffc46b",
+            "hex": "#d8e7f5",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 45,
+        "contrastChecked": 39,
         "headings": [
           {
             "tag": "h1",
@@ -9350,46 +9598,17 @@
           }
         ],
         "navTargets": [
-          ""
+          "",
+          "/privacy",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
-              "right": 398,
-              "width": 92
-            },
-            {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 398,
-              "width": 74
-            },
-            {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
-              "right": 497,
-              "width": 79
-            },
-            {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 497,
-              "width": 60
-            },
-            {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
-              "right": 561,
-              "width": 45
-            },
-            {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 561,
-              "width": 26
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
-        "opened": true,
+        "opened": false,
         "targets": [
           "",
           "/privacy",
@@ -9404,13 +9623,13 @@
       "status": 200,
       "desktop": {
         "meta": {
-          "title": "Terms of Use — Seclura",
+          "title": "Terms of Use — Veilary",
           "lang": "en",
           "h1Count": 1,
           "bodyTextLength": 2352,
           "scrollWidth": 1440,
           "clientWidth": 1440,
-          "focusableCount": 28
+          "focusableCount": 30
         },
         "words": [
           {
@@ -10034,14 +10253,6 @@
             "count": 1
           },
           {
-            "word": "Seclura",
-            "count": 8
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 3
-          },
-          {
             "word": "security",
             "count": 1
           },
@@ -10182,6 +10393,14 @@
             "count": 2
           },
           {
+            "word": "Veilary",
+            "count": 8
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 3
+          },
+          {
             "word": "violate",
             "count": 1
           },
@@ -10252,12 +10471,20 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
+            "key": "aria-label=Privacy Policy",
+            "count": 1
           },
           {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
+          },
+          {
+            "key": "aria-label=Terms of Use",
+            "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -10280,11 +10507,19 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
         "links": [
+          {
+            "href": "/privacy",
+            "count": 1
+          },
+          {
+            "href": "/terms",
+            "count": 1
+          },
           {
             "href": "#/",
             "count": 1
@@ -10346,11 +10581,11 @@
             "count": 1
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 3
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -10359,160 +10594,176 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas",
-          "atlas__meter",
-          "atlas__rail",
-          "atlas__stage",
-          "bp-btn",
-          "bp-btn--block",
-          "bp-btn--ghost",
-          "bp-btn--small",
-          "bp-btn--solid",
-          "bp-kicker",
-          "closing",
-          "closing__blurb",
-          "closing__brand",
-          "closing__chip",
-          "closing__column",
-          "closing__column-title",
-          "closing__columns",
-          "closing__foot",
-          "closing__grid",
-          "closing__identity",
-          "closing__inner",
-          "closing__legal",
-          "closing__name",
-          "closing__notice",
-          "closing__sep",
-          "closing__social",
-          "closing__social--pending",
-          "closing__socials",
-          "dossier",
-          "dossier__back",
-          "dossier__body",
-          "dossier__copy",
-          "dossier__head",
-          "dossier__heading",
-          "dossier__lead",
-          "dossier__section",
-          "dossier__stamp",
-          "dossier__title",
-          "rail",
-          "rail__brand",
-          "rail__chip",
-          "rail__foot",
-          "rail__glyph",
-          "rail__head",
-          "rail__index",
-          "rail__label",
-          "rail__link",
-          "rail__name",
-          "rail__paper",
+          "harbor__brand",
+          "harbor__cta",
+          "harbor__dock",
+          "harbor__label",
+          "harbor__legal",
+          "harbor__link",
+          "harbor__marker",
+          "harbor__paper",
+          "harbor__sigil",
+          "harbor__split",
+          "harbor__word",
+          "legal",
+          "legal__back",
+          "legal__copy",
+          "legal__heading",
+          "legal__lead",
+          "legal__opening",
+          "legal__reading",
+          "legal__section",
+          "legal__stamp",
+          "legal__title",
+          "legal__wall",
           "router-link-active",
-          "router-link-exact-active"
+          "router-link-exact-active",
+          "scene",
+          "scene--tall",
+          "scene__inner",
+          "shore",
+          "shore__base",
+          "shore__blurb",
+          "shore__brand",
+          "shore__copy",
+          "shore__crest",
+          "shore__group",
+          "shore__group-title",
+          "shore__index",
+          "shore__inner",
+          "shore__legal",
+          "shore__links",
+          "shore__notice",
+          "shore__sep",
+          "shore__sigil",
+          "shore__social",
+          "shore__social--pending",
+          "shore__socials",
+          "shore__word",
+          "tide",
+          "tide-button",
+          "tide-button--fill",
+          "tide-button--line",
+          "tide-kicker",
+          "tide__aurora",
+          "tide__dots",
+          "tide__main"
         ],
         "fingerprint": [
+          "a@10:0",
           "a@11:0",
-          "a@8:0",
+          "a@7:0",
+          "a@7:1",
+          "a@7:2",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@6:2",
-          "button@8:0",
-          "div@3:3",
-          "div@4:2",
-          "div@5:2",
-          "div@5:3",
-          "div@6:1",
-          "div@6:2",
+          "button@7:0",
+          "div@3:1",
+          "div@4:4+",
+          "div@5:0",
+          "div@5:4+",
           "div@6:4+",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
-          "div@8:1",
           "div@8:2",
           "div@8:4+",
-          "footer@4:1",
-          "h1@8:0",
-          "h2@9:0",
+          "div@9:1",
+          "div@9:4+",
+          "footer@5:1",
+          "h1@9:0",
+          "h2@11:0",
           "h4@9:0",
           "li@10:1",
           "main@5:1",
-          "nav@7:4+",
-          "p@7:0",
+          "nav@6:4+",
+          "p@11:0",
           "p@8:0",
           "p@9:0",
+          "path@10:0",
           "path@11:0",
-          "section@8:2",
+          "path@9:0",
+          "rect@9:0",
+          "section@10:2",
           "span@6:0",
+          "span@7:0",
           "span@8:0",
+          "span@8:1",
           "span@9:0",
           "span@9:1",
-          "strong@7:0",
+          "strong@8:0",
           "svg@10:1",
+          "svg@8:2",
+          "svg@9:1",
           "ul@9:4+"
         ],
         "landmarks": [
           {
             "tag": "main",
             "role": "",
-            "top": -11,
-            "left": 590,
-            "width": 850,
-            "height": 1327
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 138,
-            "left": 49,
-            "width": 492,
-            "height": 308
+            "top": -19,
+            "left": 0,
+            "width": 1440,
+            "height": 2330
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 1316,
+            "top": 2397,
             "left": 0,
             "width": 1440,
-            "height": 521
+            "height": 766
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 814,
+            "left": 199,
+            "width": 1041,
+            "height": 58
           }
         ],
         "colors": [
           {
-            "hex": "#f4f6f9",
-            "count": 44
+            "hex": "#081b2b",
+            "count": 95
           },
           {
-            "hex": "#0a0b0d",
-            "count": 42
+            "hex": "#546a7d",
+            "count": 41
           },
           {
-            "hex": "#aeb6c1",
-            "count": 22
-          },
-          {
-            "hex": "#585c63",
+            "hex": "#298dff",
             "count": 9
+          },
+          {
+            "hex": "#b3d2ec",
+            "count": 8
+          },
+          {
+            "hex": "#0b64cc",
+            "count": 7
           },
           {
             "hex": "#ffffff",
             "count": 7
           },
           {
-            "hex": "#0000ff",
-            "count": 4
-          },
-          {
-            "hex": "#a3a3ff",
+            "hex": "#eaf4ff",
             "count": 3
           },
           {
-            "hex": "#171a1f",
+            "hex": "#e8f3ff",
+            "count": 2
+          },
+          {
+            "hex": "#8a5a00",
             "count": 1
           },
           {
-            "hex": "#ffc46b",
+            "hex": "#d8e7f5",
             "count": 1
           }
         ],
@@ -10561,7 +10812,9 @@
           }
         ],
         "navTargets": [
-          ""
+          "",
+          "/privacy",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
@@ -10582,13 +10835,13 @@
       },
       "mobile": {
         "meta": {
-          "title": "Terms of Use — Seclura",
+          "title": "Terms of Use — Veilary",
           "lang": "en",
           "h1Count": 1,
-          "bodyTextLength": 2330,
+          "bodyTextLength": 2283,
           "scrollWidth": 390,
           "clientWidth": 390,
-          "focusableCount": 27
+          "focusableCount": 24
         },
         "words": [
           {
@@ -10686,6 +10939,10 @@
           {
             "word": "any",
             "count": 4
+          },
+          {
+            "word": "App",
+            "count": 1
           },
           {
             "word": "applicable",
@@ -10856,12 +11113,8 @@
             "count": 1
           },
           {
-            "word": "FAQ",
-            "count": 1
-          },
-          {
             "word": "Features",
-            "count": 3
+            "count": 2
           },
           {
             "word": "fee",
@@ -10912,12 +11165,8 @@
             "count": 1
           },
           {
-            "word": "Home",
-            "count": 1
-          },
-          {
             "word": "How",
-            "count": 2
+            "count": 1
           },
           {
             "word": "HPKE-sealed",
@@ -10957,7 +11206,7 @@
           },
           {
             "word": "it",
-            "count": 3
+            "count": 2
           },
           {
             "word": "its",
@@ -10973,6 +11222,10 @@
           },
           {
             "word": "Last",
+            "count": 1
+          },
+          {
+            "word": "Launch",
             "count": 1
           },
           {
@@ -11197,19 +11450,11 @@
           },
           {
             "word": "Roadmap",
-            "count": 2
+            "count": 1
           },
           {
             "word": "sanctions",
             "count": 1
-          },
-          {
-            "word": "Seclura",
-            "count": 8
-          },
-          {
-            "word": "seclura.xyz",
-            "count": 3
           },
           {
             "word": "security",
@@ -11317,7 +11562,7 @@
           },
           {
             "word": "Tokenomics",
-            "count": 2
+            "count": 1
           },
           {
             "word": "tokens",
@@ -11350,6 +11595,14 @@
           {
             "word": "value",
             "count": 2
+          },
+          {
+            "word": "Veilary",
+            "count": 7
+          },
+          {
+            "word": "veilary.xyz",
+            "count": 3
           },
           {
             "word": "violate",
@@ -11385,7 +11638,7 @@
           },
           {
             "word": "works",
-            "count": 2
+            "count": 1
           },
           {
             "word": "you",
@@ -11422,16 +11675,24 @@
             "count": 1
           },
           {
-            "key": "aria-label=Seclura home",
-            "count": 2
+            "key": "aria-label=Privacy Policy",
+            "count": 1
           },
           {
             "key": "aria-label=Telegram (link pending)",
             "count": 1
           },
           {
+            "key": "aria-label=Terms of Use",
+            "count": 1
+          },
+          {
             "key": "aria-label=Toggle navigation",
             "count": 1
+          },
+          {
+            "key": "aria-label=Veilary home",
+            "count": 2
           },
           {
             "key": "aria-label=X / Twitter",
@@ -11454,11 +11715,19 @@
             "count": 1
           },
           {
-            "key": "title=X / Twitter — @seclura",
+            "key": "title=X / Twitter — @veilary",
             "count": 1
           }
         ],
         "links": [
+          {
+            "href": "/privacy",
+            "count": 1
+          },
+          {
+            "href": "/terms",
+            "count": 1
+          },
           {
             "href": "#/",
             "count": 1
@@ -11472,28 +11741,24 @@
             "count": 1
           },
           {
-            "href": "#faq",
+            "href": "#features",
             "count": 1
           },
           {
-            "href": "#features",
-            "count": 2
-          },
-          {
             "href": "#home",
-            "count": 3
+            "count": 2
           },
           {
             "href": "#how-it-works",
-            "count": 2
+            "count": 1
           },
           {
             "href": "#roadmap",
-            "count": 2
+            "count": 1
           },
           {
             "href": "#tokenomics",
-            "count": 2
+            "count": 1
           },
           {
             "href": "https://ghostwareos.gitbook.io/docs",
@@ -11520,11 +11785,11 @@
             "count": 1
           },
           {
-            "href": "https://seclura.xyz/",
+            "href": "https://veilary.xyz/",
             "count": 2
           },
           {
-            "href": "https://x.com/seclura",
+            "href": "https://x.com/veilary",
             "count": 1
           }
         ],
@@ -11533,93 +11798,101 @@
         "imageIssues": [],
         "interactiveIssues": [],
         "classTokens": [
-          "atlas",
-          "atlas__rail",
-          "atlas__stage",
-          "bp-btn",
-          "bp-btn--ghost",
-          "bp-btn--small",
-          "bp-kicker",
-          "closing",
-          "closing__blurb",
-          "closing__brand",
-          "closing__chip",
-          "closing__column",
-          "closing__column-title",
-          "closing__columns",
-          "closing__foot",
-          "closing__grid",
-          "closing__identity",
-          "closing__inner",
-          "closing__legal",
-          "closing__name",
-          "closing__notice",
-          "closing__sep",
-          "closing__social",
-          "closing__social--pending",
-          "closing__socials",
-          "dossier",
-          "dossier__back",
-          "dossier__body",
-          "dossier__copy",
-          "dossier__head",
-          "dossier__heading",
-          "dossier__lead",
-          "dossier__section",
-          "dossier__stamp",
-          "dossier__title",
-          "rail",
-          "rail__brand",
-          "rail__chip",
-          "rail__glyph",
-          "rail__head",
-          "rail__index",
-          "rail__label",
-          "rail__link",
-          "rail__name",
-          "rail__toggle",
+          "harbor__brand",
+          "harbor__cta",
+          "harbor__dock",
+          "harbor__legal",
+          "harbor__sigil",
+          "harbor__split",
+          "harbor__toggle",
+          "legal",
+          "legal__back",
+          "legal__copy",
+          "legal__heading",
+          "legal__lead",
+          "legal__opening",
+          "legal__reading",
+          "legal__section",
+          "legal__stamp",
+          "legal__title",
+          "legal__wall",
           "router-link-active",
-          "router-link-exact-active"
+          "router-link-exact-active",
+          "scene",
+          "scene--tall",
+          "scene__inner",
+          "shore",
+          "shore__base",
+          "shore__blurb",
+          "shore__brand",
+          "shore__copy",
+          "shore__crest",
+          "shore__group",
+          "shore__group-title",
+          "shore__index",
+          "shore__inner",
+          "shore__legal",
+          "shore__links",
+          "shore__notice",
+          "shore__sep",
+          "shore__sigil",
+          "shore__social",
+          "shore__social--pending",
+          "shore__socials",
+          "shore__word",
+          "tide",
+          "tide-button",
+          "tide-button--fill",
+          "tide-button--line",
+          "tide-kicker",
+          "tide__aurora",
+          "tide__main"
         ],
         "fingerprint": [
+          "a@10:0",
           "a@11:0",
-          "a@8:0",
+          "a@7:1",
+          "a@7:2",
           "a@8:2",
           "a@9:0",
           "a@9:1",
           "article@6:2",
-          "button@8:1",
-          "div@3:3",
-          "div@4:2",
-          "div@5:2",
-          "div@5:3",
-          "div@6:1",
-          "div@6:2",
+          "button@7:0",
+          "button@7:1",
+          "div@3:1",
+          "div@4:4+",
+          "div@5:0",
           "div@6:4+",
+          "div@7:1",
           "div@7:2",
           "div@7:3",
-          "div@7:4+",
-          "div@8:1",
           "div@8:2",
           "div@8:4+",
-          "footer@4:1",
-          "h1@8:0",
-          "h2@9:0",
+          "div@9:1",
+          "div@9:4+",
+          "footer@5:1",
+          "h1@9:0",
+          "h2@11:0",
           "h4@9:0",
           "li@10:1",
           "main@5:1",
-          "nav@7:4+",
-          "p@7:0",
+          "nav@6:4+",
+          "p@11:0",
           "p@8:0",
           "p@9:0",
           "path@10:0",
           "path@11:0",
-          "section@8:2",
-          "span@8:0",
+          "path@9:0",
+          "rect@9:0",
+          "section@10:2",
+          "span@7:0",
+          "span@8:1",
           "span@9:0",
           "span@9:1",
-          "strong@7:0",
+          "strong@8:0",
           "svg@10:1",
+          "svg@8:1",
+          "svg@8:2",
           "svg@9:1",
           "ul@9:4+"
         ],
@@ -11627,68 +11900,68 @@
           {
             "tag": "main",
             "role": "",
-            "top": 117,
+            "top": 0,
             "left": 0,
             "width": 390,
-            "height": 1446
-          },
-          {
-            "tag": "nav",
-            "role": "",
-            "top": 74,
-            "left": 18,
-            "width": 355,
-            "height": 42
+            "height": 2276
           },
           {
             "tag": "footer",
             "role": "",
-            "top": 1564,
+            "top": 2316,
             "left": 0,
             "width": 390,
-            "height": 1076
+            "height": 1124
+          },
+          {
+            "tag": "nav",
+            "role": "",
+            "top": 772,
+            "left": 27,
+            "width": 337,
+            "height": 58
           }
         ],
         "colors": [
           {
-            "hex": "#f4f6f9",
-            "count": 44
+            "hex": "#081b2b",
+            "count": 87
           },
           {
-            "hex": "#0a0b0d",
-            "count": 43
-          },
-          {
-            "hex": "#aeb6c1",
-            "count": 22
-          },
-          {
-            "hex": "#585c63",
-            "count": 8
+            "hex": "#546a7d",
+            "count": 23
           },
           {
             "hex": "#ffffff",
-            "count": 7
+            "count": 8
           },
           {
-            "hex": "#a3a3ff",
+            "hex": "#0b64cc",
+            "count": 6
+          },
+          {
+            "hex": "#eaf4ff",
             "count": 3
           },
           {
-            "hex": "#0000ff",
+            "hex": "#b3d2ec",
             "count": 2
           },
           {
-            "hex": "#171a1f",
+            "hex": "#e8f3ff",
+            "count": 2
+          },
+          {
+            "hex": "#8a5a00",
             "count": 1
           },
           {
-            "hex": "#ffc46b",
+            "hex": "#d8e7f5",
             "count": 1
           }
         ],
         "contrast": [],
-        "contrastChecked": 47,
+        "contrastChecked": 41,
         "headings": [
           {
             "tag": "h1",
@@ -11732,46 +12005,17 @@
           }
         ],
         "navTargets": [
-          ""
+          "",
+          "/privacy",
+          "/terms"
         ],
         "overflow": {
           "documentOverflow": false,
-          "offenders": [
-            {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
-              "right": 398,
-              "width": 92
-            },
-            {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 398,
-              "width": 74
-            },
-            {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
-              "right": 497,
-              "width": 79
-            },
-            {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 497,
-              "width": 60
-            },
-            {
-              "selector": "div.rail > nav.rail__index > a.rail__link",
-              "right": 561,
-              "width": 45
-            },
-            {
-              "selector": "nav.rail__index > a.rail__link > span.rail__label",
-              "right": 561,
-              "width": 26
-            }
-          ]
+          "offenders": []
         }
       },
       "mobileNav": {
-        "opened": true,
+        "opened": false,
         "targets": [
           "",
           "/privacy",
@@ -11781,5 +12025,5 @@
       }
     }
   },
-  "inventoryHash": "c2aacd4a908acc88a114506cee8c468a61f313a90a8f2e71503a19ae109b459e"
+  "inventoryHash": "c781e8f4d3152655ddf7aca003646398e1aadf802c4e511f7d2316e2cb85cfe9"
 }

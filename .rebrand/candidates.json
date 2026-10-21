@@ -1,0 +1,1042 @@
+{
+  "generatedAt": "2026-10-22T00:55:39+08:00",
+  "wave": 3,
+  "keywords": {
+    "summary": "A private payment rail on Solana: stealth addresses and HPKE-sealed instructions keep the sender, receiver and amount off the public ledger while settlement stays sub-second and non-custodial.",
+    "audience": [
+      "individuals and organisations that need financial discretion",
+      "merchant operations and treasury functions",
+      "participants in decentralised ecosystems"
+    ],
+    "values": [
+      "confidentiality",
+      "invisibility",
+      "composure",
+      "cryptographic assurance",
+      "subsecond settlement",
+      "self-custodial"
+    ],
+    "keywords": [
+      "veilcraft",
+      "veilline",
+      "hushline",
+      "quietude",
+      "sealcraft",
+      "shroudline",
+      "cloakwork",
+      "stealthing",
+      "cipherwork",
+      "concealment",
+      "seclusion",
+      "anonymity",
+      "obfuscation",
+      "discretion",
+      "confidentiality",
+      "unlinkability",
+      "noncustodial",
+      "paymentrail",
+      "recipientonly",
+      "cryptographic"
+    ],
+    "avoid": [
+      "Seclura",
+      "Nummula",
+      "Cifruna",
+      "GhostPay",
+      "GhostWareOS",
+      "Ghost",
+      "Solana",
+      "privacy",
+      "private",
+      "wallet",
+      "crypto"
+    ]
+  },
+  "excluded": [
+    "veilova"
+  ],
+  "candidates": [
+    {
+      "name": "veilary",
+      "score": 96.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 16.0,
+        "distinctiveness": 10.0
+      },
+      "length": 7,
+      "syllables": 3,
+      "semanticHits": [
+        "veilcraft",
+        "veilline"
+      ],
+      "source": "manual"
+    },
+    {
+      "name": "veilene",
+      "score": 96.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 16.0,
+        "distinctiveness": 10.0
+      },
+      "length": 7,
+      "syllables": 2,
+      "semanticHits": [
+        "veilcraft",
+        "veilline"
+      ],
+      "source": "manual"
+    },
+    {
+      "name": "cipher",
+      "score": 90.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 10.0,
+        "distinctiveness": 10.0
+      },
+      "length": 6,
+      "syllables": 2,
+      "semanticHits": [
+        "cipherwork"
+      ],
+      "source": "root"
+    },
+    {
+      "name": "hushera",
+      "score": 90.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 10.0,
+        "distinctiveness": 10.0
+      },
+      "length": 7,
+      "syllables": 3,
+      "semanticHits": [
+        "hushline"
+      ],
+      "source": "manual"
+    },
+    {
+      "name": "veilline",
+      "score": 86.3,
+      "components": {
+        "length": 16.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 9.3,
+        "semantic": 16.0,
+        "distinctiveness": 10.0
+      },
+      "length": 8,
+      "syllables": 2,
+      "semanticHits": [
+        "veilcraft",
+        "veilline"
+      ],
+      "source": "keyword"
+    },
+    {
+      "name": "veillith",
+      "score": 86.3,
+      "components": {
+        "length": 16.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 9.3,
+        "semantic": 16.0,
+        "distinctiveness": 10.0
+      },
+      "length": 8,
+      "syllables": 2,
+      "semanticHits": [
+        "veilcraft",
+        "veilline"
+      ],
+      "source": "manual"
+    },
+    {
+      "name": "pera",
+      "score": 86.0,
+      "components": {
+        "length": 16.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 10.0,
+        "distinctiveness": 10.0
+      },
+      "length": 4,
+      "syllables": 2,
+      "semanticHits": [
+        "operations"
+      ],
+      "source": "curated"
+    },
+    {
+      "name": "sealvora",
+      "score": 86.0,
+      "components": {
+        "length": 16.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 10.0,
+        "distinctiveness": 10.0
+      },
+      "length": 8,
+      "syllables": 3,
+      "semanticHits": [
+        "sealcraft"
+      ],
+      "source": "manual"
+    },
+    {
+      "name": "treasury",
+      "score": 86.0,
+      "components": {
+        "length": 16.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 10.0,
+        "distinctiveness": 10.0
+      },
+      "length": 8,
+      "syllables": 3,
+      "semanticHits": [
+        "treasury"
+      ],
+      "source": "keyword"
+    },
+    {
+      "name": "adora",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "alora",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "atria",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "bealo",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "belva",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "brena",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "calva",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "cavel",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "clara",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "davia",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "doria",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "drava",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "eleta",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "elora",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "erila",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "ferio",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "flova",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "gavia",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "glera",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "grava",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "grida",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "griva",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "helva",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "ilora",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "joria",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "kaira",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "korin",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "laria",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "laven",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "leira",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "lenio",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "lensa",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "leora",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "levio",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "loria",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "lumen",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "root"
+    },
+    {
+      "name": "lumia",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "metra",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "nadia",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "orbia",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "orbio",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "orbis",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "orila",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 3,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "pavia",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "pulsa",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "pulso",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "quira",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "scopa",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "siala",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "signa",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    },
+    {
+      "name": "stela",
+      "score": 83.0,
+      "components": {
+        "length": 20.0,
+        "syllables": 15.0,
+        "pronounceability": 20.0,
+        "visual": 15.0,
+        "semantic": 3.0,
+        "distinctiveness": 10.0
+      },
+      "length": 5,
+      "syllables": 2,
+      "semanticHits": [],
+      "source": "curated"
+    }
+  ]
+}

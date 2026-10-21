@@ -5,8 +5,8 @@ every root-relative path here exists.
 
 | File | Purpose |
 | --- | --- |
-| `favicon.svg` | 64×64 site icon: blue tidal gradient disc, white `S` monogram and a pale accent dot. Hand-authored SVG. |
-| `og-cover.svg` | 1200×630 social card used by `og:image` and `twitter:image`. Hand-authored SVG so it stays diffable in git. |
+| `favicon.svg` | 64×64 site icon: black console tile, red `V` monogram and a magenta status dot. Hand-authored SVG. |
+| `og-cover.svg` | 1200×630 social card used by `og:image` and `twitter:image`. Hand-authored terminal-console SVG so it stays diffable in git. |
 | `og-cover.png` | The same card rasterised at 1200×630 by headless Chrome from the SVG, so the pair cannot drift. |
 
 ## Converting the social card to PNG
@@ -27,7 +27,7 @@ Then keep `og:image` / `twitter:image` in `index.html` pointing at the file you 
 | Filename | What it is |
 | --- | --- |
 | `app-private-send.png` | Real product screenshot to replace the CSS-drawn hero mock |
-| `logo-seclura.svg` | Wordmark for press / brand kit use |
+| `logo-veilary.svg` | Wordmark for press / brand kit use |
 
-The icon set is inline SVG (`src/components/Icon.vue`) and the favicon is `favicon.svg`; nothing else
-is needed at runtime.
+The icon set is CSS-masked from path data in `src/components/Icon.vue` (no inline `<svg>` in the
+rendered page) and the favicon is `favicon.svg`; nothing else is needed at runtime.

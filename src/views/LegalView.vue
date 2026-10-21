@@ -10,11 +10,11 @@ const content = computed(() =>
   props.kind === 'terms'
     ? {
         title: 'Terms of Use',
-        lead: `These terms govern your use of the Seclura protocol interfaces published at ${site.domain}. By connecting a wallet you accept them.`,
+        lead: `These terms govern your use of the Veilary protocol interfaces published at ${site.domain}. By connecting a wallet you accept them.`,
         sections: [
           {
             h: '1. Non-custodial software',
-            p: 'Seclura is non-custodial software. We never take possession of your assets, your keys or your identity. You are solely responsible for the security of your wallet, your seed phrase and every transaction you sign.'
+            p: 'Veilary is non-custodial software. We never take possession of your assets, your keys or your identity. You are solely responsible for the security of your wallet, your seed phrase and every transaction you sign.'
           },
           {
             h: '2. No financial advice',
@@ -22,7 +22,7 @@ const content = computed(() =>
           },
           {
             h: '3. Acceptable use',
-            p: 'You agree not to use Seclura to violate any law applicable to you, including sanctions, anti-fraud and tax obligations. Privacy is a legitimate default, but it is not a licence to break the law.'
+            p: 'You agree not to use Veilary to violate any law applicable to you, including sanctions, anti-fraud and tax obligations. Privacy is a legitimate default, but it is not a licence to break the law.'
           },
           {
             h: '4. Availability and changes',
@@ -30,7 +30,7 @@ const content = computed(() =>
           },
           {
             h: '5. Limitation of liability',
-            p: 'To the maximum extent permitted by law, the Seclura contributors are not liable for any loss of funds, data or profits arising from your use of the protocol or any third-party wallet, bridge or exchange.'
+            p: 'To the maximum extent permitted by law, the Veilary contributors are not liable for any loss of funds, data or profits arising from your use of the protocol or any third-party wallet, bridge or exchange.'
           },
           {
             h: '6. Contact',
@@ -40,7 +40,7 @@ const content = computed(() =>
       }
     : {
         title: 'Privacy Policy',
-        lead: `Seclura is built so that there is almost nothing to write a privacy policy about. Here is exactly what happens to data when you use ${site.domain}.`,
+        lead: `Veilary is built so that there is almost nothing to write a privacy policy about. Here is exactly what happens to data when you use ${site.domain}.`,
         sections: [
           {
             h: '1. What we collect',
@@ -60,7 +60,7 @@ const content = computed(() =>
           },
           {
             h: '5. Third parties',
-            p: 'Wallets, RPC providers, bridges and exchanges you choose to interact with are independent of Seclura and operate under their own policies. Review them before use.'
+            p: 'Wallets, RPC providers, bridges and exchanges you choose to interact with are independent of Veilary and operate under their own policies. Review them before use.'
           }
         ]
       }
@@ -68,27 +68,35 @@ const content = computed(() =>
 </script>
 
 <template>
-  <article class="legal">
-    <div class="scene scene--tall legal__opening">
-      <div class="scene__inner">
-        <p class="tide-kicker">Legal</p>
-        <p class="legal__stamp">Last updated: {{ new Date().getFullYear() }}</p>
-        <h1 class="legal__title">{{ content.title }}</h1>
-        <p class="legal__lead">{{ content.lead }}</p>
+  <article class="statute">
+    <div class="module module--first statute__opening">
+      <div class="module__inner">
+        <div class="module__bar">
+          <p class="kicker">Legal</p>
+        </div>
+        <p class="statute__stamp">Last updated: <time>{{ new Date().getFullYear() }}</time></p>
+        <h1 class="statute__title">{{ content.title }}</h1>
+        <p class="statute__lead">{{ content.lead }}</p>
       </div>
     </div>
 
-    <div class="scene legal__reading">
-      <div class="scene__inner">
-        <div class="legal__wall">
-          <section v-for="s in content.sections" :key="s.h" class="legal__section">
-            <h2 class="legal__heading">{{ s.h }}</h2>
-            <p class="legal__copy">{{ s.p }}</p>
-          </section>
+    <div class="module statute__reading">
+      <div class="module__inner">
+        <div class="statute__grid">
+          <div class="statute__rail" aria-hidden="true" />
+
+          <div class="statute__wall">
+            <section v-for="s in content.sections" :key="s.h" class="statute__section">
+              <h2 class="statute__heading"><code>{{ s.h }}</code></h2>
+              <p class="statute__copy">{{ s.p }}</p>
+            </section>
+          </div>
+
+          <div class="statute__meta" aria-hidden="true" />
         </div>
 
-        <div class="legal__back">
-          <router-link class="tide-button tide-button--line" to="/">Back to home</router-link>
+        <div class="statute__back">
+          <router-link class="cmd cmd--ghost" to="/">Back to home</router-link>
         </div>
       </div>
     </div>
@@ -96,109 +104,121 @@ const content = computed(() =>
 </template>
 
 <style scoped>
-.legal__opening {
-  padding-block: clamp(96px, 12vw, 150px) clamp(48px, 6vw, 80px);
+.statute__opening {
+  padding-block: clamp(40px, 7vw, 96px) clamp(28px, 4vw, 52px);
   overflow: clip;
 }
 
-.legal__opening::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -10%;
-  width: min(44vw, 600px);
-  aspect-ratio: 1;
-  border: 1px solid rgba(41, 141, 255, 0.22);
-  border-radius: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.legal__opening::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 2%;
-  width: min(26vw, 360px);
-  aspect-ratio: 1;
-  border: 1px dashed rgba(41, 141, 255, 0.24);
-  border-radius: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.legal__stamp {
-  margin-top: 18px;
-  color: var(--muted);
-  font-family: var(--font-mono);
+.statute__stamp {
+  margin-top: 14px;
+  color: var(--faint);
+  font-family: var(--mono);
   font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.legal__title {
+.statute__title {
   max-width: 18ch;
-  margin-top: clamp(14px, 2vw, 22px);
-  font-size: clamp(2.7rem, 6.4vw, 5.4rem);
-  line-height: 0.92;
-  letter-spacing: -0.055em;
+  margin-top: clamp(12px, 1.8vw, 20px);
+  color: var(--ink);
+  font-size: clamp(2.3rem, 5.6vw, 4.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.045em;
 }
 
-.legal__lead {
-  max-width: 56ch;
-  margin-top: clamp(20px, 2.6vw, 30px);
-  color: var(--muted);
-  font-size: clamp(1.02rem, 1.2vw, 1.14rem);
+.statute__lead {
+  max-width: 58ch;
+  margin-top: clamp(18px, 2.4vw, 28px);
+  color: var(--dim);
+  font-size: clamp(1rem, 1.15vw, 1.12rem);
   line-height: 1.7;
 }
 
-.legal__reading {
-  padding-block: clamp(20px, 3vw, 40px) clamp(56px, 8vw, 110px);
+.statute__reading {
+  padding-block: clamp(20px, 3vw, 40px) clamp(52px, 7vw, 96px);
 }
 
-.legal__wall {
+.statute__grid {
   display: grid;
-  gap: clamp(26px, 3.6vw, 46px);
-  width: min(100%, 720px);
-  margin-inline: auto;
-  padding: clamp(22px, 3.4vw, 46px);
-  border-radius: var(--radius-xl);
-  background:
-    radial-gradient(110% 80% at 100% 0%, #ffffff 0%, rgba(255, 255, 255, 0) 52%),
-    var(--surface-alt);
-  box-shadow: var(--shadow);
+  grid-template-columns: minmax(60px, 0.14fr) minmax(0, 1fr) minmax(120px, 0.22fr);
+  gap: clamp(14px, 2.4vw, 34px);
+  align-items: start;
 }
 
-.legal__section {
+.statute__rail {
+  align-self: stretch;
+  border-right: 1px solid var(--edge);
+  background-image: repeating-linear-gradient(
+    180deg,
+    var(--edge-2) 0 1px,
+    transparent 1px 26px
+  );
+  background-size: 14px 100%;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+.statute__wall {
+  min-width: 0;
+  padding: clamp(18px, 3vw, 36px);
+  border: 1px solid var(--edge-2);
+  border-radius: var(--r-md);
+  background: var(--deck);
+}
+
+.statute__section {
   display: grid;
-  gap: 10px;
+  gap: 9px;
 }
 
-.legal__section + .legal__section {
-  padding-top: clamp(22px, 3vw, 34px);
-  border-top: 1px solid rgba(179, 210, 236, 0.55);
+.statute__section + .statute__section {
+  margin-top: clamp(20px, 2.8vw, 32px);
+  padding-top: clamp(20px, 2.8vw, 32px);
+  border-top: 1px dashed var(--edge-2);
 }
 
-.legal__heading {
-  font-size: clamp(1.16rem, 1.8vw, 1.5rem);
-  line-height: 1.14;
+.statute__heading {
+  color: var(--ink);
+  font-size: clamp(1.06rem, 1.6vw, 1.32rem);
+  line-height: 1.18;
 }
 
-.legal__copy {
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.8;
+.statute__copy {
+  color: var(--dim);
+  font-size: 0.98rem;
+  line-height: 1.78;
 }
 
-.legal__back {
+.statute__meta {
+  align-self: stretch;
+  min-height: 220px;
+  border-left: 1px solid var(--edge);
+  background-image: radial-gradient(circle at center, var(--edge-2) 0 1px, transparent 1px);
+  background-size: 12px 12px;
+  opacity: 0.55;
+}
+
+.statute__back {
   display: flex;
-  justify-content: center;
-  margin-top: clamp(28px, 4vw, 48px);
+  justify-content: flex-start;
+  margin-top: clamp(24px, 3.4vw, 40px);
+}
+
+@media (max-width: 980px) {
+  .statute__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .statute__rail,
+  .statute__meta {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
-  .legal__title {
-    font-size: clamp(2.4rem, 12vw, 3.2rem);
+  .statute__title {
+    font-size: clamp(2.1rem, 11vw, 3rem);
   }
 }
 </style>

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Seclura — verify every domain the site links to or names, over DNS.
+ * Veilary — verify every domain the site links to or names, over DNS.
  *
  * WHY THIS EXISTS
  * ---------------
@@ -33,8 +33,8 @@ const TYPES = ['A', 'AAAA', 'TXT', 'MX', 'NS']
  * `note` is printed next to the verdict so the report explains itself.
  */
 const TARGETS = [
-  { name: 'seclura.xyz', expect: 'live', note: 'the site being rebuilt' },
-  { name: 'www.seclura.xyz', expect: 'live', note: 'www alias of the above' },
+  { name: 'veilary.xyz', expect: 'live', note: 'the site being rebuilt' },
+  { name: 'www.veilary.xyz', expect: 'live', note: 'www alias of the above' },
 
   { name: 'ghostwareos.gitbook.io', expect: 'live', note: 'only verified docs host; every Documentation link uses it' },
   { name: 'solflare.com', expect: 'live', note: 'cited integration partner' },
@@ -58,7 +58,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 async function resolve(name, type) {
   const url = `${DOH}?name=${encodeURIComponent(name)}&type=${type}`
   const res = await fetch(url, {
-    headers: { accept: 'application/dns-json', 'user-agent': 'seclura-site-dns-check' }
+    headers: { accept: 'application/dns-json', 'user-agent': 'veilary-site-dns-check' }
   })
   if (!res.ok) throw new Error(`DoH HTTP ${res.status}`)
   const json = await res.json()

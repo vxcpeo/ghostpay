@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-21T17:00:58.479Z",
+  "browser": {
+    "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "version": "Chrome/155.0.8059.85",
+    "headless": true,
+    "proxy": null,
+    "method": "chrome-cdp"
+  },
+  "baseUrl": "http://127.0.0.1:57911",
+  "routes": [
+    "/"
+  ],
+  "results": [
+    {
+      "route": "/",
+      "device": "desktop",
+      "url": "http://127.0.0.1:57911/",
+      "finalUrl": "http://127.0.0.1:57911/",
+      "httpStatus": 200,
+      "title": "Veilary — Private Payments, Invisible by Design",
+      "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\screenshots\\root-desktop.png",
+      "oldBrand": {
+        "textHits": [],
+        "attributeHits": []
+      },
+      "newBrandPresent": [
+        "Veilary",
+        "veilary",
+        "veilary.xyz",
+        "veilary"
+      ],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "route": "/",
+      "device": "mobile",
+      "url": "http://127.0.0.1:57911/",
+      "finalUrl": "http://127.0.0.1:57911/",
+      "httpStatus": 200,
+      "title": "Veilary — Private Payments, Invisible by Design",
+      "screenshot": "E:\\workspace\\chuangye\\solana\\ghostpay\\website\\.rebrand\\screenshots\\root-mobile.png",
+      "oldBrand": {
+        "textHits": [],
+        "attributeHits": []
+      },
+      "newBrandPresent": [
+        "Veilary",
+        "veilary",
+        "veilary.xyz",
+        "veilary"
+      ],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    }
+  ]
+}

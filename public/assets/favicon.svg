@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Seclura">
-  <defs>
-    <linearGradient id="tide" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2E95FF"/>
-      <stop offset="1" stop-color="#0B64CC"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="32" fill="url(#tide)"/>
-  <path d="M42 20c0-6-21-6-21 2 0 6 21 6 21 14 0 8-21 8-21 2" fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="49" cy="14" r="2.6" fill="#EAF4FF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Veilary mark">
+  <rect width="64" height="64" rx="12" fill="#04070b"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="11.5" fill="none" stroke="#ff3b30" stroke-opacity="0.55"/>
+  <path d="M14 17.5 32 47l18-29.5" fill="none" stroke="#ff3b30" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="50.5" cy="12.5" r="3" fill="#ff5cd6"/>
 </svg>

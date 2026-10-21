@@ -4,20 +4,20 @@
  * Reconstructed from public research on the original project / GhostWareOS. The original live
  * site could not be fetched from the authoring environment (its runtime refuses every hostname),
  * though its DNS was verified live — see docs/environment-notes.md and docs/research-brief.md.
- * The Seclura identity is new: seclura.xyz and @seclura are confirmed available but not
+ * The Veilary identity is new: veilary.xyz and @veilary are confirmed available but not
  * registered. Every value that could
  * not be sourced is a labelled placeholder in the UI.
  */
 
 export const site = {
-  name: 'Seclura',
-  domain: 'seclura.xyz',
-  url: 'https://seclura.xyz/',
+  name: 'Veilary',
+  domain: 'veilary.xyz',
+  url: 'https://veilary.xyz/',
   tagline: 'Private Payments, Invisible by Design',
   ticker: '$GHOST',
   chain: 'Solana',
   description:
-    'Seclura is the private payment rail for Solana — money that settles in under a second while the sender, the receiver and the amount stay off the public record.',
+    'Veilary is the private payment rail for Solana — money that settles in under a second while the sender, the receiver and the amount stay off the public record.',
   // VERIFIED Solana SPL mint for $GHOST (GhostwareOS), cross-checked against Solflare,
   // DEXrabbit and GeckoTerminal. Confirm it on the official site before publishing.
   contract: 'BBKPiLM9KjdJW7oQSKt99RVWcZdhF6sEHRKnwqeBGHST',
@@ -34,11 +34,11 @@ export const navLinks = [
 ]
 
 /**
- * ⚠️ The X handle @seclura is confirmed available but not registered yet; the Telegram, Discord
+ * ⚠️ The X handle @veilary is confirmed available but not registered yet; the Telegram, Discord
  * and GitHub profiles remain unverified placeholders. `docs` points at the GhostWareOS GitBook.
  */
 export const socials = [
-  { label: 'X / Twitter', handle: '@seclura', href: 'https://x.com/seclura', icon: 'x' },
+  { label: 'X / Twitter', handle: '@veilary', href: 'https://x.com/veilary', icon: 'x' },
   { label: 'Telegram', handle: 'handle TBA', href: '#', icon: 'telegram' },
   { label: 'Discord', handle: 'handle TBA', href: '#', icon: 'discord' },
   { label: 'GitHub', handle: 'repo TBA', href: '#', icon: 'github' },
@@ -60,7 +60,7 @@ export const heroStats = [
 ]
 
 /**
- * Only Solana is confirmed as a Seclura network. The rest are ecosystems reached through
+ * Only Solana is confirmed as a Veilary network. The rest are ecosystems reached through
  * GhostSwap / the wider privacy stack, or aspirational — listed here as an ecosystem marquee.
  */
 export const trustLogos = [
@@ -93,7 +93,7 @@ export const features = [
   {
     icon: 'key',
     title: 'Non-Custodial by Default',
-    text: 'Seclura never holds your funds or your keys. Your seed phrase stays in your wallet; the protocol only ever sees a payment it can validate, never a balance it controls.'
+    text: 'Veilary never holds your funds or your keys. Your seed phrase stays in your wallet; the protocol only ever sees a payment it can validate, never a balance it controls.'
   },
   {
     icon: 'shield',
@@ -126,7 +126,7 @@ export const steps = [
   {
     step: '02',
     title: 'Fund your private balance',
-    text: 'Move SOL or SPL tokens into Seclura. Stealth addresses are derived from your own keys, so the deposit never publishes where your future payments will land.'
+    text: 'Move SOL or SPL tokens into Veilary. Stealth addresses are derived from your own keys, so the deposit never publishes where your future payments will land.'
   },
   {
     step: '03',
@@ -214,7 +214,7 @@ export const roadmap = [
     items: [
       'Merchant and payment-request tooling on the private rail',
       'Deeper cross-chain coverage through GhostSwap',
-      'Open SDK so other Solana apps can embed Seclura',
+      'Open SDK so other Solana apps can embed Veilary',
       'Governance over privacy parameters and fee curves'
     ]
   }
@@ -222,16 +222,16 @@ export const roadmap = [
 
 export const faqs = [
   {
-    q: 'What is Seclura, and how is it different from ordinary crypto payments?',
-    a: 'Seclura is a private payment rail on Solana. Ordinary crypto payments publish the sender, the receiver and the amount on a public ledger forever. Seclura keeps the payment valid and final while keeping who-paid-whom out of the public record.'
+    q: 'What is Veilary, and how is it different from ordinary crypto payments?',
+    a: 'Veilary is a private payment rail on Solana. Ordinary crypto payments publish the sender, the receiver and the amount on a public ledger forever. Veilary keeps the payment valid and final while keeping who-paid-whom out of the public record.'
   },
   {
     q: 'How does the privacy actually work — is it a mixer?',
-    a: 'It is not a mixer and there is no shared pool. Seclura uses stealth addresses, so each payment arrives at a fresh one-time address, and seals payment instructions with HPKE hybrid encryption so only the intended recipient can read them. Your privacy does not depend on other people joining a pool.'
+    a: 'It is not a mixer and there is no shared pool. Veilary uses stealth addresses, so each payment arrives at a fresh one-time address, and seals payment instructions with HPKE hybrid encryption so only the intended recipient can read them. Your privacy does not depend on other people joining a pool.'
   },
   {
     q: 'Do I need to complete KYC?',
-    a: 'No. Seclura is non-custodial and permissionless: no sign-up, no identity document, no email. You connect a wallet and the protocol does the rest.'
+    a: 'No. Veilary is non-custodial and permissionless: no sign-up, no identity document, no email. You connect a wallet and the protocol does the rest.'
   },
   {
     q: 'Which chain does it run on?',
@@ -239,7 +239,7 @@ export const faqs = [
   },
   {
     q: 'Who holds my funds?',
-    a: 'You do. Seclura is non-custodial — the protocol never takes possession of your assets or your private keys, and it cannot freeze, reverse or seize a payment.'
+    a: 'You do. Veilary is non-custodial — the protocol never takes possession of your assets or your private keys, and it cannot freeze, reverse or seize a payment.'
   },
   {
     q: 'How do I buy $GHOST?',
@@ -251,7 +251,7 @@ export const faqs = [
   },
   {
     q: 'Is privacy legal where I live?',
-    a: 'Financial privacy is a legitimate expectation in most jurisdictions. Even so, you are responsible for complying with the laws that apply to you. Seclura is software; using it to break the law is not permitted under our Terms of Use.'
+    a: 'Financial privacy is a legitimate expectation in most jurisdictions. Even so, you are responsible for complying with the laws that apply to you. Veilary is software; using it to break the law is not permitted under our Terms of Use.'
   }
 ]
 
@@ -266,6 +266,6 @@ export const brandPillars = [
   },
   {
     title: 'Private by default',
-    text: 'Privacy that has to be switched on is privacy most people never use. On the Seclura rail, private is the only mode there is.'
+    text: 'Privacy that has to be switched on is privacy most people never use. On the Veilary rail, private is the only mode there is.'
   }
 ]

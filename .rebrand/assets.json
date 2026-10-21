@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-10-22T00:57:19+08:00",
+  "palette": {
+    "primary": "#298dff",
+    "accent": "#298dff",
+    "background": "#ffffff",
+    "foreground": "#111827"
+  },
+  "items": [
+    {
+      "source": "public/assets/favicon.svg",
+      "generated": "E:/workspace/chuangye/solana/ghostpay/website/.rebrand/generated/public/assets/favicon.svg",
+      "kind": "favicon",
+      "format": "svg",
+      "width": 64,
+      "height": 64,
+      "bytes": 856,
+      "manual": false
+    },
+    {
+      "source": "public/assets/og-cover.png",
+      "generated": "E:/workspace/chuangye/solana/ghostpay/website/.rebrand/generated/public/assets/og-cover.png",
+      "kind": "og",
+      "format": "png",
+      "width": 1200,
+      "height": 630,
+      "bytes": 19001,
+      "manual": false
+    },
+    {
+      "source": "public/assets/og-cover.svg",
+      "generated": "E:/workspace/chuangye/solana/ghostpay/website/.rebrand/generated/public/assets/og-cover.svg",
+      "kind": "og",
+      "format": "svg",
+      "width": 1200,
+      "height": 630,
+      "bytes": 19001,
+      "manual": false
+    }
+  ],
+  "manualReview": [],
+  "generatedRoot": "E:/workspace/chuangye/solana/ghostpay/website/.rebrand/generated"
+}

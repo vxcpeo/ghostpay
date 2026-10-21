@@ -1,0 +1,13 @@
+# Manual naming ideas — one per line.
+# Every entry below was pre-screened against the .xyz registry RDAP and the
+# live x.com profile page; all nine had an unregistered domain and a 404
+# profile at pre-screen time. The official Chrome checker still decides.
+veilary
+veilene
+veillith
+hushera
+hushvara
+sealvora
+shrouvia
+shrouden
+cifrona

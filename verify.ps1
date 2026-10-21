@@ -1,5 +1,5 @@
 <#
-  Seclura website — one-shot setup and verification.
+  Veilary website — one-shot setup and verification.
 
   WHY THIS EXISTS
   The agent that wrote this site could not run a single shell command: every attempt on its side

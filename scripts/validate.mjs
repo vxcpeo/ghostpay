@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Seclura website — static self-check.
+ * Veilary website — static self-check.
  *
  * Verifies the things a build would NOT catch:
  *   1. Every module imported by the app exists on disk.
@@ -203,7 +203,7 @@ const vueByBase = new Map(vueFiles.map((f) => [f.split(/[\\/]/).pop(), f]))
   const GUARD = [
     {
       re: /zero-knowledge|zk-proof|zkSNARK|zk-SNARK/i,
-      why: 'no source ties zk proofs to Seclura — describe only stealth addresses / HPKE'
+      why: 'no source ties zk proofs to Veilary — describe only stealth addresses / HPKE'
     },
     {
       // Negative mentions are fine ("not a mixer"); positive claims are not.
@@ -215,7 +215,7 @@ const vueByBase = new Map(vueFiles.map((f) => [f.split(/[\\/]/).pop(), f]))
       why: 'that placeholder was not valid base58; never reintroduce it'
     },
     {
-      re: /docs\.seclura\.xyz|@SecluraFin|t\.me\/SecluraPortal|discord\.gg\/seclura/i,
+      re: /docs\.veilary\.xyz|@VeilaryFin|t\.me\/VeilaryPortal|discord\.gg\/veilary/i,
       why: 'invented handles — no official account could be verified'
     }
   ]
@@ -354,7 +354,7 @@ const vueByBase = new Map(vueFiles.map((f) => [f.split(/[\\/]/).pop(), f]))
    * docs/research-brief.md. Nothing here needs the network.
    */
   const ALLOWED = new Set([
-    'seclura.xyz', // the rebranded site
+    'veilary.xyz', // the rebranded site
     'x.com', // official X profile (handle confirmed available)
     'ghostwareos.gitbook.io', // only verified documentation host
     'solflare.com', // cited integration partner
@@ -394,7 +394,7 @@ const vueByBase = new Map(vueFiles.map((f) => [f.split(/[\\/]/).pop(), f]))
 
 {
   /**
-   * Tidal breakpoints. They may evolve with the design, but no ad-hoc
+   * Console breakpoints. They may evolve with the design, but no ad-hoc
    * width should appear without being added here first.
    */
   const ALLOWED = new Set([1180, 980, 820, 760, 640]);
@@ -407,22 +407,26 @@ const vueByBase = new Map(vueFiles.map((f) => [f.split(/[\\/]/).pop(), f]))
       if (!ALLOWED.has(Number(width))) {
         fail(
           'responsive',
-          `${rel(file)} uses a ${width}px breakpoint — use one of ${[...ALLOWED].join('/')}px (see tide.css)`
+          `${rel(file)} uses a ${width}px breakpoint — use one of ${[...ALLOWED].join('/')}px (see abyss.css)`
         )
       }
     }
   }
 
-  // The floating dock must keep both legal routes visible at every width and reveal
-  // the index toggle as the labelled section links collapse — navigation may not vanish.
-  const dock = read(vueByBase.get('TideDock.vue'))
-  const legalRoutes = /href="\/privacy"/.test(dock) && /href="\/terms"/.test(dock)
-  const showsToggle = /\.harbor__toggle\s*\{[\s\S]*?display:\s*(?:inline-flex|grid|block|flex)/.test(dock)
-  const hidesLabels = /\.harbor__label\s*\{[\s\S]*?display:\s*none/.test(dock)
-  if (!legalRoutes || !showsToggle || !hidesLabels) {
+  // The status bar must keep both legal routes visible at every width and reveal
+  // the command-palette toggle as the labelled route commands collapse — navigation
+  // may not vanish.
+  const statusBar = read(vueByBase.get('SysBar.vue'))
+  const globalCss = read(cssFile)
+  const legalRoutes = /href="\/privacy"/.test(statusBar) && /href="\/terms"/.test(statusBar)
+  const toggleRe = /\.sysbar__toggle\s*\{[\s\S]*?display:\s*(?:inline-flex|grid|block|flex)/
+  const railRe = /\.sysbar__rail\s*\{[\s\S]*?display:\s*none/
+  const showsToggle = toggleRe.test(statusBar) || toggleRe.test(globalCss)
+  const hidesRail = railRe.test(statusBar) || railRe.test(globalCss)
+  if (!legalRoutes || !showsToggle || !hidesRail) {
     fail(
       'responsive',
-      'TideDock must keep the /privacy + /terms shortcuts visible, hide the section labels on narrow screens and reveal .harbor__toggle in the same media query'
+      'SysBar must keep the /privacy + /terms shortcuts visible, hide the route rail on narrow screens and reveal .sysbar__toggle in the same media query'
     )
   }
 
@@ -430,7 +434,7 @@ const vueByBase = new Map(vueFiles.map((f) => [f.split(/[\\/]/).pop(), f]))
 
   /**
    * The no-JS marker remains the safety net for script failure. There are no
-   * opacity-gated reveals in the documentary build, so only the marker contract
+   * opacity-gated reveals in the console build, so only the marker contract
    * itself needs to stay wired.
    */
   const indexSrc = read(join(ROOT, 'index.html'))
@@ -442,7 +446,7 @@ const vueByBase = new Map(vueFiles.map((f) => [f.split(/[\\/]/).pop(), f]))
     fail('responsive', 'src/main.js never removes `no-js`')
   }
   if (/v-reveal/.test(vueFiles.map(read).join('\n')) && !/\.no-js\s+\.reveal/.test(cssFile ? read(cssFile) : '')) {
-    fail('responsive', 'tide.css has no `.no-js .reveal` rule although v-reveal is used')
+    fail('responsive', 'abyss.css has no `.no-js .reveal` rule although v-reveal is used')
   }
 }
 
@@ -510,7 +514,7 @@ const vueByBase = new Map(vueFiles.map((f) => [f.split(/[\\/]/).pop(), f]))
 
 const line = '─'.repeat(64)
 console.log(line)
-console.log('Seclura website — static validation')
+console.log('Veilary website — static validation')
 console.log(line)
 
 for (const n of notes) console.log(`  · ${n}`)
