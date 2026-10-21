@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Seclura — private payments, invisible by design">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#F4FAFF"/>
+      <stop offset="1" stop-color="#E3F1FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.08" cy="0.02" r="0.85">
+      <stop offset="0" stop-color="#298DFF" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#298DFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.92" cy="0.98" r="0.7">
+      <stop offset="0" stop-color="#4DA2FF" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#4DA2FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E95FF"/>
+      <stop offset="1" stop-color="#0B64CC"/>
+    </linearGradient>
+    <filter id="float" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="26" stdDeviation="26" flood-color="#1460AD" flood-opacity="0.16"/>
+    </filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1460AD" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#water)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- tidal rings -->
+  <g fill="none">
+    <circle cx="1036" cy="196" r="300" stroke="#298DFF" stroke-opacity="0.12" stroke-width="1"/>
+    <circle cx="1036" cy="196" r="228" stroke="#298DFF" stroke-opacity="0.18" stroke-width="1"/>
+    <circle cx="1036" cy="196" r="158" stroke="#298DFF" stroke-opacity="0.26" stroke-width="1" stroke-dasharray="3 9"/>
+    <circle cx="1036" cy="196" r="92" stroke="#298DFF" stroke-opacity="0.32" stroke-width="1"/>
+  </g>
+
+  <!-- brand lockup -->
+  <g transform="translate(64 48)">
+    <rect x="0" y="0" width="52" height="52" rx="26" fill="url(#chip)" filter="url(#soft)"/>
+    <path d="M37 17c0-5-17-5-17 1.6 0 4.9 17 4.9 17 11.4 0 6.5-17 6.5-17 1.6" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="66" y="36" font-family="'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" font-size="34" font-weight="700" fill="#081B2B" letter-spacing="-1.4">Seclura</text>
+  </g>
+
+  <!-- stage panel -->
+  <rect x="64" y="136" width="1072" height="430" rx="40" fill="#FFFFFF" filter="url(#float)"/>
+  <rect x="64" y="136" width="1072" height="430" rx="40" fill="none" stroke="#E2F0FC"/>
+
+  <!-- route strip -->
+  <rect x="96" y="168" width="128" height="30" rx="15" fill="#E8F3FF"/>
+  <circle cx="114" cy="183" r="3.4" fill="#298DFF"/>
+  <text x="126" y="188" font-family="Consolas, 'Cascadia Mono', monospace" font-size="13" font-weight="700" fill="#0B64CC" letter-spacing="2.4">SOLANA</text>
+  <text x="242" y="188" font-family="Consolas, 'Cascadia Mono', monospace" font-size="13" fill="#546A7D" letter-spacing="1.8">MAINNET · LIVE PRIVATE PAYMENTS</text>
+
+  <!-- headline -->
+  <text x="96" y="296" font-family="'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" font-size="76" font-weight="700" fill="#081B2B" letter-spacing="-3.6">Private payments,</text>
+  <text x="96" y="372" font-family="'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" font-size="76" font-weight="700" fill="#298DFF" letter-spacing="-3.6">invisible by design.</text>
+
+  <!-- description -->
+  <text x="96" y="432" font-family="'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="19" fill="#546A7D">
+    Seclura is the private payment rail for Solana. Send, receive and swap with stealth
+  </text>
+  <text x="96" y="460" font-family="'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="19" fill="#546A7D">
+    addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record.
+  </text>
+
+  <!-- footer strip -->
+  <path d="M96 500H1104" stroke="#D8E7F5" stroke-width="1"/>
+  <text x="96" y="536" font-family="Consolas, 'Cascadia Mono', monospace" font-size="15" font-weight="700" fill="#0B64CC" letter-spacing="2">$GHOST</text>
+  <text x="182" y="536" font-family="Consolas, 'Cascadia Mono', monospace" font-size="15" fill="#546A7D">·</text>
+  <text x="204" y="536" font-family="Consolas, 'Cascadia Mono', monospace" font-size="15" fill="#546A7D" letter-spacing="2">SOLANA MAINNET</text>
+  <text x="1104" y="536" text-anchor="end" font-family="Consolas, 'Cascadia Mono', monospace" font-size="15" fill="#546A7D" letter-spacing="2">seclura.xyz</text>
+</svg>

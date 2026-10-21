@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-10-20T16:30:26.630Z",
+  "checks": [
+    {
+      "name": "single h1 on home",
+      "ok": true,
+      "detail": "Private payments,\ninvisible by design."
+    },
+    {
+      "name": "home title",
+      "ok": true,
+      "detail": "Seclura — Private Payments, Invisible by Design"
+    },
+    {
+      "name": "dock floats at the bottom",
+      "ok": true,
+      "detail": "{\"x\":197.984375,\"y\":814,\"width\":1044.03125,\"height\":58}"
+    },
+    {
+      "name": "dock link scrolls to features",
+      "ok": true,
+      "detail": "{\"y\":926,\"top\":56}"
+    },
+    {
+      "name": "dock stays visible after scroll",
+      "ok": true,
+      "detail": "visible"
+    },
+    {
+      "name": "launch app reaches #launch",
+      "ok": true,
+      "detail": "{\"y\":8098,\"top\":376,\"view\":900,\"max\":9130}"
+    },
+    {
+      "name": "back-to-top appears after scrolling",
+      "ok": true,
+      "detail": "visible"
+    },
+    {
+      "name": "back-to-top returns to the opening",
+      "ok": true,
+      "detail": "13"
+    },
+    {
+      "name": "mint button reports copied",
+      "ok": true,
+      "detail": "CA BBKPiLM9…eBGHST COPIED"
+    },
+    {
+      "name": "faq opens and reports state",
+      "ok": true,
+      "detail": "true / 93px"
+    },
+    {
+      "name": "faq closes again",
+      "ok": true,
+      "detail": "false / 0px"
+    },
+    {
+      "name": "invalid email shows error",
+      "ok": true,
+      "detail": "Enter a valid email address."
+    },
+    {
+      "name": "valid email shows receipt",
+      "ok": true,
+      "detail": "You’re on the list Thanks — you’ll hear from us when the next Seclura "
+    },
+    {
+      "name": "receipt reset restores form",
+      "ok": true,
+      "detail": "form back"
+    },
+    {
+      "name": "footer privacy link routes",
+      "ok": true,
+      "detail": "http://127.0.0.1:4326/#/privacy"
+    },
+    {
+      "name": "404 h1",
+      "ok": true,
+      "detail": "This page has gone quiet."
+    },
+    {
+      "name": "404 title",
+      "ok": true,
+      "detail": "Signal lost — Seclura"
+    },
+    {
+      "name": "404 routes home",
+      "ok": true,
+      "detail": "two actions"
+    },
+    {
+      "name": "mobile legal shortcuts visible",
+      "ok": true,
+      "detail": "two shortcuts"
+    },
+    {
+      "name": "mobile index sheet opens",
+      "ok": true,
+      "detail": "6"
+    },
+    {
+      "name": "escape closes the index sheet",
+      "ok": true,
+      "detail": "closed"
+    },
+    {
+      "name": "mobile legal shortcut routes to privacy",
+      "ok": true,
+      "detail": "http://127.0.0.1:4326/#/privacy"
+    },
+    {
+      "name": "no horizontal overflow at 1440px",
+      "ok": true,
+      "detail": "scrollWidth 1440"
+    },
+    {
+      "name": "no horizontal overflow at 390px",
+      "ok": true,
+      "detail": "scrollWidth 390"
+    }
+  ],
+  "consoleErrors": [],
+  "passed": true
+}

@@ -1,0 +1,566 @@
+/* ============================================================
+   Tidal Sui — global surface system for the Seclura site
+   White water ground, aqua caustics, one bright-blue accent.
+   ============================================================ */
+
+:root {
+  /* surfaces */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-alt: #e8f3ff;
+  --surface-soft: #f4f9ff;
+  --surface-mist: #dceeff;
+
+  /* ink */
+  --ink: #081b2b;
+  --muted: #546a7d;
+
+  /* accent */
+  --accent: #298dff;
+  --accent-2: #4da2ff;
+  --accent-safe: #0b64cc;
+  --accent-wash: #d9ecff;
+  --fill: #0b64cc;
+  --fill-deep: #0a58b4;
+
+  /* structure */
+  --line: #d8e7f5;
+  --line-strong: #b3d2ec;
+  --success: #087a55;
+  --danger: #b42318;
+  --warning: #8a5a00;
+  --warning-wash: #fdf6e7;
+  --success-wash: #e8f5ee;
+
+  /* deep water */
+  --shade: #06182a;
+  --shade-2: #0b2540;
+  --shade-3: #123553;
+  --shade-ink: #eaf4ff;
+  --shade-muted: #a9c6dd;
+  --shade-link: #7cc0ff;
+
+  /* type */
+  --font-display: "Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-mono: "Cascadia Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  --display-weight: 600;
+  --display-tracking: -0.04em;
+  --label-tracking: 0.08em;
+
+  /* shape */
+  --radius-sm: 12px;
+  --radius-md: 22px;
+  --radius-lg: 36px;
+  --radius-xl: 52px;
+  --radius-pill: 999px;
+  --shadow: 0 26px 64px rgba(20, 96, 173, 0.12);
+  --shadow-lift: 0 34px 90px rgba(20, 96, 173, 0.19);
+
+  /* motion */
+  --motion: 260ms;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* rhythm */
+  --gutter: clamp(20px, 4.6vw, 68px);
+  --scene-pad: clamp(56px, 8vw, 128px);
+  --shell: 1320px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  color-scheme: light;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+dl,
+dd,
+dt,
+blockquote,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  line-height: 1.02;
+  letter-spacing: var(--display-tracking);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: var(--accent);
+  color: #04121f;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-safe);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.tide-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------------------------------------------------- primitives */
+
+.tide-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent-safe);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.tide-kicker::before {
+  content: "";
+  flex: none;
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), rgba(41, 141, 255, 0));
+}
+
+.tide-title {
+  font-size: clamp(2rem, 4.3vw, 3.7rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.tide-title em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.tide-deck {
+  max-width: 56ch;
+  color: var(--muted);
+  font-size: clamp(0.98rem, 1.05vw, 1.1rem);
+  line-height: 1.7;
+}
+
+.tide-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 26px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition:
+    background var(--motion) var(--ease),
+    color var(--motion) var(--ease),
+    border-color var(--motion) var(--ease),
+    box-shadow var(--motion) var(--ease),
+    transform var(--motion) var(--ease);
+}
+
+.tide-button svg {
+  flex: none;
+}
+
+.tide-button--fill {
+  border-color: var(--fill);
+  background: var(--fill);
+  color: #ffffff;
+  box-shadow: 0 16px 36px rgba(20, 96, 173, 0.28);
+}
+
+.tide-button--fill:hover {
+  border-color: var(--fill-deep);
+  background: var(--fill-deep);
+  transform: translateY(-1px);
+}
+
+.tide-button--line {
+  border-color: var(--line-strong);
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--ink);
+}
+
+.tide-button--line:hover {
+  border-color: var(--ink);
+  background: #ffffff;
+}
+
+.tide-button--light {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.tide-button--light:hover {
+  background: var(--accent-wash);
+  border-color: var(--accent-wash);
+}
+
+.tide-button--outline {
+  border-color: rgba(234, 244, 255, 0.45);
+  background: transparent;
+  color: var(--shade-ink);
+}
+
+.tide-button--outline:hover {
+  border-color: var(--shade-ink);
+  background: rgba(234, 244, 255, 0.1);
+}
+
+.tide-button--small {
+  min-height: 40px;
+  padding: 9px 18px;
+  font-size: 0.84rem;
+}
+
+/* ---------------------------------------------------- shell */
+
+.tide {
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+.tide__aurora {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(900px 620px at 10% -10%, rgba(41, 141, 255, 0.17), rgba(41, 141, 255, 0) 70%),
+    radial-gradient(760px 540px at 92% 2%, rgba(77, 162, 255, 0.15), rgba(77, 162, 255, 0) 72%),
+    radial-gradient(680px 680px at 50% 108%, rgba(41, 141, 255, 0.1), rgba(41, 141, 255, 0) 70%);
+}
+
+.tide__aurora::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.55;
+  background-image: repeating-linear-gradient(
+    115deg,
+    rgba(41, 141, 255, 0.05) 0 1px,
+    rgba(41, 141, 255, 0) 1px 28px
+  );
+  mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 72%);
+}
+
+.tide__main {
+  position: relative;
+  z-index: 1;
+}
+
+.tide__dots {
+  position: fixed;
+  top: 50%;
+  right: clamp(10px, 1.6vw, 24px);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.tide__dots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+
+.tide__dots span:nth-child(3n + 1) {
+  background: var(--accent);
+  opacity: 0.55;
+}
+
+.tidetop {
+  position: fixed;
+  right: clamp(16px, 2.4vw, 34px);
+  bottom: clamp(92px, 11vw, 108px);
+  z-index: 58;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid var(--fill);
+  border-radius: 50%;
+  background: var(--fill);
+  color: #ffffff;
+  box-shadow: var(--shadow-lift);
+  cursor: pointer;
+  transition:
+    background var(--motion) var(--ease),
+    transform var(--motion) var(--ease);
+}
+
+.tidetop:hover {
+  background: var(--fill-deep);
+  transform: translateY(-2px);
+}
+
+.tidetop__glyph {
+  transform: rotate(-90deg);
+}
+
+/* Vue transition names are frozen content attributes (`name=page|fade|drop`
+   in the contract), so the generated classes keep those names. */
+.page-enter-active,
+.page-leave-active,
+.fade-enter-active,
+.fade-leave-active,
+.drop-enter-active,
+.drop-leave-active {
+  transition:
+    opacity var(--motion) var(--ease),
+    transform var(--motion) var(--ease);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.drop-enter-from,
+.drop-leave-to {
+  opacity: 0;
+  transform: translate(-50%, 12px);
+}
+
+/* ---------------------------------------------------- scenes */
+
+.scene {
+  position: relative;
+  padding-block: var(--scene-pad);
+  scroll-margin-top: 20px;
+}
+
+.scene__inner {
+  position: relative;
+  width: min(100% - 2 * var(--gutter), var(--shell));
+  margin-inline: auto;
+}
+
+.scene--tall {
+  display: grid;
+  align-content: center;
+  min-height: 100svh;
+}
+
+.scene--wash {
+  background: linear-gradient(180deg, #ffffff 0%, var(--surface-soft) 42%, #ffffff 100%);
+}
+
+.scene--deep {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(90% 120% at 84% 0%, var(--shade-3) 0%, rgba(18, 53, 83, 0) 62%),
+    var(--shade);
+  color: var(--shade-ink);
+}
+
+.scene--deep :focus-visible {
+  outline-color: #ffffff;
+}
+
+.scene--deep .tide-kicker {
+  color: var(--shade-link);
+}
+
+.scene--deep .tide-kicker::before {
+  background: linear-gradient(90deg, var(--shade-link), rgba(124, 192, 255, 0));
+}
+
+.scene--deep .tide-title em {
+  color: var(--shade-link);
+}
+
+.scene--deep .tide-deck {
+  color: var(--shade-muted);
+}
+
+.scene__head {
+  display: grid;
+  gap: clamp(14px, 1.7vw, 22px);
+  max-width: 64ch;
+}
+
+/* ---------------------------------------------------- bento + rail */
+
+.tide-bento {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: clamp(12px, 1.4vw, 20px);
+}
+
+.tide-bento__cell {
+  min-width: 0;
+  padding: clamp(20px, 2.4vw, 34px);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.tide-bento__cell--wash {
+  background: var(--surface-alt);
+  box-shadow: none;
+}
+
+.tide-bento__cell--deep {
+  background: var(--shade-2);
+  box-shadow: none;
+}
+
+.tide-rail {
+  display: flex;
+  gap: clamp(12px, 1.4vw, 20px);
+  overflow-x: auto;
+  padding-block: 6px 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+  overscroll-behavior-x: contain;
+}
+
+.tide-rail > * {
+  flex: 0 0 min(82vw, 380px);
+  scroll-snap-align: start;
+}
+
+.tide-rail:focus-visible {
+  outline: 2px solid var(--accent-safe);
+  outline-offset: 6px;
+}
+
+/* ---------------------------------------------------- responsive */
+
+@media (max-width: 1180px) {
+  .tide__dots {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .tide-button {
+    min-height: 46px;
+    padding: 11px 20px;
+  }
+
+  .tide-deck {
+    font-size: 0.96rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

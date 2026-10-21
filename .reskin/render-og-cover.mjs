@@ -1,0 +1,13 @@
+﻿import { createRequire } from 'node:module';
+import fs from 'node:fs';
+import path from 'node:path';
+const require = createRequire(path.join(process.cwd(), '.reskin', 'tools', 'package.json'));
+const { chromium } = require('playwright-core');
+const svg = fs.readFileSync('public/assets/og-cover.svg', 'utf8');
+const browser = await chromium.launch({ headless: true, executablePath: fs.existsSync('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe') ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' : undefined });
+const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
+await page.setContent(`<html><body style="margin:0;background:#F4FAFF">${svg}</body></html>`);
+await page.waitForTimeout(400);
+await page.locator('svg').screenshot({ path: 'public/assets/og-cover.png' });
+await browser.close();
+console.log('rendered', fs.statSync('public/assets/og-cover.png').size);

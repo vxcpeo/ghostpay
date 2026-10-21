@@ -1,0 +1,1848 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-20T16:01:14.485Z",
+  "project": {
+    "root": "E:/workspace/chuangye/solana/ghostpay/website",
+    "name": "seclura-website",
+    "vueVersion": "^3.5.13",
+    "nuxt": false,
+    "dependencies": [
+      "@vitejs/plugin-vue",
+      "vite",
+      "vue",
+      "vue-router"
+    ],
+    "packageManager": "npm",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "validate": "node scripts/validate.mjs",
+      "capture": "node scripts/capture.mjs",
+      "dns": "node scripts/dns.mjs",
+      "check": "node scripts/validate.mjs && vite build"
+    },
+    "frameworks": []
+  },
+  "stats": {
+    "filesScanned": 20,
+    "vueFiles": 16,
+    "routes": 3,
+    "staticTextTokens": 115,
+    "bindingTokens": 101,
+    "eventTokens": 21,
+    "classNames": 216,
+    "colors": 44
+  },
+  "routes": [
+    {
+      "path": "/",
+      "dynamic": false
+    },
+    {
+      "path": "/privacy",
+      "dynamic": false
+    },
+    {
+      "path": "/terms",
+      "dynamic": false
+    }
+  ],
+  "unresolvedRoutes": [],
+  "archetype": {
+    "id": "ticker-stage",
+    "family": "linear",
+    "traits": {
+      "sidebar": false,
+      "topbar": false,
+      "cards": true,
+      "hero": false,
+      "table": true,
+      "grid": true,
+      "tabs": false,
+      "modal": false,
+      "charts": true,
+      "sticky": true,
+      "orbital": false,
+      "terminal": false,
+      "bento": false,
+      "ticker": true,
+      "gallery": false
+    }
+  },
+  "palette": [
+    {
+      "hex": "#ffffff",
+      "count": 16
+    },
+    {
+      "hex": "#0000ff",
+      "count": 5
+    },
+    {
+      "hex": "#006b47",
+      "count": 2
+    },
+    {
+      "hex": "#0a0b0d",
+      "count": 2
+    },
+    {
+      "hex": "#7a4f00",
+      "count": 2
+    },
+    {
+      "hex": "#e8f5ee",
+      "count": 2
+    },
+    {
+      "hex": "#0000c8",
+      "count": 1
+    },
+    {
+      "hex": "#171a1f",
+      "count": 1
+    },
+    {
+      "hex": "#585c63",
+      "count": 1
+    },
+    {
+      "hex": "#a3a3ff",
+      "count": 1
+    },
+    {
+      "hex": "#a82a08",
+      "count": 1
+    },
+    {
+      "hex": "#aeb6c1",
+      "count": 1
+    },
+    {
+      "hex": "#b6c0cc",
+      "count": 1
+    },
+    {
+      "hex": "#ccd6e1",
+      "count": 1
+    },
+    {
+      "hex": "#d7dde5",
+      "count": 1
+    },
+    {
+      "hex": "#dde3e9",
+      "count": 1
+    },
+    {
+      "hex": "#e9eaff",
+      "count": 1
+    },
+    {
+      "hex": "#f1f4f7",
+      "count": 1
+    },
+    {
+      "hex": "#f4f6f9",
+      "count": 1
+    },
+    {
+      "hex": "#fdf6e7",
+      "count": 1
+    },
+    {
+      "hex": "#ffc46b",
+      "count": 1
+    }
+  ],
+  "fonts": [],
+  "classNames": [
+    "?",
+    "access",
+    "access__button",
+    "access__error",
+    "access__field",
+    "access__fine",
+    "access__label",
+    "access__sub",
+    "access__title",
+    "atlas",
+    "atlas__meter",
+    "atlas__rail",
+    "atlas__stage",
+    "bp-btn",
+    "bp-btn--block",
+    "bp-btn--ghost",
+    "bp-btn--small",
+    "bp-btn--solid",
+    "bp-deck",
+    "bp-kicker",
+    "bp-title",
+    "checks",
+    "chips",
+    "chips__item",
+    "closing",
+    "closing__blurb",
+    "closing__brand",
+    "closing__chip",
+    "closing__column",
+    "closing__column-title",
+    "closing__columns",
+    "closing__foot",
+    "closing__grid",
+    "closing__identity",
+    "closing__inner",
+    "closing__legal",
+    "closing__name",
+    "closing__notice",
+    "closing__sep",
+    "closing__social",
+    "closing__socials",
+    "creed",
+    "dossier",
+    "dossier__back",
+    "dossier__body",
+    "dossier__copy",
+    "dossier__head",
+    "dossier__heading",
+    "dossier__lead",
+    "dossier__section",
+    "dossier__stamp",
+    "dossier__title",
+    "gauge",
+    "gauge__cell",
+    "home",
+    "invite",
+    "invite__acts",
+    "invite__copy",
+    "invite__deck",
+    "invite__form",
+    "invite__ticks",
+    "invite__title",
+    "lane",
+    "lane__badge",
+    "lane__items",
+    "lane__meta",
+    "lane__phase",
+    "lane__status",
+    "lane__title",
+    "lanes",
+    "ledger",
+    "ledger__copy",
+    "ledger__key",
+    "ledger__row",
+    "ledger__value",
+    "list",
+    "lost",
+    "lost__acts",
+    "lost__back",
+    "lost__code",
+    "lost__copy",
+    "lost__mark",
+    "lost__text",
+    "lost__title",
+    "matrix",
+    "matrix__mark",
+    "matrix__note",
+    "matrix__own",
+    "matrix__table",
+    "mint",
+    "mint__act",
+    "mint__key",
+    "mint__value",
+    "more",
+    "more__links",
+    "more__question",
+    "notes",
+    "notes__item",
+    "opener",
+    "opener__acts",
+    "opener__board",
+    "opener__chain",
+    "opener__date",
+    "opener__lede",
+    "opener__register",
+    "opener__side",
+    "opener__title",
+    "opener__top",
+    "opener__turn",
+    "pillars",
+    "pillars__item",
+    "pillars__text",
+    "pillars__title",
+    "qa",
+    "qa__answer",
+    "qa__icon",
+    "qa__num",
+    "qa__q",
+    "qa__trigger",
+    "rail",
+    "rail__brand",
+    "rail__chip",
+    "rail__dot",
+    "rail__dot--alt",
+    "rail__drawer",
+    "rail__foot",
+    "rail__glyph",
+    "rail__head",
+    "rail__index",
+    "rail__label",
+    "rail__link",
+    "rail__name",
+    "rail__paper",
+    "rail__sheet-link",
+    "rail__tick",
+    "rail__toggle",
+    "rail__toolbar",
+    "rail__utility",
+    "readout",
+    "readout__aside",
+    "readout__live",
+    "readout__main",
+    "readout__meta",
+    "readout__tag",
+    "readout__text",
+    "readout__title",
+    "receipt-note",
+    "receipt-note__mark",
+    "record",
+    "record__audit",
+    "record__facts",
+    "record__foot",
+    "record__head",
+    "record__list",
+    "record__live",
+    "record__row",
+    "record__source",
+    "record__stat",
+    "record__stats",
+    "route",
+    "route__label",
+    "route__line",
+    "route__node",
+    "route__step",
+    "row.legacy",
+    "row.ours",
+    "seal",
+    "seal__hash",
+    "seal__head",
+    "seal__ok",
+    "spec",
+    "spec__icon",
+    "spec__item",
+    "spec__text",
+    "spec__title",
+    "stop",
+    "stop__head",
+    "supply",
+    "supply__bar",
+    "supply__figure",
+    "supply__head",
+    "supply__label",
+    "supply__name",
+    "supply__pct",
+    "supply__row",
+    "supply__rows",
+    "supply__sheet",
+    "supply__track",
+    "tenets",
+    "tenets__icon",
+    "tenets__item",
+    "tenets__text",
+    "tenets__title",
+    "to-top",
+    "to-top__glyph",
+    "track",
+    "track__body",
+    "track__button",
+    "track__go",
+    "track__num",
+    "track__step",
+    "track__text",
+    "track__title",
+    "transmit",
+    "transmit__bar",
+    "transmit__flag",
+    "transmit__route",
+    "transmit__row",
+    "transmit__row--amount",
+    "transmit__rows",
+    "transmit__send",
+    "utility",
+    "utility__act",
+    "utility__fine",
+    "utility__list",
+    "utility__title"
+  ],
+  "designSignals": {
+    "frameworks": [],
+    "cssVars": [
+      "--band",
+      "--band-ink",
+      "--band-link",
+      "--band-muted",
+      "--band-raised",
+      "--danger",
+      "--display-tracking",
+      "--display-weight",
+      "--duration",
+      "--ease",
+      "--font-body",
+      "--font-display",
+      "--font-mono",
+      "--ghost",
+      "--ground",
+      "--ground-deep",
+      "--ink",
+      "--label-tracking",
+      "--line",
+      "--line-strong",
+      "--muted",
+      "--pending",
+      "--primary",
+      "--primary-deep",
+      "--primary-tint",
+      "--radius-lg",
+      "--radius-md",
+      "--radius-pill",
+      "--radius-sm",
+      "--rail-pad",
+      "--shadow",
+      "--shadow-lift",
+      "--solid",
+      "--stack",
+      "--stage-pad",
+      "--success",
+      "--surface",
+      "--surface-soft",
+      "--warning"
+    ],
+    "colorVars": [
+      {
+        "name": "--band",
+        "value": "#0a0b0d"
+      },
+      {
+        "name": "--band-ink",
+        "value": "#f4f6f9"
+      },
+      {
+        "name": "--band-link",
+        "value": "#a3a3ff"
+      },
+      {
+        "name": "--band-muted",
+        "value": "#aeb6c1"
+      },
+      {
+        "name": "--band-raised",
+        "value": "#171a1f"
+      },
+      {
+        "name": "--danger",
+        "value": "#a82a08"
+      },
+      {
+        "name": "--ground",
+        "value": "#dde3e9"
+      },
+      {
+        "name": "--ground-deep",
+        "value": "#ccd6e1"
+      },
+      {
+        "name": "--ink",
+        "value": "#0a0b0d"
+      },
+      {
+        "name": "--line",
+        "value": "#d7dde5"
+      },
+      {
+        "name": "--line-strong",
+        "value": "#b6c0cc"
+      },
+      {
+        "name": "--muted",
+        "value": "#585c63"
+      },
+      {
+        "name": "--primary",
+        "value": "#0000ff"
+      },
+      {
+        "name": "--primary-deep",
+        "value": "#0000c8"
+      },
+      {
+        "name": "--primary-tint",
+        "value": "#e9eaff"
+      },
+      {
+        "name": "--success",
+        "value": "#006b47"
+      },
+      {
+        "name": "--surface",
+        "value": "#ffffff"
+      },
+      {
+        "name": "--surface-soft",
+        "value": "#f1f4f7"
+      },
+      {
+        "name": "--warning",
+        "value": "#7a4f00"
+      }
+    ],
+    "mediaQueries": [
+      "@media (max-height: 780px) and (min-width: 1081px)",
+      "@media (max-width: 1080px)",
+      "@media (max-width: 520px)",
+      "@media (max-width: 560px)",
+      "@media (max-width: 620px)",
+      "@media (max-width: 760px)",
+      "@media (max-width: 820px)",
+      "@media (max-width: 900px)",
+      "@media (prefers-reduced-motion: reduce)"
+    ],
+    "darkMode": false
+  },
+  "structure": {
+    "tagCounts": {
+      "a": 15,
+      "aboutsection": 1,
+      "article": 3,
+      "blockquote": 1,
+      "briefrail": 1,
+      "button": 13,
+      "closingband": 1,
+      "comparisonsection": 1,
+      "component": 1,
+      "dd": 10,
+      "div": 90,
+      "dl": 3,
+      "dt": 10,
+      "em": 9,
+      "faqsection": 1,
+      "featuressection": 1,
+      "footer": 1,
+      "form": 1,
+      "h1": 3,
+      "h2": 9,
+      "h3": 8,
+      "h4": 1,
+      "herosection": 1,
+      "howitworkssection": 1,
+      "icon": 43,
+      "input": 1,
+      "label": 1,
+      "launchsection": 1,
+      "li": 14,
+      "main": 1,
+      "nav": 1,
+      "ol": 1,
+      "p": 39,
+      "path": 1,
+      "roadmapsection": 1,
+      "router-link": 5,
+      "router-view": 1,
+      "section": 11,
+      "span": 56,
+      "strong": 4,
+      "svg": 1,
+      "table": 1,
+      "tbody": 1,
+      "td": 2,
+      "template": 1,
+      "th": 4,
+      "thead": 1,
+      "tokenomicssection": 1,
+      "tr": 2,
+      "transition": 3,
+      "ul": 7
+    },
+    "depthHistogram": {
+      "0": 18,
+      "1": 49,
+      "2": 74,
+      "3": 85,
+      "4": 94,
+      "5": 60,
+      "6": 8,
+      "7": 3
+    },
+    "maxDepth": 7,
+    "topLevelTags": [
+      "div",
+      "closingband",
+      "transition",
+      "div",
+      "footer",
+      "svg",
+      "section",
+      "section",
+      "section",
+      "section",
+      "section",
+      "section",
+      "section",
+      "section",
+      "section",
+      "div",
+      "article",
+      "section"
+    ],
+    "skeletonSample": [
+      "div",
+      "  main",
+      "    router-view",
+      "      transition",
+      "        component",
+      "  div",
+      "    span",
+      "    briefrail",
+      "closingband",
+      "transition",
+      "  button",
+      "    icon",
+      "div",
+      "  div",
+      "    a",
+      "      span",
+      "        icon",
+      "      span",
+      "    button",
+      "      icon",
+      "  nav",
+      "    a",
+      "      span",
+      "      span",
+      "  div",
+      "    button",
+      "    a",
+      "  transition",
+      "    div",
+      "      a",
+      "        span",
+      "        icon",
+      "      button",
+      "      div",
+      "        a",
+      "          span",
+      "        a",
+      "          span",
+      "footer",
+      "  div",
+      "    div",
+      "      div",
+      "        a",
+      "          span",
+      "            icon",
+      "          span",
+      "        p",
+      "        div",
+      "          a",
+      "            icon",
+      "      div",
+      "        div",
+      "          h4",
+      "          ul",
+      "            li",
+      "              a",
+      "    div",
+      "      strong",
+      "    div",
+      "      p",
+      "      div",
+      "        router-link",
+      "        span",
+      "        router-link",
+      "        span",
+      "        a",
+      "svg",
+      "  path",
+      "section",
+      "  div",
+      "    p",
+      "    h2",
+      "      em",
+      "    p",
+      "  blockquote",
+      "  div",
+      "    div",
+      "      h3",
+      "      p",
+      "  div",
+      "    div",
+      "      div",
+      "        span",
+      "        span",
+      "      dl",
+      "        div",
+      "          dt",
+      "          dd",
+      "    div",
+      "      div",
+      "        strong",
+      "        span",
+      "    div",
+      "      div",
+      "        icon",
+      "      p",
+      "section",
+      "  div",
+      "    p",
+      "    h2",
+      "      em",
+      "    p",
+      "  div",
+      "    table",
+      "      thead",
+      "        tr",
+      "          th",
+      "          th",
+      "          th",
+      "      tbody",
+      "        tr",
+      "          th",
+      "          td",
+      "            span",
+      "              icon",
+      "          td",
+      "            span",
+      "              icon",
+      "    p",
+      "  div"
+    ]
+  },
+  "contentContract": {
+    "schemaVersion": 1,
+    "meta": {
+      "projectName": "seclura-website",
+      "title": "seclura-website",
+      "lang": "en"
+    },
+    "routes": [
+      "/",
+      "/privacy",
+      "/terms"
+    ],
+    "visibleText": [
+      {
+        "value": "— gone.",
+        "count": 1
+      },
+      {
+        "value": "— the fuel of",
+        "count": 1
+      },
+      {
+        "value": ". All rights reserved.",
+        "count": 1
+      },
+      {
+        "value": "▮▮▮▮▮▮ · hidden",
+        "count": 1
+      },
+      {
+        "value": "0.4s finality",
+        "count": 1
+      },
+      {
+        "value": "0x7f…a91c · Seclura balance",
+        "count": 1
+      },
+      {
+        "value": "0x8ac4 f19b 22de 77a0 4c31 9fbe 08d2 5c66",
+        "count": 1
+      },
+      {
+        "value": "404 · signal lost",
+        "count": 1
+      },
+      {
+        "value": "A fresh one-time address per payment means nothing is linkable",
+        "count": 1
+      },
+      {
+        "value": "A public ledger turns your life into",
+        "count": 1
+      },
+      {
+        "value": "A utility token for the private payment rail — it pays for access, backs ecosystem incentives and puts how the privacy stack evolves in the hands of the people using it.",
+        "count": 1
+      },
+      {
+        "value": "Add another address",
+        "count": 1
+      },
+      {
+        "value": "Address derivation happens in your wallet — keys never leave your device",
+        "count": 1
+      },
+      {
+        "value": "Amount",
+        "count": 1
+      },
+      {
+        "value": "answered plainly",
+        "count": 1
+      },
+      {
+        "value": "Back to home",
+        "count": 2
+      },
+      {
+        "value": "Buy",
+        "count": 1
+      },
+      {
+        "value": "CA",
+        "count": 1
+      },
+      {
+        "value": "Can’t find what you’re looking for?",
+        "count": 1
+      },
+      {
+        "value": "Core modules",
+        "count": 1
+      },
+      {
+        "value": "Custody",
+        "count": 1
+      },
+      {
+        "value": "Early access list",
+        "count": 1
+      },
+      {
+        "value": "email",
+        "count": 1
+      },
+      {
+        "value": "Enter a valid email address.",
+        "count": 1
+      },
+      {
+        "value": "Every card payment you make is private. Every salary transfer is private. Crypto is the only money system where the opposite is true — where your landlord, your employer and your competitors can audit you in real time. Seclura exists to close that gap.",
+        "count": 1
+      },
+      {
+        "value": "Everything a public chain",
+        "count": 1
+      },
+      {
+        "value": "Explore features",
+        "count": 1
+      },
+      {
+        "value": "FAQ",
+        "count": 1
+      },
+      {
+        "value": "Financial privacy is not a loophole.",
+        "count": 1
+      },
+      {
+        "value": "four moves",
+        "count": 1
+      },
+      {
+        "value": "From",
+        "count": 1
+      },
+      {
+        "value": "From private transfers to",
+        "count": 1
+      },
+      {
+        "value": "Go invisible in",
+        "count": 1
+      },
+      {
+        "value": "How it works",
+        "count": 1
+      },
+      {
+        "value": "hpke seal",
+        "count": 1
+      },
+      {
+        "value": "invisible by design.",
+        "count": 1
+      },
+      {
+        "value": "invisible finance",
+        "count": 1
+      },
+      {
+        "value": "invisible money",
+        "count": 1
+      },
+      {
+        "value": "is a utility token for a decentralised protocol and its value can go to zero. Always copy the official mint address from the project’s own channels before trading — impersonator tokens are common — and never share your seed phrase.",
+        "count": 1
+      },
+      {
+        "value": "is non-custodial software: you alone control your keys and your funds. This is an independent demonstration project and is not operated by the GhostWareOS team.",
+        "count": 1
+      },
+      {
+        "value": "It is the default.",
+        "count": 1
+      },
+      {
+        "value": "Join the list",
+        "count": 1
+      },
+      {
+        "value": "Last updated:",
+        "count": 1
+      },
+      {
+        "value": "Launch App",
+        "count": 3
+      },
+      {
+        "value": "Launch Seclura",
+        "count": 1
+      },
+      {
+        "value": "Legal",
+        "count": 1
+      },
+      {
+        "value": "live",
+        "count": 1
+      },
+      {
+        "value": "mainnet",
+        "count": 1
+      },
+      {
+        "value": "mainnet · live private payments",
+        "count": 1
+      },
+      {
+        "value": "Mint address",
+        "count": 1
+      },
+      {
+        "value": "Network",
+        "count": 1
+      },
+      {
+        "value": "No address link",
+        "count": 1
+      },
+      {
+        "value": "No sign-up, no KYC",
+        "count": 1
+      },
+      {
+        "value": "No sign-up, no verification queue, no shared pool to wait on. Connect a wallet and the protocol handles the cryptography.",
+        "count": 1
+      },
+      {
+        "value": "Non-custodial",
+        "count": 1
+      },
+      {
+        "value": "Non-custodial from day one",
+        "count": 1
+      },
+      {
+        "value": "Nothing on this website is financial, legal or tax advice.",
+        "count": 1
+      },
+      {
+        "value": "On a transparent chain, your employer knows your rent, your competitors know your treasury, and anyone with a block explorer knows your net worth. Seclura keeps verifiability and removes the surveillance.",
+        "count": 1
+      },
+      {
+        "value": "Privacy is not a one-off launch feature — it is a network effect. Here is how the Seclura protocol opens up, phase by phase.",
+        "count": 1
+      },
+      {
+        "value": "Privacy Policy",
+        "count": 1
+      },
+      {
+        "value": "private",
+        "count": 1
+      },
+      {
+        "value": "Private beta",
+        "count": 1
+      },
+      {
+        "value": "Private money in",
+        "count": 1
+      },
+      {
+        "value": "Private payments,",
+        "count": 1
+      },
+      {
+        "value": "Product drops, audits and privacy-stack news. No spam, ever.",
+        "count": 1
+      },
+      {
+        "value": "Property",
+        "count": 1
+      },
+      {
+        "value": "protocol facts",
+        "count": 1
+      },
+      {
+        "value": "public record.",
+        "count": 1
+      },
+      {
+        "value": "Questions,",
+        "count": 1
+      },
+      {
+        "value": "quiet",
+        "count": 1
+      },
+      {
+        "value": "Read the docs",
+        "count": 2
+      },
+      {
+        "value": "Read the vision doc",
+        "count": 1
+      },
+      {
+        "value": "Risk notice.",
+        "count": 1
+      },
+      {
+        "value": "Roadmap",
+        "count": 1
+      },
+      {
+        "value": "sealed ✓",
+        "count": 1
+      },
+      {
+        "value": "Seclura",
+        "count": 1
+      },
+      {
+        "value": "Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions — your counterparties, your balances and your amounts stay yours alone.",
+        "count": 1
+      },
+      {
+        "value": "Seclura replaces the transparent ledger with verifiable secrecy: payments that anyone can validate but nobody can trace.",
+        "count": 1
+      },
+      {
+        "value": "seclura://send",
+        "count": 1
+      },
+      {
+        "value": "See how it works",
+        "count": 1
+      },
+      {
+        "value": "Send privately",
+        "count": 1
+      },
+      {
+        "value": "shows the world",
+        "count": 1
+      },
+      {
+        "value": "Solana settlement finalises in under a second",
+        "count": 1
+      },
+      {
+        "value": "stealth ●●9d4f",
+        "count": 1
+      },
+      {
+        "value": "Stealth addresses on every payment",
+        "count": 1
+      },
+      {
+        "value": "step",
+        "count": 1
+      },
+      {
+        "value": "Still curious? The community and the docs go deeper than any landing page can.",
+        "count": 1
+      },
+      {
+        "value": "Terms of Use",
+        "count": 1
+      },
+      {
+        "value": "Thanks — you’ll hear from us when the next Seclura module goes live.",
+        "count": 1
+      },
+      {
+        "value": "The link you followed doesn’t exist — or it was never meant to be found. Either way, nothing here is traceable.",
+        "count": 1
+      },
+      {
+        "value": "The mission",
+        "count": 1
+      },
+      {
+        "value": "The private payment rail for Solana. Stealth addresses, HPKE-sealed instructions and non-custodial settlement — powered by",
+        "count": 1
+      },
+      {
+        "value": "The Seclura app is open to everyone — connect a wallet and start sending privately. Leave your email if you want the mobile build, merchant SDK and payroll console the day they ship.",
+        "count": 1
+      },
+      {
+        "value": "This page has gone",
+        "count": 1
+      },
+      {
+        "value": "To",
+        "count": 1
+      },
+      {
+        "value": "Token",
+        "count": 1
+      },
+      {
+        "value": "Tokenomics",
+        "count": 1
+      },
+      {
+        "value": "total supply",
+        "count": 1
+      },
+      {
+        "value": "Total supply",
+        "count": 1
+      },
+      {
+        "value": "Trade tax",
+        "count": 1
+      },
+      {
+        "value": "Transparency for validity · privacy for identity",
+        "count": 1
+      },
+      {
+        "value": "Transparent chain",
+        "count": 1
+      },
+      {
+        "value": "under a minute",
+        "count": 1
+      },
+      {
+        "value": "unlocks",
+        "count": 1
+      },
+      {
+        "value": "Unverified figures are labelled on this page · confirm everything at the official source",
+        "count": 1
+      },
+      {
+        "value": "We store nothing but your address, and you can ask us to delete it at any time.",
+        "count": 1
+      },
+      {
+        "value": "What",
+        "count": 1
+      },
+      {
+        "value": "Whitepaper",
+        "count": 1
+      },
+      {
+        "value": "Why it matters",
+        "count": 1
+      },
+      {
+        "value": "You’re on the list",
+        "count": 1
+      },
+      {
+        "value": "Zero logs",
+        "count": 1
+      }
+    ],
+    "hiddenText": [],
+    "attributes": [
+      {
+        "name": "href",
+        "value": "/privacy",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "/terms",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "#home",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "#launch",
+        "count": 1
+      },
+      {
+        "name": "href",
+        "value": "https://ghostwareos.gitbook.io/docs/core-modules/ghostpay",
+        "count": 2
+      },
+      {
+        "name": "href",
+        "value": "https://ghostwareos.gitbook.io/docs/vision-and-principles",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "arrow",
+        "count": 5
+      },
+      {
+        "name": "name",
+        "value": "arrowUpRight",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "bolt",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "book",
+        "count": 3
+      },
+      {
+        "name": "name",
+        "value": "check",
+        "count": 9
+      },
+      {
+        "name": "name",
+        "value": "code",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "drop",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "eye",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "fade",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "layers",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "lock",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "mask",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "page",
+        "count": 1
+      },
+      {
+        "name": "name",
+        "value": "seclura",
+        "count": 3
+      },
+      {
+        "name": "name",
+        "value": "send",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "shield",
+        "count": 2
+      },
+      {
+        "name": "name",
+        "value": "wallet",
+        "count": 1
+      },
+      {
+        "name": "placeholder",
+        "value": "you@protonmail.com",
+        "count": 1
+      },
+      {
+        "name": "to",
+        "value": "/",
+        "count": 2
+      },
+      {
+        "name": "to",
+        "value": "/#features",
+        "count": 1
+      },
+      {
+        "name": "to",
+        "value": "/privacy",
+        "count": 1
+      },
+      {
+        "name": "to",
+        "value": "/terms",
+        "count": 1
+      }
+    ],
+    "bindings": [
+      {
+        "kind": "attr",
+        "expr": "`${s.label} — ${s.handle}`",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "copied ? 'check' : 'copy'",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "f.icon",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "link.href",
+        "count": 3
+      },
+      {
+        "kind": "attr",
+        "expr": "open ? 'close' : 'menu'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "open === i ? 'close' : 'plus'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "p.icon",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "p.status === 'done' ? 'check' : 'spark'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "row.legacy ? 'close' : 'check'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "row.ours ? 'check' : 'close'",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "s.href === '#' ? undefined : s.href",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "s.icon",
+        "count": 1
+      },
+      {
+        "kind": "attr",
+        "expr": "site.contract",
+        "count": 2
+      },
+      {
+        "kind": "attr",
+        "expr": "site.url",
+        "count": 3
+      },
+      {
+        "kind": "form",
+        "expr": "copied ? 'check' : 'copy'",
+        "count": 2
+      },
+      {
+        "kind": "form",
+        "expr": "f.icon",
+        "count": 1
+      },
+      {
+        "kind": "form",
+        "expr": "open ? 'close' : 'menu'",
+        "count": 1
+      },
+      {
+        "kind": "form",
+        "expr": "open === i ? 'close' : 'plus'",
+        "count": 1
+      },
+      {
+        "kind": "form",
+        "expr": "p.icon",
+        "count": 1
+      },
+      {
+        "kind": "form",
+        "expr": "p.status === 'done' ? 'check' : 'spark'",
+        "count": 1
+      },
+      {
+        "kind": "form",
+        "expr": "row.legacy ? 'close' : 'check'",
+        "count": 1
+      },
+      {
+        "kind": "form",
+        "expr": "row.ours ? 'check' : 'close'",
+        "count": 1
+      },
+      {
+        "kind": "form",
+        "expr": "s.icon",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "col.title",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "content.lead",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "content.title",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "copied ? 'Copied' : 'Copy'",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "d.label",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "d.pct",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "f",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "f.k",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "f.text",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "f.title",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "f.v",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item.a",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "item.q",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "link.label",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "logo",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "new Date().getFullYear()",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "p.phase",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "p.text",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "p.title",
+        "count": 3
+      },
+      {
+        "kind": "interpolation",
+        "expr": "row.label",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.h",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.label",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.p",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.step",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.text",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.title",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "s.value",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "shortContract",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "site.audit",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "site.chain",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "site.contract.slice(0, 10)",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "site.description",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "site.domain",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "site.name",
+        "count": 4
+      },
+      {
+        "kind": "interpolation",
+        "expr": "site.ticker",
+        "count": 6
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stat.label",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "stat.value",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "statusLabel[p.status]",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "steps[activeStep].step",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "steps[activeStep].text",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "steps[activeStep].title",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "String(i + 1).padStart(2, '0')",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tokenomics.disclaimer",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tokenomics.supply",
+        "count": 2
+      },
+      {
+        "kind": "interpolation",
+        "expr": "tokenomics.tax",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "u",
+        "count": 1
+      },
+      {
+        "kind": "interpolation",
+        "expr": "year",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "link.href",
+        "count": 3
+      },
+      {
+        "kind": "link",
+        "expr": "s.href === '#' ? undefined : s.href",
+        "count": 1
+      },
+      {
+        "kind": "link",
+        "expr": "site.url",
+        "count": 3
+      },
+      {
+        "kind": "model",
+        "expr": "email",
+        "count": 1
+      }
+    ],
+    "events": [
+      {
+        "event": "click",
+        "handler": "activeStep = i",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "copyContract",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "go('#home')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "go('#how-it-works')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "go('#launch')",
+        "count": 4
+      },
+      {
+        "event": "click",
+        "handler": "go(link.href)",
+        "count": 2
+      },
+      {
+        "event": "click",
+        "handler": "goRoute('/privacy')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "goRoute('/terms')",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "open = !open",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "reset",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "toggle(i)",
+        "count": 1
+      },
+      {
+        "event": "click",
+        "handler": "toTop",
+        "count": 1
+      },
+      {
+        "event": "input",
+        "handler": "reset",
+        "count": 1
+      },
+      {
+        "event": "keydown",
+        "handler": "open = false",
+        "count": 1
+      },
+      {
+        "event": "mouseenter",
+        "handler": "activeStep = i",
+        "count": 1
+      },
+      {
+        "event": "submit",
+        "handler": "submit",
+        "count": 1
+      }
+    ],
+    "links": [
+      {
+        "kind": "href",
+        "target": "/privacy",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "/terms",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "#home",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "#launch",
+        "count": 1
+      },
+      {
+        "kind": "href",
+        "target": "https://ghostwareos.gitbook.io/docs/core-modules/ghostpay",
+        "count": 2
+      },
+      {
+        "kind": "href",
+        "target": "https://ghostwareos.gitbook.io/docs/vision-and-principles",
+        "count": 1
+      },
+      {
+        "kind": "to",
+        "target": "/",
+        "count": 2
+      },
+      {
+        "kind": "to",
+        "target": "/#features",
+        "count": 1
+      },
+      {
+        "kind": "to",
+        "target": "/privacy",
+        "count": 1
+      },
+      {
+        "kind": "to",
+        "target": "/terms",
+        "count": 1
+      }
+    ],
+    "assets": [],
+    "forms": [
+      {
+        "tag": "input",
+        "name": "",
+        "type": "email",
+        "count": 1
+      }
+    ],
+    "i18n": [],
+    "i18nKeys": [],
+    "i18nFiles": [],
+    "api": [],
+    "env": []
+  },
+  "contentContractHash": "c2aacd4a908acc88a114506cee8c468a61f313a90a8f2e71503a19ae109b459e"
+}

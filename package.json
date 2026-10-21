@@ -1,0 +1,24 @@
+{
+  "name": "seclura-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Seclura (seclura.xyz) marketing site rebuilt with Vue 3 + Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "node scripts/validate.mjs",
+    "capture": "node scripts/capture.mjs",
+    "dns": "node scripts/dns.mjs",
+    "check": "node scripts/validate.mjs && vite build"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.7"
+  }
+}

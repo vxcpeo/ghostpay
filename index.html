@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#E8F3FF" />
+
+    <title>Seclura — Private Payments, Invisible by Design</title>
+    <meta
+      name="description"
+      content="Seclura is the private payment rail for Solana. Send, receive and swap with stealth addresses and HPKE-sealed instructions, so who-paid-whom stays off the public record. Powered by $GHOST."
+    />
+    <meta name="keywords" content="Seclura, GHOST, private payments, crypto privacy, stealth address, HPKE, Solana privacy, untraceable" />
+    <meta name="author" content="Seclura" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Seclura — Private Payments, Invisible by Design" />
+    <meta
+      property="og:description"
+      content="The private payment rail for Solana. Stealth addresses, HPKE-sealed instructions, non-custodial settlement. Powered by $GHOST."
+    />
+    <meta property="og:url" content="https://seclura.xyz/" />
+    <meta property="og:site_name" content="Seclura" />
+    <meta property="og:image" content="/assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Seclura — private payments, invisible by design. The private payment rail for Solana." />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Seclura — Private Payments, Invisible by Design" />
+    <meta
+      name="twitter:description"
+      content="The private payment rail for Solana. Stealth addresses, HPKE-sealed instructions, non-custodial settlement. Powered by $GHOST."
+    />
+    <meta name="twitter:image" content="/assets/og-cover.png" />
+
+    <!-- Canonical: the app uses hash routing, so every view shares this one URL. -->
+    <link rel="canonical" href="https://seclura.xyz/" />
+
+    <!--
+      Structured data. `url` points at the new canonical domain; the GhostWareOS docs remain an
+      external source until the new domain is registered.
+      No token/offer markup is included on purpose: this page is informational only.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Seclura",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Seclura is the private payment rail for Solana: stealth addresses, HPKE-sealed payment instructions and non-custodial settlement.",
+        "url": "https://seclura.xyz/",
+        "sameAs": ["https://seclura.xyz/"],
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Connect a Solana wallet; there is no subscription."
+        }
+      }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!--
+      Progressive enhancement marker.
+
+      The tidal layout is static and does not gate content behind opacity. If the bundle never runs
+      (JS disabled, CSP, network failure), `.no-js` stays on <html> so the stylesheet can keep the
+      page fully visible rather than blank.
+
+      This must stay inline and above the module script: it has to run before first paint.
+    -->
+    <script>
+      document.documentElement.classList.add('no-js')
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

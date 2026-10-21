@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-20T16:36:53.177Z",
+  "project": {
+    "root": "E:/workspace/chuangye/solana/ghostpay/website",
+    "name": "seclura-website",
+    "baseUrl": "http://127.0.0.1:4326/"
+  },
+  "passed": true,
+  "thresholds": {
+    "maxStructureSimilarity": 0.5,
+    "maxLandmarkSimilarity": 0.68,
+    "maxClassOverlap": 0.1,
+    "minAccentDistance": 30,
+    "maxContrastFailures": 0,
+    "maxAxeSerious": 0
+  },
+  "gates": {
+    "sourceContract": {
+      "passed": true,
+      "issues": [],
+      "warnings": [],
+      "hash": "c2aacd4a908acc88a114506cee8c468a61f313a90a8f2e71503a19ae109b459e"
+    },
+    "skeleton": {
+      "passed": true,
+      "original": {
+        "id": "ticker-stage",
+        "family": "linear",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": true,
+          "hero": false,
+          "table": true,
+          "grid": true,
+          "tabs": false,
+          "modal": false,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": false,
+          "bento": false,
+          "ticker": true,
+          "gallery": false
+        }
+      },
+      "current": {
+        "id": "bento-canvas",
+        "family": "spatial",
+        "traits": {
+          "sidebar": false,
+          "topbar": false,
+          "cards": true,
+          "hero": false,
+          "table": true,
+          "grid": true,
+          "tabs": false,
+          "modal": false,
+          "charts": true,
+          "sticky": true,
+          "orbital": false,
+          "terminal": false,
+          "bento": true,
+          "ticker": true,
+          "gallery": true
+        }
+      },
+      "accent": {
+        "original": "#0000ff",
+        "current": "#298dff",
+        "deltaE": 83.88,
+        "min": 30
+      }
+    },
+    "pages": [
+      {
+        "route": "/",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute changed/removed: aria-label=Back to top",
+          "aria attribute added: aria-label=Core modules",
+          "aria attribute added: aria-label=Privacy Policy",
+          "aria attribute added: aria-label=Roadmap",
+          "aria attribute added: aria-label=Terms of Use",
+          "link target added: /privacy",
+          "link target added: /terms"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.306,
+          "landmarkSimilarity": 0.667,
+          "classOverlap": 0
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 21,
+              "total": 37
+            },
+            "current": {
+              "tokens": 21,
+              "total": 37
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/home-desktop.png",
+          "mobile": "current/home-mobile.png"
+        }
+      },
+      {
+        "route": "/privacy",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=Privacy Policy",
+          "aria attribute added: aria-label=Terms of Use",
+          "link target added: /privacy",
+          "link target added: /terms"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.338,
+          "landmarkSimilarity": 0.667,
+          "classOverlap": 0.019
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 6,
+              "total": 7
+            },
+            "current": {
+              "tokens": 6,
+              "total": 7
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/privacy-desktop.png",
+          "mobile": "current/privacy-mobile.png"
+        }
+      },
+      {
+        "route": "/terms",
+        "passed": true,
+        "skipped": false,
+        "failures": [],
+        "warnings": [
+          "aria attribute added: aria-label=Privacy Policy",
+          "aria attribute added: aria-label=Terms of Use",
+          "link target added: /privacy",
+          "link target added: /terms"
+        ],
+        "structure": {
+          "fingerprintSimilarity": 0.338,
+          "landmarkSimilarity": 0.667,
+          "classOverlap": 0.019
+        },
+        "content": {
+          "missing": [],
+          "extra": [],
+          "numeric": {
+            "baseline": {
+              "tokens": 7,
+              "total": 8
+            },
+            "current": {
+              "tokens": 7,
+              "total": 8
+            }
+          }
+        },
+        "usability": {
+          "passed": true,
+          "failures": [],
+          "warnings": [],
+          "axe": {
+            "serious": [],
+            "moderate": []
+          }
+        },
+        "screenshots": {
+          "desktop": "current/terms-desktop.png",
+          "mobile": "current/terms-mobile.png"
+        }
+      }
+    ]
+  },
+  "failures": [],
+  "warnings": [
+    "/: aria attribute changed/removed: aria-label=Back to top",
+    "/: aria attribute added: aria-label=Core modules",
+    "/: aria attribute added: aria-label=Privacy Policy",
+    "/: aria attribute added: aria-label=Roadmap",
+    "/: aria attribute added: aria-label=Terms of Use",
+    "/: link target added: /privacy",
+    "/: link target added: /terms",
+    "/privacy: aria attribute added: aria-label=Privacy Policy",
+    "/privacy: aria attribute added: aria-label=Terms of Use",
+    "/privacy: link target added: /privacy",
+    "/privacy: link target added: /terms",
+    "/terms: aria attribute added: aria-label=Privacy Policy",
+    "/terms: aria attribute added: aria-label=Terms of Use",
+    "/terms: link target added: /privacy",
+    "/terms: link target added: /terms"
+  ],
+  "baseline": {
+    "generatedAt": "2026-10-20T16:01:54.434Z",
+    "routes": [
+      "/",
+      "/privacy",
+      "/terms"
+    ]
+  }
+}
